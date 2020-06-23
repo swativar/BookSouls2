@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksouls - A blog to inspire million</title>
+    <link rel="stylesheet" href="booksouls.css">
+    <script src="https://kit.fontawesome.com/509c72249f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Header section-->
+    <div class="text-center" id="upper">
+        <a href="booksouls.html">Booksouls</a>
+        <p id="moto">A blog to inspire million</p>
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <div class="container">
+            <!-- Brand -->
+            <div class="justify-content-end">
+                <!--Social media-->
+                <a href="#!"><i class="fab fa-facebook fa-sm text-dark"></i></a>
+                <a href="#!"><i class="fab fa-twitter fa-sm text-dark"></i></a>
+                <a href="#!"><i class="fab fa-pinterest fa-sm text-dark"></i></a>
+                <a href="#!"><i class="fab fa-instagram fa-sm text-dark"></i></a>
+            </div>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="booksouls.html"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Inspire Me</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Request a Book</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Carousel-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://seattlesteve.files.wordpress.com/2014/02/dsc03070.jpg" alt="">
+                <div class="carousel-caption">
+                    <button class="btn btn-outine-light text-light">Articles</button>
+                    <button class="btn btn-outine-light text-light">Recommended</button>
+                    <h3 class="text-light">What is the reason behind COVID 19 Lockdown Relief</h3>
+                    <a href="#" class="text-light">View Post</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1553729784-e91953dec042?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+                    alt="">
+                <div class="carousel-caption">
+                    <button class="btn btn-outine-light text-light">Articles</button>
+                    <button class="btn btn-outine-light text-light">Recommended</button>
+                    <h3 class="text-light">6 Amazing Benefits of Reading: Everyone Should Know</h3>
+                    <a href="#" class="text-light">View Post</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+    <!--collection-->
+    <h4 class="text-center" style="font-weight: bolder; margin-top: 5%;">Categories</h4>
+    <div id="con">
+        <span class="button">
+            <button class="btn btn-outline-dark">Society and Culture</button>
+            <button class="btn btn-outline-dark">Science</button>
+            <button class="btn btn-outline-dark">Career and Success</button>
+            <button class="btn btn-outline-dark">Religion</button>
+            <button class="btn btn-outline-dark">Motivation and Inspiration</button>
+            <button class="btn btn-outline-dark">Society and Culture</button>
+        </span>
+        <span class="button">
+            <button class="btn btn-outline-dark">Sex and Relationships</button>
+            <button class="btn btn-outline-dark">Health and Nutrition</button>
+            <button class="btn btn-outline-dark">Personal Development</button>
+            <button class="btn btn-outline-dark">Parenting</button>
+            <button class="btn btn-outline-dark">Nature and Enviornment</button>
+            <button class="btn btn-outline-dark">Society and Culture</button>
+        </span>
+        <a class="prev" onclick="plusSlides(-1)"><span>&#10094</span></a>
+        <a class="next" onclick="plusSlides(1)"><span>&#10095</span></a>
+    </div>
+    <!--Categories Content-->
+    <div id="societyandculture">
+        <div class="container">
+            <h5 class="text-center title">Top titles in <span class="name text-primary">Society and Culture</span></h5>
+            <div class="row card_row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Stephen R. Covey</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Stephen R. Covey</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Stephen R. Covey</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Stephen R. Covey</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Stephen R. Covey</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Stephen R. Covey</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <button class="btn btn-outline-dark" onclick="category()">Show All</button>
+            </div>
+        </div>
+    </div>
+    <div id="religion">
+        <div class="container">
+            <h5 class="text-center title">Top titles in <span class="name text-primary"></span></h5>
+            <div class="row card_row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Paul D. Tieger, Barbara</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Paul D. Tieger, Barbara</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Paul D. Tieger, Barbara</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Paul D. Tieger, Barbara</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Paul D. Tieger, Barbara</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Paul D. Tieger, Barbara</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <button class="btn btn-outline-dark" onclick="category()">Show All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="careerandsuccess">
+        <div class="container">
+            <h5 class="text-center title">Top titles in <span class="name text-primary"></span></h5>
+            <div class="row card_row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Michael Bungay Stanier</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Michael Bungay Stanier</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Michael Bungay Stanier</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Michael Bungay Stanier</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Michael Bungay Stanier</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Michael Bungay Stanier</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <button class="btn btn-outline-dark" onclick="category()">Show All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="science">
+        <div class="container">
+            <h5 class="text-center title">Top titles in <span class="name text-primary"></span></h5>
+            <div class="row card_row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
+                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">William H. McRaven</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
+                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">William H. McRaven</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
+                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">William H. McRaven</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
+                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">William H. McRaven</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
+                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">William H. McRaven</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
+                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">William H. McRaven</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <button class="btn btn-outline-dark" onclick="category()">Show All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sexandrelationships">
+        <div class="container">
+            <h5 class="text-center title">Top titles in <span class="name text-primary"></span></h5>
+            <div class="row card_row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Dale Carnegie</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Dale Carnegie</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Dale Carnegie</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Dale Carnegie</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Dale Carnegie</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
+                            alt="">
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        </div>
+                        <div class="card-body" style="height:80px;">
+                            <p class="text-center">Dale Carnegie</p>
+                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
+                                    class="fas fa-headphones"></i> audio available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <button class="btn btn-outline-dark" onclick="category()">Show All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="personaldevelopment">
+        <div class="container">
+            <h5 class="text-center title">No Data in <span class="name text-primary"></span></h5>
+        </div>
+    </div>
+    <div id="parenting">
+        <div class="container">
+            <h5 class="text-center title">No Data in <span class="name text-primary"></span></h5>
+        </div>
+    </div>
+    <div id="natureandenviornment">
+        <div class="container">
+            <h5 class="text-center title">No Data in <span class="name text-primary"></span></h5>
+        </div>
+    </div>
+    <div id="motivationandinspiration">
+        <div class="container">
+            <h5 class="text-center title">No Data in <span class="name text-primary"></span></h5>
+        </div>
+    </div>
+    <div id="healthandnutrition">
+        <div class="container">
+            <h5 class="text-center title">No Data in <span class="name text-primary"></span></h5>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <pre>B O O K S O U L S. C O M</pre>
+                    <p>We’re dedicated to the thought that writing about books and reading
+                        should be even as diverse as books and readers are. We began with the
+                        goal of leading a platform that illustrates good content among readers</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+
+                    <ul class="list-unstyled links">
+                        <li>
+                            <a href="#!">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Write for Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Privacy Policy</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+                <h5 class="mb-1">Register for free</h5>
+            </li>
+            <li class="list-inline-item">
+                <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+            </li>
+        </ul>
+        <!-- Call to action -->
+
+        <hr>
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a>
+                    <i class="fab fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="mx-1">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="mx-1">
+                    <i class="fab fa-google-plus-g"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="mx-1">
+                    <i class="fab fa-linkedin-in"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <p>Crafted with <span></span> By Booksouls.com</p>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="booksouls.js"></script>
+</body>
+
+</html>

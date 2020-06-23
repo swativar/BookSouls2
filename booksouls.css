@@ -1,0 +1,208 @@
+#moto{
+    position: relative;
+    top: -5px;
+    opacity: 0.7;
+}
+#upper{
+    padding:4%;
+}
+#upper a{
+    text-decoration: none;
+    font-size: 3.5rem;
+    color: black;
+    font-weight: bold;
+}
+.carousel-item img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 420px;
+}
+.carousel-caption{
+    top:15%;
+    
+}
+.carousel-caption button{
+    background: transparent; 
+    border:2px solid white;
+}
+.carousel-caption h3{
+    font-weight: bolder; 
+    font-size: 2rem; 
+    text-shadow: 2px 2px 5px black;
+}
+.carousel-caption a{
+    text-shadow: 2px 2px 5px black;
+}
+.nav-item{
+    text-align: center;
+}
+.nav-item span{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding:0 10px;
+}
+#collection{
+    margin-top: 15%;
+}
+.content{
+    text-decoration: none;
+    color: black;
+}
+.card-header{
+    text-align: center;
+}
+.card-header a{
+    font-weight: bold;
+}
+.card-footer{
+    text-align: center;
+}
+.card-body{
+    font-size: 0.8rem;
+    position: relative;
+    top:-10px;
+}
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+
+.card{
+    margin-top: 10%;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#con{
+    border:1px solid transparent;
+    padding: 1%;
+    width:80%;
+    text-align: center;
+    margin:2% auto;
+  }
+  
+  #con a{
+    cursor:pointer;
+  }
+  .next,.prev{
+    position: relative;
+    top: 15px;
+  }
+  .prev span, .next span{
+      font-weight: bolder;
+      border: 2px solid black;
+      padding:1% 4%;
+      border-radius: 15%;
+  }
+  #religion, #science, #careerandsuccess,#sexandrelationships,#personaldevelopment,#parenting,#natureandenviornment,
+  #motivationandinspiration,#healthandnutrition {
+      display: none;
+  }
+  .title{
+    margin-top: 13%;
+  }
+  .more{
+      margin-top:5%;
+      text-align: center;
+  }
+  footer{
+      margin-top:20%;
+      padding:3%;
+      font-size: 0.8rem;
+  }
+  footer ul{
+      list-style-type: none;
+  }
+  footer .links li{
+      position: relative;
+      text-align: left;
+    
+  }
+  footer li a{
+      color: black;
+  }
+  @media screen and (min-width:600px){
+    .next{
+        position: relative;
+        left: 300px;
+        top:-60px;
+    }
+    .prev{
+      position: relative;
+        left: -300px;
+        top:-60px; 
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 420px;
+    }
+    .card_row{
+        padding: 0 12%;
+    }
+  }
+@media screen and (min-width:900px){
+.card_row{
+    padding: 0 8%;
+}
+.carousel-item img{
+    object-fit: cover;
+    height: 600px;
+    width: 90%;
+}
+.carousel-item{
+    text-align: center;
+}
+.prev{
+    left:-400px;
+    top:-25px;
+  }
+  .next{
+    left:400px;
+    top:-25px;
+  }
+  .prev span, .next span{
+    padding: 0.5% 1%;
+}
+.title{
+    margin-top:0;
+}
+.carousel-caption h3{
+    font-size: 3rem; 
+}
+.carousel-caption a{
+    font-size: 1.3rem;
+}
+.nav-item span{
+    border-right: 1px solid black;
+    border-left: 0px;
+    padding: 0 10px;
+}
+.nav-item:last-child span{
+    border-right: 0px;
+    padding:0px;
+}
+#upper{
+    padding:2%;
+}
+footer{
+    margin-top:10%;
+}
+footer .links li{
+    position: relative;
+    left:-150px;
+    top:20px;
+  
+}
+}
+@media screen and (min-width:1200px){
+    .card_row{
+        padding: 0 12%;
+    }
+    .prev{
+        left:-600px;
+      }
+      .next{
+        left:600px;
+      }
+}
