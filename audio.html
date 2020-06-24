@@ -63,7 +63,7 @@
                         <!--listen now button & download button-->
                         <div>
                             <button class="btn btn-outline-light play">Listen Now</button>
-                            <button class="btn btn-outline-light">Download</button>
+                            <a class="btn btn-outline-light text-light" href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">Download</a>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                         <!--listen now button & download button-->
                         <div>
                             <button class="btn btn-outline-light play">Listen Now</button>
-                            <button class="btn btn-outline-light">Download</button>
+                            <a class="btn btn-outline-light text-right" href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">Download</button>
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                         <!--listen now button & download button-->
                         <div>
                             <button class="btn btn-outline-light play">Listen Now</button>
-                            <button class="btn btn-outline-light">Download</button>
+                            <a class="btn btn-outline-light text-light" href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3">Download</a>
                         </div>
                     </div>
                 </div>
@@ -267,7 +267,7 @@
                         <!--listen now button & download button-->
                         <div>
                             <button class="btn btn-outline-light play">Listen Now</button>
-                            <button class="btn btn-outline-light">Download</button>
+                            <a class="btn btn-outline-light text-light" href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3">Download</a>
                         </div>
                     </div>
                 </div>
@@ -335,7 +335,7 @@
                         <!--listen now button & download button-->
                         <div>
                             <button class="btn btn-outline-light play">Listen Now</button>
-                            <button class="btn btn-outline-light">Download</button>
+                            <a class="btn btn-outline-light text-light" href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3">Download</a>
                         </div>
                     </div>
                 </div>
@@ -396,65 +396,38 @@
             </div>
         </div>
     </div>
-    <!--comment section-->
-    <hr>
-    <div class="row" id="comment_row">
-        <div class="col-sm-12 col-md-6">
-            <div>
-                <h6>Leave A Comment</h6>
-                <div id="form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" placeholder="Enter Name" id="name" name="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="comment">Comment</label>
-                        <textarea class="form-control" placeholder="Enter Comment" id="comment"
-                            name="comment"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-outline-dark" onclick="addNewComment()">Submit</button>
-                </div>
-            </div>
+    <!--parallax-->
+    <div class="parallax">
+        <div class="parallax_item">
+            <input type="text" placeholder="Enter Email" name="sub_mail" class="form-group rounded">
+            <button class="btn btn-light btn-md">SUBSCRIBE</button>
         </div>
-        <div class="col-sm-12 col-md-6">
-            <div id="comment_sec">
-                <h6>Comments:</h6>
-                <div class="mt-5">
-                    <p class="user"><span class="bg-info"><i class="fas fa-user fa-lg"></i></span> Admin</p>
-                    <span class="date">23/06/2020</span>
-                    <div class="comment">Very Nice
-                    <span class="float-right"><button class="btn btn-outline-dark btn-sm" style="position: relative;top:-4px">Reply</button></span>
-                    </div>
+    </div>
+    <!--comment section-->
+    <div class="form-group comment_sec_u mt-5">
+        <div class="bg-info rounded-circle user"><i class="fas fa-user fa-lg"></i></div>
+        <textarea class="form-control" placeholder="Join Discussion..." id="textarea" name="comment"></textarea>
+            <div class="text-center mt-2">
+                <button class="btn btn-info" onclick="addComment()">Post</button>
                 </div>
-                <div class="mt-5">
-                    <p class="user"><span class="bg-info"><i class="fas fa-user fa-lg"></i></span> User1</p>
-                    <span class="date">19/06/2020</span>
-                    <div class="comment">Very Nice
-                    <span class="float-right"><button class="btn btn-outline-dark btn-sm" style="position: relative;top:-4px">Reply</button></span>
-                    </div>
-                </div>
-                <div class="mt-5">
-                    <p class="user"><span class="bg-info"><i class="fas fa-user fa-lg"></i></span> User2</p>
-                    <span class="date">10/06/2020</span>
-                    <div class="comment">Very Nice
-                    <span class="float-right"><button class="btn btn-outline-dark btn-sm" style="position: relative;top:-4px">Reply</button></span>
-                    </div>
-                </div>
-                <div class="mt-5">
-                    <p class="user"><span class="bg-info"><i class="fas fa-user fa-lg"></i></span> User3</p>
-                    <span class="date">1/06/2020</span>
-                    <div class="comment">Very Nice
-                    <span class="float-right"><button class="btn btn-outline-dark btn-sm" style="position: relative;top:-4px">Reply</button></span>
-                    </div>
-                </div>
+    </div>
+   
+    <p class="ml-3">Comments: <span id="no" class="text-info"></span></p>
+    <hr>
+    <div id="comment_add">
+        <div class="mt-2 comment_sec">
+            <div class="bg-info rounded-circle user"><i class="fas fa-user fa-lg"></i></div>
+            <div class="comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam numquam excepturi labore, eius
+                    perspiciatis obcaecati facere cumque dolor adipisci eveniet, placeat repellat nobis laborum saepe?
+                    Expedita eligendi soluta a doloremque?</p>
+                <span class="date"><i class="far fa-calendar-alt"></i> 1/06/2020</span>
+                <span class="time"><i class="far fa-clock"></i> 20:25</span>
+                <span class="reply"><i class="fas fa-reply fa-md"></i></span>
+                <span class="heart"><i class="far fa-heart fa-md"></i></span>
             </div>
         </div>
     </div>
-    <!--end of comment section-->
     <!-- Footer -->
     <footer class="page-footer font-small pt-4">
 

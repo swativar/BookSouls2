@@ -5,6 +5,7 @@ window.onload = function () {
     for (var i = 0, l = params.length; i < l; i++) {
         tmp = params[i].split('=');
         data[tmp[0]] = tmp[1];
+        console.log(data);
     }
     var title = data.name.split('-').join(' ');
     document.querySelector('.title1').innerHTML = title;
@@ -38,36 +39,75 @@ play_arr.forEach(function(play_button){
     }
 });
 
-function addNewComment(){
-    var newComment = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      comment: document.getElementById('comment').value
-    }
+function addComment(){
+    var comment = document.getElementById('textarea').value;
     var div = document.createElement('div');
-    div.className="mt-5";
-    var p = document.createElement('p');
-    p.className="user";
-    p.textContent= ' '+ newComment.name;
-    var span = document.createElement('span');
-    span.className="bg-info";
+    div.className="mt-2 comment_sec";
+    var div1 = document.createElement('div');
+    div1.className = "bg-info rounded-circle user"
     var i = document.createElement('i');
-    i.className="fas fa-user fa-lg";
-    span.appendChild(i);
-    p.prepend(span);
+    i.className = "fas fa-user fa-lg";
+    div1.appendChild(i);
+    var div2 = document.createElement('div');
+    div2.className = "comment";
+    var p = document.createElement('p');
+    p.textContent= comment;
+    var span = document.createElement('span');
     var span1 = document.createElement('span');
-    span1.className="date";
+    var span2 = document.createElement('span');
+    var span3 = document.createElement('span');
+    span.className="date";
+    span1.className="time";
+    span2.className="reply";
+    span3.className="heart";
     var date = new Date();
     var fulldate = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
-    span1.textContent = fulldate;
-    var div1 = document.createElement('div');
-    div1.className = "comment";
-    div1.textContent = newComment.comment;
-    div.appendChild(p);
-    div.appendChild(span1);
+    var hour = date.getHours();
+    var min = date.getMinutes();
+    var time = hour+':'+min;
+    var i1 = document.createElement('i');
+    var i2 = document.createElement('i');
+    var i3 = document.createElement('i');
+    var i4 = document.createElement('i');
+    i1.className="far fa-calendar-alt";
+    i2.className="far fa-clock";
+    i3.className="fas fa-reply fa-md";
+    i4.className="far fa-heart fa-md";
+    span2.appendChild(i3);
+    span3.appendChild(i4);
+    span.textContent= ' '+fulldate;
+    span1.textContent=' '+time;
+    span.prepend(i1);
+    span1.prepend(i2);
+    div2.appendChild(p);
+    div2.appendChild(span);
+    div2.appendChild(span1);
+    div2.appendChild(span2);
+    div2.appendChild(span3);
     div.appendChild(div1);
-    document.getElementById('comment_sec').prepend(div);
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('comment').value = '';
+    div.appendChild(div2);
+    document.getElementById('comment_add').prepend(div);
+    document.getElementById('textarea').value="";
+    var no = document.querySelectorAll('.comment_sec');
+    var no_arr = Array.from(no);
+    var tot_no = no_arr.length;
+    document.getElementById('no').innerHTML = tot_no;
 }
+
+var no = document.querySelectorAll('.comment_sec');
+var no_arr = Array.from(no);
+var tot_no = no_arr.length;
+document.getElementById('no').innerHTML = tot_no;
+
+var hearts = document.querySelectorAll('.heart');
+var hearts_arr = Array.from(hearts);
+hearts_arr.forEach(function(heart){
+heart.onclick = function (e){
+    console.log(e.target);
+    if(e.target.className==="far fa-heart fa-md"){
+    e.target.className="fas fa-heart fa-md text-danger";
+    }else{
+    e.target.className="far fa-heart fa-md";
+    }
+}
+})

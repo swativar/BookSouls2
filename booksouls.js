@@ -55,13 +55,19 @@ function category() {
 
 var links = document.getElementsByClassName('content');
 var links_arr = Array.from(links);
-console.log(links_arr);
 links_arr.forEach(function (link) {
     link.onclick = function (e) {
         window.book_name = e.target.innerHTML;
         window.id = e.target.id;
-        console.log(book_name);
+        console.log(window.book_name);
         url = 'audio.html?name=' + encodeURIComponent(window.book_name.split(" ").join('-')) + '&id=' + encodeURIComponent(window.id);
         document.location.href = url;
     }
 })
+
+function showLogin(){
+ $('#mymodal').modal("hide");
+}
+ function showSignUp(){
+        $('#mymodal1').modal("hide");
+     }

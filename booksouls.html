@@ -46,11 +46,93 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><span>Request a Book</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#mymodal"><span>Sign Up</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#mymodal1"><span>Log In</span></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!--Sign Up-->
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
 
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign Up for Booksouls</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" placeholder="Enter email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Create Password</label>
+                        <input type="password" class="form-control" placeholder="Create password" id="pwd">
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark w-100">Create Account</button>
+                    <hr>
+                    <button type="submit" class="btn btn-info w-100"><i class="fab fa-facebook fa-lg text-light" style="position: relative; left:-8px"></i> Sign Up
+                        with Facebook</button>
+                    <div class="mt-4">
+                        <p class="small">By Continuing you indicate that you've read and agree to our <a href="#">Terms of Service</a>
+                            and <a href="#">Privacy Policy</a></p>
+                        <div class="text-center">
+                        <a href="#" data-toggle="modal" data-target="#mymodal1" class="mt-4" onclick="showLogin()">Already have a account?</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--login-->
+    <div class="modal fade" id="mymodal1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title text-center">Login to Booksouls</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Enter password">
+                    </div>
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-outline-dark w-100">Login with Email</button>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-info" style="width: 40%;"><i class="fab fa-facebook fa-lg text-light" style="position: relative; left:-8px"></i>Login</button>
+                    <button type="submit" class="btn btn-info" style="width: 40%;"><i class="fab fa-google-plus-g fa-lg text-light" style="position: relative; left:-8px"></i>Login</button>
+                    </div>
+                    <div class="mt-4">
+                        <div class="text-center">
+                        <a href="forgot.html" class="mt-4 text-center">Forgot your password?</a>
+                    </div>
+                        <p class="mt-4 small">By Continuing you indicate that you've read and agree to our <a href="#">Terms of Service</a>
+                            and <a href="#">Privacy Policy</a></p>
+                        <div class="text-center">
+                        <a href="#" data-toggle="modal" data-target="#mymodal" class="mt-4 text-center" onclick="showSignUp()">You don't have an account?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
     <!--Carousel-->
     <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -92,7 +174,6 @@
         </a>
 
     </div>
-
     <!--collection-->
     <h4 class="text-center" style="font-weight: bolder; margin-top: 5%;">Categories</h4>
     <div id="con">
@@ -489,7 +570,7 @@
                         <img class="card-img-top"
                             src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
                             alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends and Influence People</a>
                         </div>
                         <div class="card-body" style="height:80px;">
                             <p class="text-center">Dale Carnegie</p>
@@ -503,7 +584,7 @@
                         <img class="card-img-top"
                             src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
                             alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends and Influence People</a>
                         </div>
                         <div class="card-body" style="height:80px;">
                             <p class="text-center">Dale Carnegie</p>
@@ -517,7 +598,7 @@
                         <img class="card-img-top"
                             src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
                             alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends and Influence People</a>
                         </div>
                         <div class="card-body" style="height:80px;">
                             <p class="text-center">Dale Carnegie</p>
@@ -531,7 +612,8 @@
                         <img class="card-img-top"
                             src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
                             alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence
+                                People</a>
                         </div>
                         <div class="card-body" style="height:80px;">
                             <p class="text-center">Dale Carnegie</p>
@@ -545,7 +627,7 @@
                         <img class="card-img-top"
                             src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
                             alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends and Influence People</a>
                         </div>
                         <div class="card-body" style="height:80px;">
                             <p class="text-center">Dale Carnegie</p>
@@ -559,7 +641,7 @@
                         <img class="card-img-top"
                             src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
                             alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence People</a>
+                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends and Influence People</a>
                         </div>
                         <div class="card-body" style="height:80px;">
                             <p class="text-center">Dale Carnegie</p>

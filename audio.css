@@ -13,7 +13,7 @@
 }
 
 #pic1 {
-    background-image: url(https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg);
+    background-image: url(https://academichelp.net/wp-content/uploads/2013/04/novel.jpg);
 }
 #pic2{
     background-image: url(https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale);
@@ -41,33 +41,34 @@
     position: absolute;
     top: 0%;
     width: 100%;
-    background-color: black;
+    background-color: #0d3894;
     height: 60px;
     text-align: center;
     padding: 10px 0;
 }
 .over1{
     overflow-y: auto;
-    height: 310px;
+    height: 290px;
     text-align: center;
-    padding:5%;
+    padding:7%;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 15%;
+    font-size:0.8rem;
 }
 .jump1 div:first-child{
     position: absolute;
     top:0%;
     width: 91%;
-    background-color: black;
-    height: 40px;
+    background-color: #0d3894;
+    height: 60px;
     text-align: center;
-    padding: 5px 0;
+    padding: 15px 0;
 }
 .over1_h{
-background-color: black;
-height: 40px;
+background-color: #0d3894;
+height: 60px;
 text-align: center;
-padding: 5px 0;
+padding: 15px 0;
 }
 .jump1{
     height: 350px;
@@ -88,6 +89,7 @@ padding: 5px 0;
 #background img:first-child{
     object-fit: cover;
     max-width: 100%;
+    filter: grayscale(100%);
 }
 #art1,#art2,#art3,#art4,#art5{
     display: none;
@@ -96,13 +98,34 @@ padding: 5px 0;
     position: relative;
     font-size: 0.7rem;
     opacity: 0.7; 
-    left: 45px; 
-    top:-25px;
+    left: 0px; 
+    top:-15px;
 }
-.user span{
-    width: 50px; 
-    height: 50px; 
-    padding: 2%;
+.time{
+    position: relative;
+    font-size: 0.7rem;
+    opacity: 0.7; 
+    left: 15px; 
+    top:-15px;  
+}
+.reply{
+    position: relative;
+    opacity: 0.7; 
+    float: right;
+    top:-15px; 
+}
+.heart{
+    position: relative;
+    opacity: 0.7; 
+    float: right;
+    top:-15px;
+    left: -7px; 
+}
+.heart i{
+    cursor: pointer;
+}
+.reply i{
+    cursor: pointer;
 }
 .title1{
     position:relative;
@@ -112,40 +135,86 @@ padding: 5px 0;
     font-weight: bolder;
     text-shadow: 2px 2px 5px black;
  }
- #comment_row{
-    padding: 0 10%;
-}
-#comment_row div:last-child{
-    margin-top: 12%;
-}
-#comment_sec{
-    overflow-y: auto;
-    height: 380px;
-}
 .comment{
-    width: 100%; 
+    width: 60%; 
     padding: 2%;
-    background-color: #dfdfd1;
+    background-color: #f5f5ec;
+    height: auto;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#comment_sec::-webkit-scrollbar,.over1::-webkit-scrollbar{
+.user{
+    width: 50px; 
+    height: 50px; 
+    padding: 2%; 
+    opacity: 0.7;
+    position: relative;
+    left: -12px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.user i{
+    position: relative;
+    left:7px;
+    top:5px;
+}
+.comment_sec,.comment_sec_u{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.comment_sec_u textarea{
+    width: 62%;
+}
+.comment_sec_u div:first-child{
+    left: -4px;
+}
+.comment_sec_u div:last-child{
+    margin-left: 0.5rem;
+}
+.over1::-webkit-scrollbar{
     width:6px;
     
 }
-#comment_sec::-webkit-scrollbar-track,.over1::-webkit-scrollbar-track{
+.over1::-webkit-scrollbar-track{
     box-shadow: 0 0 6px rgba(0,0,0,0.7);
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
     background-color: #F5F5F5;
     border-radius: 20px;
     
 }
-#comment_sec::-webkit-scrollbar-thumb,.over1::-webkit-scrollbar-thumb{
+.over1::-webkit-scrollbar-thumb{
     background-color: grey;
     height: 10px;
     border-radius: 20px;
 }
 
-#comment_sec::-webkit-scrollbar-thumb:hover,.over1::-webkit-scrollbar-thumb:hover{
+.over1::-webkit-scrollbar-thumb:hover{
     background-color: black;
+}
+.parallax{
+    background-image: url(https://wallpapercave.com/wp/wp4815475.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    padding: 10% 0;
+}
+.parallax_item{
+    position: absolute;
+    width: 100%;
+    padding:13% 0;
+}
+.parallax_item input{
+    box-shadow: 0 4px 8px grey, 0 6px 20px 0 grey;
+    background:transparent;
+    border:1px solid white;
+    padding:6.5px;
+    width:80%;
+}
+.parallax_item input::placeholder{
+    color:white;
 }
 @media screen and (min-width:600px){
     #comment_row div:last-child{
@@ -154,8 +223,32 @@ padding: 5px 0;
     .title1{
         top:-300px;
     } 
+    .parallax_item{
+        display: inline-block;
+        left:-50px;
+        padding:3% 0;
+    }
+    .parallax_item input{
+        position: relative;
+        width:20%;
+        left: 3px;
+        top:3px;
+    }
+    .user i{
+        left:0px;
+        top:-3px;
+    }
 }
 @media screen and (min-width:900px){
+    .user i{
+        left:-7px;
+        top:-7px;
+    }
+    .parallax {
+        height:400px;
+    }
+}
+@media screen and (min-width:1200px){
    
     #background img:first-child{
        height: 550px;
@@ -170,5 +263,23 @@ padding: 5px 0;
     }
     .jump1 div:first-child{
         width: 92%;
+    }
+    .user i{
+        left:-10px;
+        top:-10px;
+    }
+    .comment_sec_u{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .comment_sec_u div:first-child{
+        left: -12px;
+    }
+    .comment_sec_u textarea{
+        width: 60%;
+    }
+    .comment_sec_u div:last-child{
+        margin-left: 1rem;
     }
 }
