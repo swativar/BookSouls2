@@ -11,6 +11,7 @@
     font-size: 3.5rem;
     color: black;
     font-weight: bold;
+    font-family: 'Almendra SC', serif;
 }
 .carousel-item img{
     object-fit: cover;

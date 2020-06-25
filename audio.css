@@ -2,7 +2,7 @@
     width: 90%;
     position: fixed;
     bottom: 0%;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    box-shadow:  0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 90px;
     left: 5%;
 
@@ -83,6 +83,12 @@ padding: 15px 0;
     overflow-y: auto;
     left:20px;
 }
+.jump1 p a{
+    cursor: pointer;
+}
+.jump1 a:hover{
+    border-bottom: 2px solid black;
+}
 #art1,#art2,#art3,#art4,#art5{
     padding:4% 10%;
 }
@@ -90,6 +96,8 @@ padding: 15px 0;
     object-fit: cover;
     max-width: 100%;
     filter: grayscale(100%);
+    background-color: blue;
+    background-blend-mode: darken;
 }
 #art1,#art2,#art3,#art4,#art5{
     display: none;

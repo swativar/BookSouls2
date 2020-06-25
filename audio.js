@@ -12,7 +12,8 @@ window.onload = function () {
     window.id = data.id;
     document.getElementById(window.id).style.display = "block";
 }
-
+let a=1;
+let audio1=null;
 var time_jump = document.querySelectorAll('.jump1 p a');
 console.log(time_jump);
 var time_jump_arr = Array.from(time_jump);
@@ -21,9 +22,18 @@ time_jump_arr.forEach(function(jump){
     console.log(e.target);
    var clip = e.target.innerHTML;
    console.log(clip);
-   clip = parseInt(clip);
+   if(a===1)
+   {
+   audio1 = document.querySelector('#'+ window.id + ' ' + '.sound audio').src;
+   a=2;
+   }
+   var min = clip.split(':')[0];
+   var sec = clip.split(':')[1];
+   sec = parseInt(sec);
+   min = parseInt(min);
    var audio = document.querySelector('#'+ window.id + ' ' + '.sound audio');
-   audio.src = audio.src+"#t="+clip*60;
+   var time = (min*60) + sec;
+   audio.src = audio1+"#t="+ time;
    console.log(audio.src);
     }
 })
