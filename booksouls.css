@@ -80,6 +80,7 @@
     width:80%;
     text-align: center;
     margin:2% auto;
+    transition: linear;
   }
   
   #con a{
@@ -91,9 +92,13 @@
   }
   .prev span, .next span{
       font-weight: bolder;
-      border: 2px solid black;
+      border: 1px solid black;
       padding:1% 4%;
       border-radius: 15%;
+  }
+  .prev span:hover, .next span:hover {
+      background-color: black;
+      color:white;
   }
   #religion, #science, #careerandsuccess,#sexandrelationships,#personaldevelopment,#parenting,#natureandenviornment,
   #motivationandinspiration,#healthandnutrition {

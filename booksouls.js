@@ -14,6 +14,22 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
+
+    /*var fade = document.querySelectorAll('#con .button');
+    var first = fade[0];
+    var last = fade[fade.length-1];
+    var style_first = getComputedStyle(first);
+    var style_last = getComputedStyle(last);
+    if(style_last.display==="block"){
+    document.querySelector('.next span').style.display = "none";
+    }else{
+    document.querySelector('.next span').style.display = "inline";    
+    }
+    if(style_first.display==="block"){
+        document.querySelector('.prev span').style.display = "none";
+        }else{
+        document.querySelector('.prev span').style.display = "inline";    
+        }*/
 }
 
 var buttons = document.querySelectorAll('.button button');
@@ -71,3 +87,9 @@ function showLogin(){
  function showSignUp(){
         $('#mymodal1').modal("hide");
      }
+// automatic slideshow off //
+$(document).ready(function(){
+	$("#demo").carousel({
+		interval : false
+	});
+});
