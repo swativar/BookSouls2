@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
+    <style>
+        .pass{
+            height: 300px;
+            padding: 6% 5%;
+            box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    @media screen and (min-width:600px){
+        .pass{
+            width: 50%;
+        }
+    }
+    @media screen and (min-width:900px){
+        .pass{
+            width: 35%;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -54,7 +72,8 @@
     <!--Forgot password-->
     <div class="text-center mt-4">
         <h5 class="text-center mt-4 mb-4">Forgot your Password?</h5>
-        <div class="w-25 mx-auto p-5 bg-dark">
+        <p class="text-center">No Problem -- it happens to everyone</p>
+        <div class="mx-auto pass">
         <div class="form-group">
             <input type="email" class="form-control" placeholder="Enter email">
         </div>
@@ -62,7 +81,7 @@
             <input type="password" class="form-control" placeholder="Enter new password">
         </div>
         <div class="text-center">
-        <button type="submit" class="btn btn-outline-light w-100">Reset Password</button>
+        <button type="submit" class="btn btn-info w-100">Reset Password</button>
         </div>
         </div>
     </div>
