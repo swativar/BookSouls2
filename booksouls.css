@@ -48,6 +48,10 @@
 #collection{
     margin-top: 15%;
 }
+.button button{
+    margin-top:1%;
+    /*box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
 .content{
     text-decoration: none;
     color: black;
@@ -99,6 +103,7 @@
       border: 1px solid black;
       padding:1% 4%;
       border-radius: 15%;
+     /* box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   }
   .prev span:hover, .next span:hover {
       background-color: black;
@@ -114,6 +119,7 @@
   .more{
       margin-top:5%;
       text-align: center;
+      width: 100%;
   }
   footer{
       margin-top:20%;
@@ -185,7 +191,7 @@
     }
     .navbar-nav{
         position: relative;
-        left: -35px;
+        left: -45px;
     }
   }
 @media screen and (min-width:900px){
