@@ -137,7 +137,7 @@
       padding:1.5%;
   }
   .quote::-webkit-scrollbar{
-    width:6px;
+    height: 6px;
     
 }
 .quote::-webkit-scrollbar-track{
@@ -148,13 +148,13 @@
     
 }
 .quote::-webkit-scrollbar-thumb{
-    background-color: rgb(150, 151, 153);
+    background-color: black;
     height: 10px;
     border-radius: 20px;
 }
 
 .quote::-webkit-scrollbar-thumb:hover{
-    background-color: black;
+    background-color: rgb(2, 8, 61);
 }
   @media screen and (min-width:600px){
     .next{
