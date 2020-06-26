@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksouls - A blog to inspire million</title>
+    <link rel="stylesheet" href="booksouls.css">
+    <script src="https://kit.fontawesome.com/509c72249f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
+
+    <style>
+        .signup_con{
+            margin: 15% auto;
+            padding: 15% 5%;
+            background-color: white;
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 5px;
+            width: 90%;
+        }
+        .signup_con::before{
+            position: absolute;
+            z-index: -1;
+            content: "";
+            left: 50px;
+            right: 50px;
+            top: 20px;
+            bottom: 15px;
+            background: black;
+            -webkit-box-shadow: 0 0 30px 17px rgb(114, 106, 106);
+            -moz-box-shadow: 0 0 30px 17px rgb(88, 82, 82);
+            box-shadow: 0 0 30px 17px rgb(126, 100, 100);
+            border-radius: 100px/10px;  
+  
+        }
+        #email{
+            border-radius: 5px;
+            box-shadow: inset 0 4px 5px 0px rgba(0,0,0,0.4);
+            font-family: fontawesome;
+        }
+        #pwd{
+            border-radius: 5px;
+            box-shadow: inset 0 4px 5px 0px rgba(0,0,0,0.4);
+            font-family: fontawesome;
+        }
+        .bttn{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .signup h4{
+            font-family: 'Almendra SC', serif;
+            font-weight: bold;
+        }
+        .form-group label{
+            font-weight: bold;
+        }
+        @media screen and (min-width:600px){
+            .signup_con{
+                width: 50%;
+                padding: 5%;
+                margin: 10% auto;
+            }
+        }
+        @media screen and (min-width:900px){
+            .signup_con{
+                width: 35%;
+                margin: 5% auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header section-->
+    <div class="text-center" id="upper">
+        <a href="index.html">Booksouls <i class="fas fa-book-open fa-sm text-warning"></i></a>
+        <p id="moto">A blog to inspire million</p>
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <div class="container">
+            <!-- Brand -->
+            <div class="justify-content-end">
+                <!--Social media-->
+                <a href="#!"><i class="fab fa-facebook fa-sm text-dark"></i></a>
+                <a href="#!"><i class="fab fa-twitter fa-sm text-dark"></i></a>
+                <a href="#!"><i class="fab fa-pinterest fa-sm text-dark"></i></a>
+                <a href="#!"><i class="fab fa-instagram fa-sm text-dark"></i></a>
+            </div>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Inspire Me</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Request a Book</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html"><span>Sign Up</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><span>Log In</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Signup-->
+
+    <div class="signup">
+        <h4 class="text-center mt-5 bg-warning container p-2">Sign Up for Booksouls</h4>
+        <div class="signup_con">
+        <div class="form-group">
+            <label for="email" class="text-secondary">Email Address</label>
+            <input type="email" class="form-control mt-2" placeholder="&#xf0e0;  Enter email" id="email">
+        </div>
+        <div class="form-group mt-4">
+            <label for="pwd" class="text-secondary">Create Password</label>
+            <input type="password" class="form-control mt-2" placeholder="&#xf023;  Create password" id="pwd">
+        </div>
+        <button type="submit" class="btn btn-dark w-100 bttn mt-4">Create Account</button>
+        <hr>
+        <button type="submit" class="btn btn-info w-100 bttn mt-2"><i class="fab fa-facebook fa-lg text-light" style="position: relative; left:-8px"></i> Sign Up
+            with Facebook</button>
+        <div class="mt-4">
+            <p class="small">By Continuing you indicate that you've read and agree to our <a href="#">Terms of Service</a>
+                and <a href="#">Privacy Policy</a></p>
+            <div class="text-center">
+            <a href="login.html" class="mt-5">Already have a account?</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer font-small pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+
+                <!-- Content -->
+                <pre>B O O K S O U L S. C O M</pre>
+                <p>We’re dedicated to the thought that writing about books and reading
+                    should be even as diverse as books and readers are. We began with the
+                    goal of leading a platform that illustrates good content among readers</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+
+                <ul class="list-unstyled links">
+                    <li>
+                        <a href="#!">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#!">Write for Us</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#!">Privacy Policy</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <hr>
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+        </li>
+        <li class="list-inline-item">
+            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+        </li>
+    </ul>
+    <!-- Call to action -->
+
+    <hr>
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+            <a>
+                <i class="fab fa-facebook-f"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="mx-1">
+                <i class="fab fa-twitter"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="mx-1">
+                <i class="fab fa-google-plus-g"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="mx-1">
+                <i class="fab fa-linkedin-in"> </i>
+            </a>
+        </li>
+    </ul>
+    <!-- Social buttons -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        <p>Crafted with <span></span> By Booksouls.com</p>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    </body>
+    </html>
