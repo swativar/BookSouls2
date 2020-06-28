@@ -5,30 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booksouls - A blog to inspire million</title>
-    <link rel="stylesheet" href="booksouls.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/509c72249f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
+
 </head>
 
 <body>
-    <!--Header section-->
-    <div class="text-center" id="upper">
-        <a href="index.html">Booksouls <i class="fas fa-book-open fa-sm text-warning"></i></a>
-        <p id="moto">A blog to inspire million</p>
-    </div>
-
-    <nav class="navbar navbar-expand-md bg-light navbar-light">
+    <nav class="navbar navbar-expand-md navbar-trans navbar-dark">
         <div class="container">
             <!-- Brand -->
-            <div class="justify-content-end">
-                <!--Social media-->
-                <a href="#!"><i class="fab fa-facebook fa-sm text-dark"></i></a>
-                <a href="#!"><i class="fab fa-twitter fa-sm text-dark"></i></a>
-                <a href="#!"><i class="fab fa-pinterest fa-sm text-dark"></i></a>
-                <a href="#!"><i class="fab fa-instagram fa-sm text-dark"></i></a>
-            </div>
+            <a class="navbar-brand" href="#">Booksouls</a>
+
 
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -39,26 +30,33 @@
             <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><span>Home</span></a>
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span>Inspire Me</span></a>
+                        <a class="nav-link" href="#">ORIGINALS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span>Request a Book</span></a>
+                        <a class="nav-link" href="#">SUMMARY</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            ARTICLES
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signup.html"><span>Sign Up</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html"><span>Log In</span></a>
+                        <a class="nav-link" href="">CONTACT</a>
                     </li>
                 </ul>
             </div>
+            <a class="navbar-brand" href=""><i class="fas fa-search"></i></a>
         </div>
     </nav>
-   
-   
+
     <!--Carousel-->
     <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -66,679 +64,369 @@
         <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
             <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
         </ul>
 
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://seattlesteve.files.wordpress.com/2014/02/dsc03070.jpg" alt="">
+                <img src="https://i.pinimg.com/originals/4b/73/ca/4b73cad281574e5df85024fe4c35397d.jpg" alt="">
+                <div class="carousel-caption text-white">
+                    <p>LIFE</p>
+                    <p>The leap of faith in humanity</p>
+                    <p class="hr"><span></span>24 March 2020<span></span></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpapercrafter.com/uploads/posts/21561-___smiling-happiness-happy-and-black-and-white-hd.jpg"
+                    alt="">
                 <div class="carousel-caption">
-                    <button class="btn btn-outine-light text-light">Articles</button>
-                    <button class="btn btn-outine-light text-light">Recommended</button>
-                    <h3 class="text-light">What is the reason behind COVID 19 Lockdown Relief</h3>
-                    <a href="#" class="text-light">View Post</a>
+                    <p>LIFE</p>
+                    <p>The leap of faith in humanity</p>
+                    <p class="hr"><span></span>24 March 2020<span></span></p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="https://images.unsplash.com/photo-1553729784-e91953dec042?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
                     alt="">
                 <div class="carousel-caption">
-                    <button class="btn btn-outine-light text-light">Articles</button>
-                    <button class="btn btn-outine-light text-light">Recommended</button>
-                    <h3 class="text-light">6 Amazing Benefits of Reading: Everyone Should Know</h3>
-                    <a href="#" class="text-light">View Post</a>
+                    <p>LIFE</p>
+                    <p>The leap of faith in humanity</p>
+                    <p class="hr"><span></span>24 March 2020<span></span></p>
                 </div>
             </div>
         </div>
 
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+    </div>
 
+    <!--Subscribe-->
+
+    <div class="container mt-5 p-4 subscribe">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <p class="lead" style="font-size:1.4rem;">Get articles directly in your email</p>
+                <p style="position: relative;top:-15px" class="small">Be First to read the articles and other special
+                    contents</p>
+            </div>
+            <div class="col-sm-12 col-md-6 d-inline-flex">
+                <div class="form-group w-100">
+                    <input type="email" class="form-control" placeholder="&#xf0e0;  Enter email" id="email1">
+                </div>
+                <div>
+                    <button class="btn btn-teal">Subscribe</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <!--collection-->
-    <h4 class="text-center" style="font-weight: bolder; margin-top: 5%;">Categories</h4>
-    <div id="con">
-        <span class="button">
-            <button class="btn btn-info">Society and Culture</button>
-            <button class="btn btn-info">Science</button>
-            <button class="btn btn-info">Career and Success</button>
-            <button class="btn btn-info">Religion</button>
-            <button class="btn btn-info">Motivation and Inspiration</button>
-            <button class="btn btn-info">Society and Culture</button>
-        </span>
-        <span class="button">
-            <button class="btn btn-info">Sex and Relationships</button>
-            <button class="btn btn-info">Health and Nutrition</button>
-            <button class="btn btn-info">Personal Development</button>
-            <button class="btn btn-info">Parenting</button>
-            <button class="btn btn-info">Nature and Enviornment</button>
-            <button class="btn btn-info">Society and Culture</button>
-        </span>
-        <a class="prev" onclick="plusSlides(-1)"><span>&#10094</span></a>
-        <a class="next" onclick="plusSlides(1)"><span>&#10095</span></a>
-    </div>
-    <!--Categories Content-->
-    <div id="societyandculture">
+    <hr class="w-75" style="border-width: 2px">
+
+    <!--Originals-->
+    <div id="original" class="mt-2">
+        <div class="doodle_top">
+            <css-doodle>
+                :doodle{
+                @grid:11;
+                @size:4rem;
+                grid-gap:4px;
+                }
+                background:rgba(0,0,0,0.2);
+            </css-doodle>
+        </div>
+        <h4 class="text-center text-teal font-weight-bold">ORIGINALS</h4>
+        <div class="doodle_bottom">
+            <css-doodle>
+                :doodle{
+                @grid:11;
+                @size:4rem;
+                grid-gap:4px;
+                }
+                background:rgba(0,0,0,0.2);
+            </css-doodle>
+        </div>
+        <p class="text-center" style="position: relative;top:-25px">Read contents and articles from your favorite
+            authors & writers</p>
         <div class="container">
-            <h5 class="text-center title">Top titles in <span class="name text-primary">Society and Culture</span></h5>
             <div class="row card_row">
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card">
-                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
+                        <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg" alt="">
+                        <div class="card-header">
+                            <p class="text-teal">ORIGINAL</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and... </a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country & different
+                                people and everyone's hiding something...</p>
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Stephen R. Covey</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div class="card-body">
+                            <span class="text-left">MARCH 28,2020</span>
+                            <span class="float-right">by<span class="text-teal"> DAN BROWN</span></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card">
-                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
+                        <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg" alt="">
+                        <div class="card-header">
+                            <p class="text-teal">ORIGINAL</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country & different
+                                people and everyone's hiding something...</p>
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Stephen R. Covey</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div class="card-body">
+                            <span>MARCH 28,2020</span>
+                            <span class="float-right">by<span class="text-teal"> DAN BROWN</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card">
-                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
+                        <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg" alt="">
+                        <div class="card-header">
+                            <p class="text-teal">ORIGINAL</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country & different
+                                people and everyone's hiding something...</p>
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Stephen R. Covey</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Stephen R. Covey</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Stephen R. Covey</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://academichelp.net/wp-content/uploads/2013/04/novel.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art1">The 7 habits of highly effective people</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Stephen R. Covey</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div class="card-body">
+                            <span>MARCH 28,2020</span>
+                            <span class="float-right">by<span class="text-teal"> DAN BROWN</span></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="more">
-                <button class="btn btn-dark" onclick="category()">Show All</button>
+            <div class="text-center pt-5">
+                <button class="btn btn-teal">Load More</button>
             </div>
         </div>
     </div>
-    <div id="religion">
+    <hr class="w-75" style="border-width: 2px">
+    <!--Summary-->
+    <div id="summary" class="mt-2">
+        <div class="doodle_top">
+            <css-doodle>
+                :doodle{
+                @grid:11;
+                @size:4rem;
+                grid-gap:4px;
+                }
+                background:rgba(0,0,0,0.2);
+            </css-doodle>
+        </div>
+        <h4 class="text-center text-teal font-weight-bold">SUMMARY</h4>
+        <div class="doodle_bottom">
+            <css-doodle>
+                :doodle{
+                @grid:11;
+                @size:4rem;
+                grid-gap:4px;
+                }
+                background:rgba(0,0,0,0.2);
+            </css-doodle>
+        </div>
+        <p class="text-center" style="position: relative;top:-25px">Read contents and articles from your favorite
+            authors & writers</p>
         <div class="container">
-            <h5 class="text-center title">Top titles in <span class="name text-primary"></span></h5>
             <div class="row card_row">
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card">
-                        <img class="card-img-top"
-                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
+                        <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg" alt="">
+                        <div class="card-header">
+                            <p class="text-teal">SUMMARY</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country & different
+                                people and everyone's hiding something...</p>
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Paul D. Tieger, Barbara</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div class="card-body">
+                            <span class="text-left">MARCH 28,2020</span>
+                            <span class="float-right">by<span class="text-teal"> MOHAMMAD SAHIL</span></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card">
-                        <img class="card-img-top"
-                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
+                        <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg" alt="">
+                        <div class="card-header">
+                            <p class="text-teal">SUMMARY</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country & different
+                                people and everyone's hiding something...</p>
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Paul D. Tieger, Barbara</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div class="card-body">
+                            <span>MARCH 28,2020</span>
+                            <span class="float-right">by<span class="text-teal"> MOHAMMAD SAHIL</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card">
-                        <img class="card-img-top"
-                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
+                        <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg" alt="">
+                        <div class="card-header">
+                            <p class="text-teal">SUMMARY</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country & different
+                                people and everyone's hiding something...</p>
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Paul D. Tieger, Barbara</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div class="card-body">
+                            <span>MARCH 28,2020</span>
+                            <span class="float-right">by<span class="text-teal"> MOHAMMAD SAHIL</span></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Paul D. Tieger, Barbara</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Paul D. Tieger, Barbara</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://specials-images.forbesimg.com/imageserve/1009498682/960x0.jpg?fit=scale"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art2">Do What You Are</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Paul D. Tieger, Barbara</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="more">
-                    <button class="btn btn-outline-dark" onclick="category()">Show All</button>
-                </div>
+            </div>
+            <div class="text-center pt-5">
+                <button class="btn btn-teal">Load More</button>
             </div>
         </div>
     </div>
-    <div id="careerandsuccess">
-        <div class="container">
-            <h5 class="text-center title">Top titles in <span class="name text-primary"></span></h5>
+    <hr class="w-75" style="border-width: 2px">
+    <!--Articles-->
+    <div id="articles" class="mt-2">
+        <div class="doodle_top">
+            <css-doodle>
+                :doodle{
+                @grid:11;
+                @size:4rem;
+                grid-gap:4px;
+                }
+                background:rgba(0,0,0,0.2);
+            </css-doodle>
+        </div>
+        <h4 class="text-center text-teal font-weight-bold">ARTICLES</h4>
+        <div class="doodle_bottom">
+            <css-doodle>
+                :doodle{
+                @grid:11;
+                @size:4rem;
+                grid-gap:4px;
+                }
+                background:rgba(0,0,0,0.2);
+            </css-doodle>
+        </div>
+        <p class="text-center" style="position: relative;top:-25px">Read articles from Booksouls' team to keep you
+            motivated</p>
+        <div class="text-center">
+            <span class="category"><button class="btn btn-outline-teal px-4 btn-sm all">All</button></span>
+            <span class="category"><button class="btn btn-outline-teal btn-sm px-4 art1">TABOOS</button></span>
+            <span class="category"><button class="btn btn-outline-teal btn-sm px-4 art2">RELATIONSHIP</button></span>
+            <span class="category"><button class="btn btn-outline-teal btn-sm px-4 art3">ENTREPRENEURESHIP</button></span>
+            <span class="category"><button class="btn btn-outline-teal px-4 btn-sm art4">LIFE</button></span>
+            <span class="category"><button class="btn btn-outline-teal btn-sm px-4 art5">INSPIRE ME</button></span>
+        </div>
+        <div class="container all">
             <div class="row card_row">
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-4 art1">
                     <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg" alt="">
+                        <div class="card-header">
+                            <p class="text-teal">TABOOS</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                different people and everyone's hiding something...</p>
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Michael Bungay Stanier</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div class="card-body">
+                            <span class="text-left">MARCH 28,2020</span>
+                            <span class="float-right">by<span class="text-teal"> DAN BROWN</span></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-4 art2">
                     <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg" alt="">
+                        <div class="card-header">
+                            <p class="text-teal">RELATIONSHIP</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                different people and everyone's hiding something...</p>
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Michael Bungay Stanier</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div class="card-body">
+                            <span>MARCH 28,2020</span>
+                            <span class="float-right">by<span class="text-teal"> DAN BROWN</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-4 art3">
                     <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg" alt="">
+                        <div class="card-header">
+                            <p class="text-teal">ENTREPRENEURESHIP</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                different people and everyone's hiding something...</p>
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Michael Bungay Stanier</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div class="card-body">
+                            <span>MARCH 28,2020</span>
+                            <span class="float-right">by<span class="text-teal"> DAN BROWN</span></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-6 last_article art4">
                     <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        <div>
+                            <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg"
+                                alt="">
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Michael Bungay Stanier</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div>
+                            <div class="card-header">
+                                <p class="text-teal">LIFE</p>
+                                <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                    find answers and...</a>
+                                <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                    different people and everyone's hiding something...</p>
+                            </div>
+                            <div class="card-body">
+                                <span>MARCH 28,2020</span>
+                                <span class="float-right">by<span class="text-teal"> DAN BROWN</span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-6 last_article art5">
                     <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
+                        <div>
+                            <img class="card-img-top" src="https://stream.org/wp-content/uploads/Dante-in-wood.jpg"
+                                alt="">
                         </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Michael Bungay Stanier</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
+                        <div>
+                            <div class="card-header">
+                                <p class="text-teal">INSPIRE ME</p>
+                                <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                    find answers and...</a>
+                                <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                    different people and everyone's hiding something...</p>
+                            </div>
+                            <div class="card-body">
+                                <span>MARCH 28,2020</span>
+                                <span class="float-right">by<span class="text-teal"> DAN BROWN</span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.torontopubliclibrary.ca/content/reading-challenge/images/reading-challenge-hero.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art3">The Coaching Habit</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Michael Bungay Stanier</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="more">
-                    <button class="btn btn-dark" onclick="category()">Show All</button>
-                </div>
+            </div>
+            <div class="text-center pt-5">
+                <button class="btn btn-teal">Load More</button>
             </div>
         </div>
     </div>
-    <div id="science">
-        <div class="container">
-            <h5 class="text-center title">Top titles in <span class="name text-primary"></span></h5>
-            <div class="row card_row">
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
-                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">William H. McRaven</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
-                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">William H. McRaven</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
-                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">William H. McRaven</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
-                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">William H. McRaven</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
-                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">William H. McRaven</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.mywit.org/wp-content/uploads/2015/11/books-open-on-table.jpg" alt="">
-                        <div class="card-header"><a href="#" class="content" id="art4">Make your Bed</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">William H. McRaven</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="more">
-                    <button class="btn btn-dark" onclick="category()">Show All</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="sexandrelationships">
-        <div class="container">
-            <h5 class="text-center title">Top titles in <span class="name text-primary"></span></h5>
-            <div class="row card_row">
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends and Influence People</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Dale Carnegie</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends and Influence People</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Dale Carnegie</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends and Influence People</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Dale Carnegie</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends & Influence
-                                People</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Dale Carnegie</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends and Influence People</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Dale Carnegie</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg"
-                            alt="">
-                        <div class="card-header"><a href="#" class="content" id="art5">How to Win Friends and Influence People</a>
-                        </div>
-                        <div class="card-body" style="height:80px;">
-                            <p class="text-center">Dale Carnegie</p>
-                            <p class="text-center"><i class="far fa-clock"></i> 19 min read <i
-                                    class="fas fa-headphones"></i> audio available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="more">
-                    <button class="btn btn-dark" onclick="category()">Show All</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="personaldevelopment">
-        <div class="container">
-            <h5 class="text-center title">No Data in <span class="name text-primary"></span></h5>
-        </div>
-    </div>
-    <div id="parenting">
-        <div class="container">
-            <h5 class="text-center title">No Data in <span class="name text-primary"></span></h5>
-        </div>
-    </div>
-    <div id="natureandenviornment">
-        <div class="container">
-            <h5 class="text-center title">No Data in <span class="name text-primary"></span></h5>
-        </div>
-    </div>
-    <div id="motivationandinspiration">
-        <div class="container">
-            <h5 class="text-center title">No Data in <span class="name text-primary"></span></h5>
-        </div>
-    </div>
-    <div id="healthandnutrition">
-        <div class="container">
-            <h5 class="text-center title">No Data in <span class="name text-primary"></span></h5>
-        </div>
-    </div>
-    <!--Quotes-->
-    <div class="quote mt-5">
-        <div class="d-inline-flex p-3 text-white" style="overflow-x: auto;justify-content: space-around; align-items: center">
-            <div class="text-center q_in">
-            <q>It is a far, far better thing that I do, than I have ever done; it is a far, far better rest I go to than I have ever known</q>
-            <cite>- A Tale of Two Cities, Charles Dickens</cite>
-        </div>
-            <div class="text-center q_in">
-                <q>All we have to decide is what to do with the time that is given us.</q>
-                <cite>- The Fellowship of the Ring, J.R.R. Tolkein</cite>
-            </div>
-            <div class="text-center q_in">
-                <q>You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You’re on your own. And you know what you know. And YOU are the one who’ll decide where to go…</q>
-                <cite>- Oh, the Places You’ll Go!, Dr Seuss</cite>
-            </div>
-            <div class="text-center q_in">
-                <q>It matters not what someone is born, but what they grow to be.</q>
-                <cite>- Harry Potter and the Goblet of Fire, J.K. Rowling</cite>
-            </div>
-            <div class="text-center q_in">
-                <q>But I, being poor, have only my dreams;
 
-                    I have spread my dreams under your feet;
-                    
-                    Tread softly because you tread on my dreams.</q>
-                    <cite>He Wishes for the Cloths of Heaven, W.B. Yeats</cite>
-            </div>
-            <div class="text-center q_in">
-                <q>Whatever our souls are made of, his and mine are the same.</q>
-                <cite>- Wuthering Heights, Emily Bronte</cite>
-            </div>
-          </div>
-    </div>
-    <!-- Footer -->
-    <footer class="page-footer font-small pt-4">
 
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-4 mx-auto">
-
-                    <!-- Content -->
-                    <pre>B O O K S O U L S. C O M</pre>
-                    <p>We’re dedicated to the thought that writing about books and reading
-                        should be even as diverse as books and readers are. We began with the
-                        goal of leading a platform that illustrates good content among readers</p>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-2 mx-auto">
-
-                    <!-- Links -->
-
-                    <ul class="list-unstyled links">
-                        <li>
-                            <a href="#!">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#!">Write for Us</a>
-                        </li>
-                        <li>
-                            <a href="#!">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#!">Privacy Policy</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Footer Links -->
-
-        <hr>
-
-        <!-- Call to action -->
-        <ul class="list-unstyled list-inline text-center py-2">
-            <li class="list-inline-item">
-                <h5 class="mb-1">Register for free</h5>
-            </li>
-            <li class="list-inline-item">
-                <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
-            </li>
+    <!--footer-->
+    <footer class="mt-5">
+        <p class="text-center text-light font-weight-bolder mt-4">Booksouls</p>
+        <ul class="mt-3">
+            <li><a href="">CONTACT<a><span class="fdash">/</span></li>
+            <li><a href="">PRIVACY</a><span class="fdash">/</span></li>
+            <li><a href="">ABOUT</a><span class="fdash">/</span></li>
+            <li><a href="">TERMS</a></li>
         </ul>
-        <!-- Call to action -->
-
-        <hr>
-
-        <!-- Social buttons -->
-        <ul class="list-unstyled list-inline text-center">
-            <li class="list-inline-item">
-                <a>
-                    <i class="fab fa-facebook-f"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="mx-1">
-                    <i class="fab fa-twitter"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="mx-1">
-                    <i class="fab fa-google-plus-g"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="mx-1">
-                    <i class="fab fa-linkedin-in"> </i>
-                </a>
-            </li>
-        </ul>
-        <!-- Social buttons -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center">
-            <p>Crafted with <span></span> By Booksouls.com</p>
-        </div>
-        <!-- Copyright -->
-
     </footer>
-    <!-- Footer -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -748,7 +436,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="booksouls.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
