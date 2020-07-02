@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 footer{
     margin-top: auto;
     width:100%;
@@ -30,6 +33,7 @@ footer li a{
     position: relative;
     top:35px;
     opacity: 0.7;
+    max-width: 100%;
 }
 #top{
     background-image: url(https://images.hdqwalls.com/wallpapers/music-melody-abstract-4k-jr.jpg);
@@ -84,6 +88,10 @@ footer li a{
     font-size: 0.6rem;
     height:60px;
 }
+.card-body span:first-child{
+    opacity: 0.5;
+    font-weight: bold;
+}
 .card{
     margin: 6% 0;
     width: 280px;
@@ -102,26 +110,6 @@ footer li a{
     height: 30px;
     margin:0 7px;
 }
-.line::after{
-    content: attr(data-content);
-    position: relative;
-    background:transparent;
-    top:-13px;
-    z-index: 2;
-}
-.hr span{
-    display: inline-block;
-    width: 6%;
-    border-bottom: 2px solid white;
-    position: relative;
-    top:-3px;
-}
-.hr span:first-child{
-    left:-8px;
-}
-.hr span:last-child{
-    left:8px;
-}
 .doodle_top{
     margin-left: 25%;
     position: relative;
@@ -138,7 +126,10 @@ footer li a{
 .prev{
     display:none;
 }
-@media screen and (min-width:600px){
+#publisher{
+    background:rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width:768px){
     .navbar-nav li:last-child{
         position: relative;
         left:50px;
@@ -252,7 +243,7 @@ footer li a{
         font-size: 0.8rem;
     }
 }
-@media screen and (min-width:900px){
+@media screen and (min-width:992px){
     .navbar-nav li:last-child{
         position: relative;
         left:160px;
@@ -373,8 +364,11 @@ footer li a{
         position: relative;
         top:-38px;
     }
+    .next{
+        left:40px;
+    }
     .prev{
-        left: -1010px;
+        left: -1050px;
     }
     .bg_top{
         width:50%;
