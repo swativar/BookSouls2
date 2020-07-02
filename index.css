@@ -1,18 +1,13 @@
-html{
-    height: 100%;
-}
-body{
-    display:flex;
-    flex-direction: column;
-    min-height: 100%;
-}
 footer{
     margin-top: auto;
+    width:100%;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     position: relative;
     bottom:0px;
+    left: 0px;
+    right: 0px;
 }
 footer > p{
     font-size: 2rem;
@@ -31,6 +26,11 @@ footer li a{
     color: white;
     font-size: 0.8rem;
 }
+.footer_last{
+    position: relative;
+    top:35px;
+    opacity: 0.7;
+}
 #top{
     background-image: url(https://images.hdqwalls.com/wallpapers/music-melody-abstract-4k-jr.jpg);
     background-position: center;
@@ -38,6 +38,14 @@ footer li a{
     max-width: 100%;
     width: 100%;
     height: 300px;
+    position: relative;
+}
+.bg_top{
+    width: 100%;
+    padding:5%;
+    position: absolute;
+    top:20%;
+    text-align: center;
 }
 #top h4{
     font-size: 1.3rem;
@@ -47,16 +55,8 @@ footer li a{
 #top p{
     font-size:1rem;
 }
-.bg_top{
-    width: 100%;
-    margin-top: 10%;
-    padding:5%;
-}
-.doodle_head{
+.doodle_head,.doodle_foot{
     display: none;
-}
-.doodle_foot{
-    display:none;
 }
 .fdash{
     margin-left:9px;
@@ -213,9 +213,20 @@ footer li a{
     .slider .d-md-flex > div{
         margin:0 9px;
     }
-    #top{
-        height: 400px;
-    }
+    .fade_e {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        animation-name: fade;
+        animation-duration: 2s;
+      }
+      #top{
+          height:400px;
+      }
+      .bg_top{
+        top:20%;
+        text-align: left;
+        padding:0 15%;
+    } 
     #top h4{
         font-size: 1.8rem;
         margin-bottom: 1%;
@@ -223,25 +234,23 @@ footer li a{
     #top p{
         font-size:1.2rem;
     }
-    .bg_top{
-        margin-top: 10%;
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
     }
-    .fade_e {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 2s;
-        animation-name: fade;
-        animation-duration: 2s;
-      }
       
-      @-webkit-keyframes fade {
+    @keyframes fade {
         from {opacity: .4}
         to {opacity: 1}
-      }
-      
-      @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
+    }
+    footer{
+        height: 250px;
+    }
+    .footer_last{
+        position: relative;
+        top:50px;
+        font-size: 0.8rem;
+    }
 }
 @media screen and (min-width:900px){
     .navbar-nav li:last-child{
@@ -291,33 +300,6 @@ footer li a{
     .category button {
         margin:0 7px;
     }
-    #top{
-        height: 510px;
-    }
-    #top h4{
-        font-size: 2.3rem;
-        font-weight: 400;
-        margin-bottom: 2%;
-    }
-    #top p{
-        font-size:1.6rem;
-    }
-    .bg_top{
-        width: 60%;
-        margin-left: 35%;
-        margin-top: -20%;
-    }
-    .doodle_head{
-      display: block;
-      position: relative;
-      left:100px;
-      top:170px;
-  }
-  .doodle_foot{
-      display: block;
-      position: relative;
-      top:-57px;
-  }
  .last_inspire:first-child{
      margin-top: auto;
  }
@@ -332,6 +314,40 @@ footer li a{
  .prev{
      left: -950px;
  }
+ #top{
+    height:510px;
+}
+.bg_top{
+    width:60%;
+  top:25%;
+  position: relative;
+  left: 400px;
+  padding:0px;
+}
+.doodle_head,.doodle_foot{
+    display: block;
+    position:absolute;
+    
+}
+.doodle_head{
+    top:18%;
+    left:10%;
+}
+.doodle_foot{
+    top:30%;
+}
+#top h4{
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+#top p{
+    font-size:1.6rem;
+}
+.footer_last{
+    top:20px;
+    font-size: 0.8rem;
+}
 }
 @media screen and (min-width:1200px){
     .navbar-nav li:last-child{
@@ -357,6 +373,16 @@ footer li a{
         position: relative;
         top:-38px;
     }
+    .prev{
+        left: -1010px;
+    }
+    .bg_top{
+        width:50%;
+      top:25%;
+      position: relative;
+      left: 500px;
+      padding:0px;
+    }
     #top h4{
         font-size: 2.1rem;
         font-weight: 400;
@@ -365,24 +391,18 @@ footer li a{
     #top p{
         font-size:1.5rem;
     }
-    .bg_top{
-        width: 60%;
-        margin-left: 35%;
-        margin-top: -15%;
-    }
     .doodle_head{
-        position: relative;
-        left:100px;
-        top:200px;
+        top:40%;
+        left:9.5%;
     }
     .doodle_foot{
-        position: relative;
-        top:-55px;
+        top:61%;
     }
-    .prev{
-        left: -1010px;
+    footer{
+        height: 270px;
     }
-    .slider{
-        height: 507px;
+    .footer_last{
+        top:0px;
+        font-size: 0.8rem;
     }
 }

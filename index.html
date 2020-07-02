@@ -58,20 +58,7 @@
             </div>
         </div>
     </nav>
-
-    <!--header-->
     <div id="top">
-        <div class="doodle_head">
-            <css-doodle>
-                :doodle{
-                @grid:27;
-                @size:15rem;
-                grid-gap:6px;
-                }
-                @shape:circle;
-                background:yellow;
-            </css-doodle>
-        </div>
         <div class="bg_top">
             <h4 class="text-light lead">Looking for some articles to feed your inner book worm?</h4>
             <p class="text-light lead">We have collection of different contents curated just for you.Go check them out.
@@ -80,19 +67,29 @@
                 <button class="btn btn-warning text-light">Subscribe Now</button>
             </div>
         </div>
-        <div class="doodle_foot">
-            <css-doodle>
-                :doodle{
-                @grid:27;
-                @size:15rem;
-                grid-gap:6px;
-                }
-                background: rgba(255,255,0,0.5);
-                @shape:circle;
-            </css-doodle>
-        </div>
     </div>
-
+    <div class="doodle_head">
+        <css-doodle>
+            :doodle{
+            @grid:27;
+            @size:15rem;
+            grid-gap:6px;
+            }
+            @shape:circle;
+            background:yellow;
+        </css-doodle>
+    </div>
+    <div class="doodle_foot">
+        <css-doodle>
+            :doodle{
+            @grid:27;
+            @size:15rem;
+            grid-gap:6px;
+            }
+            background: rgba(255,255,0,0.5);
+            @shape:circle;
+        </css-doodle>
+    </div>
     <!--Articles-->
     <div id="articles" class="mt-2">
         <div class="doodle_top">
@@ -558,38 +555,37 @@
         </div>
     </div>
     <!--footer-->
-    <footer class="mt-5">
-        <p class="text-center text-light font-weight-bolder mt-4">Booksouls</p>
-        <ul class="mt-3">
-            <li><a href="">CONTACT<a><span class="fdash">/</span></li>
-            <li><a href="">PRIVACY</a><span class="fdash">/</span></li>
-            <li><a href="">ABOUT</a><span class="fdash">/</span></li>
-            <li><a href="">TERMS</a></li>
-        </ul>
-        <div class="row px-3">
-          <div class="col-sm-12 col-md-4 text-md-left text-sm-center">
-              <p class="text-light">2020 &copy; Booksouls.com</p>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <p class="text-light">Made with <i class="fas fa-heart text-danger"></i> by booksouls.com</p>
+   <footer class="mt-5">
+    <p class="text-center text-light font-weight-bolder mt-4">Booksouls</p>
+    <ul class="mt-3">
+        <li><a href="">CONTACT<a><span class="fdash">/</span></li>
+        <li><a href="">PRIVACY</a><span class="fdash">/</span></li>
+        <li><a href="">ABOUT</a><span class="fdash">/</span></li>
+        <li><a href="">TERMS</a></li>
+    </ul>
+    <div class="row px-3 footer_last">
+        <div class="col-sm-12 col-md-4 text-md-left text-sm-center">
+            <p class="text-light">2020 &copy; Booksouls.com</p>
         </div>
-        <div class="col-sm-12 col-md-4 text-md-right text-sm-center">
-            <a href="#!" class="mr-1"><i class="fab fa-facebook fa-sm text-light"></i></a>
-                <a href="#!" class="mr-1"><i class="fab fa-twitter fa-sm text-light"></i></a>
-                <a href="#!"><i class="fab fa-instagram fa-sm text-light"></i></a>
-        </div>
-        </div>
-    </footer>
+        <div class="col-sm-12 col-md-4">
+          <p class="text-light">Made with <i class="fas fa-heart text-danger"></i> by booksouls.com</p>
+      </div>
+      <div class="col-sm-12 col-md-4 text-md-right text-sm-center">
+          <a href="#!" class="mr-1"><i class="fab fa-facebook fa-sm text-light"></i></a>
+              <a href="#!" class="mr-1"><i class="fab fa-twitter fa-sm text-light"></i></a>
+              <a href="#!"><i class="fab fa-instagram fa-sm text-light"></i></a>
+      </div>
+      </div>  
+   </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
-
 </html>
