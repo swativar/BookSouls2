@@ -11,8 +11,10 @@ footer{
     height: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
+    position: relative;
+    bottom:0px;
 }
-footer p{
+footer > p{
     font-size: 2rem;
 }
 footer ul{
@@ -29,57 +31,42 @@ footer li a{
     color: white;
     font-size: 0.8rem;
 }
+#top{
+    background-image: url(https://images.hdqwalls.com/wallpapers/music-melody-abstract-4k-jr.jpg);
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+}
+#top h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+#top p{
+    font-size:1rem;
+}
+.bg_top{
+    width: 100%;
+    margin-top: 10%;
+    padding:5%;
+}
+.doodle_head{
+    display: none;
+}
+.doodle_foot{
+    display:none;
+}
 .fdash{
     margin-left:9px;
-}
-.carousel-item img{
-    object-fit: cover;
-    max-width: 100%;
-    height: 420px;
-}
-.navbar{
-    background-color: transparent!important;
-    position: absolute!important;
-    z-index: 1;
-    width: 100%;
-}
-.nav-link{
-    color:white!important;
-    text-shadow: 0 0 5px black;
-}
-.carousel-indicators{
-    right: 0!important;
-    bottom: 0!important;
-    top: 0!important;
-    flex-direction: column!important;
-    margin-right: 1%!important;
-    left:auto!important;
-}
-.carousel-indicators .active{
-    background-color:#fff!important;
-}
-.carousel-indicators li{
-    width: 15px!important;
-    height: 15px!important;
-    border-radius: 50%!important;
-    margin-top: 15px;
-    background-color: black!important;
-    border:2px solid white;
-}
-.carousel-caption{
-    top:22%;
-}
-.carousel-caption p:nth-child(2){
-    font-size: 1.5rem;
-}
-.carousel-caption p{
-    text-shadow: 2px 2px 5px black;
 }
 .subscribe{
     background-color: #e1e9f1;
 }
 #email1{
     font-family: fontawesome;
+    border:none;
 }
 .content{
     font-size: 1.1rem;
@@ -98,7 +85,7 @@ footer li a{
     height:60px;
 }
 .card{
-    margin-top: 10%;
+    margin: 6% 0;
     width: 280px;
     margin-left: auto;
     margin-right: auto;
@@ -135,22 +122,6 @@ footer li a{
 .hr span:last-child{
     left:8px;
 }
-.btn-teal{
-    background-color:rgb(98, 207, 144);
-    color: white;
-}
-.text-teal{
-    color:rgb(98, 207, 144);
-}
-.btn-outline-teal{
-    background-color:white;
-    border-color: rgb(98, 207, 144)!important;
-    color:rgb(98, 207, 144);
-}
-.btn-outline-teal:hover{
-    background-color:rgb(98, 207, 144);
-    color: white;
-}
 .doodle_top{
     margin-left: 25%;
     position: relative;
@@ -161,14 +132,16 @@ footer li a{
     position: relative;
     top:-38px;
 }
+.next{
+    display: none;
+}
+.prev{
+    display:none;
+}
 @media screen and (min-width:600px){
     .navbar-nav li:last-child{
         position: relative;
         left:50px;
-    }
-    .carousel-item img{
-        width: 100%;
-        height: 420px;
     }
     .subscribe .row div:first-child{
         position: relative; 
@@ -180,6 +153,7 @@ footer li a{
     }
     .card{
         width: 220px;
+        margin: 3% 0;
     }
     .card_row{
         padding: 0 1%;
@@ -190,6 +164,26 @@ footer li a{
     }
     .last_article .card img{
         width:100px;
+        height: 100%;
+    }
+    .last_inspire .card{
+        flex-direction: row!important;
+        width: 100%;
+    }
+    .last_inspire .card img{
+        width:300px;
+        height: 100%;
+    }
+    .last_inspire:last-child .card{
+        flex-direction: row-reverse!important;
+    }
+    .wide_article .card{
+        flex-direction: row!important;
+        width: 100%;
+        height: 250px;
+    }
+    .wide_article .card img{
+        width:300px;
         height: 100%;
     }
     .doodle_top{
@@ -204,15 +198,55 @@ footer li a{
     .category button {
         margin:0 1px;
     }
+   .next_prev{
+       position: absolute;
+        text-align: center;
+       margin: 75% 0;
+    }
+    .next,.prev{
+        display: inline;
+        cursor: pointer;
+    }
+    .last_inspire:first-child{
+        margin-top: 10%;
+    }
+    .slider .d-md-flex > div{
+        margin:0 9px;
+    }
+    #top{
+        height: 400px;
+    }
+    #top h4{
+        font-size: 1.8rem;
+        margin-bottom: 1%;
+    }
+    #top p{
+        font-size:1.2rem;
+    }
+    .bg_top{
+        margin-top: 10%;
+    }
+    .fade_e {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        animation-name: fade;
+        animation-duration: 2s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
 }
 @media screen and (min-width:900px){
     .navbar-nav li:last-child{
         position: relative;
         left:160px;
-    }
-    .carousel-item img{
-        height: 600px;
-       
     }
     .subscribe .row div:first-child{
         left: 40px;
@@ -222,10 +256,7 @@ footer li a{
     }
     .card{
         width: 280px;
-        margin-top: 1%;
-    }
-    #articles .card{
-        margin-top: 10%;
+        margin: 3% 0;
     }
     .card_row{
         padding: 0 3%;
@@ -238,21 +269,69 @@ footer li a{
         width:200px;
         height: 100%;
     }
+    .wide_article .card img{
+        width:400px;
+        height: 100%;
+    }
+    .last_inspire .card{
+        flex-direction: row!important;
+        width: 100%;
+        height: 250px;
+    }
+    .last_inspire .card img{
+        width:400px;
+        height: 100%;
+    }
     .doodle_top{
         margin-left: 42%;
     }
     .doodle_bottom{
         margin-left: 51%;
     }
-    .carousel-caption{
-        top:35%;
-    }
-    .carousel-caption p:nth-child(2){
-        font-size: 3rem;
-    }
     .category button {
         margin:0 7px;
     }
+    #top{
+        height: 510px;
+    }
+    #top h4{
+        font-size: 2.3rem;
+        font-weight: 400;
+        margin-bottom: 2%;
+    }
+    #top p{
+        font-size:1.6rem;
+    }
+    .bg_top{
+        width: 60%;
+        margin-left: 35%;
+        margin-top: -20%;
+    }
+    .doodle_head{
+      display: block;
+      position: relative;
+      left:100px;
+      top:170px;
+  }
+  .doodle_foot{
+      display: block;
+      position: relative;
+      top:-57px;
+  }
+ .last_inspire:first-child{
+     margin-top: auto;
+ }
+ .next_prev{
+     margin:25% 0;
+     position: relative;
+ }
+ .prev,.next{
+     position:absolute;
+     transition: 0.6s ease;
+ }
+ .prev{
+     left: -950px;
+ }
 }
 @media screen and (min-width:1200px){
     .navbar-nav li:last-child{
@@ -277,5 +356,33 @@ footer li a{
         margin-left: 51%;
         position: relative;
         top:-38px;
+    }
+    #top h4{
+        font-size: 2.1rem;
+        font-weight: 400;
+        margin-bottom: 2%;
+    }
+    #top p{
+        font-size:1.5rem;
+    }
+    .bg_top{
+        width: 60%;
+        margin-left: 35%;
+        margin-top: -15%;
+    }
+    .doodle_head{
+        position: relative;
+        left:100px;
+        top:200px;
+    }
+    .doodle_foot{
+        position: relative;
+        top:-55px;
+    }
+    .prev{
+        left: -1010px;
+    }
+    .slider{
+        height: 507px;
     }
 }
