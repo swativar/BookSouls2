@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 footer{
-    margin-top: auto;
     width:100%;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -32,6 +31,7 @@ footer li a{
 .footer_last{
     position: relative;
     top:35px;
+    left: 15px;
     opacity: 0.7;
     max-width: 100%;
 }
@@ -222,7 +222,7 @@ footer li a{
         font-size:1.2rem;
     }
     footer{
-        height: 250px;
+        height: 280px;
     }
     .footer_last{
         position: relative;
@@ -386,7 +386,7 @@ footer li a{
         top:61%;
     }
     footer{
-        height: 270px;
+        height: 282px;
     }
     .footer_last{
         top:0px;
