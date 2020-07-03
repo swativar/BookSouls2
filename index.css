@@ -36,7 +36,7 @@ footer li a{
     max-width: 100%;
 }
 #top{
-    background-image: url(https://images.hdqwalls.com/wallpapers/music-melody-abstract-4k-jr.jpg);
+    background-image: url(https://cdn.wallpapersafari.com/56/91/JnS7i6.jpg);
     background-position: center;
     background-size: cover;
     max-width: 100%;
@@ -80,6 +80,14 @@ footer li a{
 .card-header{
     font-size: 0.8rem;
 }
+.card-header a{
+    font-weight: 450;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-header p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0.7;
+}
 .card-img-top{
     height: 200px;
     object-fit: cover;
@@ -109,6 +117,11 @@ footer li a{
     border-radius: 50px;
     height: 30px;
     margin:0 7px;
+    border-color: transparent!important;
+    font-weight: 550;
+}
+.category button:hover {
+    color: white!important;
 }
 .doodle_top{
     margin-left: 25%;
@@ -120,14 +133,12 @@ footer li a{
     position: relative;
     top:-38px;
 }
-.next{
-    display: none;
-}
-.prev{
-    display:none;
-}
 #publisher{
     background:rgba(0, 0, 0, 0.1);
+}
+.controls{
+    text-align:center;
+    margin-top: 12%;
 }
 @media screen and (min-width:768px){
     .navbar-nav li:last-child{
@@ -189,27 +200,12 @@ footer li a{
     .category button {
         margin:0 1px;
     }
-   .next_prev{
-       position: absolute;
-        text-align: center;
-       margin: 75% 0;
-    }
-    .next,.prev{
-        display: inline;
-        cursor: pointer;
-    }
     .last_inspire:first-child{
         margin-top: 10%;
     }
     .slider .d-md-flex > div{
         margin:0 9px;
     }
-    .fade_e {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 2s;
-        animation-name: fade;
-        animation-duration: 2s;
-      }
       #top{
           height:400px;
       }
@@ -225,15 +221,6 @@ footer li a{
     #top p{
         font-size:1.2rem;
     }
-    @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-      
-    @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
     footer{
         height: 250px;
     }
@@ -241,6 +228,10 @@ footer li a{
         position: relative;
         top:50px;
         font-size: 0.8rem;
+    }
+    .controls{
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 }
 @media screen and (min-width:992px){
@@ -294,17 +285,6 @@ footer li a{
  .last_inspire:first-child{
      margin-top: auto;
  }
- .next_prev{
-     margin:25% 0;
-     position: relative;
- }
- .prev,.next{
-     position:absolute;
-     transition: 0.6s ease;
- }
- .prev{
-     left: -950px;
- }
  #top{
     height:510px;
 }
@@ -338,6 +318,19 @@ footer li a{
 .footer_last{
     top:20px;
     font-size: 0.8rem;
+}
+.inspire_cara{
+    padding:0 5%!important;
+}
+.next_in{
+    position: absolute;
+    top:50%;
+    right: -8%;
+}
+.prev_in{
+    position: absolute;
+    top:50%;
+    left:-8%;
 }
 }
 @media screen and (min-width:1200px){
@@ -398,5 +391,18 @@ footer li a{
     .footer_last{
         top:0px;
         font-size: 0.8rem;
+    }
+    .inspire_cara{
+        padding:0 7%!important;
+    }
+    .next_in{
+        position: absolute;
+        top:50%;
+        right: -10%;
+    }
+    .prev_in{
+        position: absolute;
+        top:50%;
+        left:-10%;
     }
 }
