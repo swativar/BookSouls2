@@ -147,8 +147,8 @@ nav{
    top:0%;
    right: 0%;
    bottom:80%;
-   border-top: 10px solid yellow;
-   border-right: 10px solid yellow;
+   border-top: 10px solid rgb(224, 203, 12);
+   border-right: 10px solid rgb(224, 203, 12);
    width: 30%;
 }
 .card_article::after{
@@ -157,8 +157,8 @@ nav{
     top:80%;
     bottom: 0%;
     left: 0%;
-    border-left: 10px solid yellow;
-    border-bottom: 10px solid yellow;
+    border-left: 10px solid rgb(224, 203, 12);
+    border-bottom: 10px solid rgb(224, 203, 12);
     width: 30%;
  }
  img{
