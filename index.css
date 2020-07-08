@@ -4,6 +4,9 @@
 nav{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.navbar{
+    height: 80px;
+}
 .title h1{
     font-size: 1.5rem;
     text-align: center;
@@ -66,6 +69,12 @@ nav{
     border-radius: 50%!important;
     background-color: yellow!important;
     cursor: pointer;
+}
+.carousel-indicators{
+    align-items: center;
+}
+.carousel-indicators li:first-child{
+    margin-right: 1%;
 }
 .title{
     background: linear-gradient(
@@ -157,25 +166,25 @@ nav{
  }
  .articles{
     background: linear-gradient(
-        #000000 0%,
-        #000000 12%,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.9) 12%,
         #ffffff 12%,
         #ffffff 100%
     );
 }
  .podcasts{
     background: linear-gradient(
-        #000000 0%,
-        #000000 15%,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.9) 15%,
         #ffffff 15%,
         #ffffff 100%
     );
 }
 .originals{
     background: linear-gradient(
-        #000000 0%,
-        #000000 25%,
-        #ffffff 25%,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.9) 15%,
+        #ffffff 15%,
         #ffffff 100%
     );
 }
@@ -225,6 +234,10 @@ nav{
  .podcasts_flex{
      position: relative;
  }
+ .p_flex{
+    padding:0 17%;
+    margin-top:7%;
+}
  .podcasts_flex p{
      position: absolute;
      font-weight: bold;
@@ -358,6 +371,12 @@ footer ul{
  .summary_h h2{
      font-size: 1.6rem;
  }
+ .summary .card{
+     border-radius: 20px;
+ }
+ .summary .card .card-header{
+     border-radius: 20px;
+ }
  .summary .img1{
     box-shadow:  1px 20px 30px rgb(218, 136, 43);
     border-radius: 10px;
@@ -401,6 +420,9 @@ footer ul{
     cursor: pointer;
     text-decoration: none;
 }
+.summary .carousel-indicators{
+    top: 100%;
+}
 .quote_u{
     font-size: 4rem;
     display:inline-block; 
@@ -416,28 +438,28 @@ footer ul{
     right: 10%; top:77%
  }
  .quote_u1{
-    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;left: 5%; top:40%
+    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;left: 5%; top:48%;
  }
  .quote_l1{
-    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;right: 15%; bottom:25%
+    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;right: 15%; bottom:20%;
  }
  .quote_u2{
-    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;left: 2%; top:2%
+    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;left: 3%; top:2%;
  }
  .quote_l2{
-    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;right: 15%; top:60%
+    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;right: 15%; top:60%;
  }
  .quote_u3{
-    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;left: 5%; top:40%
+    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;left: 5%; top:48%;
  }
  .quote_l3{
-    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;right: 15%; bottom:25%
+    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;right: 15%; bottom:20%;
  }
  .quote_u4{
-    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;left: 2%; top:2%
+    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;left: 3%; top:2%;
  }
  .quote_l4{
-    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;right: 15%; top:60%
+    font-size: 4rem;display:inline-block; width: 0px;height:0px;position:absolute;right: 15%; top:60%;
  }
  .cardt1 .card-header .clearfix{
     margin-top: 15%;
@@ -447,6 +469,23 @@ footer ul{
 }
 .trending .card{
     margin:5% 0;
+    border-radius: 30px;
+}
+.trending .cardt2 .card-header,.cardt3 .card-header,.cardt4 .card-header,.cardt5 .card-header {
+    border-radius: 30px!important;
+}
+.cardt2 img,.cardt4 img{
+    height:350px;
+    border-radius: 30px 30px 0 0;
+}
+.cardt1 div div:first-child img{
+    border-radius: 30px 0 0 30px!important;
+}
+.cardt1 div div:last-child{
+    border-radius: 0 30px 30px 0!important;
+}
+.trending .clearfix span:first-child{
+    opacity: 0.7;
 }
 @media screen and (min-width:768px){
     
@@ -461,8 +500,9 @@ footer ul{
         left: 50px;
     }
     .title h1{
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: left;
+        margin-left: 6%;
     }
     .title .next_in{
         position: absolute;
@@ -532,11 +572,23 @@ footer ul{
 }
 .podcasts{
     background: linear-gradient(
-        #000000 0%,
-        #000000 25%,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.9) 25%,
         #ffffff 25%,
         #ffffff 100%
     );
+}
+.originals{
+    background: linear-gradient(
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.9) 18%,
+        #ffffff 18%,
+        #ffffff 100%
+    );
+}
+.p_flex{
+    padding:0 16%;
+    margin-top:0%;
 }
 #usr{
     border:none;
@@ -561,22 +613,22 @@ footer ul{
 .card_article{
     width: 220px;
 }
-.card_article .clearfix span:last-child{
+.card_article .article_btm span:last-child{
     float: none;
     text-align: center;
     margin-top: 3%;
 }
 .articles{
     background: linear-gradient(
-        #000000 0%,
-        #000000 25%,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.9) 25%,
         #ffffff 25%,
         #ffffff 100%
     );
 }
 .summary_h{
     text-align: left;
-    padding: 5%;
+    margin-left: 6%;
 }
 .summary_h h2{
     font-size: 1.6rem;
@@ -641,8 +693,8 @@ footer ul{
 .trending .card{
     margin:0%;
 }
-.cardt1 .card-img-top{
-  width: 300px;
+.cardt1 div div:first-child img{
+  width: 350px;
   height: 100%;
 }
 .cardt1 .card-header .clearfix{
@@ -650,17 +702,20 @@ footer ul{
     margin-top: 10%;
 }
 .quote_u{
-    left: 46%;
+    left: 52%;
     top: 2%;
 }
 .quote_l{
-    top:50%;
+    top:56%;
 }
 .trend_con{
     padding: 0 6%;
 }
+.column1,.column2{
+    width:330px;
 }
-@media screen and (min-width:900px){
+}
+@media screen and (min-width:992px){
     .middle{
         left: 110px;
     }
@@ -687,19 +742,39 @@ footer ul{
     }
     .podcasts{
         background: linear-gradient(
-            #000000 0%,
-            #000000 23%,
-            #ffffff 23%,
+            rgba(0,0,0,0.9) 0%,
+            rgba(0,0,0,0.9) 40%,
+            #ffffff 40%,
             #ffffff 100%
         );
     }
+    .originals{
+        background: linear-gradient(
+            rgba(0,0,0,0.9) 0%,
+            rgba(0,0,0,0.9) 25%,
+            #ffffff 25%,
+            #ffffff 100%
+        );
+    }
+    .p_flex{
+        padding:0 5%;
+        margin-top:5%;
+    }
+    .podcast_heading p{
+        font-size: 1.3rem;
+        opacity: 0.9;
+    }
     #flex1 img,#flex4 img{
-        width:480px;
+        width:445px;
         height: 250px;
     }
     #flex2 img,#flex3 img,#flex5 img,#flex6 img{
-        width:225px;
+        width:210px;
         height: 350px;
+    }
+    .summary_h p{
+        font-size: 1.2rem;
+        opacity: 0.7;
     }
     .summary .card1,.card3{
         width:240px;
@@ -754,13 +829,24 @@ footer ul{
     }
     .articles{
         background: linear-gradient(
-            #000000 0%,
-            #000000 28%,
+            rgba(0,0,0,0.9) 0%,
+            rgba(0,0,0,0.9) 28%,
             #ffffff 28%,
             #ffffff 100%
         );
     }
-    .cardt1 .card-img-top{
+    .trend h2{
+        font-size: 1.8rem;
+    }
+    .trend p{
+        font-size: 1.2rem;
+        opacity: 0.7;
+    }
+    .original_heading p{
+        font-size: 1.3rem;
+        opacity: 0.7;
+    }
+    .cardt1 div div:first-child img{
         width: 450px;
         height: 100%;
       }
@@ -772,15 +858,33 @@ footer ul{
         top:50%;
     }
    
-    .trending .card-header .clearfix{
+   /* .trending .card-header .clearfix{
         padding: 0 6%;
         margin-top: 10%;
-    }
+    }*/
     .cardt1 .card-header .clearfix{
         margin-top: 13%;
     }
     .trend_con{
         padding: 5%;
+    }
+    .trend_con p:last-child{
+        font-size: 1.1rem;
+        opacity: 0.7;
+    }
+    .tr_content{
+        padding: 0 13%;
+    }
+    .tr_content p:last-child{
+        font-size: 1.1rem;
+        opacity: 0.7;
+    }
+    .cardt2 .clearfix,.cardt3 .clearfix,.cardt4 .clearfix,.cardt5 .clearfix{
+        padding:0 10%;
+        margin-top: 17%;
+    }
+    .column1,.column2{
+        width:440px;
     }
 }
 @media screen and (min-width:1200px){
@@ -789,6 +893,12 @@ footer ul{
     }
     .special{
         padding:0 6%;
+    }
+    .heading{
+        font-size: 1.8rem;
+    }
+    .special_header p{
+        font-size: 1.2rem;
     }
     .special img{
         border-radius: 4%;
@@ -816,12 +926,12 @@ footer ul{
     #flex1 img,#flex4 img{
         width:480px;
         height: 250px;
-        margin-top: auto;
+        margin-top: 0%;
     }
     #flex2 img,#flex3 img,#flex5 img,#flex6 img{
         width:225px;
         height: 350px;
-        margin-top: auto;
+        margin-top: 0%;
     }
     .summary .card1,.card3{
         width:280px;
@@ -829,10 +939,13 @@ footer ul{
     .summary .card2{
        width:280px;
     }
+    .summary_h h2{
+        font-size: 1.8rem;
+    }
     .podcasts{
         background: linear-gradient(
-            #000000 0%,
-            #000000 40%,
+            rgba(0,0,0,0.9) 0%,
+            rgba(0,0,0,0.9) 40%,
             #ffffff 40%,
             #ffffff 100%
         );
@@ -841,15 +954,19 @@ footer ul{
         margin-top: 1%;
         padding:0 10%;
     }
+    .article_heading p{
+      font-size: 1.3rem;
+      opacity: 0.9;
+    }
     .cardt1 .card-img-top{
         width: 450px;
         height:100%;
       }
     .column1{
-        width: 480px;
+        width: 470px;
     }
     .column2{
-        width: 480px;
+        width: 470px;
     }
     .quote_u1{
         left: 5%; top:50%;
@@ -870,5 +987,12 @@ footer ul{
      .trend{
          padding: 0 6%;
          margin-bottom: 4%;
+     }
+     .title h1{
+         font-size: 1.8rem;
+     }
+     .p_flex{
+         padding:0 13%;
+         margin-top:2%;
      }
 } 
