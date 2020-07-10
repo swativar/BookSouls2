@@ -1,0 +1,534 @@
+.navbar-light .navbar-toggler {
+    border-color: transparent!important;
+    color: rgba(0,0,0,1)!important;
+}
+.navbar{
+    height: 70px;
+    max-width: 100%;
+}
+.navbar.shadow{
+    height: 70px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.icon1 {
+    width: 10px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 12px;
+    border-radius: 1px;
+    
+  }
+  .icon2 {
+    width: 22px;
+    height: 2px;
+    background-color: black;
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+  .icon3 {
+    width: 12px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    border-radius: 1px;
+  }
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    right: 100%;
+    width: 80%;
+    padding-left: 4%;
+    padding-right: 5%;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(100%);
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,1)!important;
+}
+.qu1{
+    font-size: 3rem;display:inline-block; width: 0px;height:0px;position:absolute;left: 5%; top:8%;
+}
+.ql1{
+    font-size: 3rem;display:inline-block; width: 0px;height:0px;position:absolute;right: 15%; top:53%;
+}
+.qu2{
+    font-size: 3rem;display:inline-block; width: 0px;height:0px;position:absolute;left: 10%; top:8%;
+}
+.ql2{
+    font-size: 3rem;display:inline-block; width: 0px;height:0px;position:absolute;right: 15%; top:53%;
+}
+.slide2{
+    margin: 0 auto;
+}
+.slide2 div{
+    width:95%;
+    height: 180px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:17% 10%;
+    background:white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    z-index: -1;
+    position: relative;
+    top:-70px;
+}
+.slide2 p{
+    font-size:1rem;
+    font-weight: bold;
+}
+.slide2 a{
+    color:black;
+    border-bottom: 1px solid black;
+    position: relative;
+    top: 47px;
+    left:250px;
+}
+.slide2 a:hover{
+    text-decoration: none;
+    border-bottom: none;
+    color:black;
+}
+.slide1{
+    text-align: center;
+}
+.slide1 img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    z-index: 1;
+}
+.carousel-indicators .active {
+    width: 27px!important;
+    height: 10px!important;
+    background-color: #ffc107!important;
+    border-radius: 50px!important;
+}
+.carousel-indicators li {
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%!important;
+    background-color: white!important;
+    cursor: pointer;
+    border: 2px solid #ffc107;
+}
+.carousel-indicators{
+    align-items: center;
+}
+.carousel-indicators li:first-child{
+    margin-right: 1%;
+}
+.title{
+    background: rgba(0,0,0,0.06);
+    padding-top: 5%;
+    margin-top: 20%;
+}
+.title .row{
+ margin-right: 0px!important;
+ margin-left: 0px!important;
+}
+.article_heading p{
+    font-size: 0.9rem;
+}
+.art_cara img{
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 6%;
+}
+.art_cara{
+    margin: 5% 0;
+}
+.art_cara .carousel-indicators{
+    top:220px;
+    left: 15px!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    right: auto!important;
+}
+.art_cara .art_cara_in{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 25%;
+}
+.art_cara_in p{
+    font-size:1.2rem;
+    line-height: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.buttons{
+    overflow-x: auto;
+    margin-top: 15%;
+    align-items: center;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.buttons::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .buttons {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.buttons span{
+    margin-left: 3%;
+}
+.category button {
+    border-radius: 50px;
+    border-color: transparent!important;
+}
+.buttons .active button {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+.card_row .card{
+    width: 100%;
+    height: 130px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card_row .card-header{
+    height: 130px;
+}
+.card_row .card-header a{
+    font-size: 0.8rem;
+    color: black;
+    text-decoration: none;
+}
+.card_row .card-header p{
+    font-size: 0.7rem;
+}
+.card_row img{
+    width: 100px;
+    object-fit: cover;
+    height: 100px;
+    border-radius: 10px;
+}
+.card_row .content p:first-child{
+    margin-bottom: -0.1rem;
+}
+.card_row .content p:last-child{
+    margin-top: 0.3rem;
+}
+.card_row .card::before{
+    content:'';
+    position: absolute;
+    top:0%;
+    right: 0%;
+    bottom:60%;
+    border-top: 3px solid #ffc107;
+    border-right: 3px solid #ffc107;
+    width: 20%;
+ }
+ .card_row .card::after{
+     content:'';
+     position: absolute;
+     top:60%;
+     bottom: 0%;
+     left: 0%;
+     border-left: 3px solid #ffc107;
+     border-bottom: 3px solid #ffc107;
+     width: 20%;
+  }
+  .card_row .art1,.art2,.art3,.art4,.art5{
+      margin: 4% 0;
+  }
+ .email{
+     background-color: rgba(0,0,0,0.06);
+     padding: 5% 2%;
+ }
+  .email p:first-child{
+    font-size:1.3rem;
+    font-weight: 500;
+}
+.email p:last-child{
+    font-size:1rem;
+    opacity: 0.7;
+}
+#usr{
+    border:none;
+    padding:4% 0;
+    border-radius: 5px;
+    padding-left: 10%;
+    width: 100%;
+    margin: 0 auto;
+}
+#usr:focus{
+    background-color: lightyellow;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.email .row div:last-child button{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding:2.9% 0;
+    margin-top: 10%;
+}
+.email .row{
+    margin-right: 0px!important; 
+     margin-left: 0px!important;
+}
+.inspire_in div div{
+   position: absolute;
+   top: 17%;
+   left: 10%;
+   padding: 0 5%;
+   text-align: center;
+}
+.inspire_in div div p{
+    font-size: 1rem;
+    color: #ffffff;
+}
+.inspire_in img{
+    width:230px;
+    height: 170px;
+    border-radius: 5px;
+}
+.inspire_in{
+    overflow-x: scroll;
+    margin-top: 15%;
+    background-color: rgba(0,0,0,0.1);
+    padding: 3% 0;
+}
+.inspire_in div{
+    margin-right: 7%;
+    position: relative;
+}
+.inspire_in::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .inspire_in {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.inspire .carousel-inner{
+    text-align: center;
+}
+img{
+    object-fit: cover;
+}
+.inspire .carousel-inner img{
+    width:250px;
+    height: 300px;
+    border-radius: 20px;
+    
+}
+.inspire .carousel-indicators{
+    top:330px;
+}
+.inspire{
+    background: linear-gradient(
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.9) 45%,
+        #ffffff 45%,
+        #ffffff 100%
+    );
+}
+.spcl1,.spcl2,.spcl3{
+    padding:0 20%;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.spcl1{
+    position: absolute; top: 73%; left: 0px;right: 0px;
+}
+.spcl2{
+    position: absolute; top: 73%; left: 0px;right: 0px;
+}
+.spcl3{
+    position: absolute; top: 73%; left: 0px;right: 0px;
+}
+.publisher{
+    background-image: url(https://c1.wallpaperflare.com/preview/411/694/389/black-business-computer-desk.jpg),radial-gradient(rgba(0,0,0,0.5),black);
+    background-size: auto 300px;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+.publisher .card{
+    width: 90%;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.publisher .card img{
+    height: 150px;
+}
+.publisher .card-header{
+    text-align: center;
+    padding:1.25rem!important;
+}
+.publisher .card-header a{
+    font-size: 1.2rem;
+    color:black;
+    text-decoration: none;
+    padding: 6% 0;
+    line-height: 10px;
+}
+.pub_content p:first-child{
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 5%;
+}
+.pub_content p:last-child{
+    font-size: 0.8rem;
+    text-align: right;
+    margin-top: 5%;
+}
+.publisher .carousel-indicators{
+    top: 350px;
+}
+.publisher .card::before{
+    content:'';
+    position: absolute;
+    top:0%;
+    right: 0%;
+    bottom:80%;
+    border-top: 7px solid #ffc107;
+    border-right: 7px solid #ffc107;
+    width: 25%;
+ }
+ .publisher .card::after{
+     content:'';
+     position: absolute;
+     top:80%;
+     bottom: 0%;
+     left: 0%;
+     border-left: 7px solid #ffc107;
+     border-bottom: 7px solid #ffc107;
+     width: 25%;
+  }
+  .podcast{
+    background-image: url(https://miro.medium.com/max/3840/1*pWbt1WAJBLogqhjkk4ISpQ.jpeg),radial-gradient(rgba(0,0,0,0.5),black);
+    background-repeat: no-repeat; 
+    background-size: auto 300px;
+    background-blend-mode: overlay;
+  }
+  .podcast .row{
+      margin-left: 0px!important;
+      margin-right: 0px!important;
+  }
+  .podcast .row img{
+      width: 330px;
+      height: 460px;
+  }
+  .podcast .row svg:first-child{
+    position: absolute;
+    left:0px;
+    top:-184px;
+    max-width: 100%;
+}
+  .podcast .row svg:last-child{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+  .podcast .row .pod1,.podcast .row .pod2,.podcast .row .pod3,.podcast .row .pod4{
+    background-size: cover;
+    width: 330px;
+    height: 420px;
+    margin: 0 auto;
+    position: relative;
+  }
+ .podcast .row .pod1 {
+     background-image: url(https://thumbs.dreamstime.com/b/camper-van-summer-vacation-vector-illustration-classic-vintage-travel-bus-71174247.jpg);
+  }
+  .podcast .row .pod2 {
+    background-image: url(https://wallpaperaccess.com/full/314085.jpg);
+ }
+ .podcast .row .pod3 {
+    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2015/02/18/624507/005c3951c15ca2b5f51255b3acfc3663.jpg);
+ }
+ .podcast .row .pod4 {
+    background-image: url(https://i.pinimg.com/originals/57/d8/bb/57d8bb23d2aa5781f512e567d389b1ae.jpg);
+ }
+ .podcast .row .lower{
+     position: absolute;
+     bottom: 1%;
+     z-index: 1;
+ }
+ .podcast .row>div{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ .podcast .row .lower p:last-child{
+     font-size: 1.5rem;
+     font-weight: bold;
+     line-height: 25px;
+     text-align: left;
+ }
+ .podcast .row .lower p:first-child{
+     font-size: 0.8rem;
+     text-align: left;
+ }
+ .podcast .upper{
+     position: absolute;
+     top:7%;
+     z-index: 1;
+ }
+ .podcast .upper p{
+    font-size: 1.8rem;
+     font-weight: bold;
+     line-height: 10px;
+ }
+ body{
+     overflow-x: hidden;
+ }
+
+ footer{
+    width:100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    position: relative;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+}
+footer > p{
+    font-size: 2rem;
+}
+footer ul{
+    list-style-type: none;
+    position: relative;
+    left: -14px;
+}
+footer li{
+    display: inline-block;
+    color: white;
+    margin: 5% 5px;
+}
+footer li a{
+    color: white;
+    font-size: 0.8rem;
+}
+.footer_last{
+    position: relative;
+    top:35px;
+    max-width: 100%;
+}
+.footer_last p{
+    margin-bottom: 0.5rem!important;
+}
+footer .row{
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+}
+.fdash{
+    margin-left:9px;
+}
+body{
+    max-width:100%;
+}
+
+@media screen and (min-width:700px){
+    .offcanvas-header{ display:none; }
+}
