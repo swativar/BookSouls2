@@ -13,106 +13,132 @@
 </head>
 
 <body>
+
+    <!--Navbar-->
+
     <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
         <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand font-weight-bold" href="#">Booksouls</a>
 
-            <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
-                <div class="icon1"></div>
-                <div class="icon2"></div>
-                <div class="icon3"></div>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <a class="navbar-brand" href="#">Booksouls</a>
-
-            <div class="navbar-collapse justify-content-center" id="collapsibleNavbar">
-                <div class="offcanvas-header mt-3">
-                    <span class="float-right btn-close"><i class="fas fa-times"></i></span>
-                    <h5 class="py-2">Booksouls</h5>
-                </div>
-                <ul class="navbar-nav">
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav navbar_middle">
                     <li class="nav-item">
-                        <a class="nav-link active" href="mobile.html">HOME</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            ARTICLES
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">RELATIONSHIPS</a>
-                            <a class="dropdown-item" href="#">TABOOS</a>
-                            <a class="dropdown-item" href="#">ENTERPRENEURSHIP</a>
-                            <a class="dropdown-item" href="#">LIFE</a>
-                        </div>
+                        <a class="nav-link" href="index.html">Articles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">.INSPIRE ME</a>
+                        <a class="nav-link" href="#">Insipre Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PUBLISHERS</a>
+                        <a class="nav-link" href="#">Podcast</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">CONTACT</a>
+                        <a class="nav-link" href="#">Quick</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Publisher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">More</a>
                     </li>
                 </ul>
             </div>
             <a class="navbar-brand" href=""><i class="fas fa-search"></i></a>
+            <button class="btn btn-warning px-5">Log In</button>
         </div>
     </nav>
-    <!--Carousel-->
-    <div class="title">
-        <div id="demo" class="carousel carousel-multi-item" data-ride="carousel">
+
+    <!--Header carousel-->
+
+    <div class="container title mt-5">
+        <h1>A blog to <span class="text-warning">inspire</span> millions.</h1>
+        <div id="demo" class="carousel carousel-multi-item my-5" data-ride="carousel">
+            <!-- Left and right controls -->
+            <div class="controls">
+                <a class="prev_in bg-warning px-4 py-2 text-light rounded" href="#demo"
+                    data-slide="prev"><span>&#10094</span></a>
+                <a class="next_in bg-warning px-4 py-2 text-light rounded" href="#demo"
+                    data-slide="next"><span>&#10095</span></a>
+            </div>
             <!-- Indicators -->
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
                 <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
             </ul>
             <!-- The slideshow -->
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <div class="row">
-                        <div class="col-md-6 slide1">
+                        <div class="col-md-6 slide1 clearfix d-none d-md-block">
                             <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg"
-                                width="280" height="160">
+                                width="350" height="220">
 
                         </div>
                         <div class="col-md-6 slide2 my-5">
                             <div>
-                                <span class="text-warning qu1">&#10077;</span>
+                                <span class="text-warning quote_u1">&#10077;</span>
                                 <p>WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN RELIEF?</p>
-                                <span class="text-warning ql1">&#10078;</span>
+                                <span class="text-warning quote_l1">&#10078;</span>
                             </div>
+                            <a href="">VIEW POST</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-md-6 slide1">
+                        <div class="col-md-6 slide1 clearfix d-none d-md-block">
                             <img src="https://images.unsplash.com/photo-1553729784-e91953dec042?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
-                                width="280" height="160">
+                                width="350" height="220">
                         </div>
                         <div class="col-md-6 slide2 my-5">
                             <div>
-                                <span class="text-warning qu2">&#10077;</span>
+                                <span class="text-warning quote_u2">&#10077;</span>
                                 <p>6 AMAZING BENEFITS OF READING: EVERYONE SHOULD KHOW?</p>
-                                <span class="text-warning ql2">&#10078;</span>
+                                <span class="text-warning quote_l2">&#10078;</span>
                             </div>
+                            <a href="">VIEW POST</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-md-6 slide1">
+                        <div class="col-md-6 slide1 clearfix d-none d-md-block">
                             <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg"
-                                width="280" height="160">
+                                width="350" height="220">
 
                         </div>
                         <div class="col-md-6 slide2 my-5">
                             <div>
-                                <span class="text-warning qu1">&#10077;</span>
+                                <span class="text-warning quote_u1">&#10077;</span>
                                 <p>WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN RELIEF?</p>
-                                <span class="text-warning ql1">&#10078;</span>
+                                <span class="text-warning quote_l1">&#10078;</span>
                             </div>
+                            <a href="">VIEW POST</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 slide1 clearfix d-none d-md-block">
+                            <img src="https://images.unsplash.com/photo-1553729784-e91953dec042?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+                                width="350" height="220">
+                        </div>
+                        <div class="col-md-6 slide2 my-5">
+                            <div>
+                                <span class="text-warning quote_u2">&#10077;</span>
+                                <p>6 AMAZING BENEFITS OF READING: EVERYONE SHOULD KHOW?</p>
+                                <span class="text-warning quote_l2">&#10078;</span>
+                            </div>
+                            <a href="">VIEW POST</a>
                         </div>
                     </div>
                 </div>
@@ -121,300 +147,689 @@
     </div>
 
     <!--Articles-->
-
-    <div class="article mt-3">
-        <div class="article_heading">
-            <h2 class="text-center">Article<span class="text-warning">s</span></h2>
-            <p class="text-center px-3">Read articles from Booksouls' team to keep you
+    <div class="articles" class="mt-2">
+        <div class="container">
+            <h2>Article<span class="text-warning">s</span></h2>
+            <p>Read articles from Booksouls' team to keep you
                 motivated</p>
         </div>
-        <div class="buttons d-flex justify-content-between">
-            <span class="category active"><button class="btn btn-outline-warning px-4 btn-sm all">All</button></span>
-            <span class="category"><button class="btn btn-outline-warning btn-sm px-4 art1">TABOOS</button></span>
-            <span class="category"><button class="btn btn-outline-warning btn-sm px-4 art2">RELATIONSHIP</button></span>
-            <span class="category"><button
-                    class="btn btn-outline-warning btn-sm px-4 art3">ENTREPRENEURESHIP</button></span>
-            <span class="category"><button class="btn btn-outline-warning px-4 btn-sm art4">LIFE</button></span>
-            <span class="category"><button class="btn btn-outline-warning btn-sm px-4 art5">INSPIRE ME</button></span>
-        </div>
-        <div class="all mt-3">
-            <div class="row card_row mx-auto">
+        <div class="container all mt-5">
+            <div class="row card_row">
                 <div class="col-sm-12 col-md-4 art1">
                     <div class="card">
-                        <div class="card-header d-flex">
-                            <img class="images"
-                                src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&w=1000&q=80"
-                                alt="">
-                            <div class="ml-2 content">
-                                <p class="text-warning">TABOOS</p>
-                                <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</a>
-                                <p>By <span class="text-warning">MOHAMMAD SAHIL</span></p>
+                        <div class="card-header">
+                            <img class="card-img-top images" data-src="images/one.jpg" src="images/one-min.jpg" alt="">
+                            <p class="text-warning mt-4">TABOOS</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                different people and everyone's hiding something...</p>
+                            <div class="clearfix card_bottom">
+                                <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 art5">
+                <div class="col-sm-12 col-md-4 art2">
                     <div class="card">
-                        <div class="card-header d-flex">
-                            <img class="images"
-                                src="https://miro.medium.com/max/3840/1*pWbt1WAJBLogqhjkk4ISpQ.jpeg"
+                        <div class="card-header">
+                            <img class="card-img-top images" data-src="images/two.jpg" src="images/two-min.jpg" alt="">
+                            <p class="text-warning mt-4">RELATIONSHIP</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                different people and everyone's hiding something...</p>
+                            <div class="clearfix card_bottom">
+                                <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 art3">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img-top images" data-src="images/three.jpg" src="images/three-min.jpg"
                                 alt="">
-                            <div class="ml-2 content">
+                            <p class="text-warning mt-4">ENTREPRENEURESHIP</p>
+                            <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to find
+                                answers and...</a>
+                            <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                different people and everyone's hiding something...</p>
+                            <div class="clearfix card_bottom">
+                                <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 wide_article art4">
+                    <div class="card">
+                        <div>
+                            <img class="card-img-top images" data-src="images/four.jpg" src="images/four-min.jpg"
+                                alt="">
+                        </div>
+                        <div>
+                            <div class="card-header">
+                                <p class="text-warning">LIFE</p>
+                                <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                    find answers and...</a>
+                                <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                    different people and everyone's hiding something...</p>
+                                <div class="clearfix card_bottom">
+                                    <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                    <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 last_article art4">
+                    <div class="card">
+                        <div>
+                            <img class="card-img-top images" data-src="images/five.jpg" src="images/five-min.jpg"
+                                alt="">
+                        </div>
+                        <div>
+                            <div class="card-header">
+                                <p class="text-warning">LIFE</p>
+                                <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                    find answers and...</a>
+                                <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                    different people and everyone's hiding something...</p>
+                                <div class="clearfix card_bottom">
+                                    <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                    <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 last_article art5">
+                    <div class="card">
+                        <div>
+                            <img class="card-img-top images" data-src="images/six.jpg" src="images/six-min.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="card-header">
                                 <p class="text-warning">INSPIRE ME</p>
-                                <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</a>
-                                <p>By <span class="text-warning">MOHAMMAD SAHIL</span></p>
+                                <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                    find answers and...</a>
+                                <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                    different people and everyone's hiding something...</p>
+                                <div class="clearfix card_bottom">
+                                    <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                    <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="art_cara">
-                <div id="art" class="carousel carousel-multi-item" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#art" data-slide-to="0" class="active"></li>
-                        <li data-target="#art" data-slide-to="1"></li>
-                        <li data-target="#art" data-slide-to="2"></li>
-                    </ul>
-                    <!-- The slideshow -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active text-center">
-                            <img src="https://wallpaperaccess.com/full/143763.jpg" alt="">
-                            <div class="text-center text-light art_cara_in">
-                                <p>Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="https://wallpaperaccess.com/full/143763.jpg" alt="">
-                            <div class="text-center text-light art_cara_in">
-                                <p>Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="https://wallpaperaccess.com/full/143763.jpg" alt="">
-                            <div class="text-center text-light art_cara_in">
-                                <p>Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row card_row mx-auto">
-                <div class="col-sm-12 col-md-4 art1">
-                    <div class="card">
-                        <div class="card-header d-flex">
-                            <img class="images"
-                                src="https://wallup.net/wp-content/uploads/2015/12/180049-digital_art-CGI-nature-landscape-island-sea-trees-forest-beach-sand-house-boat-lighthouse-clouds-tropical-bird039s_eye_view.jpg"
-                                alt="">
-                            <div class="ml-2 content">
-                                <p class="text-warning">TABOOS</p>
-                                <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</a>
-                                <p>By <span class="text-warning">MOHAMMAD SAHIL</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 art4">
-                    <div class="card">
-                        <div class="card-header d-flex">
-                            <img class="images"
-                                src="https://i.pinimg.com/originals/14/5c/62/145c6278d0ac50b828c9f8f8789fca01.jpg"
-                                alt="">
-                            <div class="ml-2 content">
-                                <p class="text-warning">LIFE</p>
-                                <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</a>
-                                <p>By <span class="text-warning">MOHAMMAD SAHIL</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 art3">
-                    <div class="card">
-                        <div class="card-header d-flex">
-                            <img class="images"
-                                src="https://wallpapercave.com/wp/UjNDsdp.jpg"
-                                alt="">
-                            <div class="ml-2 content">
-                                <p class="text-warning">ENTREPRENEURESHIP</p>
-                                <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</a>
-                                <p>By <span class="text-warning">MOHAMMAD SAHIL</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="art_cara">
-                <div id="art1" class="carousel carousel-multi-item" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#art1" data-slide-to="0" class="active"></li>
-                        <li data-target="#art1" data-slide-to="1"></li>
-                        <li data-target="#art1" data-slide-to="2"></li>
-                    </ul>
-                    <!-- The slideshow -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active text-center">
-                            <img src="https://wallpaperaccess.com/full/143763.jpg" alt="">
-                            <div class="text-center text-light art_cara_in">
-                                <p>Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="https://wallpaperaccess.com/full/143763.jpg" alt="">
-                            <div class="text-center text-light art_cara_in">
-                                <p>Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="https://wallpaperaccess.com/full/143763.jpg" alt="">
-                            <div class="text-center text-light art_cara_in">
-                                <p>Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row card_row mx-auto">
-                <div class="col-sm-12 col-md-4 art4">
-                    <div class="card">
-                        <div class="card-header d-flex">
-                            <img class="images"
-                                src="https://wallpapercave.com/wp/HKGW4tj.jpg"
-                                alt="">
-                            <div class="ml-2 content">
-                                <p class="text-warning">LIFE</p>
-                                <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</a>
-                                <p>By <span class="text-warning">MOHAMMAD SAHIL</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 art3">
-                    <div class="card">
-                        <div class="card-header d-flex">
-                            <img class="images"
-                                src="https://lh3.googleusercontent.com/proxy/nr-ARsi6UW9lMj_VxJ5djtlj_Ip0Cfm8q0QFbG94OnBK7VHNmu2pc8-I-VudDQF66PCFccGl_c38uXKLfmo68jjD4HO3ZxBO-eXoG0OQXjxlfC8zKOq5kT-_YofNyHYuuxy9bg2H"
-                                alt="">
-                            <div class="ml-2 content">
-                                <p class="text-warning">ENTREPRENEURESHIP</p>
-                                <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</a>
-                                <p>By <span class="text-warning">MOHAMMAD SAHIL</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-3">
-            <button class="btn btn-warning px-4">LOAD MORE</button>
-        </div>
-    </div>
-
-    <!--Subscribe-->
-
-    <div class="email text-center my-5">
-        <p>Get articles directly in your email</p>
-        <p>Be the first to read the articles and other special contents</p>
-        <div class="row mt-5">
-            <div class="col-sm-12 col-md-6">
-                <div class="form-group mx-auto">
-                    <input type="text" class="form-control" id="usr" placeholder="Enter email">
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <button class="btn btn-warning px-5 text-dark">Subscribe</button>
+            <div class="text-center pt-5">
+                <button class="btn btn-warning text-light">Load More</button>
             </div>
         </div>
     </div>
 
+    <!--inspire-->
 
-    <!--Inspire me-->
-
-    <div class="inspire">
-        <div class="text-center p-5">
-            <h2 class="text-light">.Inspire <span class="text-warning">Me</span></h2>
-            <p class="text-light">Content to inspire you to keep you motivated and make your day bright</p>
+    <div class="inspire mt-5">
+        <div class="container mb-5">
+            <h2>.Inspire <span class="text-warning">Me</span></h2>
+            <p>Content to inspire you to keep you motivated and make your day bright</p>
         </div>
         <div id="demo1" class="carousel carousel-multi-item" data-ride="carousel">
             <!-- Indicators -->
             <ul class="carousel-indicators">
-                <li data-target="#demo1" data-slide-to="0" class="active"></li>
-                <li data-target="#demo1" data-slide-to="1"></li>
-                <li data-target="#demo1" data-slide-to="2"></li>
+                <a href="#demoa" class="js_inspire_link">
+                    <li class="active"></li>
+                </a>
+                <a href="#demob" class="js_inspire_link">
+                    <li></li>
+                </a>
+                <a href="#democ" class="js_inspire_link">
+                    <li></li>
+                </a>
+                <a href="#demod" class="js_inspire_link">
+                    <li></li>
+                </a>
+                <a href="#demoe" class="js_inspire_link">
+                    <li></li>
+                </a>
             </ul>
             <!-- The slideshow -->
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="https://femina.wwmindia.com/content/2019/jul/ajeynagar1562839404.jpg">
-                    <div class="spcl1">
-                        <p class="text-light">From <span class="text-warning">Ajay</span> to <span
-                                class="text-warning">Carry</span></p>
+            <div class="carousel-inner special" role="listbox">
+                <div class="carousel-item" id="demoa">
+                    <div class="item">
+                        <img src="https://femina.wwmindia.com/content/2019/jul/ajeynagar1562839404.jpg">
+                        <div class="spcl1">
+                            <p class="text-light">From <span class="text-warning">Ajay</span> to <span
+                                    class="text-warning">Carry</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://www.forbesindia.com/media/images/2019/Jul/img_118739_bhuvan_bam_s.jpg">
+                        <div class="spcl2">
+                            <p class="text-light">The <span class="text-warning">Story</span> Behind <span
+                                    class="text-warning">BB Ki Vines</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img
+                            src="https://www.dkoding.in/wp-content/uploads/Gaurav-Chaudhary-Technical-Guruji-Tech-Startups-Business-DKODING.jpg">
+                        <div class="spcl3">
+                            <p class="text-light">The <span class="text-warning">making</span> of <span
+                                    class="text-warning">Technical Guruji</span></p>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://lh3.googleusercontent.com/proxy/Bq__770gTky9QZPOSlFMvMwworeKjjuOTitpl1nCLnfoPDttUdaqS6VssSh5FFkIQnocaNUHGLcl9gquwEj5ddm9WlSMxjogwc5b_hsJKMO20O2PcqgeZk3_L5sR6JdSRhemL5s6TR_XceVupf5HyiK9UnG7CpoSQGdK">
-                    <div class="spcl2">
-                        <p class="text-light">The <span class="text-warning">Story</span> Behind <span
-                                class="text-warning">BB Ki Vines</span></p>
+                <div class="carousel-item" id="demob">
+                    <div class="item">
+                        <img src="https://femina.wwmindia.com/content/2019/jul/ajeynagar1562839404.jpg">
+                        <div class="spcl1">
+                            <p class="text-light">From <span class="text-warning">Ajay</span> to <span
+                                    class="text-warning">Carry</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://www.forbesindia.com/media/images/2019/Jul/img_118739_bhuvan_bam_s.jpg">
+                        <div class="spcl2">
+                            <p class="text-light">The <span class="text-warning">Story</span> Behind <span
+                                    class="text-warning">BB Ki Vines</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img
+                            src="https://www.dkoding.in/wp-content/uploads/Gaurav-Chaudhary-Technical-Guruji-Tech-Startups-Business-DKODING.jpg">
+                        <div class="spcl3">
+                            <p class="text-light">The <span class="text-warning">making</span> of <span
+                                    class="text-warning">Technical Guruji</span></p>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://www.dkoding.in/wp-content/uploads/Gaurav-Chaudhary-Technical-Guruji-Tech-Startups-Business-DKODING.jpg">
-                    <div class="spcl3">
-                        <p class="text-light">The <span class="text-warning">making</span> of <span
-                                class="text-warning">Technical Guruji</span></p>
+                <div class="carousel-item" id="democ">
+                    <div class="item">
+                        <img src="https://femina.wwmindia.com/content/2019/jul/ajeynagar1562839404.jpg">
+                        <div class="spcl1">
+                            <p class="text-light">From <span class="text-warning">Ajay</span> to <span
+                                    class="text-warning">Carry</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://www.forbesindia.com/media/images/2019/Jul/img_118739_bhuvan_bam_s.jpg">
+                        <div class="spcl2">
+                            <p class="text-light">The <span class="text-warning">Story</span> Behind <span
+                                    class="text-warning">BB Ki Vines</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img
+                            src="https://www.dkoding.in/wp-content/uploads/Gaurav-Chaudhary-Technical-Guruji-Tech-Startups-Business-DKODING.jpg">
+                        <div class="spcl3">
+                            <p class="text-light">The <span class="text-warning">making</span> of <span
+                                    class="text-warning">Technical Guruji</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="demod">
+                    <div class="item">
+                        <img src="https://femina.wwmindia.com/content/2019/jul/ajeynagar1562839404.jpg">
+                        <div class="spcl1">
+                            <p class="text-light">From <span class="text-warning">Ajay</span> to <span
+                                    class="text-warning">Carry</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://www.forbesindia.com/media/images/2019/Jul/img_118739_bhuvan_bam_s.jpg">
+                        <div class="spcl2">
+                            <p class="text-light">The <span class="text-warning">Story</span> Behind <span
+                                    class="text-warning">BB Ki Vines</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img
+                            src="https://www.dkoding.in/wp-content/uploads/Gaurav-Chaudhary-Technical-Guruji-Tech-Startups-Business-DKODING.jpg">
+                        <div class="spcl3">
+                            <p class="text-light">The <span class="text-warning">making</span> of <span
+                                    class="text-warning">Technical Guruji</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="demoe">
+                    <div class="item">
+                        <img src="https://femina.wwmindia.com/content/2019/jul/ajeynagar1562839404.jpg">
+                        <div class="spcl1">
+                            <p class="text-light">From <span class="text-warning">Ajay</span> to <span
+                                    class="text-warning">Carry</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://www.forbesindia.com/media/images/2019/Jul/img_118739_bhuvan_bam_s.jpg">
+                        <div class="spcl2">
+                            <p class="text-light">The <span class="text-warning">Story</span> Behind <span
+                                    class="text-warning">BB Ki Vines</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img
+                            src="https://www.dkoding.in/wp-content/uploads/Gaurav-Chaudhary-Technical-Guruji-Tech-Startups-Business-DKODING.jpg">
+                        <div class="spcl3">
+                            <p class="text-light">The <span class="text-warning">making</span> of <span
+                                    class="text-warning">Technical Guruji</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="d-flex inspire_in justify-content-between">
-            <div>
-                <img src="https://wallpaperstock.net/wallpapers/thumbs1/41395wide.jpg" alt="">
-                <div>
-                    <p>Drawing from dante's dark epic poem, Langdon races to find
-                        answers and...</p>
-                </div>
-            </div>
-            <div>
-                <img src="https://wallpaperstock.net/wallpapers/thumbs1/41395wide.jpg" alt="">
-                <div>
-                    <p>Drawing from dante's dark epic poem, Langdon races to find
-                        answers and...</p>
-                </div>
-            </div>
-            <div>
-                <img src="https://wallpaperstock.net/wallpapers/thumbs1/41395wide.jpg" alt="">
-                <div>
-                    <p>Drawing from dante's dark epic poem, Langdon races to find
-                        answers and...</p>
-                </div>
-            </div>
-        </div>
-        <div class="text-center" style="margin-top: 10%;">
-            <button class="btn btn-warning px-4">LOAD MORE</button>
+        <div class="text-center" style="margin-top: 8%;">
+            <button class="btn btn-warning">Explore Inspire Me</button>
         </div>
     </div>
 
-    <!--Publishers-->
-    <div class="publisher mt-5">
-        <div class="text-center px-3 py-5">
-            <h2 class="text-light">Booksouls <span class="text-warning">Publishers</span></h2>
-            <p class="text-light">Read original contents from the Booksouls team</p>
+    <!--Subscribe-->
+    <div class="container mt-5 subscribe_middle">
+        <div class="row px-5">
+            <div class="col-sm-12 col-md-6" style="line-height: 15px;padding-left:80px;">
+                <p style="font-size:1.5rem;font-weight:500;">Get articles directly in your email</p>
+                <p style="font-size: 0.9rem">Be First to read the articles and other special
+                    contents</p>
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                <div class="form-group w-100">
+                    <input type="email" class="form-control" placeholder="Enter email" id="email1">
+                </div>
+                <div>
+                    <button class="btn btn-warning px-4 py-2">Subscribe</button>
+                </div>
+            </div>
         </div>
-        <div id="demo2" class="carousel carousel-multi-item" data-ride="carousel">
+    </div>
+    <!--Podacasts-->
+    <div class="podcast">
+        <div class="container">
+            <h2>Pod<span class="text-warning">casts</span></h2>
+            <p>Listen to some original podcasts from the Booksouls team</p>
+        </div>
+        <div id="demo1" class="carousel carousel-multi-item my-2" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <a href="#podcast_in1" class="js_pod_link">
+                    <li class="active"></li>
+                </a>
+                <a href="#podcast_in2" class="js_pod_link">
+                    <li></li>
+                </a>
+                <a href="#podcast_in3" class="js_pod_link">
+                    <li></li>
+                </a>
+                <a href="#podcast_in4" class="js_pod_link">
+                    <li></li>
+                </a>
+                <a href="#podcast_in5" class="js_pod_link">
+                    <li></li>
+                </a>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner special" role="listbox">
+                <div class="carousel-item active" id="podcast_in1">
+                    <div class="podcast_1 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The Way of Travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast_2 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The way of travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast_3 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The way of travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active" id="podcast_in2">
+                    <div class="podcast_1 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The Way of Travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast_2 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The way of travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast_3 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The way of travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active" id="podcast_in3">
+                    <div class="podcast_1 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The Way of Travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast_2 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The way of travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast_3 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The way of travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active" id="podcast_in4">
+                    <div class="podcast_1 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The Way of Travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast_2 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The way of travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast_3 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The way of travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active" id="podcast_in5">
+                    <div class="podcast_1 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The Way of Travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast_2 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The way of travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast_3 js_pod">
+                        <div class="text-light">
+                            <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                            <p>The way of travelling in Caraven.</p>
+                            <div class="clearfix">
+                                <span class="float-left"><i class="far fa-play-circle text-light fa-3x"></i></span>
+                                <span class="float-right"><i class="far fa-heart text-danger fa-lg"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pod_cont">
+            <div class="card flex-row podcast_4">
+                <div class="podcast_4_img text-center">
+                    <span><i class="far fa-play-circle text-light fa-4x"></i></span>
+                </div>
+
+                <div class="card_con">
+                    <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                    <p>The way of travelling in Caraven.</p>
+                    <div class="clearfix">
+                        <span class="float-left">Topics: Do's and don't of travelling alone, where to go and right time
+                            to go.</span>
+                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card flex-row podcast_5 mt-3">
+                <div class="podcast_5_img text-center">
+                    <span><i class="far fa-play-circle text-light fa-4x"></i></span>
+                </div>
+                <div class="card_con">
+                    <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                    <p>The way of travelling in Caraven.</p>
+                    <div class="clearfix">
+                        <span class="float-left">Topics: Do's and don't of travelling alone, where to go and right time
+                            to go.</span>
+                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex-row podcast_6 mt-3">
+                <div class="podcast_6_img text-center">
+                    <span><i class="far fa-play-circle text-light fa-4x"></i></span>
+                </div>
+                <div class="card_con">
+                    <p><i class="fas fa-headphones-alt"></i> 24 min listen</p>
+                    <p>The way of travelling in Caraven.</p>
+                    <div class="clearfix">
+                        <span class="float-left">Topics: Do's and don't of travelling alone, where to go and right time
+                            to go.</span>
+                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <button class="btn btn-warning">Explore Podcasts</button>
+        </div>
+    </div>
+
+    <!--Booksouls quick-->
+
+    <div class="b_quick">
+        <div class="container">
+            <h2>Booksouls <span class="text-warning">Quick</span></h2>
+            <p>your daily dose of quality read curated especially for you</p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <div class="card bq-card1 text-center">
+                    <div class="card-header">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="" width="200"
+                            height="300">
+                        <h3>The Alchemist</h3>
+                        <p>Paulo Coelho</p>
+                        <div class="clearfix mt-4">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read Now</button></span>
+                            <span class="float-right"><i class="far fa-heart text-danger"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card bq-card2 text-center">
+                    <div class="card-header">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
+                            alt="" width="200" height="300">
+                        <h3>The Fault In Our Stars</h3>
+                        <p>John Green</p>
+                        <div class="clearfix mt-4">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read Now</button></span>
+                            <span class="float-right"><i class="far fa-heart text-danger"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card bq-card3 text-center">
+                    <div class="card-header">
+                        <img src="https://format-com-cld-res.cloudinary.com/image/private/s--Scrn3blx--/c_crop,h_1129,w_735,x_0,y_0/c_fill,g_center,h_583,w_380/dpr_2,fl_keep_iptc.progressive,q_95/v1/56a891bf30e3ffc5f5409a5ac5ba031c/The_Da_Vinci_Code.jpg"
+                            alt="" width="200" height="300">
+                        <h3>The Vinci Code</h3>
+                        <p>Dan Brown</p>
+                        <div class="clearfix mt-4">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read Now</button></span>
+                            <span class="float-right"><i class="far fa-heart text-danger"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card bq-card4 text-center">
+                    <div class="card-header">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="" width="200"
+                            height="300">
+                        <h3>The Alchemist</h3>
+                        <p>Paulo Coelho</p>
+                        <div class="clearfix mt-4">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read Now</button></span>
+                            <span class="float-right"><i class="far fa-heart text-danger"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card bq-card5 text-center">
+                    <div class="card-header">
+                        <img src="https://wallpaperstream.com/wallpapers/full/rain/Grayscale-Photo-of-Man-Standing-Under-the-Rain.jpg"
+                            alt="" width="200" height="300">
+                        <h3>The Head of Yours</h3>
+                        <p>Mohammad Sahil</p>
+                        <div class="clearfix mt-4">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read Now</button></span>
+                            <span class="float-right"><i class="far fa-heart text-danger"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card bq-card6 text-center">
+                    <div class="card-header">
+                        <img src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&w=1000&q=80"
+                            alt="" width="200" height="300">
+                        <h3>Typewriter Secrets</h3>
+                        <p>Mohammad Sahil</p>
+                        <div class="clearfix mt-4">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read Now</button></span>
+                            <span class="float-right"><i class="far fa-heart text-danger"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card bq-card7 text-center">
+                    <div class="card-header">
+                        <img src="https://images.unsplash.com/photo-1553465528-5a213ccc0c7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                            alt="" width="200" height="300">
+                        <h3>The Fight in Your Head</h3>
+                        <p>Mohammad Sahil</p>
+                        <div class="clearfix mt-4">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read Now</button></span>
+                            <span class="float-right"><i class="far fa-heart text-danger"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card bq-card8 text-center">
+                    <div class="card-header">
+                        <img src="https://i.pinimg.com/originals/6b/ab/27/6bab27434ade8c581ff5ddaf9b4973a2.jpg" alt=""
+                            width="200" height="300">
+                        <h3>Neons Light</h3>
+                        <p>Mohammad Sahil</p>
+                        <div class="clearfix mt-4">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read Now</button></span>
+                            <span class="float-right"><i class="far fa-heart text-danger"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <button class="btn btn-warning">Explore Quick</button>
+        </div>
+    </div>
+
+    <!--Publisher-->
+    <div class="publisher mt-5">
+        <div class="container">
+            <h2>Booksouls <span class="text-warning">Publishers</span></h2>
+            <p>Read original contents from the Booksouls team</p>
+        </div>
+        <div id="demo2" class="carousel carousel-multi-item my-5" data-ride="carousel">
             <!-- Indicators -->
             <ul class="carousel-indicators">
                 <li data-target="#demo2" data-slide-to="0" class="active"></li>
@@ -424,153 +839,268 @@
             <!-- The slideshow -->
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <div class="card mx-auto">
-                        <div class="card-header">
-                            <img class="card-img-top images" src="https://wallpapercave.com/wp/wp1953317.jpg" alt="">
-                            <div class="pub_content">
-                                <p class="text-warning">INSPIRE ME</p>
-                                <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</a>
-                                <p>by<span class="text-warning"> MOHAMMAD
-                                        SAHIL</span></p>
+                    <div class="row card_row">
+                        <div class="col-sm-12 col-md-4 art1">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img-top images" data-src="images/one.jpg" src="images/one-min.jpg"
+                                        alt="">
+                                    <p class="text-warning mt-4">PUBLISHERS</p>
+                                    <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                        find
+                                        answers and...</a>
+                                    <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                        different people and everyone's hiding something...</p>
+                                    <div class="clearfix card_bottom">
+                                        <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 art2">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img-top images" data-src="images/two.jpg" src="images/two-min.jpg"
+                                        alt="">
+                                    <p class="text-warning mt-4">PUBLISHERS</p>
+                                    <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                        find
+                                        answers and...</a>
+                                    <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                        different people and everyone's hiding something...</p>
+                                    <div class="clearfix card_bottom">
+                                        <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 art3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img-top images" data-src="images/three.jpg"
+                                        src="images/three-min.jpg" alt="">
+                                    <p class="text-warning mt-4">PUBLISHERS</p>
+                                    <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                        find
+                                        answers and...</a>
+                                    <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                        different people and everyone's hiding something...</p>
+                                    <div class="clearfix card_bottom">
+                                        <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card mx-auto">
-                        <div class="card-header">
-                            <img class="card-img-top images" src="https://images3.alphacoders.com/654/thumb-1920-65427.jpg" alt="">
-                            <div class="pub_content">
-                                <p class="text-warning">INSPIRE ME</p>
-                                <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</a>
-                                <p>by<span class="text-warning"> MOHAMMAD
-                                        SAHIL</span></p>
+                    <div class="row card_row">
+                        <div class="col-sm-12 col-md-4 art1">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img-top images" data-src="images/one.jpg" src="images/one-min.jpg"
+                                        alt="">
+                                    <p class="text-warning mt-4">PUBLISHERS</p>
+                                    <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                        find
+                                        answers and...</a>
+                                    <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                        different people and everyone's hiding something...</p>
+                                    <div class="clearfix card_bottom">
+                                        <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 art2">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img-top images" data-src="images/two.jpg" src="images/two-min.jpg"
+                                        alt="">
+                                    <p class="text-warning mt-4">PUBLISHERS</p>
+                                    <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                        find
+                                        answers and...</a>
+                                    <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                        different people and everyone's hiding something...</p>
+                                    <div class="clearfix card_bottom">
+                                        <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 art3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img-top images" data-src="images/three.jpg"
+                                        src="images/three-min.jpg" alt="">
+                                    <p class="text-warning mt-4">PUBLISHERS</p>
+                                    <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                        find
+                                        answers and...</a>
+                                    <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                        different people and everyone's hiding something...</p>
+                                    <div class="clearfix card_bottom">
+                                        <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card mx-auto">
-                        <div class="card-header">
-                            <img class="card-img-top images" src="https://www.iliketowastemytime.com/system/files/aquatic-jungle-hd-wallpaper-by-alfred-schrock-iltwmt.jpg?download=1" alt="">
-                            <div class="pub_content">
-                                <p class="text-warning">INSPIRE ME</p>
-                                <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                    answers and...</a>
-                                <p>by<span class="text-warning"> MOHAMMAD
-                                        SAHIL</span></p>
+                    <div class="row card_row">
+                        <div class="col-sm-12 col-md-4 art1">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img-top images" data-src="images/one.jpg" src="images/one-min.jpg"
+                                        alt="">
+                                    <p class="text-warning mt-4">PUBLISHERS</p>
+                                    <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                        find
+                                        answers and...</a>
+                                    <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                        different people and everyone's hiding something...</p>
+                                    <div class="clearfix card_bottom">
+                                        <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 art2">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img-top images" data-src="images/two.jpg" src="images/two-min.jpg"
+                                        alt="">
+                                    <p class="text-warning mt-4">PUBLISHERS</p>
+                                    <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                        find
+                                        answers and...</a>
+                                    <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                        different people and everyone's hiding something...</p>
+                                    <div class="clearfix card_bottom">
+                                        <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 art3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img-top images" data-src="images/three.jpg"
+                                        src="images/three-min.jpg" alt="">
+                                    <p class="text-warning mt-4">PUBLISHERS</p>
+                                    <a href="#" class="content">Drawing from dante's dark epic poem, Langdon races to
+                                        find
+                                        answers and...</a>
+                                    <p class="mt-3">He's in a situation where he can trust no one..different country &
+                                        different people and everyone's hiding something...</p>
+                                    <div class="clearfix card_bottom">
+                                        <span class="float-left">by <span> MOHAMMAD SAHIL</span></span>
+                                        <span class="float-right"><i class="far fa-heart fa-lg text-danger"></i></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center" style="margin-top: 30%;">
-                <button class="btn btn-warning px-4">LOAD MORE</button>
+        </div>
+        <div class="text-center" style="margin-top: 8%;">
+            <button class="btn btn-warning">Explore Publishers</button>
+        </div>
+    </div>
+    <div class="email text-center mb-5">
+        <p>Stay <span class="text-warning">Updated</span></p>
+        <p>Get Selected Articles Directly on Your Email!</p>
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <button class="btn btn-outline-warning px-5 py-2 text-dark">Submit</button>
             </div>
         </div>
+    </div>
 
-        <div class="podcast mt-5">
-            <div class="text-center px-4 py-5">
-                <h2 class="text-warning">Podcasts</h2>
-                <p class="text-light">Listen to some original podcasts from the Booksouls team</p>
+    <footer>
+        <div class="d-flex justify-content-between footer">
+            <div>
+                <h1>Booksouls</h1>
+                <p>A blog to inspire millions</p>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-4 pod1 my-3">
-                    <svg height="350" viewBox="0 0 950 350">
-                        <path fill="#ffc107" d="M 0 500 C 100 500 150 500 250 450 C 350 400 400 350 350 250 L 300 200 L 300 200 L 150 200 L 0 200 L 0 200 Z" />
-                    </svg>
-                <div class="upper">
-                <p>Book</p>
-                <p>Souls</p>
-                </div>
-                <div class="lower">
-                    <p><i class="fas fa-headphones-alt"></i> 24 min</p>
-                    <p>The way of travelling in caravan</p>
-                </div>
-                <svg height="250" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 422 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L60,96C120,128,240,192,360,192C480,192,600,128,720,101.3C840,75,960,85,1080,101.3C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-                </div>
-                <div class="col-sm-12 col-md-4 pod2 my-3">
-                    <svg height="350" viewBox="0 0 950 350">
-                        <path fill="#ffc107" d="M 0 500 C 100 500 150 500 250 450 C 350 400 400 350 350 250 L 300 200 L 300 200 L 150 200 L 0 200 L 0 200 Z" />
-                    </svg>
-                <div class="upper">
-                <p>Book</p>
-                <p>Souls</p>
-                </div>
-                <div class="lower">
-                    <p><i class="fas fa-headphones-alt"></i> 24 min</p>
-                    <p>The way of travelling in caravan</p>
-                </div>
-                <svg height="250" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 422 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L60,96C120,128,240,192,360,192C480,192,600,128,720,101.3C840,75,960,85,1080,101.3C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-                </div>
-                <div class="col-sm-12 col-md-4 pod3 my-3">
-                    <svg height="350" viewBox="0 0 950 350">
-                        <path fill="#ffc107" d="M 0 500 C 100 500 150 500 250 450 C 350 400 400 350 350 250 L 300 200 L 300 200 L 150 200 L 0 200 L 0 200 Z" />
-                    </svg>
-                <div class="upper">
-                <p>Book</p>
-                <p>Souls</p>
-                </div>
-                <div class="lower">
-                    <p><i class="fas fa-headphones-alt"></i> 24 min</p>
-                    <p>The way of travelling in caravan</p>
-                </div>
-                <svg height="250" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L60,96C120,128,240,192,360,192C480,192,600,128,720,101.3C840,75,960,85,1080,101.3C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-                </div>
-                <div class="col-sm-12 col-md-4 pod4 my-3">
-                    <svg height="350" viewBox="0 0 950 350">
-                        <path fill="#ffc107" d="M 0 500 C 100 500 150 500 250 450 C 350 400 400 350 350 250 L 300 200 L 300 200 L 150 200 L 0 200 L 0 200 Z" />
-                    </svg>
-                <div class="upper">
-                <p>Book</p>
-                <p>Souls</p>
-                </div>
-                <div class="lower">
-                    <p><i class="fas fa-headphones-alt"></i> 24 min</p>
-                    <p>The way of travelling in caravan</p>
-                </div>
-                <svg height="250" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L60,96C120,128,240,192,360,192C480,192,600,128,720,101.3C840,75,960,85,1080,101.3C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-                </div>
+            <div>
+                <ul>
+                    <li>Services</li>
+                    <li><a href="">Articles</a></li>
+                    <li><a href="">Inspire Me</a></li>
+                    <li><a href="">Podcasts</a></li>
+                    <li><a href="">Publishers</a></li>
+                </ul>
             </div>
-            <div class="text-center mt-5">
-                <button class="btn btn-warning px-4">LOAD MORE</button>
+            <div>
+                <ul>
+                    <li>Community</li>
+                    <li><a href="">Write for Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Company</li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Help Desk</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>FAQ's</li>
+                    <li><a href="">What Booksouls is?</a></li>
+                    <li><a href="">What is our purpose?</a></li>
+                    <li><a href="">is Everything for free?</a></li>
+                    <li><a href="">Why are we doing this?</a></li>
+                </ul>
             </div>
         </div>
-
-        <footer class="mt-5">
-            <p class="text-center text-light font-weight-bolder pt-4">Booksouls</p>
-            <ul class="mt-3">
-                <li><a href="">CONTACT<a><span class="fdash">/</span></li>
-                <li><a href="">PRIVACY</a><span class="fdash">/</span></li>
-                <li><a href="">ABOUT</a><span class="fdash">/</span></li>
-                <li><a href="">TERMS</a></li>
-            </ul>
-            <div class="row px-md-5 footer_last">
-                <div class="col-sm-12 col-md-4 text-md-left text-sm-center">
-                    <p class="text-light">2020 &copy; Booksouls.com</p>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <p class="text-light">Made with <i class="fas fa-heart text-danger"></i> by booksouls.com</p>
-                </div>
-                <div class="col-sm-12 col-md-4 text-md-right text-sm-center">
-                    <a href="#!" class="mr-2"><i class="fab fa-facebook fa-sm text-light"></i></a>
-                    <a href="#!" class="mr-2"><i class="fab fa-twitter fa-sm text-light"></i></a>
-                    <a href="#!"><i class="fab fa-instagram fa-sm text-light"></i></a>
-                </div>
+        <div class="d-flex justify-content-between footer_in">
+            <img src="images/footer.png" alt="">
+            <div>
+                <p class="footer_p"><span>.</span> &copy; 2020, Booksouls.com <span>.</span></p>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+            <div>
+                <a href="#!" class="mr-3"><i class="fab fa-facebook fa-lg text-dark"></i></a>
+                <a href="#!" class="mr-3"><i class="fab fa-twitter fa-lg text-dark"></i></a>
+                <a href="#!" class="mr-3"><i class="fab fa-instagram fa-lg text-dark"></i></a>
+                <a href="#!"><i class="fab fa-pinterest fa-lg text-dark"></i></a>
+            </div>
+        </div>
+        <div class="text-center footer_last mt-5">
+            <p>Made with <i class="far fa-heart text-danger"></i> in india</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
