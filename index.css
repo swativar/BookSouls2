@@ -123,13 +123,16 @@
     object-fit: cover;
 }
 .articles .card-header,.publisher .card-header{
-    padding:1.25rem!important;
+    padding:1.5rem!important;
 }
 .articles .card_bottom,.publisher .card_bottom{
     margin-top: 15%;
 }
 .articles .wide_article .card_bottom{
-    margin-top: 10%;
+    margin-top: 9%;
+}
+.articles .wide_article img, .last_article img{
+    border-radius: 5px!important;
 }
 .articles .card_bottom span:first-child,.publisher .card_bottom span:first-child{
    font-size:0.7rem;
@@ -244,7 +247,8 @@ img{
     mix-blend-mode: darken;
 }
 .inspire .carousel-indicators{
-    top:440px;
+    bottom:auto!important;
+    margin-top: 2%;
 }
 .inspire .carousel-indicators a{
     margin-right: 5px;
@@ -254,7 +258,7 @@ img{
 }
 .inspire .carousel-inner{
     display: flex!important;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
 }
@@ -282,7 +286,7 @@ img{
     background: white;
     border-radius: 50%;
     text-align: center;
-    padding:2.5px 0;
+    padding:3px 0;
 }
 .spcl1,.spcl2,.spcl3{
     font-size: 1.4rem;
@@ -335,6 +339,7 @@ img{
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
+    margin-top: -4%;
 }
 .podcast .carousel-inner::-webkit-scrollbar {
     display: none;
@@ -377,9 +382,8 @@ img{
     margin-top: 12%;
 }
 .podcast_1,.podcast_2,.podcast_3{
-    width: 340px;
+    width: 360px;
     height: 250px;
-    border: 1px solid black;
 }
 .podcast_1,.podcast_2,.podcast_3{
     background-image: url(https://free4kwallpapers.com/uploads/originals/2015/11/12/android-marshmallow-pyramid-wallpaper.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
@@ -394,6 +398,10 @@ img{
     background-blend-mode: overlay;
     padding: 4% 0;
 }
+.podcast_4,.podcast_5{
+    box-shadow:2px 2px 30px rgba(0, 0, 0, 0.2);
+    border:none!important;
+}
 .podcast .card_con{
     line-height: 20px;
 }
@@ -403,10 +411,13 @@ img{
 }
 .podcast .card_con p:first-child{
     font-size: 0.8rem;
+    font-weight:600;
 }
 .podcast .card_con .clearfix span:first-child{
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 550;
+    font-family: Tahoma, sans-serif;
+    width:54%;
 }
 .podcast .card{
     width: 100%;
@@ -418,13 +429,19 @@ img{
 }
 .pod_cont{
     padding: 0 10%;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 .b_quick .card{
     width: 250px;
     margin-top: 10%;
     border: none!important;
     border-radius: 10px;
+}
+.b_quick button{
+    border-radius: 8px!important;
+}
+.b_quick .explore_q button{
+    border-radius: 5px!important;
 }
 .b_quick .card .card-header{
     border: none!important;
@@ -444,19 +461,19 @@ img{
     border-radius: 10px;
 }
 .bq-card1,.bq-card4{
-    box-shadow: 1px 5px 30px rgb(245, 218, 167);
+    box-shadow: 0px 10px 40px rgba(255,165,0,0.2);
 }
 .bq-card2{
-    box-shadow: 1px 5px 30px rgb(195, 195, 241);
+    box-shadow: 0px 10px 40px rgba(0,0,255,0.1);
 }
 .bq-card3{
-    box-shadow: 1px 5px 30px rgb(236, 187, 187);
+    box-shadow: 0px 10px 40px rgba(255,0,0,0.1);
 }
 .bq-card5,.bq-card6,.bq-card7{
-    box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.1);
 }
 .bq-card8{
-    box-shadow: 1px 5px 30px rgb(235, 175, 235);
+    box-shadow: 0px 10px 40px rgba(128,0,128,0.1);
 }
 .email{
     padding: 5% 14%;
