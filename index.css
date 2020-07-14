@@ -233,7 +233,7 @@ img{
     box-sizing: border-box;
 }
 .inspire .carousel-inner .item{
-    width:340px;
+    width:350px;
     height: 415px;
     border-radius: 10px;
     position: relative;
@@ -261,6 +261,8 @@ img{
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
+    width:79%;
+    margin: 0 auto;
 }
 .inspire .carousel-inner::-webkit-scrollbar {
     display: none;
@@ -273,7 +275,6 @@ img{
   }
 .inspire .item{
     margin-right:15px;
-    transform: translate(-150px);
 }
 .inspire .item img{
     mix-blend-mode: darken;
@@ -324,7 +325,7 @@ img{
     margin-top: 5%;
 }
 .podcast .carousel-indicators{
-    top: 450px;
+    top: 420px;
 }
 .podcast .carousel-indicators a{
     margin-right: 5px;
@@ -339,6 +340,9 @@ img{
     overflow-y: hidden;
     scroll-behavior: smooth;
     margin-top: -4%;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .podcast .carousel-inner::-webkit-scrollbar {
     display: none;
@@ -349,16 +353,9 @@ img{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
-.podcast .podcast_1,.podcast_2,.podcast_3{
-    
-    transform: translate(-160px);
-}
 .podcast_1,.podcast_2,.podcast_3{
     padding: 10px;
     margin-right: 15px;
-}
-#podcast_in1{
-    min-width: 1360px;
 }
 .podcast_1 .clearfix,.podcast_2 .clearfix,.podcast_3 .clearfix{
     margin-top: 18%;
@@ -384,7 +381,7 @@ img{
     margin-top: 12%;
 }
 .podcast_1,.podcast_2,.podcast_3{
-    width: 325px;
+    width: 345px;
     height: 250px;
 }
 .podcast_1,.podcast_2,.podcast_3{

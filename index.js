@@ -75,25 +75,6 @@ pod_links.forEach(function(link){
     }
 });
 
-var items = document.querySelectorAll('.item');
-var first_item = items[0];
-var last_item = items[items.length-1];
-var first_clone = first_item.cloneNode('true');
-var last_clone = last_item.cloneNode('true');
-console.log(first_clone,last_clone);
-var last_slide = document.querySelector('#demoe');
-var first_slide = document.querySelector('#demoa');
-last_slide.appendChild(first_clone);
-first_slide.prepend(last_clone);
-
-var podcast = document.querySelectorAll('.js_pod');
-var first_pod = podcast[0];
-var last_pod = podcast[podcast.length-1];
-var first_pod_clone = first_pod.cloneNode('true');
-var last_pod_clone = last_pod.cloneNode('true');
-var last_pod_slide = document.querySelector('#podcast_in5');
-var first_pod_slide = document.querySelector('#podcast_in1');
-first_pod_slide.prepend(last_pod_clone);
 
 // The function actually applying the offset
 function offsetAnchor() {
