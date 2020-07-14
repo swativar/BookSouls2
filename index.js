@@ -64,7 +64,7 @@ links.forEach(function(link){
 var pod_links = document.querySelectorAll('.js_pod_link');
 pod_links.forEach(function(link){
     link.onclick = function(e){
-        var length = links.length;
+        var length = pod_links.length;
         for (var i=0; i<length; i++){
             pod_links[i].children[0].classList.remove('active');
         }
@@ -93,6 +93,20 @@ var first_pod_clone = first_pod.cloneNode('true');
 var last_pod_clone = last_pod.cloneNode('true');
 var last_pod_slide = document.querySelector('#podcast_in5');
 var first_pod_slide = document.querySelector('#podcast_in1');
-last_pod_slide.appendChild(first_pod_clone);
 first_pod_slide.prepend(last_pod_clone);
+
+// The function actually applying the offset
+function offsetAnchor() {
+    if(location.hash.length !== 0) {
+        window.scrollTo(window.scrollX, window.scrollY - 100);
+    }
+}
+
+// This will capture hash changes while on the page
+window.addEventListener("hashchange", offsetAnchor);
+
+// This is here so that when you enter the page with a hash,
+// it can provide the offset in that case too. Having a timeout
+// seems necessary to allow the browser to jump to the anchor first.
+window.setTimeout(offsetAnchor, 1);
 
