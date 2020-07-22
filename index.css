@@ -218,8 +218,8 @@ header::after{
 .inspire{
     background:linear-gradient(
         to left,
-        rgba(0,0,0,0.9) 0%,
-        rgba(0,0,0,0.9) 63.6%,
+        #1C1E26  0%,
+        #1C1E26  63.6%,
         white 63.6%,
         white 100%
     );
@@ -330,7 +330,7 @@ header::after{
 .podcasts{
     margin: 5% 0;
     padding: 8% 10%;
-    background-color: rgba(0,0,0,0.9);
+    background-color: #1C1E26;
 
 }
 .podcasts .row{
@@ -465,8 +465,8 @@ header::after{
     padding-bottom: 2%;
     background: linear-gradient(
         to bottom,
-        rgba(0,0,0,0.9) 0%,
-        rgba(0,0,0,0.9) 60%,
+        #1C1E26  0%,
+        #1C1E26  60%,
         white 60%,
         white 100%
     );
