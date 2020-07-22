@@ -275,6 +275,7 @@ header::after{
     left: 15%;
     right: 15%;
     text-align: center;
+    font-family: 'Vision Regular', sans-serif;
 } 
 .inspire_item_content p{
     font-size: 1.1rem;
@@ -307,6 +308,7 @@ header::after{
 .subscribe_middle{
     background-color: rgba(0, 0, 0, 0.06);
     padding:40px 0;
+    font-family: 'Vision Regular', sans-serif;
 }
 .subscribe_left{
     line-height: 15px;
