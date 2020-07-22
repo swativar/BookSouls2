@@ -20,7 +20,7 @@ nav{
     color: #000!important;
     opacity: 1!important;
     margin-right: 10px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Vision', serif;
     font-weight: 600;
 }
 .dropdown-toggle::after{
@@ -379,6 +379,10 @@ header::after{
     transform: translate(-20%,-20%);
     
 }
+.podcast_card_content p:first-child{
+    font-family: 'Vision Regular';
+    font-size: 0.9rem;
+}
 .podcast_card_content p:last-child{
     padding: 7% 0;
     font-family: 'Montserrat', sans-serif;
@@ -456,6 +460,7 @@ header::after{
     line-height: 15px;
     width: 25%;
     text-align: left;
+    font-family: 'Vision Regular';
 }
 .quick_item_bottom .audio-icon::before{
     content: url('assets/icons/Headphones.svg');
@@ -542,7 +547,7 @@ header::after{
     font-family: 'Playfair Display', serif;
 }
 .pub_card_content + p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Vision Regular', sans-serif;
     font-size: 0.8rem;
     margin-top: 5%;
     color:#292929;
@@ -553,14 +558,15 @@ header::after{
 }
 .email{
     padding: 2% 14%;
+    font-family: 'Vision Regular', sans-serif;
 }
  .email p:first-child{
-   font-size:1.8rem;
+   font-size:2rem;
    font-weight: 500;
+   font-family:'Playfair Display', serif;
 }
-.email p:last-child{
-   font-size:1rem;
-   opacity: 0.7;
+.email p:nth-child(2){
+   font-size:1.3rem;
 }
 #usr{
    border:none;
@@ -585,6 +591,9 @@ header::after{
 .email .row{
    margin-right: 0px!important; 
     margin-left: 0px!important;
+}
+footer{
+    font-family: 'Vision Regular', sans-serif;
 }
 footer ul{
     list-style-type: none;
@@ -653,4 +662,16 @@ footer li a:hover{
 }
 .btn-outline-warning:hover{
     background-color: #FFDE00!important;
+}
+
+@font-face{
+    font-family: Vision;
+    src:url('assets/Vision/Vision-Light.ttf');
+}
+@font-face{
+    font-family: Vision Regular;
+    src:url('assets/Vision/Vision-Regular.ttf');
+}
+button{
+    font-family: 'Vision Regular'!important;
 }
