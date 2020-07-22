@@ -131,7 +131,7 @@ header::after{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    padding: 6px 0;
+    padding: 7px 0;
 }
 .article_carousel_item2 p::after{
     content: url('assets/icons/Heart.svg');
@@ -142,7 +142,7 @@ header::after{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    padding: 6px 0;
+    padding: 3px 0;
 }
 .article_carousel_item2{
     height: 250px;
