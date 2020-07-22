@@ -9,7 +9,7 @@ nav{
     margin-left: 8%;
 }
 .navbar-brand{
-    animation:brand 5s linear;
+    animation:brand 0.5s linear;
     position: relative;
 }
 @keyframes brand{
@@ -41,7 +41,7 @@ header::before{
     position: absolute;
     top: 30%;
     right: 34%;
-    animation: line 5s linear;
+    animation: line 0.5s linear;
 }
 @keyframes line{
     0% {right:0%;}
@@ -52,7 +52,7 @@ header::after{
     position: absolute;
     top: 30%;
     right: 10%;
-    animation: top 5s linear;
+    animation: top 0.5s linear;
 }
 @keyframes top{
     0% {top:0%}
@@ -60,7 +60,7 @@ header::after{
 }
 .header_content{
     margin: 10% 0 0 10%;
-    animation: header-content 5s linear;
+    animation: header-content 0.5s linear;
     position: relative;
 }
 @keyframes header-content{
@@ -352,7 +352,7 @@ header::after{
     width: 400px;
     height: 240px;
     padding: 3% 5%;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
     
 }
 .podcast_1::after{
@@ -364,8 +364,8 @@ header::after{
 .podcast_1::before{
     content: url('assets/icons/Heart.svg');
     position: absolute;
-    left: 380px;
-    top:-4px;
+    left: 370px;
+    top:0;
     background-color: #fff;
     width: 35px;
     height: 35px;
@@ -620,7 +620,7 @@ footer li a:hover{
 .footer_p{
     font-size: 0.9rem;
     position: relative;
-    left: -27px;
+    left: -18px;
     margin-bottom: 0px!important;
 }
 .footer_p span{
@@ -634,6 +634,7 @@ footer li a:hover{
 }
 .footer_last p{
     margin-bottom: 0px!important;
+    font-size: 0.9rem;
 }
 
 .text-warn{

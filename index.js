@@ -1,26 +1,13 @@
-$(document).ready(function () {
-    $("#article").carousel({
-        interval: false
-    });
-    $("#quick").carousel({
-        interval: false
-    });
-    $("#publisher").carousel({
-        interval: false
-    });
-
-})
-
 var color = window.getComputedStyle(
 	document.querySelector('header'), ':before'
 ).getPropertyValue('right');
 console.log(color);
 
-header = document.querySelector('header');
+var header_explore = document.querySelector('#header_explore');
 
-function scroll(){
+header_explore.onclick = function scroll(){
     var article = document.querySelector('#scroll_article')
-    var top = article.getBoundingClientRect().top;
+    var top = article.getBoundingClientRect().top-50;
     window.scrollBy(0,top);
     /*$('body,html').animate({
         scrollTop: top
@@ -28,6 +15,4 @@ function scroll(){
     
       );*/
 }
-
-setTimeout(scroll,7000);
 
