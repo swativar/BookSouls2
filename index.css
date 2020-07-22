@@ -83,8 +83,8 @@ header::after{
 .articles{
     background:linear-gradient(
         to right,
-        rgb(238, 222, 191) 0%,
-        rgb(238, 222, 191) 62%,
+        #FFF8CA  0%,
+        #FFF8CA  62%,
         white 62%,
         white 100%
     );
@@ -394,8 +394,7 @@ header::after{
     content: '\201CQuick';
     position: absolute;
     font-size: 25rem;
-    color: red;
-    opacity: 0.1;
+    color: #FFF8CA;
     font-family: 'Playfair Display';
     font-weight: 600;
     margin-left: 4%;
@@ -420,6 +419,9 @@ header::after{
 .booksouls_quick .card .card-header{
     border: none!important;
     border-radius: 0 0 10px 10px;
+}
+.booksouls_quick .card-header > p{
+    color:#292929;
 }
 .booksouls_quick .card .card-header::before{
     content: url('assets/icons/Heart.svg');
@@ -535,7 +537,7 @@ header::after{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     margin-top: 5%;
-
+    color:#292929;
 }
 .hr{
     width:65%;
