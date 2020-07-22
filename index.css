@@ -178,8 +178,8 @@ header::after{
 .carousel-indicators li {
     width: 12px!important;
     height: 12px!important;
-    border: 2px solid #ffc107;
-    background-color: #ffc107!important;
+    border: 2px solid #FFDE00 ;
+    background-color: #FFDE00 !important;
     border-radius: 50%!important;
     cursor: pointer;
 }
@@ -626,4 +626,22 @@ footer li a:hover{
 }
 .footer_last p{
     margin-bottom: 0px!important;
+}
+
+.text-warn{
+    color:#FFDE00!important; 
+}
+.btn-warning{
+    background-color: #FFDE00!important;
+    border-color: #FFDE00!important;
+}
+.btn-warning:hover{
+    background-color: #ffc107!important;
+    border-color: #ffc107!important;
+}
+.btn-outline-warning{
+    border-color: #FFDE00!important;
+}
+.btn-outline-warning:hover{
+    background-color: #FFDE00!important;
 }
