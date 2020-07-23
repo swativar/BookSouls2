@@ -19,60 +19,63 @@
 </head>
 
 <body>
+    <!--Loader until page loads-->
+    <div id="loader" class="center"></div>
     <!--Header-->
     <header>
         <!--Navbar-->
-
         <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container">
-                <!-- Brand -->
-                <a class="navbar-brand" href="#"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
 
 
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Articles</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Insipre Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Podcast</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Quick</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Publisher</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <a href="" class="search-icon"><img src="assets/icons/Search.svg" alt=""></a>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Insipre Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Podcast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quick</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Publisher</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
+            <a href="" class="search-icon"><img src="assets/icons/Search.svg" alt=""></a>
         </nav>
-        <div class="w-25 header_content">
+        <div class="header_illustration">
+            <img src="assets/Header-Illustration-1.svg" alt="">
+            <img src="assets/Header-Illustration-2.svg" alt="">
+        </div>
+        <div class="header_content">
             <h2>Read, listen and explore</h2>
             <p class="mt-4">Feed your inner mind with the contents which you like the most. You'll find articles,
                 inspirational
                 stories, podcasts, quick and stuff from our Booksouls publishers.</p>
             <div class="clearfix mt-5 pr-4">
-                <span class="float-left"><button class="btn btn-warning px-5">Log In</button></span>
-                <span class="float-right"><button class="btn btn-outline-warning px-5"
+                <span class="float-left"><button class="btn btn-warning" id="header_login">Log In</button></span>
+                <span class="float-right"><button class="btn btn-outline-warning"
                         id="header_explore">Explore</button></span>
             </div>
         </div>

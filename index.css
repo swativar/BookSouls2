@@ -1,3 +1,25 @@
+#loader { 
+    border: 12px solid #f3f3f3; 
+    border-radius: 50%; 
+    border-top: 12px solid #FFDE00; 
+    width: 70px; 
+    height: 70px; 
+    animation: spin 1s linear infinite; 
+} 
+  
+@keyframes spin { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+} 
+.center { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+}
 body,html{
     height: 100%;
     scroll-behavior: smooth;
@@ -5,12 +27,18 @@ body,html{
 nav{
     background-color: transparent!important;
 }
+.navbar{
+    margin: 0 165px;
+}
 .search-icon{
     margin-left: 8%;
 }
 .navbar-brand{
     animation:brand 0.5s linear;
     position: relative;
+}
+.nav-wrapper{
+    margin: 0 165px;
 }
 @keyframes brand{
     0% {left:-250px;}
@@ -36,32 +64,35 @@ header{
     background-size: contain;
     background-repeat: no-repeat;
 }
-header::before{
-    content: url('assets/Header-Illustration-1.svg');
+.header_illustration img:first-child{
     position: absolute;
     top: 30%;
-    right: 34%;
+    right: 36%;
     animation: line 0.5s linear;
 }
 @keyframes line{
     0% {right:0%;}
     100% {right:34%}
 }
-header::after{
-    content: url('assets/Header-Illustration-2.svg');
+.header_illustration img:last-child{
     position: absolute;
     top: 30%;
-    right: 10%;
+    right: 165px;
     animation: top 0.5s linear;
 }
 @keyframes top{
     0% {top:0%}
     100% {top:30%}
 }
+#header_login,#header_explore{
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+}
 .header_content{
-    margin: 10% 0 0 10%;
+    margin: 130px 0 0 165px;
     animation: header-content 0.5s linear;
     position: relative;
+    width: 23%;
 }
 @keyframes header-content{
     0% {left:-200px}
@@ -77,7 +108,7 @@ header::after{
     font-size: 2.5rem;
 }
 .header_content p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
 }
 .articles{
