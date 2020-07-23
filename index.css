@@ -350,6 +350,8 @@ header{
     background-color: rgba(0, 0, 0, 0.06);
     padding:40px 0;
     font-family: 'Vision Regular', sans-serif;
+    margin-left: 165px;
+    margin-right: 165px;
 }
 .subscribe_left{
     line-height: 15px;
@@ -506,7 +508,7 @@ header{
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  margin-top: 4%;
+  margin-top: 10%;
   line-height:12px;
 }
 .booksouls_quick .card img{
@@ -673,7 +675,9 @@ footer li a:hover{
     color:black;
 }
 .footer{
-    padding: 5% 10% 1% 10%;
+    padding: 5% 0 1% 0;
+    margin-left: 165px;
+    margin-right: 165px;
 }
 /*footer{
     background: url(images/footer_bg2.png),linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75));
