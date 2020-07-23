@@ -13,7 +13,7 @@
     } 
 } 
 .center { 
-    position: absolute; 
+    position: fixed; 
     top: 0; 
     bottom: 0; 
     left: 0; 
@@ -122,10 +122,15 @@ header{
     margin-top: 5%;
     padding: 4% 0;
 }
+.article-wrapper{
+    margin-left: 165px;
+    margin-right: 165px;
+}
 .article_carousel_item1 p{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 0.95rem;
+    font-size: 0.75rem;
+    padding-top: 3%;
 }
 .article_carousel_item2 p{
     font-family: 'Playfair Display', serif;
@@ -133,12 +138,13 @@ header{
     font-size: 1.2rem;
 }
 .article_carousel_item1 .card{
+    width: 260px;
     height: 190px;
     border: none!important;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 }
 .article_carousel_item1 .card-header{
-    padding: 2.3rem 0.2rem!important;
+    padding: 2.3rem 0.5rem!important;
     border: none!important;
 }
 .article_carousel_item2{
@@ -258,11 +264,15 @@ header{
     background:linear-gradient(
         to left,
         #1C1E26  0%,
-        #1C1E26  63.6%,
-        white 63.6%,
+        #1C1E26  62%,
+        white 62%,
         white 100%
     );
     margin-top: 7%;
+}
+.inspire-wrapper{
+    margin-left: 165px;
+    margin-right: 165px;
 }
 .inspire_item{
     width:220px;
@@ -287,7 +297,7 @@ header{
     border-radius: 50%;
 }
 .inspire_item_row{
-    padding: 2% 6.5%;
+    padding: 2% 3%;
 }
 .inspire_item_row > div:first-child{
     margin-top: 10%;
@@ -370,9 +380,12 @@ header{
 }
 .podcasts{
     margin: 5% 0;
-    padding: 8% 10%;
+    padding: 8% 0;
     background-color: #1C1E26;
-
+}
+.podcast-wrapper{
+    margin-left: 165px;
+    margin-right: 165px;
 }
 .podcasts .row{
     align-items: center;
@@ -383,16 +396,14 @@ header{
     background-blend-mode: overlay;
     background-size: cover;
     width: 400px;
-    height: 240px;
+    height: 250px;
     padding: 3% 5%;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
-    
 }
 .podcast_1::after{
     content: url('assets/icons/Play-Button-Podcast.svg');
     position: absolute;
     bottom:8px;
-    
 }
 .podcast_1::before{
     content: url('assets/icons/Heart.svg');
@@ -409,8 +420,7 @@ header{
 .podcasts::before{
     content: url('assets/Circular-pattern-in-Podcast-BG.svg');
     position: absolute;
-    transform: translate(-20%,-20%);
-    
+    transform: translate(4%,-20%);
 }
 .podcast_card_content p:first-child{
     font-family: 'Vision Regular';
@@ -423,7 +433,7 @@ header{
     font-weight: 600;
 } 
 .podcasts_right{
-    width: 75%;
+    width: 80%;
 }
 .podcasts_right h2{
     font-family: 'Playfair Display', serif;
@@ -444,6 +454,10 @@ header{
     font-weight: 600;
     margin-left: 4%;
 }
+.quick-wrapper{
+    margin-left: 165px;
+    margin-right: 165px;
+}
 .booksouls_quick h2{
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
@@ -452,12 +466,11 @@ header{
 .quick_left{
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 15%;
+    margin-top: 10%;
     color: #000;
 }
 .booksouls_quick .card{
-    width: 250px;
-    margin-top: 10%;
+    width: 220px;
     border: none!important;
     border-radius: 10px;
 }
@@ -465,14 +478,23 @@ header{
     border: none!important;
     border-radius: 0 0 10px 10px;
 }
+#quick {
+    padding: 0 4%;
+}
+.bq-card2{
+    margin-top: 15%;
+}
 .booksouls_quick .card-header > p{
     color:#292929;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 .booksouls_quick .card .card-header::before{
     content: url('assets/icons/Heart.svg');
     position: absolute;
-    right: 15px;
-    top: 0;
+    right: 25px;
+    top: 2px;
     background-color: #fff;
     width: 30px;
     height: 30px;
@@ -481,26 +503,29 @@ header{
     border-radius: 50%;
 }
 .booksouls_quick .card h3{
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 3%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 4%;
+  line-height:12px;
 }
 .booksouls_quick .card img{
     border-radius: 10px;
 }
 .quick_item_bottom span:last-child{
-    font-size: 0.8rem;
-    line-height: 15px;
+    font-size: 0.7rem;
+    line-height: 12px;
     width: 25%;
     text-align: left;
     font-family: 'Vision Regular';
+}
+.quick_item_bottom span:first-child button{
+    font-size: 0.7rem;
 }
 .quick_item_bottom .audio-icon::before{
     content: url('assets/icons/Headphones.svg');
     display: inline-block;
     margin-left: 15%;
-    margin-top: 2%;
-    
 }
 .booksouls_quick .carousel-indicators{
     top:105%;
@@ -512,10 +537,14 @@ header{
     background: linear-gradient(
         to bottom,
         #1C1E26  0%,
-        #1C1E26  60%,
-        white 60%,
+        #1C1E26  47%,
+        white 47%,
         white 100%
     );
+}
+.publisher-wrapper{
+    margin-left: 165px;
+    margin-right: 165px;
 }
 .publishers_header h2{
     font-size: 4rem;
@@ -563,7 +592,7 @@ header{
     height: 200px;
 }
 .publishers .row{
-    padding: 0 5%;
+    padding: 0 3%;
     height: 400px;
     align-items: center;
 }

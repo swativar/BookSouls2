@@ -82,7 +82,7 @@
     </header>
     <!--Articles-->
     <div class="articles" id="scroll_article">
-        <div class="container">
+        <div class="article-wrapper">
             <div class="row text-center">
                 <div class="col-sm-12 col-lg-6">
                     <div id="article" class="carousel slide" data-ride="carousel">
@@ -183,7 +183,7 @@
 
     <!--Inspire Me-->
     <div class="inspire">
-        <div class="container">
+        <div class="inspire-wrapper">
             <div class="row">
                 <div class="col-sm-12 col-lg-6 inspire_left">
                     <div class="text-center mt-5">
@@ -253,6 +253,7 @@
     </div>
     <!--Podcasts-->
     <div class="podcasts">
+        <div class="podcast-wrapper">
         <div class="row">
             <div class="col-sm-12 col-lg-6">
                 <div id="podcast" class="carousel slide" data-ride="carousel">
@@ -293,12 +294,13 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
 
     <!--Booksouls quick-->
     <div class="booksouls_quick">
-        <div class="container">
-            <h2 class="text-center">Booksouls<span class="text-warn"> Quick</span></h2>
+        <div class="quick-wrapper">
+            <h2 class="text-center mb-5">Booksouls<span class="text-warn"> Quick</span></h2>
             <div class="row">
                 <div class="col-sm-12 col-md-6 quick_left text-center">
                     <p>Running out of time? We got your back. Read quicks of books which you love. Over 1000 collection
@@ -320,10 +322,10 @@
                                     <div class="card bq-card1 text-center">
                                         <div class="card-header">
                                             <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                alt="" width="200" height="300">
+                                                alt="" width="160" height="250">
                                             <h3>The Alchemist</h3>
                                             <p>Paulo Coelho</p>
-                                            <div class="clearfix mt-4 quick_item_bottom">
+                                            <div class="clearfix mt-3 quick_item_bottom">
                                                 <span class="float-left"><button class="btn btn-warning btn-sm">Read
                                                         Now</button></span>
                                                 <span class="audio-icon"></span>
@@ -331,45 +333,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card bq-card1 text-center">
+                                    <div class="card bq-card2 text-center">
                                         <div class="card-header">
                                             <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                alt="" width="200" height="300">
+                                                alt="" width="160" height="250">
                                             <h3>The Alchemist</h3>
                                             <p>Paulo Coelho</p>
-                                            <div class="clearfix mt-4 quick_item_bottom">
-                                                <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                                        Now</button></span>
-                                                <span class="audio-icon"></span>
-                                                <span class="float-right">Audio available</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-between">
-                                    <div class="card bq-card1 text-center">
-                                        <div class="card-header">
-                                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                alt="" width="200" height="300">
-                                            <h3>The Alchemist</h3>
-                                            <p>Paulo Coelho</p>
-                                            <div class="clearfix mt-4 quick_item_bottom">
-                                                <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                                        Now</button></span>
-                                                <span class="audio-icon"></span>
-                                                <span class="float-right">Audio available</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card bq-card1 text-center">
-                                        <div class="card-header">
-                                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                alt="" width="200" height="300">
-                                            <h3>The Alchemist</h3>
-                                            <p>Paulo Coelho</p>
-                                            <div class="clearfix mt-4 quick_item_bottom">
+                                            <div class="clearfix mt-3 quick_item_bottom">
                                                 <span class="float-left"><button class="btn btn-warning btn-sm">Read
                                                         Now</button></span>
                                                 <span class="audio-icon"></span>
@@ -384,10 +354,10 @@
                                     <div class="card bq-card1 text-center">
                                         <div class="card-header">
                                             <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                alt="" width="200" height="300">
+                                                alt="" width="160" height="250">
                                             <h3>The Alchemist</h3>
                                             <p>Paulo Coelho</p>
-                                            <div class="clearfix mt-4 quick_item_bottom">
+                                            <div class="clearfix mt-3 quick_item_bottom">
                                                 <span class="float-left"><button class="btn btn-warning btn-sm">Read
                                                         Now</button></span>
                                                 <span class="audio-icon"></span>
@@ -395,13 +365,45 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="card bq-card2 text-center">
+                                        <div class="card-header">
+                                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
+                                                alt="" width="160" height="250">
+                                            <h3>The Alchemist</h3>
+                                            <p>Paulo Coelho</p>
+                                            <div class="clearfix mt-3 quick_item_bottom">
+                                                <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                                        Now</button></span>
+                                                <span class="audio-icon"></span>
+                                                <span class="float-right">Audio available</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-between">
                                     <div class="card bq-card1 text-center">
                                         <div class="card-header">
                                             <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                alt="" width="200" height="300">
+                                                alt="" width="160" height="250">
                                             <h3>The Alchemist</h3>
                                             <p>Paulo Coelho</p>
-                                            <div class="clearfix mt-4 quick_item_bottom">
+                                            <div class="clearfix mt-3 quick_item_bottom">
+                                                <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                                        Now</button></span>
+                                                <span class="audio-icon"></span>
+                                                <span class="float-right">Audio available</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bq-card2 text-center">
+                                        <div class="card-header">
+                                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
+                                                alt="" width="160" height="250">
+                                            <h3>The Alchemist</h3>
+                                            <p>Paulo Coelho</p>
+                                            <div class="clearfix mt-3 quick_item_bottom">
                                                 <span class="float-left"><button class="btn btn-warning btn-sm">Read
                                                         Now</button></span>
                                                 <span class="audio-icon"></span>
@@ -419,7 +421,7 @@
     </div>
 
     <div class="publishers">
-        <div class="container">
+        <div class="publisher-wrapper">
             <div class="publishers_header text-center">
                 <h2 class="text-light">Booksouls <span class="text-warn">Publishers</span></h2>
                 <p class="text-light mt-4">Read original contents & editorials from the famous authors</p>
@@ -502,7 +504,7 @@
                                                 races to
                                                 find
                                                 answers and...</a>
-                                            <p>by MOHAMMAD SAHIL</p>
+                                            <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
                                 </div>
@@ -519,7 +521,7 @@
                                                 races to
                                                 find
                                                 answers and...</a>
-                                            <p>by MOHAMMAD SAHIL</p>
+                                            <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
                                 </div>
@@ -536,7 +538,7 @@
                                                 races to
                                                 find
                                                 answers and...</a>
-                                            <p>by MOHAMMAD SAHIL</p>
+                                            <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
                                 </div>
@@ -557,7 +559,7 @@
                                                 races to
                                                 find
                                                 answers and...</a>
-                                            <p>by MOHAMMAD SAHIL</p>
+                                            <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
                                 </div>
@@ -574,7 +576,7 @@
                                                 races to
                                                 find
                                                 answers and...</a>
-                                            <p>by MOHAMMAD SAHIL</p>
+                                            <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
                                 </div>
@@ -591,7 +593,7 @@
                                                 races to
                                                 find
                                                 answers and...</a>
-                                            <p>by MOHAMMAD SAHIL</p>
+                                            <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
                                 </div>
