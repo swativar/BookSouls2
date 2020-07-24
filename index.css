@@ -4,14 +4,28 @@
     border-top: 12px solid #FFDE00; 
     width: 70px; 
     height: 70px; 
-    animation: spin 1s linear infinite; 
+    animation: spin 1s linear infinite;
 } 
   
-@keyframes spin { 
+/*@keyframes spin { 
     100% { 
         transform: rotate(360deg); 
     } 
-} 
+}*/
+@keyframes spin{
+    0% {
+        border-top-color: #FFDE00;
+       
+    }
+    50%{
+        border-top-color: #fda502;
+        
+    }
+    100% {
+        border-top-color: #FFDE00;
+        transform: rotate(360deg);
+    }
+}
 .center { 
     position: fixed; 
     top: 0; 
@@ -34,11 +48,8 @@ nav{
     margin-left: 8%;
 }
 .navbar-brand{
-    animation:brand 0.5s linear;
+    animation:brand 0.2s linear;
     position: relative;
-}
-.nav-wrapper{
-    margin: 0 165px;
 }
 @keyframes brand{
     0% {left:-250px;}
@@ -48,8 +59,8 @@ nav{
     color: #000!important;
     opacity: 1!important;
     margin-right: 10px;
-    font-family: 'Vision', serif;
-    font-weight: 600;
+    font-family: 'Vision Regular', serif;
+    font-size: 16px!important;
 }
 .dropdown-toggle::after{
     content: url('assets/icons/Dropdown-icon.svg')!important;
@@ -68,7 +79,7 @@ header{
     position: absolute;
     top: 30%;
     right: 36%;
-    animation: line 0.5s linear;
+    animation: line 0.2s linear;
 }
 @keyframes line{
     0% {right:0%;}
@@ -78,25 +89,29 @@ header{
     position: absolute;
     top: 30%;
     right: 165px;
-    animation: top 0.5s linear;
+    animation: top 0.2s linear;
 }
 @keyframes top{
     0% {top:0%}
     100% {top:30%}
 }
 #header_login,#header_explore{
-    padding-left: 2.7rem;
-    padding-right: 2.7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 15px;
 }
 .header_content{
     margin: 130px 0 0 165px;
-    animation: header-content 0.5s linear;
+    animation: header-content 0.2s linear;
     position: relative;
-    width: 23%;
+    width: 25%;
 }
 @keyframes header-content{
     0% {left:-200px}
     100% {left:0px}
+}
+.header_content > div{
+    padding-right: 2rem;
 }
 .header_content div span:last-child button{
     color:black!important;
@@ -105,10 +120,11 @@ header{
 .header_content h2{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 46px;
 }
 .header_content p{
-    font-size: 1rem;
+    font-size: 18px;
+    line-height: 26px;
     font-family: 'Montserrat', sans-serif;
 }
 .articles{
@@ -129,17 +145,18 @@ header{
 .article_carousel_item1 p{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 0.75rem;
-    padding-top: 3%;
+    font-size: 14px;
+    line-height: 31px;
+    position: relative;
+    top:-10px;
 }
 .article_carousel_item2 p{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 19px;
 }
 .article_carousel_item1 .card{
-    width: 260px;
-    height: 190px;
+    height: 200px;
     border: none!important;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 }
@@ -155,19 +172,19 @@ header{
     padding: 4.5rem 1.25rem!important;
     border: none!important;
 }
-.article_carousel_item1 div:first-child > div{
+.article_carousel_item1 div:first-child .card-header{
     background: url(https://wallup.net/wp-content/uploads/2019/05/10/338365-mountains-landscapes-nature-lone-tree-natural-scenery-pure-blue-748x421.jpg),linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
 }
-.article_carousel_item1 div:last-child > div{
+.article_carousel_item1 div:last-child .card-header{
     background: url(https://i.pinimg.com/originals/1d/cc/8c/1dcc8c7b417d81904cd6aaf1bab1b80b.jpg),linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
 }
-.article_carousel_item1 p::after{
+/*.article_carousel_item1 p::after{
     content: url('assets/icons/Heart.svg');
     position: absolute;
     bottom: 10%;
@@ -176,9 +193,29 @@ header{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    padding: 7px 0;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}*/
+.heart-icon{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    z-index: 1;
 }
-.article_carousel_item2 p::after{
+.heart-icon-article{
+    bottom: 10%;
+    right: 7%;
+}
+.heart-icon-article2{
+    right: 3.5%;
+    bottom: 7%;
+}
+/*.article_carousel_item2 p::after{
     content: url('assets/icons/Heart.svg');
     position: absolute;
     right: 3.5%;
@@ -187,12 +224,14 @@ header{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    padding: 3px 0;
-}
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}*/
 .article_carousel_item2{
     height: 250px;
 }
-.article_carousel_item2 div{
+.article_carousel_item2 .card-header{
     background: url(https://wallpaperstock.net/mountains-scenic--aqua-lake-wallpapers_48068_1920x1200.jpg),linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
     background-size: cover;
     background-position: center;
@@ -244,22 +283,20 @@ header{
     top: -23%;
     left: 0;
 }
-.articles_right{
-    width: 90%;
-}
 .articles_right h2{
     font-family: 'Playfair Display', serif;
-    font-size: 5rem;
-    font-weight: 530;
+    font-size: 76px;
+    font-weight: 600;
 }
 .articles_right p{
-    font-size: 2rem;
+    font-size: 34px;
     font-family: 'Montserrat', sans-serif;
     margin-top: 15%;
+    letter-spacing: 1.5%;
 }
-/*.articles p{
-    font-family: Montserrat;
-}*/
+.articles_right button{
+    font-size: 18px;
+}
 .inspire{
     background:linear-gradient(
         to left,
@@ -275,8 +312,8 @@ header{
     margin-right: 165px;
 }
 .inspire_item{
-    width:220px;
-    height: 250px;
+    width:240px;
+    height: 280px;
     border-radius: 10px;
     position: relative;
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.95));
@@ -292,12 +329,13 @@ header{
     background-color: #fff;
     width: 30px;
     height: 30px;
-    padding: 7px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
     border-radius: 50%;
 }
 .inspire_item_row{
-    padding: 2% 3%;
+    padding: 2% 0;
 }
 .inspire_item_row > div:first-child{
     margin-top: 10%;
@@ -313,14 +351,16 @@ header{
 .inspire_item_content {
     position: absolute; 
     top:77%;
-    left: 15%;
-    right: 15%;
+    left: 5%;
+    right: 5%;
     text-align: center;
-    font-family: 'Vision Regular', sans-serif;
+    font-family: 'Vision Heavy', sans-serif;
+    
 } 
 .inspire_item_content p{
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 18px;
+    font-size: 24px;
+    line-height: 32px;
 }
 .inspire_item_row::before{
     content: url('assets/Quotes.svg');
@@ -331,15 +371,16 @@ header{
 }
 .inspire_left h2{
     font-family: 'Playfair Display', serif;
-    font-size: 4.5rem;
+    font-size: 76px;
     font-weight: 600;
 }
 .inspire_left p{
-    font-size: 2rem;
+    font-size: 34px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     margin-top: 15%;
     color: #fff;
+    letter-spacing: 1.5%;
     mix-blend-mode: difference;
 }
 .inspire_left p:after{
@@ -348,37 +389,38 @@ header{
 }
 .subscribe_middle{
     background-color: rgba(0, 0, 0, 0.06);
-    padding:40px 0;
-    font-family: 'Vision Regular', sans-serif;
     margin-left: 165px;
     margin-right: 165px;
-}
-.subscribe_left{
-    line-height: 15px;
-    padding-left: 4%;
-    width: 100%;
+    align-content: center;
+    align-items: center;
+    padding: 40px 40px 20px 40px;
 }
 .subscribe_left p:first-child{
-    font-size:1.5rem;
-    font-weight:500;
+    font-size:26px;
+    line-height: 20px;
+    font-family: 'Vision Regular', sans-serif;
 }
 .subscribe_left p:last-child{
-    font-size: 0.9rem;
-}
-.subscribe_button{
-    width: 40%;
+    font-size: 16px;
+    font-family: 'Vision', sans-serif;
+    line-height: 24px;
 }
 .subscribe_button button{
     padding: 6% 20%!important;
+    font-size: 18px;
 }
 .subscribe_middle .form-group{
     margin-bottom: 0!important;
-    width: 100%;
 }
 #email1{
-    width: 97%;
+    width: 350px;
     border:none;
-    padding:3% 5%;
+    padding:3.5% 5%;
+    margin-left: 20px;
+}
+#email1::place-holder{
+    font-size: 17px;
+    font-family: 'Vision';
 }
 .podcasts{
     margin: 5% 0;
@@ -397,8 +439,8 @@ header{
     background-image: url(https://i.pinimg.com/originals/fd/8b/41/fd8b416abd6a9bb567bdacab4952582a.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-blend-mode: overlay;
     background-size: cover;
-    width: 400px;
-    height: 250px;
+    width: 390px;
+    height: 280px;
     padding: 3% 5%;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
 }
@@ -410,42 +452,43 @@ header{
 .podcast_1::before{
     content: url('assets/icons/Heart.svg');
     position: absolute;
-    left: 370px;
+    left: 363px;
     top:0;
     background-color: #fff;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    text-align: center;
-    padding:10px 0;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
 }
 .podcasts::before{
     content: url('assets/Circular-pattern-in-Podcast-BG.svg');
     position: absolute;
-    transform: translate(4%,-20%);
+    transform: translate(3%,-17%);
 }
 .podcast_card_content p:first-child{
     font-family: 'Vision Regular';
-    font-size: 0.9rem;
+    font-size: 15px;
 }
 .podcast_card_content p:last-child{
-    padding: 7% 0;
+    padding: 20% 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 28px;
+    line-height: 25px;
     font-weight: 600;
 } 
-.podcasts_right{
-    width: 80%;
-}
 .podcasts_right h2{
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+    font-size: 76px;
     font-weight: 600;
 }
 .podcasts_right p{
-    font-size: 2rem;
+    font-size: 34px;
     font-family: 'Montserrat', sans-serif;
     margin-top: 15%;
+    font-weight: 400;
+    letter-spacing: 1.5%;
 }
 .booksouls_quick::before{
     content: '\201CQuick';
@@ -462,26 +505,28 @@ header{
 }
 .booksouls_quick h2{
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+    font-size: 76px;
     font-weight: 600;
 }
-.quick_left{
-    font-size: 2rem;
+.quick_left p{
+    font-size: 34px;
     font-family: 'Montserrat', sans-serif;
     margin-top: 10%;
-    color: #000;
+    color: #042330;
+    letter-spacing: 1.5%;
+}
+.quick_left button{
+    font-size: 18px;
 }
 .booksouls_quick .card{
-    width: 220px;
+    width: 240px;
     border: none!important;
     border-radius: 10px;
 }
 .booksouls_quick .card .card-header{
     border: none!important;
     border-radius: 0 0 10px 10px;
-}
-#quick {
-    padding: 0 4%;
+    padding: 1.25rem 0.46rem!important;
 }
 .bq-card2{
     margin-top: 15%;
@@ -489,40 +534,45 @@ header{
 .booksouls_quick .card-header > p{
     color:#292929;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 500;
 }
 .booksouls_quick .card .card-header::before{
     content: url('assets/icons/Heart.svg');
     position: absolute;
     right: 25px;
-    top: 2px;
+    top: 15px;
     background-color: #fff;
     width: 30px;
     height: 30px;
-    padding: 7px 0;
-    text-align: center;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
     border-radius: 50%;
 }
 .booksouls_quick .card h3{
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 600;
-  margin-top: 10%;
-  line-height:12px;
+  margin-top: 5%;
+  line-height:25px;
 }
 .booksouls_quick .card img{
     border-radius: 10px;
 }
+.quick_item_bottom{
+    padding: 0 1.20rem;
+}
 .quick_item_bottom span:last-child{
-    font-size: 0.7rem;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 14px;
     width: 25%;
     text-align: left;
     font-family: 'Vision Regular';
 }
 .quick_item_bottom span:first-child button{
-    font-size: 0.7rem;
+    font-size: 13px;
 }
 .quick_item_bottom .audio-icon::before{
     content: url('assets/icons/Headphones.svg');
@@ -549,12 +599,13 @@ header{
     margin-right: 165px;
 }
 .publishers_header h2{
-    font-size: 4rem;
+    font-size: 76px;
     font-family: 'Playfair Display', serif;
     font-weight: 600;
 }
 .publishers_header p{
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 .publishers .carousel-indicators{
     top:108%;
@@ -581,21 +632,22 @@ header{
 .publishers .card-header::after{
     content: url('assets/icons/Heart.svg');
     position: absolute;
-    bottom: 39%;
+    bottom: 41%;
     right: 6%;
     background-color: #fff;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    padding:10px 0;
-    text-align: center;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
 }
 .publishers .card img{
     height: 200px;
 }
 .publishers .row{
     padding: 0 3%;
-    height: 400px;
+    height: 450px;
     align-items: center;
 }
 .publishers .card-header{
@@ -609,10 +661,12 @@ header{
 .pub_card_content{
     color:black;
     font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    line-height: 31px;
 }
 .pub_card_content + p{
     font-family: 'Vision Regular', sans-serif;
-    font-size: 0.8rem;
+    font-size: 14px;
     margin-top: 5%;
     color:#292929;
 }
@@ -621,87 +675,114 @@ header{
     border: 1px solid rgba(0,0,0,0.2);
 }
 .email{
-    padding: 2% 14%;
-    font-family: 'Vision Regular', sans-serif;
+    padding: 2% 0;
+    margin-left: 165px;
+    margin-right: 165px;
 }
  .email p:first-child{
-   font-size:2rem;
+   font-size:36px;
    font-weight: 500;
    font-family:'Playfair Display', serif;
+   letter-spacing: 2%;
 }
 .email p:nth-child(2){
    font-size:1.3rem;
+   font-family: 'Vision Regular', sans-serif;
 }
 #usr{
    border:none;
-   padding:2.5% 0;
+   padding:0.9rem 0;
    border-radius: 5px;
    padding-left: 10%;
-   width: 100%;
-   margin: 0 auto;
    background-color: rgba(0, 0, 0, 0.06);
-   width: 600px;
+   width: 650px;
 }
-#usr:focus{
-   background-color: lightyellow;
-   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+#usr::place-holder{
+    font-size: 19px;
+    font-family: 'Vision', sans-serif;
 }
-.email .row div:last-child button{
-   font-size: 1.2rem;
-   font-weight: 500;
-   border-width: 2px;
-   border-radius: 10px;
+.footer_subscribe{
+    padding: 0 80px;
 }
-.email .row{
-   margin-right: 0px!important; 
-    margin-left: 0px!important;
+.email .sub_button button{
+   border-width: 2.5px!important;
+   border-radius: 7px;
+   padding: 0.65rem 2.5rem;
+   font-size: 19px;
+   font-family: 'Vision';
 }
 footer{
     font-family: 'Vision Regular', sans-serif;
 }
+.footer-logo img{
+    width: 190px;
+    height: 58px;
+}
+.footer-logo p{
+    font-size: 18px;
+    letter-spacing: 0.8%;
+}
+.footer-logo p span{
+    font-size: 18px;
+    font-family: 'Vision Heavy';
+}
 footer ul{
     list-style-type: none;
 }
-footer ul li:first-child{
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
 footer li a{
     text-decoration: none;
-    color:black;
+    color:#444444;
+}
+footer ul li{
+    margin-bottom: 5px;
+    font-size: 18px;
+    letter-spacing:0.8%;
+}
+footer ul li:first-child{
+    font-size: 20px;
+    letter-spacing:0.8%;
+    margin-bottom: 15px;
+}
+footer ul li:first-child a{
+    color:#042330
 }
 footer li a:hover{
-    color:black;
+    color:#444444;
 }
 .footer{
-    padding: 5% 0 1% 0;
+    padding: 5% 0 0 0;
     margin-left: 165px;
     margin-right: 165px;
 }
-/*footer{
-    background: url(images/footer_bg2.png),linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75));
+footer{
+    background: url(assets/footer_bg2.png),linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75));
     background-blend-mode: lighten;
-    width: 100%;
-    height: 100%;
-}*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 .footer-illustration img{
-    width: 200px;
+    width: 395px;
+    height: 225px;
+    position: relative;
+    top:40px;
+    left: -90px;
 }
 .footer_in{
     align-items: flex-end;
-    padding: 0 10%;
+    margin-left: 165px;
+    margin-right: 165px;
 }
 .footer_p{
-    font-size: 0.9rem;
+    font-size: 16px;
     position: relative;
-    left: -18px;
     margin-bottom: 0px!important;
+    line-height: 0;
+    letter-spacing:0.8%;
+    left:-120px;
 }
 .footer_p span{
     font-size: 1.5rem;
     font-weight: bold;
-
 }
 .footer_last{
     background-color: rgba(0, 0, 0, 0.2);
@@ -709,7 +790,11 @@ footer li a:hover{
 }
 .footer_last p{
     margin-bottom: 0px!important;
-    font-size: 0.9rem;
+    font-size: 14px;
+    letter-spacing:0.8%;
+    color: #454545;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .text-warn{
@@ -737,6 +822,10 @@ footer li a:hover{
 @font-face{
     font-family: Vision Regular;
     src:url('assets/Vision/Vision-Regular.ttf');
+}
+@font-face{
+    font-family: Vision Heavy;
+    src:url('assets/Vision/Vision-Heavy.ttf');
 }
 button{
     font-family: 'Vision Regular'!important;
