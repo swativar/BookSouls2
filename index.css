@@ -142,22 +142,25 @@ header{
     margin-left: 165px;
     margin-right: 165px;
 }
-.article_carousel_item1 p{
+.article_carousel_item1 a{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 14px;
     position: relative;
     padding: 7% 0;
+    z-index: 1;
 }
-.article_carousel_item2 p{
+.article_carousel_item2 a{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 19px;
+    z-index: 1;
 }
 .article_carousel_item1 .card{
     height: 200px;
     border: none!important;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    z-index: 0;
 }
 .article_carousel_item1 .card-header{
     padding: 2.3rem 0.5rem!important;
@@ -166,6 +169,7 @@ header{
 .article_carousel_item2{
     border: none!important;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    z-index: 0;
 }
 .article_carousel_item2 .card-header{
     padding: 4.5rem 1.25rem!important;
@@ -245,6 +249,7 @@ header{
     position: absolute;
     right: 0;
     top:0;
+    z-index: -1;
 }
 .article_carousel_item2::after,.article_carousel_item1 > div:first-child::after,.article_carousel_item1 > div:last-child::after{
     content: url('assets/triang_svg.svg');
@@ -252,6 +257,7 @@ header{
     left: 0;
     bottom:0;
     transform: rotate(-180deg);
+    z-index: -1;
 }
 .carousel-indicators .active {
     width: 35px!important;
@@ -356,7 +362,7 @@ header{
     font-family: 'Vision Heavy', sans-serif;
     
 } 
-.inspire_item_content p{
+.inspire_item_content a{
     font-size: 18px;
     font-size: 24px;
     line-height: 32px;
@@ -421,6 +427,13 @@ header{
     font-size: 17px;
     font-family: 'Vision';
 }
+#email1:focus{
+    border-color: #FFDE00!important;
+    box-shadow: 0 0 0 0.2rem #FFDE00;
+    color: #495057;
+    background-color: #fff;
+    outline: 0;
+}
 .podcasts{
     margin: 5% 0;
     padding: 8% 0;
@@ -443,8 +456,7 @@ header{
     padding: 3% 5%;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
 }
-.podcast_1::after{
-    content: url('assets/icons/Play-Button-Podcast.svg');
+.podcast-play-button{
     position: absolute;
     bottom:8px;
 }
@@ -466,16 +478,19 @@ header{
     position: absolute;
     transform: translate(3%,-17%);
 }
-.podcast_card_content p:first-child{
+.podcast_card_content p{
     font-family: 'Vision Regular';
     font-size: 15px;
 }
-.podcast_card_content p:last-child{
+.podcast-card-title{
     padding: 20% 0;
+}
+.podcast-card-title a{
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     line-height: 31px;
     font-weight: 600;
+    color:#fff;
 } 
 .podcasts_right h2{
     font-family: 'Playfair Display', serif;
@@ -560,12 +575,15 @@ header{
     justify-content: center;
     border-radius: 50%;
 }
-.booksouls_quick .card h3{
+.quick-card-title{
+    margin-top: 5%;
+}
+.quick-card-title a{
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  margin-top: 5%;
   line-height:25px;
+  color: #042330;
 }
 .booksouls_quick .card img{
     border-radius: 10px;
@@ -709,6 +727,13 @@ header{
    background-color: rgba(0, 0, 0, 0.06);
    width: 650px;
 }
+#usr:focus{
+    border-color: #FFDE00!important;
+    box-shadow: 0 0 0 0.2rem #FFDE00;
+    color: #495057;
+    background-color: #fff;
+    outline: 0;
+}
 #usr::placeholder{
     font-size: 19px;
     font-family: 'Vision', sans-serif;
@@ -790,7 +815,7 @@ footer{
 .footer_p{
     font-size: 16px;
     position: relative;
-    margin-bottom: 0px!important;
+    margin-bottom: 0.3rem!important;
     line-height: 0;
     letter-spacing:0.8%;
     left:-120px;
