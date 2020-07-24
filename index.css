@@ -624,6 +624,7 @@ header{
     border: none!important;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
     box-sizing: border-box;
+    z-index: 0;
 }
 .publishers .card::before{
     content: url('assets/triang_svg.svg');
@@ -637,6 +638,7 @@ header{
     left: 0;
     bottom: 0;
     transform: rotate(-180deg);
+    z-index: -1;
 }
 .publishers .card-header::after{
     content: url('assets/icons/Heart.svg');
@@ -672,6 +674,7 @@ header{
     font-family: 'Playfair Display', serif;
     font-size: 19px;
     line-height: 31px;
+    z-index:1;
 }
 .pub_card_content + p{
     font-family: 'Vision Regular', sans-serif;
