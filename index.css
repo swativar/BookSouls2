@@ -146,9 +146,8 @@ header{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 31px;
     position: relative;
-    top:-10px;
+    padding: 7% 0;
 }
 .article_carousel_item2 p{
     font-family: 'Playfair Display', serif;
@@ -418,7 +417,7 @@ header{
     padding:3.5% 5%;
     margin-left: 20px;
 }
-#email1::place-holder{
+#email1::placeholder{
     font-size: 17px;
     font-family: 'Vision';
 }
@@ -475,7 +474,7 @@ header{
     padding: 20% 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
-    line-height: 25px;
+    line-height: 31px;
     font-weight: 600;
 } 
 .podcasts_right h2{
@@ -697,7 +696,7 @@ header{
    background-color: rgba(0, 0, 0, 0.06);
    width: 650px;
 }
-#usr::place-holder{
+#usr::placeholder{
     font-size: 19px;
     font-family: 'Vision', sans-serif;
 }
