@@ -72,7 +72,7 @@ header{
     background: url(assets/header_background.svg);
     width: 100%;
     height: 800px;
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 .header_illustration img:first-child{
