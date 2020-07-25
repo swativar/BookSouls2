@@ -492,6 +492,9 @@ header{
     font-weight: 600;
     color:#fff;
 } 
+.podcast-card-title a:hover{
+    color:#fff
+}
 .podcasts_right h2{
     font-family: 'Playfair Display', serif;
     font-size: 76px;
@@ -584,6 +587,9 @@ header{
   font-weight: 600;
   line-height:25px;
   color: #042330;
+}
+.quick-card-title a:hover{
+    color: #042330;
 }
 .booksouls_quick .card img{
     border-radius: 10px;
@@ -688,11 +694,14 @@ header{
     border: none!important;
 }
 .pub_card_content{
-    color:black;
+    color:#042330;
     font-family: 'Playfair Display', serif;
     font-size: 19px;
     line-height: 31px;
     z-index:1;
+}
+.pub_card_content:hover{
+    color:#042330;
 }
 .pub_card_content + p{
     font-family: 'Vision Regular', sans-serif;
