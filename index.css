@@ -329,6 +329,9 @@ header{
     z-index: 1;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
+.inspire_right{
+    max-width: 535px!important;
+}
 /*.inspire_item::before{
     content: url('assets/icons/Heart.svg');
     position: absolute;
@@ -630,6 +633,9 @@ header{
 .booksouls_quick .carousel-indicators{
     top:105%;
 }
+.quick-cards-row{
+    max-width: 535px!important;
+}
 .publishers{
     margin-top: 5%;
     padding-top: 5%;
@@ -898,3 +904,4 @@ footer{
 button{
     font-family: 'Vision Regular'!important;
 }
+
