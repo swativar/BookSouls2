@@ -64,7 +64,7 @@ nav{
 }
 .dropdown-toggle::after{
     content: url('assets/icons/Dropdown-icon.svg')!important;
-    vertical-align: -0.4em!important;
+    vertical-align: -0.5em!important;
     border-top: none!important;
     border-left: none!important;
 }
@@ -483,9 +483,12 @@ header{
     align-items:flex-end;
     justify-content: center;
 }*/
+.podcast_card_content{
+    position: relative;
+}
 .heart-icon-podcast{
-    left: 363px;
-    top:0;
+    right: -28px;
+    top:-14px;
 }
 .podcasts::before{
     content: url('assets/Circular-pattern-in-Podcast-BG.svg');
@@ -592,9 +595,12 @@ header{
     justify-content: center;
     border-radius: 50%;
 }*/
+.quick-card-img{
+    position: relative;
+}
 .heart-icon-quick{
-    right: 25px;
-    top: 15px;
+    right: 20px;
+    top: -5px;
 }
 .quick-card-title{
     margin-top: 5%;
@@ -698,9 +704,12 @@ header{
     align-items:flex-end;
     justify-content: center;
 }*/
+.publisher-card-top{
+    position: relative;
+}
 .heart-icon-publisher{
-    bottom: 41%;
-    right: 6%;
+    bottom: -5px;
+    right: -5px;
 }
 .publishers .card img{
     height: 200px;

@@ -45,3 +45,4 @@ $("#quick").carousel({interval: 2500});
 $("#publisher").carousel({interval: 2500});
 $("#podcast").carousel({interval: 2500});
 $("#article").carousel({interval: 2500});
+
