@@ -41,8 +41,11 @@ body,html{
 nav{
     background-color: transparent!important;
 }
-.navbar{
-    margin: 0 165px;
+nav .container{
+    margin-right: 165px;
+    margin-left: 165px;
+    padding-left: 0!important;
+    padding-right: 0!important;
 }
 .search-icon{
     margin-left: 8%;
@@ -406,8 +409,6 @@ header{
     background-color: rgba(0, 0, 0, 0.06);
     margin-left: 165px;
     margin-right: 165px;
-    align-content: center;
-    align-items: center;
     padding: 40px 40px 20px 40px;
 }
 .subscribe_left p:first-child{
