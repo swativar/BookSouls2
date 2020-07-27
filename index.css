@@ -88,7 +88,7 @@ nav .container{
     font-size: 14px;
     font-family: 'Vision Heavy';
 }
-.categories-nav{
+/*.categories-nav{
     list-style-type: none;
     background-color: #000;
     width: 100%;
@@ -118,9 +118,9 @@ nav .container{
 }
 #cat5:hover{
     background-color: rgb(245, 140, 101);
-}
+}*/
 .header-carousel{
-    margin-top: 155px;
+    margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.06);
 }
 #header-cara{
@@ -160,11 +160,16 @@ nav .container{
     position: relative;
 }
 .header-card-title{
-    font-size:23px;
-    font-weight: bold;
-    transform: translate(0,50%);
+   transform: translate(0,50%);
+}
+.header-card-title a{
+    font-size:24px;
     font-family: 'Vision Heavy';
     line-height: 31px;
+    color: #042330;
+}
+.header-card-title a:hover{
+    color: #042330;
 }
 .header-card-cat{
     font-size: 12px;
@@ -172,7 +177,7 @@ nav .container{
     text-transform: uppercase;
     letter-spacing: 3%;
 }
-.header-card-right a{
+.header-card-right > a{
     color: #042330;
     border-bottom: 1px solid black;
     position: absolute;
@@ -182,7 +187,7 @@ nav .container{
     font-family: 'Vision Regular';
     line-height: 12px;
 }
-.header-card-right a:hover{
+.header-card-right > a:hover{
     text-decoration: none;
     color: #042330;
     border-bottom: none;
@@ -207,7 +212,6 @@ nav .container{
 }
 .carousel-indicators{
     align-items: center;
-    z-index: -1!important;
 }
 .carousel-indicators li:first-child{
     margin-right: 1%;
@@ -294,7 +298,10 @@ nav .container{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 19px;
-    line-height: 31px;
+    line-height: 24px;
+}
+.header-flex3-bottom a:hover{
+    color:#042330;
 }
 .header-flex{
     margin-right: 165px;
@@ -325,15 +332,18 @@ nav .container{
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
+    border-radius: 0px!important;
 }
 .header-flex2 .card-header, .header-flex5 .card-header{
     background: url(https://wallpapercave.com/wp/kjh8eTP.jpg),linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
+    border-radius: 0px!important;
 }
 .header-flex3 .card-header{
     background-color: #fff!important;
+    border-radius: 0px!important;
 }
 .header-flex1::before,.header-flex2::before,.header-flex4::before,.header-flex5::before{
     content: url('assets/triang_svg.svg');
@@ -407,17 +417,21 @@ nav .container{
 .relationship-wrapper::before,.etr-ship-wrapper::before{
     content: url('assets/Quotes.svg');
     position: absolute;
-    top: 0;
-    right: 15%;
+    top: -12%;
+    right: 17%;
     opacity: 0.4;
 }
 .spirituality-wrapper::before{
     content: url('assets/Quotes.svg');
     position: absolute;
-    top: 0;
-    left: 15%;
+    top: -12%;
+    left: 17%;
     opacity: 0.4;
     transform: rotate(-180deg);
+}
+.relationship-header-wrapper,.etr-ship-header-wrapper,.spirituality-header-wrapper{
+    margin-right: 165px;
+    margin-left: 165px;
 }
 .relationship-wrapper,.spirituality-wrapper,.etr-ship-wrapper{
     margin-right: 165px;
@@ -428,12 +442,13 @@ nav .container{
     border: none!important;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
     z-index: 0;
+    height: 370px;
 }
 .card-bottom a,.spirituality-card-bottom a,.etr-ship-card-bottom a{
     color:#042330;
     font-family: 'Playfair Display', serif;
     font-size: 19px;
-    line-height: 31px;
+    line-height: 24px;
     z-index:1;
 }
 .card-bottom a:hover,.spirituality-card-bottom a:hover,.etr-ship-card-bottom a:hover{
@@ -463,11 +478,12 @@ nav .container{
     z-index: -1;
 }
 .relationship .card-header,.spirituality .card-header,.enterpreneurship .card-header{
-    padding: 30px!important;
+    padding: 25px!important;
     border: none!important;
 }
 .relationship .card-img-top,.spirituality .card-img-top,.enterpreneurship .card-img-top{
-   height: 180px;
+   height: 160px;
+   border-radius: 0px!important;
 }
 .relationship .card-top,.spirituality .spirituality-card-top,.etr-ship-card-top{
     position: relative;
@@ -510,6 +526,13 @@ nav .container{
 .view-by-cat{
     margin-left: 165px;
     margin-right: 165px;
+}
+.view-card-link{
+    color: #042330;
+}
+.view-card-link:hover{
+    color: #042330;
+    text-decoration: none;
 }
 .view-by-cat-title h2{
     font-size: 26px;
