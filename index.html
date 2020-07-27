@@ -13,270 +13,637 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap"
         rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <!--Loader until page loads-->
     <div id="loader" class="center"></div>
-    <!--Header-->
-    <header>
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
 
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md bg-light fixed-top">
+        <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
+        <p class="nav-tag">articles</p>
+        
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href=""><span class="nav-yellow">Articles</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Insipre Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Podcast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quick</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Publisher</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a href="" class="search-icon"><img src="assets/icons/Search.svg" alt=""></a>
+        </div>
+    </nav>
+    <ul class="text-center categories-nav">
+        <a href="" class="text-light"><li id="cat1">Relationship</li></a>
+        <a href="" class="text-light"><li id="cat2">Spirituality</li></a>
+        <a href="" class="text-light"><li id="cat3">Health</li></a>
+        <a href="" class="text-light"><li id="cat4">Life</li></a>
+        <a href="" class="text-light"><li id="cat5">Enterpreneurship</li></a>
+    </ul>
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Articles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Insipre Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Podcast</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Quick</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Publisher</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
+    <!--Header carousel-->
+
+    <div class="header-carousel">
+        <div id="header-cara" class="carousel slide my-5" data-ride="carousel">
+            <!-- Left and right controls -->
+            <div class="controls">
+                <a class="prev_in px-4 py-1 text-dark" href="#header-cara"
+                    data-slide="prev"><span>&#10094</span></a>
+                <a class="next_in px-4 py-1 text-dark" href="#header-cara"
+                    data-slide="next"><span>&#10095</span></a>
+            </div>
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#header-cara" data-slide-to="0" class="active"></li>
+                <li data-target="#header-cara" data-slide-to="1"></li>
+                <li data-target="#header-cara" data-slide-to="2"></li>
+                <li data-target="#header-cara" data-slide-to="3"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center header-cards">
+                        <div class="header-card-left">
+                            <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <a href="" class="search-icon"><img src="assets/icons/Search.svg" alt=""></a>
-        </div>
-        </nav>
-        <div class="header_illustration">
-            <img src="assets/Header-Illustration-1.svg" alt="">
-            <img src="assets/Header-Illustration-2.svg" alt="">
-        </div>
-        <div class="header_content">
-            <h2>Read, listen and explore</h2>
-            <p class="mt-4">Feed your inner mind with the contents which you like the most. You'll find articles,
-                inspirational
-                stories, podcasts, quick and stuff from our Booksouls publishers.</p>
-            <div class="clearfix mt-5">
-                <span class="float-left"><button class="btn btn-warning" id="header_login">Log In</button></span>
-                <span class="float-right"><button class="btn btn-outline-warning"
-                        id="header_explore">Explore</button></span>
-            </div>
-        </div>
-    </header>
-    <!--Articles-->
-    <div class="articles" id="scroll_article">
-        <div class="article-wrapper">
-            <div class="row text-center">
-                <div class="col-sm-12 col-lg-6 article_left">
-                    <div id="article" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#article" data-slide-to="0" class="active"></li>
-                            <li data-target="#article" data-slide-to="1"></li>
-                            <li data-target="#article" data-slide-to="2"></li>
-                        </ul>
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex flex-column">
-                                    <div class="d-flex mb-4 article_carousel_item1">
-                                        <div class="text-center card p-4 mr-4">
-                                            <div class="card-header py-4">
-                                                <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon races
-                                                    to find answers and...</a>
-                                            </div>
-                                            <div class="heart-icon heart-icon-article bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="text-center card p-4">
-                                            <div class="card-header py-4">
-                                                <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon races
-                                                    to find answers and...</a>
-                                            </div>
-                                            <div class="heart-icon heart-icon-article bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center card p-4 article_carousel_item2">
-                                        <div class="card-header py-5">
-                                            <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon races to
-                                                find answers and...</a>
-                                        </div>
-                                        <div class="heart-icon heart-icon-article2 bg-light">
-                                            <img src="assets/icons/Heart.svg" alt="">
-                                        </div>
-                                    </div>
+                        <div class="header-card-right my-5">
+                            <div class="header-card-content">
+                                <img src="assets/Quotes.svg" alt="" class="quote_u">
+                                <p class="text-center text-warn header-card-cat">Lifestyle</p>
+                                <p class="text-center header-card-title">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN RELIEF?</p>
+                                <img src="assets/Quotes.svg" alt="" class="quote_l">
+                                <div class="heart-icon heart-icon-header bg-light">
+                                    <img src="assets/icons/Heart.svg">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="d-flex flex-column">
-                                    <div class="d-flex mb-4 article_carousel_item1">
-                                        <div class="text-center card p-4 mr-4">
-                                            <div class="card-header py-4">
-                                                <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon races
-                                                    to find answers and...</a>
-                                            </div>
-                                            <div class="heart-icon heart-icon-article bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="text-center card p-4">
-                                            <div class="card-header py-4">
-                                                <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon races
-                                                    to find answers and...</a>
-                                            </div>
-                                            <div class="heart-icon heart-icon-article bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center card p-4 article_carousel_item2">
-                                        <div class="card-header py-5">
-                                            <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon races to
-                                                find answers and...</a>
-                                        </div>
-                                        <div class="heart-icon heart-icon-article2 bg-light">
-                                            <img src="assets/icons/Heart.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex flex-column">
-                                    <div class="d-flex mb-4 article_carousel_item1">
-                                        <div class="text-center card p-4 mr-4">
-                                            <div class="card-header py-4">
-                                                <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon races
-                                                    to find answers and...</a>
-                                            </div>
-                                            <div class="heart-icon heart-icon-article bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="text-center card p-4">
-                                            <div class="card-header py-4">
-                                                <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon races
-                                                    to find answers and...</a>
-                                            </div>
-                                            <div class="heart-icon heart-icon-article bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center card p-4 article_carousel_item2">
-                                        <div class="card-header py-5">
-                                            <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon races to
-                                                find answers and...</a>
-                                        </div>
-                                        <div class="heart-icon heart-icon-article2 bg-light">
-                                            <img src="assets/icons/Heart.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="">VIEW POST</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-6">
-                    <div class="text-center articles_right">
-                        <h2>Article<span class="text-warn">s</span></h2>
-                        <p>Dive deeper into some cool and motivational articles to keep up your daily pace and feed your
-                            inner worm.</p>
-                        <button class="btn btn-warning mt-4 px-4">Explore Articles</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Inspire Me-->
-    <div class="inspire">
-        <div class="inspire-wrapper">
-            <div class="row">
-                <div class="col-sm-12 col-lg-6 inspire_left">
-                    <div class="text-center mt-5">
-                        <h2>Inspire<span class="text-warn"> Me</span></h2>
-                        <p>Get inspired with your idols. Explore how they rose above everyone and made their names
-                            beyond the world.</p>
-                        <button class="btn btn-warning mt-4 px-4">Explore Inspire Me</button>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-6 inspire_right">
-                    <div class="d-flex justify-content-between inspire_item_row">
-                        <div class="d-flex flex-column">
-                            <div class="inspire_item">
-                                <img src="https://femina.wwmindia.com/content/2019/jul/ajeynagar1562839404.jpg">
-                                <div class="inspire_item_content">
-                                    <a href="" class="text-light">From <span class="text-warn">Ajay</span> to <span
-                                            class="text-warn">Carry</span></a>
-                                </div>
-                                <div class="heart-icon heart-icon-inspire bg-light">
-                                    <img src="assets/icons/Heart.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="inspire_item">
-                                <img
-                                    src="https://www.forbesindia.com/media/images/2019/Jul/img_118739_bhuvan_bam_s.jpg">
-                                <div class="inspire_item_content">
-                                    <a href="" class="text-light">The <span class="text-warn">Story</span> Behind <span
-                                            class="text-warn">BB Ki Vines</span></a>
-                                </div>
-                                <div class="heart-icon heart-icon-inspire bg-light">
-                                    <img src="assets/icons/Heart.svg" alt="">
-                                </div>
-                            </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center header-cards">
+                        <div class="header-card-left">
+                            <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
                         </div>
-                        <div class="d-flex flex-column">
-                            <div class="inspire_item">
-                                <img
-                                    src="https://www.dkoding.in/wp-content/uploads/Gaurav-Chaudhary-Technical-Guruji-Tech-Startups-Business-DKODING.jpg">
-                                <div class="inspire_item_content">
-                                    <a href="" class="text-light">The <span class="text-warn">making</span> of <span
-                                            class="text-warn">Technical Guruji</span></a>
-                                </div>
-                                <div class="heart-icon heart-icon-inspire bg-light">
-                                    <img src="assets/icons/Heart.svg" alt="">
+                        <div class="header-card-right my-5">
+                            <div class="header-card-content">
+                                <img src="assets/Quotes.svg" alt="" class="quote_u">
+                                <p class="text-center text-warn header-card-cat">Lifestyle</p>
+                                <p class="text-center header-card-title">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN RELIEF?</p>
+                                <img src="assets/Quotes.svg" alt="" class="quote_l">
+                                <div class="heart-icon heart-icon-header bg-light">
+                                    <img src="assets/icons/Heart.svg">
                                 </div>
                             </div>
-                            <div class="inspire_item">
-                                <img src="https://femina.wwmindia.com/content/2019/jul/ajeynagar1562839404.jpg">
-                                <div class="inspire_item_content">
-                                    <a href="" class="text-light">From <span class="text-warn">Ajay</span> to <span
-                                            class="text-warn">Carry</span></a>
-                                </div>
-                                <div class="heart-icon heart-icon-inspire bg-light">
-                                    <img src="assets/icons/Heart.svg" alt="">
+                            <a href="">VIEW POST</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center header-cards">
+                        <div class="header-card-left">
+                            <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
+                        </div>
+                        <div class="header-card-right my-5">
+                            <div class="header-card-content">
+                                <img src="assets/Quotes.svg" alt="" class="quote_u">
+                                <p class="text-center text-warn header-card-cat">Lifestyle</p>
+                                <p class="text-center header-card-title">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN RELIEF?</p>
+                                <img src="assets/Quotes.svg" alt="" class="quote_l">
+                                <div class="heart-icon heart-icon-header bg-light">
+                                    <img src="assets/icons/Heart.svg">
                                 </div>
                             </div>
+                            <a href="">VIEW POST</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center header-cards">
+                        <div class="header-card-left">
+                            <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
+                        </div>
+                        <div class="header-card-right my-5">
+                            <div class="header-card-content">
+                                <img src="assets/Quotes.svg" alt="" class="quote_u">
+                                <p class="text-center text-warn header-card-cat">Lifestyle</p>
+                                <p class="text-center header-card-title">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN RELIEF?</p>
+                                <img src="assets/Quotes.svg" alt="" class="quote_l">
+                                <div class="heart-icon heart-icon-header bg-light">
+                                    <img src="assets/icons/Heart.svg">
+                                </div>
+                            </div>
+                            <a href="">VIEW POST</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--Subscribe-->
+    <hr class="hr">
+    <!---->
+    <div class="header-flex mt-5">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex flex-column">
+                <div class="card header-flex1 mb-5">
+                    <div class="card-header text-light text-center">
+                        <p>SPIRITUALITY</p>
+                        <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
+                        <div class="heart-icon heart-icon-flex bg-light">
+                            <img src="assets/icons/Heart.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="card header-flex2">
+                    <div class="card-header text-light text-center">
+                        <p>LIFE</p>
+                        <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
+                        <div class="heart-icon heart-icon-flex bg-light">
+                            <img src="assets/icons/Heart.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card header-flex3">
+                <div class="card-header">
+                    <div class="header-flex3-top">
+                        <img class="card-img-top"
+                            src="https://cdn.wallpapersafari.com/16/51/Xl9qge.jpg"
+                            alt="" height="220">
+                        <div class="heart-icon heart-icon-flex bg-light">
+                            <img src="assets/icons/Heart.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mt-4 header-flex3-bottom">
+                        <p>LIFESTYLE</p>
+                        <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
+                        <p class="flex3-author">by Mohammad Sahil <span>8 min read</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="card header-flex4 mb-5">
+                    <div class="card-header text-light text-center">
+                        <p>RELATIONSHIP</p>
+                        <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
+                        <div class="heart-icon heart-icon-flex bg-light">
+                            <img src="assets/icons/Heart.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="card header-flex5">
+                    <div class="card-header text-light text-center">
+                        <p>CREATIVITY</p>
+                        <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
+                        <div class="heart-icon heart-icon-flex bg-light">
+                            <img src="assets/icons/Heart.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relationship mt-5">
+        <div class="relationship-wrapper">
+            <div class="relationship-title">
+                <h2 class="text-center">Relationship</h2>
+            </div>
+            <div class="relationship-post-link">
+                <a href="" class="float-right">VIEW ALL</a>
+            </div>
+        </div>
+        <div class="relationship-row mt-5">
+            <div class="relationship-wrapper">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-top">
+                                    <img class="card-img-top"
+                                        src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-relationship bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 card-bottom">
+                                    <p>RELATIONSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-top">
+                                    <img class="card-img-top"
+                                        src="https://mrpopat.in/admin/upload/wallpaper/2014021313922785971254871447.jpg"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-relationship bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 card-bottom">
+                                    <p>RELATIONSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-top">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1522315641900-874dc98a7cbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-relationship bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 card-bottom">
+                                    <p>RELATIONSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-top">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1579208570378-8c970854bc23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=795&q=80"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-relationship bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 card-bottom">
+                                    <p>RELATIONSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-top">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1505150099521-fde7970bcc3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-relationship bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 card-bottom">
+                                    <p>RELATIONSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-top">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-relationship bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 card-bottom">
+                                    <p>RELATIONSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-warning px-5">See all</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+    <div class="view-by-cat mt-5">
+        <div class="text-center view-by-cat-title">
+            <h2>View by categories</h2>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <div class="card view-cat-card">
+                    <img src="assets-article/InspirationIcon.svg" alt="" width="50" height="50">
+                    <p class="view-card-title mt-3">Inspiration</p>
+                    <p class="view-card-content">Inspirational and motivational articles</p>
+                    <div class="view-arrow">
+                        <a href><img src="assets-article/Right-Arrow-Not-Active.svg" alt="" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card view-cat-card">
+                    <img src="assets-article/SpiritualIcon.svg" alt="" width="50" height="50">
+                    <p class="view-card-title mt-3">Spiritual</p>
+                    <p class="view-card-content">Spiritual articles to feed your soul.</p>
+                    <div class="view-arrow">
+                        <a href><img src="assets-article/Right-Arrow-Not-Active.svg" alt="" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card view-cat-card">
+                    <img src="assets-article/EntreIcon.svg" alt="" width="50" height="50">
+                    <p class="view-card-title mt-3">Enterpreneur</p>
+                    <p class="view-card-content">Enterpreneurship and much more corporate topics.</p>
+                    <div class="view-arrow">
+                        <a href><img src="assets-article/Right-Arrow-Not-Active.svg" alt="" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card view-cat-card">
+                    <img src="assets-article/CreativityIcon.svg" alt="" width="50" height="50">
+                    <p class="view-card-title mt-3">Creativity</p>
+                    <p class="view-card-content">Creative articles for daily hobbies.</p>
+                    <div class="view-arrow">
+                        <a href><img src="assets-article/Right-Arrow-Not-Active.svg" alt="" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card view-cat-card">
+                    <img src="assets-article/SciFiIcon.svg" alt="" width="50" height="50">
+                    <p class="view-card-title mt-3">Sci-Fi</p>
+                    <p class="view-card-content">Science and fictional articles for the cosmologist in you.</p>
+                    <div class="view-arrow">
+                        <a href><img src="assets-article/Right-Arrow-Not-Active.svg" alt="" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card view-cat-card">
+                    <img src="assets-article/LifestyleIcon.svg" alt="" width="50" height="50">
+                    <p class="view-card-title mt-3">Lifestyle</p>
+                    <p class="view-card-content">Lifestyle articles for you to manage things effectively.</p>
+                    <div class="view-arrow">
+                        <a href><img src="assets-article/Right-Arrow-Not-Active.svg" alt="" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card view-cat-card">
+                    <img src="assets-article/ReadingIcon.svg" alt="" width="50" height="50">
+                    <p class="view-card-title mt-3">Reading</p>
+                    <p class="view-card-content">Read articles related to book &amp; authors.</p>
+                    <div class="view-arrow">
+                        <a href><img src="assets-article/Right-Arrow-Not-Active.svg" alt="" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card view-cat-card">
+                    <img src="assets-article/RelationIcon.svg" alt="" width="50" height="50">
+                    <p class="view-card-title mt-3">Relationship</p>
+                    <p class="view-card-content">Articles related to relationships &amp; couples</p>
+                    <div class="view-arrow">
+                        <a href><img src="assets-article/Right-Arrow-Not-Active.svg" alt="" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+    <div class="spirituality mt-5">
+        <div class="spirituality-wrapper">
+            <div class="spirituality-title">
+                <h2 class="text-center">Spirituality</h2>
+            </div>
+            <div class="spirituality-post-link">
+                <a href="" class="float-right">VIEW ALL</a>
+            </div>
+        </div>
+        <div class="spirituality-row mt-5">
+            <div class="spirituality-wrapper">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="spirituality-card-top">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1530368333607-c100785945b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-spirituality bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 spirituality-card-bottom">
+                                    <p>SPIRITUALITY</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="spirituality-card-top">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1573320180154-f7cd3a33e6a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-spirituality bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 spirituality-card-bottom">
+                                    <p>SPIRITUALITY</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="spirituality-card-top">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1586875401592-64f1d5cb43e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-spirituality bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 spirituality-card-bottom">
+                                    <p>SPIRITUALITY</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="spirituality-card-top">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-spirituality bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 spirituality-card-bottom">
+                                    <p>SPIRITUALITY</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="spirituality-card-top">
+                                    <img class="card-img-top"
+                                        src="https://catholicstrengthblog.files.wordpress.com/2016/05/candle-1285947_1280.jpg"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-spirituality bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 spirituality-card-bottom">
+                                    <p>SPIRITUALITY</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="spirituality-card-top">
+                                    <img class="card-img-top"
+                                        src="https://wallpaperaccess.com/full/929192.jpg"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-spirituality bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 spirituality-card-bottom">
+                                    <p>SPIRITUALITY</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-warning px-5">See all</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--Subscribe-->
     <div class="mt-5 subscribe_middle">
         <div class="d-flex justify-content-between">
             <div class="subscribe_left">
@@ -292,441 +659,170 @@
             </div>
         </div>
     </div>
-    <!--Podcasts-->
-    <div class="podcasts">
-        <div class="podcast-wrapper">
-        <div class="row">
-            <div class="col-sm-12 col-lg-6">
-                <div id="podcast" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="podcast_1">
-                                <div class="text-light podcast_card_content">
-                                    <p><img src="assets/icons/Headphones-White.svg"> 24 min listen</p>
-                                    <div class="text-center podcast-card-title">
-                                    <a href="" >The Way of Travelling in Caraven.</a>
-                                    </div>
-                                    <div class="podcast-play-button">
-                                        <a href=""><img src="assets/icons/Play-Button-Podcast.svg"></a>
-                                    </div>
-                                    <div class="heart-icon heart-icon-podcast bg-light">
+    <!--Enterpreneurship-->
+    <div class="enterpreneurship mt-5">
+        <div class="etr-ship-wrapper">
+            <div class="etr-ship-title">
+                <h2 class="text-center">Enterpreneurship</h2>
+            </div>
+            <div class="etr-ship-post-link">
+                <a href="" class="float-right">VIEW ALL</a>
+            </div>
+        </div>
+        <div class="etr-ship-row mt-5">
+            <div class="etr-ship-wrapper">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="etr-ship-card-top">
+                                    <img class="card-img-top"
+                                        src="https://startupistanbul.com/wp-content/uploads/2014/11/startup1.jpg"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-enterpreneurship bg-light">
                                         <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 etr-ship-card-bottom">
+                                    <p>ENTREPRENEURSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="podcast_1">
-                                <div class="text-light podcast_card_content">
-                                    <p><img src="assets/icons/Headphones-White.svg"> 24 min listen</p>
-                                    <div class="text-center podcast-card-title">
-                                    <a href="">The Way of Travelling in Caraven.</a>
-                                    </div>
-                                    <div class="podcast-play-button">
-                                        <a href=""><img src="assets/icons/Play-Button-Podcast.svg"></a>
-                                    </div>
-                                    <div class="heart-icon heart-icon-podcast bg-light">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="etr-ship-card-top">
+                                    <img class="card-img-top"
+                                        src="https://albandri98home.files.wordpress.com/2018/10/entrepreneurship-background.jpg?w=840"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-enterpreneurship bg-light">
                                         <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 etr-ship-card-bottom">
+                                    <p>ENTERPRENEURSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="podcast_1">
-                                <div class="text-light podcast_card_content">
-                                    <p><img src="assets/icons/Headphones-White.svg"> 24 min listen</p>
-                                    <div class="text-center podcast-card-title">
-                                    <a href="">The Way of Travelling in Caraven.</a>
-                                    </div>
-                                    <div class="podcast-play-button">
-                                        <a href=""><img src="assets/icons/Play-Button-Podcast.svg"></a>
-                                    </div>
-                                    <div class="heart-icon heart-icon-podcast bg-light">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="etr-ship-card-top">
+                                    <img class="card-img-top"
+                                        src="https://corporate-entrepreneurs.com/wp-content/uploads/2019/09/iStock-464731840-2-e1569785543163.jpg"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-enterpreneurship bg-light">
                                         <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 etr-ship-card-bottom">
+                                    <p>ENTREPRENEURSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-lg-6 w-25">
-                <div class="text-center podcasts_right">
-                    <h2 class="text-light">Pod<span class="text-warn">casts</span></h2>
-                    <p class="text-light">Listen to some original podcasts on one of your favourite topics from the
-                        Booksouls team</p>
-                    <button class="btn btn-warning mt-4 px-4">Explore Podcasts</button>
+                <div class="mt-4 row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="etr-ship-card-top">
+                                    <img class="card-img-top"
+                                        src="https://en-coller.m.tau.ac.il/sites/coller-english.tau.ac.il/files/styles/og_image/public/entrepreneurship580x330_0.jpg?itok=XYtAnBA6"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-enterpreneurship bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 etr-ship-card-bottom">
+                                    <p>ENTREPRENEURSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="etr-ship-card-top">
+                                    <img class="card-img-top"
+                                        src="https://speaking.com/wp-content/uploads/2018/09/entreprenuership-speakers.png"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-enterpreneurship bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 etr-ship-card-bottom">
+                                    <p>ENTREPRENEURSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="etr-ship-card-top">
+                                    <img class="card-img-top"
+                                        src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
+                                        alt="">
+                                    <div class="heart-icon heart-icon-enterpreneurship bg-light">
+                                        <img src="assets/icons/Heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-2 etr-ship-card-bottom">
+                                    <p>ENTREPRENEURSHIP</p>
+                                    <a href="#">Drawing from dante's dark epic poem, Langdon races to find answers
+                                        and...</a>
+                                    <div class="clearfix mt-1">
+                                        <span class="float-left">by Mohammad Sahil</span>
+                                        <span class="float-right">8 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-warning px-5">See all</button>
                 </div>
             </div>
         </div>
-        </div>
     </div>
+    
+     <!--Subscribe-->
 
-    <!--Booksouls quick-->
-    <div class="booksouls_quick">
-        <div class="quick-wrapper">
-            <h2 class="text-center mb-5">Booksouls<span class="text-warn"> Quick</span></h2>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 quick_left text-center">
-                    <p>Running out of time? We got your back. Read quicks of books which you love. Over 1000 collection
-                        of books in different categories.</p>
-                    <button class="btn btn-warning mt-4 px-4">Explore Quick</button>
-                </div>
-                <div class="col-sm-12 col-md-6 quick-cards-row">
-                    <div id="quick" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#quick" data-slide-to="0" class="active"></li>
-                            <li data-target="#quick" data-slide-to="1"></li>
-                            <li data-target="#quick" data-slide-to="2"></li>
-                        </ul>
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex justify-content-between">
-                                    <div class="card bq-card1 text-center">
-                                        <div class="card-header">
-                                            <div class="quick-card-img">
-                                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                alt="" width="176" height="265">
-                                                <div class="heart-icon heart-icon-quick bg-light">
-                                                    <img src="assets/icons/Heart.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="text-center quick-card-title">
-                                            <a href="" >The Alchemist</a>
-                                            </div>
-                                            <p>Paulo Coelho</p>
-                                            <div class="clearfix mt-3 quick_item_bottom">
-                                                <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                                        Now</button></span>
-                                                <span class="audio-icon"></span>
-                                                <span class="float-right">Audio available</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card bq-card2 text-center">
-                                        <div class="card-header">
-                                            <div class="quick-card-img">
-                                            <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
-                                                alt="" width="176" height="265">
-                                                <div class="heart-icon heart-icon-quick bg-light">
-                                                    <img src="assets/icons/Heart.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="text-center quick-card-title">
-                                            <a href="" >The Fault In Our Stars</a>
-                                            </div>
-                                            <p>John Green</p>
-                                            <div class="clearfix mt-3 quick_item_bottom">
-                                                <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                                        Now</button></span>
-                                                <span class="audio-icon"></span>
-                                                <span class="float-right">Audio available</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-between">
-                                    <div class="card bq-card3 text-center">
-                                        <div class="card-header">
-                                            <div class="quick-card-img">
-                                            <img src="https://format-com-cld-res.cloudinary.com/image/private/s--Scrn3blx--/c_crop,h_1129,w_735,x_0,y_0/c_fill,g_center,h_583,w_380/dpr_2,fl_keep_iptc.progressive,q_95/v1/56a891bf30e3ffc5f5409a5ac5ba031c/The_Da_Vinci_Code.jpg"
-                                                alt="" width="176" height="265">
-                                                <div class="heart-icon heart-icon-quick bg-light">
-                                                    <img src="assets/icons/Heart.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="text-center quick-card-title">
-                                            <a href="" >The Vinci Code</a>
-                                            </div>
-                                            <p>Dan Brown</p>
-                                            <div class="clearfix mt-3 quick_item_bottom">
-                                                <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                                        Now</button></span>
-                                                <span class="audio-icon"></span>
-                                                <span class="float-right">Audio available</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card bq-card4 text-center">
-                                        <div class="card-header">
-                                            <div class="quick-card-img">
-                                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                alt="" width="176" height="265">
-                                                <div class="heart-icon heart-icon-quick bg-light">
-                                                    <img src="assets/icons/Heart.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="text-center quick-card-title">
-                                            <a href="" >The Alchemist</a>
-                                            </div>
-                                            <p>Paulo Coelho</p>
-                                            <div class="clearfix mt-3 quick_item_bottom">
-                                                <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                                        Now</button></span>
-                                                <span class="audio-icon"></span>
-                                                <span class="float-right">Audio available</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-between">
-                                    <div class="card bq-card5 text-center">
-                                        <div class="card-header">
-                                            <div class="quick-card-img">
-                                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                alt="" width="176" height="265">
-                                            <div class="heart-icon heart-icon-quick bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                            </div>
-                                            <div class="text-center quick-card-title">
-                                            <a href="">The Alchemist</a>
-                                            </div>
-                                            <p>Paulo Coelho</p>
-                                            <div class="clearfix mt-3 quick_item_bottom">
-                                                <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                                        Now</button></span>
-                                                <span class="audio-icon"></span>
-                                                <span class="float-right">Audio available</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card bq-card6 text-center">
-                                        <div class="card-header">
-                                            <div class="quick-card-img">
-                                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                alt="" width="176" height="265">
-                                                <div class="heart-icon heart-icon-quick bg-light">
-                                                    <img src="assets/icons/Heart.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="text-center quick-card-title">
-                                            <a href="">The Alchemist</a>
-                                            </div>
-                                            <p>Paulo Coelho</p>
-                                            <div class="clearfix mt-3 quick_item_bottom">
-                                                <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                                        Now</button></span>
-                                                <span class="audio-icon"></span>
-                                                <span class="float-right">Audio available</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Publishers-->
-    <div class="publishers">
-        <div class="publisher-wrapper">
-            <div class="publishers_header text-center">
-                <h2 class="text-light">Booksouls <span class="text-warn">Publishers</span></h2>
-                <p class="text-light mt-4">Read original contents & editorials from the famous authors</p>
-            </div>
-            <div id="publisher" class="carousel slide mt-5" data-ride="carousel">
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#publisher" data-slide-to="0" class="active"></li>
-                    <li data-target="#publisher" data-slide-to="1"></li>
-                    <li data-target="#publisher" data-slide-to="2"></li>
-                </ul>
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row publisher-row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                        <img class="card-img-top"
-                                            src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                            alt="">
-                                        <div class="heart-icon heart-icon-publisher bg-light">
-                                            <img src="assets/icons/Heart.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                        <img class="card-img-top"
-                                            src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                            alt="">
-                                        <div class="heart-icon heart-icon-publisher bg-light">
-                                            <img src="assets/icons/Heart.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                        <img class="card-img-top"
-                                            src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                            alt="">
-                                        <div class="heart-icon heart-icon-publisher bg-light">
-                                            <img src="assets/icons/Heart.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                        <img class="card-img-top"
-                                            src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                            alt="">
-                                            <div class="heart-icon heart-icon-publisher bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                        <img class="card-img-top"
-                                            src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                            alt="">
-                                            <div class="heart-icon heart-icon-publisher bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                        <img class="card-img-top"
-                                            src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                            alt="">
-                                            <div class="heart-icon heart-icon-publisher bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                        <img class="card-img-top"
-                                            src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                            alt="">
-                                            <div class="heart-icon heart-icon-publisher bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                        <img class="card-img-top"
-                                            src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                            alt="">
-                                            <div class="heart-icon heart-icon-publisher bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                        <img class="card-img-top"
-                                            src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                            alt="">
-                                        <div class="heart-icon heart-icon-publisher bg-light">
-                                            <img src="assets/icons/Heart.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center" style="margin-top:10%;font-size: 18px;">
-                <button class="btn btn-warning px-4">Explore Publishers</button>
-            </div>
-        </div>
-    </div>
-    <hr class="hr">
-    <!--Subscribe-->
-
-    <div class="email text-center mb-5">
+     <div class="email text-center mb-5">
         <p>Stay <span class="text-warn">Updated</span></p>
         <p>Get selected contents directly in your Email!</p>
         <div class="d-flex mt-5 justify-content-between footer_subscribe">

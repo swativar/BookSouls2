@@ -1,3 +1,18 @@
+@font-face{
+    font-family: Vision;
+    src:url('assets/Vision/Vision-Light.ttf');
+}
+@font-face{
+    font-family: Vision Regular;
+    src:url('assets/Vision/Vision-Regular.ttf');
+}
+@font-face{
+    font-family: Vision Heavy;
+    src:url('assets/Vision/Vision-Heavy.ttf');
+}
+button{
+    font-family: 'Vision Regular'!important;
+}
 #loader { 
     border: 12px solid #f3f3f3; 
     border-radius: 50%; 
@@ -6,12 +21,6 @@
     height: 70px; 
     animation: spin 1s linear infinite;
 } 
-  
-/*@keyframes spin { 
-    100% { 
-        transform: rotate(360deg); 
-    } 
-}*/
 @keyframes spin{
     0% {
         border-top-color: #FFDE00;
@@ -38,9 +47,6 @@ body,html{
     height: 100%;
     scroll-behavior: smooth;
 }
-nav{
-    background-color: transparent!important;
-}
 nav .container{
     margin-right: 165px;
     margin-left: 165px;
@@ -49,14 +55,6 @@ nav .container{
 }
 .search-icon{
     margin-left: 8%;
-}
-.navbar-brand{
-    animation:brand 0.3s linear;
-    position: relative;
-}
-@keyframes brand{
-    0% {left:-250px;}
-    100% {left:0px;}
 }
 .nav-link{
     color: #000!important;
@@ -71,138 +69,175 @@ nav .container{
     border-top: none!important;
     border-left: none!important;
 }
-header{
-    background: url(assets/header_background.svg);
-    width: 100%;
-    height: 800px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.header_illustration img:first-child{
-    position: absolute;
-    top: 30%;
-    right: 36%;
-    animation: line 0.3s linear;
-}
-@keyframes line{
-    0% {right:0%;}
-    100% {right:34%}
-}
-.header_illustration img:last-child{
-    position: absolute;
-    top: 30%;
-    right: 165px;
-    animation: top 0.3s linear;
-}
-@keyframes top{
-    0% {top:0%}
-    100% {top:30%}
-}
-#header_login,#header_explore{
-    padding-left: 3rem;
-    padding-right: 3rem;
-    font-size: 15px;
-}
-.header_content{
-    margin: 130px 0 0 165px;
-    animation: header-content 0.3s linear;
+.nav-yellow:after {
+    content: ""; 
+    display: block;
+    width: 50%; 
+    border-bottom: 3px solid yellow;
     position: relative;
-    width: 25%;
+    top:-4px;
 }
-@keyframes header-content{
-    0% {left:-200px}
-    100% {left:0px}
+.navbar-brand{
+    position: relative;
 }
-.header_content > div{
-    padding-right: 2rem;
+.nav-tag{
+    position: absolute;
+    bottom:-20%;
+    left: 19%;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Vision Heavy';
 }
-.header_content div span:last-child button{
-    color:black!important;
-    border-width:2px!important;
+.categories-nav{
+    list-style-type: none;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    top: 67px;
+    z-index: 1;
 }
-.header_content h2{
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-size: 46px;
+.categories-nav li{
+    display: inline-block;
+    padding: 10px 20px;
 }
-.header_content p{
-    font-size: 18px;
-    line-height: 26px;
-    font-family: 'Montserrat', sans-serif;
+.categories-nav a li{
+    font-size: 14px;
+    font-family:'Vision Regular', serif;
 }
-.articles{
-    background:linear-gradient(
-        to right,
-        #FFF8CA  0%,
-        #FFF8CA  62%,
-        white 62%,
-        white 100%
-    );
-    margin-top: 5%;
-    padding: 4% 0;
+#cat1:hover{
+    background-color: red;
 }
-.article-wrapper{
+#cat2:hover{
+    background-color: skyblue;
+}
+#cat3:hover{
+    background-color: rgb(97, 236, 97);
+}
+#cat4:hover{
+    background-color: rgb(201, 85, 201);
+}
+#cat5:hover{
+    background-color: rgb(245, 140, 101);
+}
+.header-carousel{
+    margin-top: 155px;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#header-cara{
     margin-left: 165px;
     margin-right: 165px;
-}
-.article_carousel_item1 a{
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-size: 14px;
     position: relative;
-    padding: 7% 0;
-    z-index: 1;
 }
-.article_carousel_item2 a{
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-size: 19px;
-    z-index: 1;
+.header-card-right{
+    position: relative;
+    left: -17px;
 }
-.article_carousel_item1 .card{
-    height: 200px;
-    border: none!important;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-    z-index: 0;
+.header-card-left{
+    position: relative;
+    left:17px;
+    margin: 10% 0;
 }
-.article_carousel_item1 .card-header{
-    padding: 2.3rem 0.5rem!important;
-    border: none!important;
-}
-.article_carousel_item2{
-    border: none!important;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-    z-index: 0;
-}
-.article_carousel_item2 .card-header{
-    padding: 4.5rem 1.25rem!important;
-    border: none!important;
-}
-.article_carousel_item1 div:first-child .card-header{
-    background: url(https://wallup.net/wp-content/uploads/2019/05/10/338365-mountains-landscapes-nature-lone-tree-natural-scenery-pure-blue-748x421.jpg),linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-}
-.article_carousel_item1 div:last-child .card-header{
-    background: url(https://i.pinimg.com/originals/1d/cc/8c/1dcc8c7b417d81904cd6aaf1bab1b80b.jpg),linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-}
-/*.article_carousel_item1 p::after{
-    content: url('assets/icons/Heart.svg');
+.header-card-content .quote_u{
     position: absolute;
-    bottom: 10%;
-    right: 7%;
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-}*/
+    top: 5%;
+    left: 5%;
+    width: 40px;
+    transform: rotate(-180deg);
+}
+.header-card-content .quote_l{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 40px;
+}
+.header-card-content{
+    width: 450px;
+    height: 235px;
+    box-shadow: 1px 1px 30px rgba(0,0,0,0.2);
+    padding:5% 10%;
+    background:white;
+    border-radius: 10px;
+    position: relative;
+}
+.header-card-title{
+    font-size:23px;
+    font-weight: bold;
+    transform: translate(0,50%);
+    font-family: 'Vision Heavy';
+    line-height: 31px;
+}
+.header-card-cat{
+    font-size: 12px;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3%;
+}
+.header-card-right a{
+    color: #042330;
+    border-bottom: 1px solid black;
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    font-size: 14px;
+    font-family: 'Vision Regular';
+    line-height: 12px;
+}
+.header-card-right a:hover{
+    text-decoration: none;
+    color: #042330;
+    border-bottom: none;
+}
+.heart-icon-header{
+    right:-10px;
+    top:-10px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+}
+.carousel-indicators .active {
+    width: 35px!important;
+    height: 12px!important;
+    border-radius: 50px!important;
+    background-color: #FFDE00 !important;
+}
+.carousel-indicators li {
+    width: 12px!important;
+    height: 12px!important;
+    border: 2px solid #FFDE00 ;
+    border-radius: 50%!important;
+    cursor: pointer;
+}
+.carousel-indicators{
+    align-items: center;
+    z-index: -1!important;
+}
+.carousel-indicators li:first-child{
+    margin-right: 1%;
+}
+.next_in{
+    position: absolute;
+    right: -10%;
+    top:40%;
+    background-color: #FFDE00;
+}
+.prev_in{
+    position: absolute;
+    left:-10%;
+    top:40%;
+    background-color: #FFDE00;
+}
+.next_in:hover{
+    text-decoration: none;
+    background-color: #ffc107;
+}
+.prev_in:hover{
+    text-decoration: none;
+    background-color: #ffc107;
+}
+.header-card-left img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width:450px;
+    height: 235px;
+}
 .heart-icon{
     position: absolute;
     height: 30px;
@@ -216,194 +251,337 @@ header{
     width:16px;
     height:16px;
 }
-.heart-icon-article{
-    bottom: 10%;
-    right: 7%;
+.heart-icon-flex{
+    right: -5px;
+    bottom: -5px;
 }
-.heart-icon-article2{
-    right: 4%;
-    bottom: 7%;
+.header-flex3-top{
+    position: relative;
 }
-/*.article_carousel_item2 p::after{
-    content: url('assets/icons/Heart.svg');
+.header-flex3-top::before{
+    content: url('assets/triang_svg.svg');
     position: absolute;
-    right: 3.5%;
-    bottom: 7%;
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-}*/
-.article_carousel_item2{
-    height: 250px;
+    top: -10px;
+    right: -10px;
 }
-.article_carousel_item2 .card-header{
-    background: url(https://wallpaperstock.net/mountains-scenic--aqua-lake-wallpapers_48068_1920x1200.jpg),linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+.header-flex3-top::after{
+    content: url('assets/triang_svg.svg');
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    transform: rotate(-180deg);
+}
+.header-flex3 .card-header{
+    padding: 30px!important;
+}
+.header-flex3-bottom p:first-child{
+    font-size: 14px;
+    font-family: 'Vision Regular', serif;
+}
+.header-flex3-bottom .flex3-author{
+    font-size: 14px;
+    margin-top: 6%;
+    font-family: 'Vision Regular', sans-serif;
+    color: #292929!important;
+}
+.header-flex3-bottom p:last-child span{
+    border-left: 1.5px solid rgba(0,0,0,0.5);
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.header-flex3-bottom a{
+    color:#042330;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 31px;
+}
+.header-flex{
+    margin-right: 165px;
+    margin-left: 165px;
+}
+.header-flex1,.header-flex2,.header-flex4,.header-flex5{
+    width: 300px;
+    padding: 25px;
+    height: 180px;
+    border: none!important;
+    z-index: 0;
+}
+.header-flex3{
+    width: 400px;
+    height: 450px;
+    border-left: 1px solid rgba(0,0,0,0.1)!important;
+    border-right: 1px solid rgba(0,0,0,0.1)!important;
+    border-bottom: none!important;
+    border-top: none!important;
+}
+.header-flex .card-header{
+    position: relative;
+    height: 100%;
+    border: none!important;
+}
+.header-flex1 .card-header,.header-flex4 .card-header{
+    background: url(https://wallup.net/wp-content/uploads/2019/05/10/338365-mountains-landscapes-nature-lone-tree-natural-scenery-pure-blue-748x421.jpg),linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
 }
-.articles .card-header{
-    height:100%;
-    border: none!important;
+.header-flex2 .card-header, .header-flex5 .card-header{
+    background: url(https://wallpapercave.com/wp/kjh8eTP.jpg),linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
 }
-.article_carousel_item2::before,.article_carousel_item1 > div:first-child::before,.article_carousel_item1 > div:last-child::before{
+.header-flex3 .card-header{
+    background-color: #fff!important;
+}
+.header-flex1::before,.header-flex2::before,.header-flex4::before,.header-flex5::before{
+    content: url('assets/triang_svg.svg');
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header-flex1::after,.header-flex2::after,.header-flex4::after,.header-flex5::after{
+    content: url('assets/triang_svg.svg');
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-180deg);
+}
+.header-flex1 p,.header-flex2 p,.header-flex4 p, .header-flex5 p{
+    font-size: 12px;
+    margin-bottom: 0.5rem!important;
+}
+.header-flex1 a,.header-flex2 a,.header-flex4 a, .header-flex5 a{
+    font-size: 14px;
+    color:rgba(255,255,255);
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.header-flex1 a:hover,.header-flex2 a:hover,.header-flex4 a:hover, .header-flex5 a:hover{
+   color:rgba(255,255,255);
+}
+.relationship-row,.spirituality-row,.etr-ship-row{
+    position: relative;
+    padding: 15px 0;
+}
+.relationship-row::before,.etr-ship-row::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 25%;
+    top:0;
+    bottom: 20%;
+    background-color: #FFF8CA;
+    z-index: -1;
+}
+.spirituality-row::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 25%;
+    top:0;
+    bottom: 20%;
+    background-color: #FFF8CA;
+    z-index: -1;
+}
+.relationship-post-link,.spirituality-post-link,.etr-ship-post-link{
+    position: relative;
+    top: -30px;
+}
+.relationship-post-link a,.spirituality-post-link a,.etr-ship-post-link a{
+    color: #042330;
+    font-size: 14px;
+    line-height: 13px;
+    border-bottom: 1px solid #042330;
+}
+.relationship-post-link a:hover,.spirituality-post-link a:hover,.etr-ship-post-link a:hover{
+    color: #042330;
+    text-decoration: none;
+    border-bottom: none;
+}
+.relationship-post-link a:hover,.spirituality-post-link a:hover,.etr-ship-post-link a:hover{
+    color: #042330;
+    border-color: transparent!important;
+}
+.relationship-wrapper::before,.etr-ship-wrapper::before{
+    content: url('assets/Quotes.svg');
+    position: absolute;
+    top: 0;
+    right: 15%;
+    opacity: 0.4;
+}
+.spirituality-wrapper::before{
+    content: url('assets/Quotes.svg');
+    position: absolute;
+    top: 0;
+    left: 15%;
+    opacity: 0.4;
+    transform: rotate(-180deg);
+}
+.relationship-wrapper,.spirituality-wrapper,.etr-ship-wrapper{
+    margin-right: 165px;
+    margin-left: 165px;
+    position: relative;
+}
+.relationship .card,.spirituality .card,.enterpreneurship .card{
+    border: none!important;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    z-index: 0;
+}
+.card-bottom a,.spirituality-card-bottom a,.etr-ship-card-bottom a{
+    color:#042330;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    line-height: 31px;
+    z-index:1;
+}
+.card-bottom a:hover,.spirituality-card-bottom a:hover,.etr-ship-card-bottom a:hover{
+    color:#042330;
+}
+.card-bottom p, .card-bottom span,.spirituality-card-bottom p,.spirituality-card-bottom span,.etr-ship-card-bottom p,.etr-ship-card-bottom span{
+    font-family: 'Vision Regular', sans-serif;
+    font-size: 14px;
+    margin-top: 5%;
+    color:#292929;
+}
+.card-bottom span,.spirituality-card-bottom span,.etr-ship-card-bottom span{
+    color:#292929;
+}
+.relationship .card::before,.spirituality .card::before,.enterpreneurship .card::before{
     content: url('assets/triang_svg.svg');
     position: absolute;
     right: 0;
-    top:0;
-    z-index: -1;
+    top: 0;
 }
-.article_carousel_item2::after,.article_carousel_item1 > div:first-child::after,.article_carousel_item1 > div:last-child::after{
+.relationship .card::after,.spirituality .card::after,.enterpreneurship .card::after{
     content: url('assets/triang_svg.svg');
     position: absolute;
     left: 0;
-    bottom:0;
+    bottom: 0;
     transform: rotate(-180deg);
     z-index: -1;
 }
-.carousel-indicators .active {
-    width: 35px!important;
-    height: 12px!important;
-    border-radius: 50px!important;
+.relationship .card-header,.spirituality .card-header,.enterpreneurship .card-header{
+    padding: 30px!important;
+    border: none!important;
 }
-.carousel-indicators li {
-    width: 12px!important;
-    height: 12px!important;
-    border: 2px solid #FFDE00 ;
-    background-color: #FFDE00 !important;
-    border-radius: 50%!important;
-    cursor: pointer;
+.relationship .card-img-top,.spirituality .card-img-top,.enterpreneurship .card-img-top{
+   height: 180px;
 }
-.carousel-indicators{
-    align-items: center;
-    
+.relationship .card-top,.spirituality .spirituality-card-top,.etr-ship-card-top{
+    position: relative;
 }
-.carousel-indicators li:first-child{
-    margin-right: 1%;
+.heart-icon-relationship,.heart-icon-spirituality,.heart-icon-enterpreneurship{
+    bottom:-5px;
+    right: -5px;
 }
-.articles .carousel-indicators{
-    top:105%;
+.relationship-title,.spirituality-title,.etr-ship-title{
+    position: relative;
 }
-.articles .articles_right::before{
-    content: url('assets/Quotes.svg');
+.relationship-title h2,.spirituality-title h2,.etr-ship-title h2,.view-by-cat-title h2{
+    font-size: 25px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+.relationship-title::after,.spirituality-title::after{
+    content: '';
     position: absolute;
-    top: -23%;
-    left: 0;
+    background-color: #FFDE00;
+    left: 43.5%;
+    right: 43.5%;
+    bottom: 0;
+    top: 17px;
+    z-index: -1;
 }
-.articles_right h2{
-    font-family: 'Playfair Display', serif;
-    font-size: 76px;
-    font-weight: 600;
+.etr-ship-title::after{
+    content: '';
+    position: absolute;
+    background-color: #FFDE00;
+    left: 40.5%;
+    right: 40.5%;
+    bottom: 0;
+    top: 17px;
+    z-index: -1;
 }
-.articles_right p{
-    font-size: 34px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 15%;
-    letter-spacing: 1.5%;
+.hr{
+    width:76%;
 }
-.articles_right button{
-    font-size: 18px;
-}
-.inspire{
-    background:linear-gradient(
-        to left,
-        #1C1E26  0%,
-        #1C1E26  62%,
-        white 62%,
-        white 100%
-    );
-    margin-top: 7%;
-}
-.inspire-wrapper{
+.view-by-cat{
     margin-left: 165px;
     margin-right: 165px;
 }
-.inspire_item{
-    width:240px;
-    height: 280px;
-    border-radius: 10px;
+.view-by-cat-title h2{
+    font-size: 26px;
+}
+.view-card-title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.view-card-content{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0!important;
+}
+.view-by-cat .card{
+    padding: 10px;
+    width: 150px;
+    height: 210px;
+    border: none!important;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.95));
-    margin: 3% 0;
-    z-index: 1;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
-.inspire_right{
-    max-width: 535px!important;
-}
-/*.inspire_item::before{
-    content: url('assets/icons/Heart.svg');
+.view-arrow{
     position: absolute;
-    right: -2px;
-    top: -2px;
-    background-color: #fff;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
-    border-radius: 50%;
-}*/
-.heart-icon-inspire{
-    right: -2px;
-    top: -2px;
+    right: 10px;
+    bottom: 10px;
 }
-.inspire_item_row{
-    padding: 2% 0;
+.view-by-cat .card:hover{
+    border: 2px solid #FFDE00!important;
 }
-.inspire_item_row > div:first-child{
-    margin-top: 10%;
+.view-by-cat .row{
+    padding: 0 15%;
 }
-.inspire_item > img{
-    width:100%;
-    height: 100%;
-    border-radius: 10px;
-    position: relative;
-    mix-blend-mode: overlay;
-    object-fit: cover;
-}
-.inspire_item_content {
-    position: absolute; 
-    top:77%;
-    left: 5%;
-    right: 5%;
-    text-align: center;
-    font-family: 'Vision Heavy', sans-serif;
-    
-} 
-.inspire_item_content a{
-    font-size: 18px;
-    font-size: 24px;
-    line-height: 32px;
-}
-.inspire_item_row::before{
-    content: url('assets/Quotes.svg');
+.view-by-cat::before{
+    content: 'Categories';
     position: absolute;
-    top: -12%;
     left: 0;
-    transform: rotate(-180deg);
-}
-.inspire_left h2{
-    font-family: 'Playfair Display', serif;
-    font-size: 76px;
+    font-size: 17rem;
+    color: #FFF8CA;
+    font-family: 'Playfair Display';
     font-weight: 600;
 }
-.inspire_left p{
-    font-size: 34px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    margin-top: 15%;
-    color: #fff;
-    letter-spacing: 1.5%;
-    mix-blend-mode: difference;
+.view-by-cat-title{
+    position: relative;
 }
-.inspire_left p:after{
-    color:#000;
-    font-weight: 400;
+.view-by-cat-title::after{
+    content: '';
+    position: absolute;
+    background-color: #FFDE00;
+    left: 39.5%;
+    right: 39.5%;
+    bottom: 0;
+    top: 17px;
+    z-index: -1;
+}
+.text-warn{
+    color:#FFDE00!important; 
+}
+.btn-warning{
+    background-color: #FFDE00!important;
+    border-color: #FFDE00!important;
+}
+.btn-warning:hover{
+    background-color: #ffc107!important;
+    border-color: #ffc107!important;
+}
+.btn-outline-warning{
+    border-color: #FFDE00!important;
+}
+.btn-outline-warning:hover{
+    background-color: #FFDE00!important;
 }
 .subscribe_middle{
     background-color: rgba(0, 0, 0, 0.06);
@@ -444,301 +622,6 @@ header{
     color: #495057;
     background-color: #fff;
     outline: 0;
-}
-.podcasts{
-    margin: 5% 0;
-    padding: 8% 0;
-    background-color: #1C1E26;
-}
-.podcast-wrapper{
-    margin-left: 165px;
-    margin-right: 165px;
-}
-.podcasts .row{
-    align-items: center;
-}
-.podcast_1{
-
-    background-image: url(https://i.pinimg.com/originals/fd/8b/41/fd8b416abd6a9bb567bdacab4952582a.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    background-blend-mode: overlay;
-    background-size: cover;
-    width: 390px;
-    height: 280px;
-    padding: 3% 5%;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
-}
-.podcast-play-button{
-    position: absolute;
-    bottom:8px;
-}
-/*.podcast_1::before{
-    content: url('assets/icons/Heart.svg');
-    position: absolute;
-    left: 363px;
-    top:0;
-    background-color: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-}*/
-.podcast_card_content{
-    position: relative;
-}
-.heart-icon-podcast{
-    right: -28px;
-    top:-14px;
-}
-.podcasts::before{
-    content: url('assets/Circular-pattern-in-Podcast-BG.svg');
-    position: absolute;
-    transform: translate(3%,-17%);
-}
-.podcast_card_content p{
-    font-family: 'Vision Regular';
-    font-size: 15px;
-}
-.podcast-card-title{
-    padding: 20% 0;
-}
-.podcast-card-title a{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-    line-height: 31px;
-    font-weight: 600;
-    color:#fff;
-} 
-.podcast-card-title a:hover{
-    color:#fff
-}
-.podcasts_right h2{
-    font-family: 'Playfair Display', serif;
-    font-size: 76px;
-    font-weight: 600;
-}
-.podcasts_right p{
-    font-size: 34px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 15%;
-    font-weight: 400;
-    letter-spacing: 1.5%;
-}
-.booksouls_quick::before{
-    content: '\201CQuick';
-    position: absolute;
-    font-size: 25rem;
-    color: #FFF8CA;
-    font-family: 'Playfair Display';
-    font-weight: 600;
-    margin-left: 4%;
-}
-.quick-wrapper{
-    margin-left: 165px;
-    margin-right: 165px;
-}
-.booksouls_quick h2{
-    font-family: 'Playfair Display', serif;
-    font-size: 76px;
-    font-weight: 600;
-}
-.quick_left p{
-    font-size: 34px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 10%;
-    color: #042330;
-    letter-spacing: 1.5%;
-}
-.quick_left button{
-    font-size: 18px;
-}
-.booksouls_quick .card{
-    width: 240px;
-    height: 420px;
-    border: none!important;
-    border-radius: 10px;
-}
-.booksouls_quick .card .card-header{
-    border: none!important;
-    border-radius: 10px;
-    padding: 1.25rem 0.46rem!important;
-    background-color:#fff!important;
-}
-.bq-card2,.bq-card4,.bq-card6{
-    margin-top: 15%;
-}
-.booksouls_quick .card-header > p{
-    color:#292929;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 25px;
-    font-weight: 500;
-}
-/*.booksouls_quick .card .card-header::before{
-    content: url('assets/icons/Heart.svg');
-    position: absolute;
-    right: 25px;
-    top: 15px;
-    background-color: #fff;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-    border-radius: 50%;
-}*/
-.quick-card-img{
-    position: relative;
-}
-.heart-icon-quick{
-    right: 20px;
-    top: -5px;
-}
-.quick-card-title{
-    margin-top: 5%;
-}
-.quick-card-title a{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height:25px;
-  color: #042330;
-}
-.quick-card-title a:hover{
-    color: #042330;
-}
-.booksouls_quick .card-header > img{
-    border-radius: 10px;
-}
-.quick_item_bottom{
-    padding: 0 1.20rem;
-}
-.quick_item_bottom span:last-child{
-    font-size: 12px;
-    line-height: 14px;
-    width: 25%;
-    text-align: left;
-    font-family: 'Vision Regular';
-}
-.quick_item_bottom span:first-child button{
-    font-size: 13px;
-}
-.quick_item_bottom .audio-icon::before{
-    content: url('assets/icons/Headphones.svg');
-    display: inline-block;
-    margin-left: 15%;
-}
-.booksouls_quick .carousel-indicators{
-    top:105%;
-}
-.quick-cards-row{
-    max-width: 535px!important;
-}
-.publishers{
-    margin-top: 5%;
-    padding-top: 5%;
-    padding-bottom: 2%;
-    background: linear-gradient(
-        to bottom,
-        #1C1E26  0%,
-        #1C1E26  47%,
-        white 47%,
-        white 100%
-    );
-}
-.publisher-wrapper{
-    margin-left: 165px;
-    margin-right: 165px;
-}
-.publishers_header h2{
-    font-size: 76px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-}
-.publishers_header p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-}
-.publishers .carousel-indicators{
-    top:108%;
-}
-.publishers .card{
-    width: 300px;
-    border: none!important;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-    box-sizing: border-box;
-    z-index: 0;
-}
-.publishers .card::before{
-    content: url('assets/triang_svg.svg');
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.publishers .card::after{
-    content: url('assets/triang_svg.svg');
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: rotate(-180deg);
-    z-index: -1;
-}
-/*.publishers .card-header::after{
-    content: url('assets/icons/Heart.svg');
-    position: absolute;
-    bottom: 41%;
-    right: 6%;
-    background-color: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-}*/
-.publisher-card-top{
-    position: relative;
-}
-.heart-icon-publisher{
-    bottom: -5px;
-    right: -5px;
-}
-.publishers .card img{
-    height: 200px;
-}
-.publishers .row{
-    padding: 0 3%;
-    height: 450px;
-    align-items: center;
-}
-.publishers .card-header{
-    padding-top:1.5rem!important;
-    padding-left:1.5rem!important;
-    padding-right:1.5rem!important;
-    padding-bottom: 0.5rem!important;
-    height: 100%;
-    border: none!important;
-}
-.pub_card_content{
-    color:#042330;
-    font-family: 'Playfair Display', serif;
-    font-size: 19px;
-    line-height: 31px;
-    z-index:1;
-}
-.pub_card_content:hover{
-    color:#042330;
-}
-.pub_card_content + p{
-    font-family: 'Vision Regular', sans-serif;
-    font-size: 14px;
-    margin-top: 5%;
-    color:#292929;
-}
-.hr{
-    width:65%;
-    border: 1px solid rgba(0,0,0,0.2);
 }
 .email{
     padding: 2% 0;
@@ -872,38 +755,3 @@ footer{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
-
-.text-warn{
-    color:#FFDE00!important; 
-}
-.btn-warning{
-    background-color: #FFDE00!important;
-    border-color: #FFDE00!important;
-}
-.btn-warning:hover{
-    background-color: #ffc107!important;
-    border-color: #ffc107!important;
-}
-.btn-outline-warning{
-    border-color: #FFDE00!important;
-}
-.btn-outline-warning:hover{
-    background-color: #FFDE00!important;
-}
-
-@font-face{
-    font-family: Vision;
-    src:url('assets/Vision/Vision-Light.ttf');
-}
-@font-face{
-    font-family: Vision Regular;
-    src:url('assets/Vision/Vision-Regular.ttf');
-}
-@font-face{
-    font-family: Vision Heavy;
-    src:url('assets/Vision/Vision-Heavy.ttf');
-}
-button{
-    font-family: 'Vision Regular'!important;
-}
-

@@ -1,35 +1,3 @@
-
-var header_explore = document.querySelector('#header_explore');
-
-header_explore.onclick = function scroll(){
-    var article = document.querySelector('#scroll_article')
-    var top = article.getBoundingClientRect().top-50;
-    window.scrollBy(0,top);
-}
-
-/*document.body.classList.add('js-loading');
-window.addEventListener('load', showAnimation());
-
-function showAnimation(){
-    document.body.classList.remove('js-loading');
-}*/
-
-var before_loadtime = new Date().getTime();  
-window.onload = Pageloadtime;  
-function Pageloadtime() {  
-    var aftr_loadtime = new Date().getTime();  
-    // Time calculating in seconds  
-    pgloadtime = (aftr_loadtime - before_loadtime) / 1000;
-    console.log(pgloadtime);
-    var navbar_brand = document.querySelector('.navbar-brand');
-    var header_illus1 = document.querySelector('.header_illustration img:first-child');
-    var header_illus2 = document.querySelector('.header_illustration img:last-child');
-    var header_content = document.querySelector('.header_content');
-    navbar_brand.style.animationDelay = pgloadtime+'s';
-    header_illus1.style.animationDelay = pgloadtime+'s';
-    header_illus2.style.animationDelay = pgloadtime+'s';
-    header_content.style.animationDelay = pgloadtime+'s';
-}
 document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
         document.querySelector("body").style.visibility = "hidden"; 
@@ -41,8 +9,21 @@ document.onreadystatechange = function() {
         document.documentElement.style.overflow = 'auto'; 
     } 
 };
-$("#quick").carousel({interval: 2500});
-$("#publisher").carousel({interval: 2500});
-$("#podcast").carousel({interval: 2500});
-$("#article").carousel({interval: 2500});
 
+var cat_cards = document.querySelectorAll('.view-cat-card');
+var cat_cards_len = cat_cards.length-1;
+
+cat_cards.forEach(function(cat_card){
+    cat_card.addEventListener('mouseenter',function(event){
+        var target_element = event.target.children;
+        var last_element = target_element[target_element.length-1].children[0].children[0];
+        console.log(last_element);
+        last_element.src= "assets-article/Right-Arrow-Active.svg";
+    });
+    cat_card.addEventListener('mouseleave',function(event){
+        var target_element = event.target.children;
+        var last_element = target_element[target_element.length-1].children[0].children[0];
+        console.log(last_element);
+        last_element.src= "assets-article/Right-Arrow-Not-Active.svg";
+    });
+})
