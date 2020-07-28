@@ -77,6 +77,14 @@ nav .container{
     position: relative;
     top:-4px;
 }
+.hover-yellow:hover::after{
+    content: ""; 
+    display: block;
+    width: 50%; 
+    border-bottom: 3px solid yellow;
+    position: relative;
+    top:-4px;
+}
 .navbar-brand{
     position: relative;
 }
@@ -278,9 +286,13 @@ nav .container{
 .header-flex3 .card-header{
     padding: 30px!important;
 }
-.header-flex3-bottom p:first-child{
+.header-flex3-tag{
     font-size: 14px;
     font-family: 'Vision Regular', serif;
+    color: #042330;
+}
+.header-flex3-tag:hover{
+    color: #042330;
 }
 .header-flex3-bottom .flex3-author{
     font-size: 14px;
@@ -288,19 +300,19 @@ nav .container{
     font-family: 'Vision Regular', sans-serif;
     color: #292929!important;
 }
-.header-flex3-bottom p:last-child span{
+.header-flex3-bottom > p span{
     border-left: 1.5px solid rgba(0,0,0,0.5);
     margin-left: 10px;
     padding-left: 10px;
 }
-.header-flex3-bottom a{
+.header-flex3-title a{
     color:#042330;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 19px;
     line-height: 24px;
 }
-.header-flex3-bottom a:hover{
+.header-flex3-title a:hover{
     color:#042330;
 }
 .header-flex{
@@ -333,6 +345,7 @@ nav .container{
     background-position: center;
     background-blend-mode: overlay;
     border-radius: 0px!important;
+    padding: 0.4rem 0.5rem!important;
 }
 .header-flex2 .card-header, .header-flex5 .card-header{
     background: url(https://wallpapercave.com/wp/kjh8eTP.jpg),linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
@@ -340,6 +353,7 @@ nav .container{
     background-position: center;
     background-blend-mode: overlay;
     border-radius: 0px!important;
+    padding: 0.4rem 0.5rem!important;
 }
 .header-flex3 .card-header{
     background-color: #fff!important;
@@ -358,11 +372,14 @@ nav .container{
     left: 0;
     transform: rotate(-180deg);
 }
-.header-flex1 p,.header-flex2 p,.header-flex4 p, .header-flex5 p{
+.header-flex1-tag a,.header-flex2-tag a,.header-flex4-tag a, .header-flex5-tag a{
     font-size: 12px;
-    margin-bottom: 0.5rem!important;
+    color:rgba(255,255,255);
+    font-family: 'Vision Regular';
+    line-height: 31px;
+
 }
-.header-flex1 a,.header-flex2 a,.header-flex4 a, .header-flex5 a{
+.header-flex1-title a,.header-flex2-title a,.header-flex4-title a, .header-flex5-title a{
     font-size: 14px;
     color:rgba(255,255,255);
     font-family: 'Playfair Display', serif;
@@ -444,21 +461,24 @@ nav .container{
     z-index: 0;
     height: 370px;
 }
-.card-bottom a,.spirituality-card-bottom a,.etr-ship-card-bottom a{
+.relationship-card-title a,.spirituality-card-title a,.etr-card-title a{
     color:#042330;
     font-family: 'Playfair Display', serif;
     font-size: 19px;
     line-height: 24px;
     z-index:1;
 }
-.card-bottom a:hover,.spirituality-card-bottom a:hover,.etr-ship-card-bottom a:hover{
+.relationship-card-title a:hover,.spirituality-card-title a:hover,.etr-card-title a:hover{
     color:#042330;
 }
-.card-bottom p, .card-bottom span,.spirituality-card-bottom p,.spirituality-card-bottom span,.etr-ship-card-bottom p,.etr-ship-card-bottom span{
+.relationship-tag, .card-bottom span,.spirituality-tag,.spirituality-card-bottom span,.etr-tag,.etr-ship-card-bottom span{
     font-family: 'Vision Regular', sans-serif;
     font-size: 14px;
     margin-top: 5%;
     color:#292929;
+}
+.relationship-tag:hover,.spirituality-tag:hover,.etr-tag:hover{
+    color:#042330;
 }
 .card-bottom span,.spirituality-card-bottom span,.etr-ship-card-bottom span{
     color:#292929;
