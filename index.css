@@ -71,6 +71,18 @@ nav .container{
     border-top: none!important;
     border-left: none!important;
 }
+.hover-yellow{
+    position: relative;
+}
+.hover-yellow:hover::after{
+    content: ""; 
+    position: absolute;
+    width: 50%; 
+    border-bottom: 3px solid yellow;
+    bottom:-4px;
+    left: 0;
+    right: 0;
+}
 header{
     background: url(assets/header_background.svg);
     width: 100%;

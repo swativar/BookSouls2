@@ -69,21 +69,20 @@ nav .container{
     border-top: none!important;
     border-left: none!important;
 }
-.nav-yellow:after {
-    content: ""; 
-    display: block;
-    width: 50%; 
-    border-bottom: 3px solid yellow;
+.nav-yellow{
     position: relative;
-    top:-4px;
 }
-.hover-yellow:hover::after{
+.hover-yellow{
+    position: relative;
+}
+.nav-yellow:after, .hover-yellow:hover::after {
     content: ""; 
-    display: block;
+    position: absolute;
     width: 50%; 
     border-bottom: 3px solid yellow;
-    position: relative;
-    top:-4px;
+    bottom:-4px;
+    left: 0;
+    right: 0;
 }
 .navbar-brand{
     position: relative;
