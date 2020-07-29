@@ -129,6 +129,7 @@ cite,i{
     left: -95px;
     transform: rotate(-180deg);
     opacity: 0.5;
+    z-index: -1;
 }
 .share{
     margin-left: 250px;
@@ -140,12 +141,17 @@ cite,i{
     font-weight: 500;
     opacity: 0.7;
 }
+.author_desc{
+    background-color: rgba(0,0,0,0.06);
+    width:55%;
+    margin: 0 auto;
+    padding: 15px 8%;
+}
 .author_desc .auth-desc{
-    width:38%;
     font-family:'Montserrat',sans-serif;
     font-size: 14px;
     color: #242424;
-    margin: 0 auto;
+    
 }
 .author_desc .auth-desc-name{
     font-family: 'Vision Regular';
