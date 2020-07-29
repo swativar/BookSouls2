@@ -1,0 +1,197 @@
+img{
+    object-fit: cover;
+}
+header{
+    background-image: url(https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    background-position: center;
+    height:450px;
+    width: 100%;
+    position: relative;
+}
+.heart-icon-sart{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    bottom: -30px;
+    right:10%;
+}
+.heart-icon-sart img{
+    width:30px;
+    height:30px;
+}
+.article-navigation{
+    margin: 15px 165px 15px 165px;
+}
+.top-nav{
+    margin: 0 5px;
+    font-family: 'Vision Regular';
+}
+a.top-nav{
+    color: #042330;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+a.top-nav:hover{
+    color: #042330;
+    text-decoration: none;
+}
+.single-article > h2{
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 40px;
+}
+.single-article-social{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.social-links a{
+    margin-right: 10px;
+}
+.singlearticle-author img{
+   object-fit: cover;
+}
+.author-name p{
+    font-family: 'Vision Regular';
+    line-height: 9px;
+}
+.author-name{
+    transform: translate(0,20%);
+}
+.author-name p:last-child{
+    opacity: 0.7;
+}
+.single-article-content{
+    margin-left: 250px;
+    margin-right: 250px;
+    position: relative;
+    margin-top: 5%;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    line-height: 31px;
+}
+.single-article-content p{
+    margin-bottom: 3%;
+}
+#wiki{
+    color: #042330;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.related{
+    margin-bottom: 2%;
+}
+.related a{
+    text-decoration: underline;
+    font-weight: 500;
+}
+.related p{
+    font-weight: 500;
+    opacity: 0.7;
+}
+.related a:hover{
+    text-decoration: none;
+}
+#wiki:hover{
+    color: #042330;
+    text-decoration: none;
+}
+cite,i{
+    font-family: 'Playfair Display';
+}
+.bold-line{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.quote{
+    font-size: 27px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    line-height: 35px;
+    quotes: none;
+}
+.quote .qu-u{
+    position: relative;
+    top: -10px;
+    transform: rotate(-180deg);
+}
+.quote .qu-l{
+    position: relative;
+    top: -10px;
+}
+.single-article-quote{
+    position: absolute;
+    top: -80px;
+    left: -95px;
+    transform: rotate(-180deg);
+    opacity: 0.5;
+}
+.share{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.share-left p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.author_desc .auth-desc{
+    width:38%;
+    font-family:'Montserrat',sans-serif;
+    font-size: 14px;
+    color: #242424;
+    margin: 0 auto;
+}
+.author_desc .auth-desc-name{
+    font-family: 'Vision Regular';
+    font-size: 16px;
+    line-height: 31px;
+}
+.related-title{
+    position: relative;
+}
+.related-title h2{
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+.related-title::after{
+    content: '';
+    position: absolute;
+    background-color: #FFDE00;
+    left: 5%;
+    right: 80.5%;
+    bottom: 0;
+    top: 17px;
+    z-index: -1;
+}
+.related-article-wrapper{
+    margin-left: 165px;
+    margin-right: 165px;
+}
+.related-article-row{
+    position: relative;
+}
+.related-article-row::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 25%;
+    top:-3%;
+    bottom: 15%;
+    background-color: #FFF8CA;
+    z-index: -1;
+}
+.related-article-row::after{
+    content: url('assets/Quotes.svg');
+    position: absolute;
+    top: -22%;
+    right: 25%;
+    opacity: 0.4;
+    z-index: -1;
+}
