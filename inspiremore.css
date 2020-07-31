@@ -25,7 +25,7 @@ img{
     position: relative;
 }
 .millionaire-title h2{
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Playfair Display';
     font-weight: 600;
 }
@@ -33,37 +33,33 @@ img{
     position: relative;
     left: 15px;
 }
-.millionaire-content{
-    margin-left: 390px;
-    margin-right: 390px;
+.heart-icon-mill{
+    bottom: -5px;
+    right: -5px;
 }
-.millionaire-content > p{
-    font-size: 22px;
+.millionaire-cont{
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.millionaire-cont p{
+    font-size: 21px;
     font-family: 'Montserrat',sans-serif;
-} 
-.millionaire-audio p{
-    width: 20%;
-    line-height: 15px;
-    margin-bottom: 0!important;
-    font-family: 'Vision Regular';
-    font-size: 15px;
+    line-height: 31px;
 }
-.millionaire-bottom{
-    position: relative;
+.millionaire-cont q{
+    font-family: 'Playfair Display';
+    font-size: 24px;
 }
-.heart-icon-audio{
-    right: 0;
-    top:50%;
-    transform: translate(0,-50%);
-}
-.related-heading h2{
-    font-size: 26px;
+.millionaire-cont cite{
     font-family: 'Playfair Display';
     font-style: italic;
+    font-size: 23px;
 }
-.related{
-    margin-left: 165px;
-    margin-right: 165px;
+.millionaire-cont h3{
+    font-size: 24px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    margin-bottom: 4%;
 }
 .body::before{
     content: url('assets-InspireMe/BG-Shapes-2.svg');
@@ -78,4 +74,30 @@ img{
     left:0;
     top: -85%;
     z-index: -1;
+}
+.related-heading h2{
+    font-size: 26px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+.related{
+    margin-left: 165px;
+    margin-right: 165px;
+}
+.millionaire-links{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.hr2{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.share-left p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.social-links a{
+    margin-right: 10px;
 }

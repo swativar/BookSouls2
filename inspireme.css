@@ -1,6 +1,35 @@
 img{
     object-fit: cover;
 }
+.inspireme-header::before{
+    content: url('assets-InspireMe/HEADER-BG-Right.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.bg-header{
+    position: relative;
+}
+.bg1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    top: -20%;
+    height: 85%;
+    z-index:-1;  
+}
+.bg2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 55%;
+    z-index: -1;  
+}
+.inspireme-header nav{
+    background-color: transparent!important;
+}
 .inspire-page-header{
     margin: 100px 165px;
 }
@@ -44,11 +73,11 @@ img{
     line-height: 17px;
     font-weight: 500;
 }
-.insp-header-card1 .card-header button,.insp-header-card3 .card-header button{
+.insp-header-card1 .card-header .btn,.insp-header-card3 .card-header .btn{
     font-size: 10px;
     padding: 5px 10px;
 }
-.insp-header-card2 .card-header button{
+.insp-header-card2 .card-header .btn{
     padding: 7px 13px;
     font-size: 12px;
 }
@@ -163,11 +192,14 @@ img{
 .tab-links li{
     width: 100%;
     cursor: pointer;
-    padding: 0 10%;
+    padding: 0 40px;
     margin: 6% 0;
     font-family: 'Vision Regular';
     font-size: 18px;
-    text-align: center;
+    position: relative;
+}
+.tab-links li img{
+    margin-right: 20px;
 }
 .tab-links .disc{
     font-size: 22px;
@@ -181,6 +213,9 @@ img{
 .tab-links li.tab-active{
     border-left: 4.5px solid #FFDE00;
     color: #FFDE00;
+}
+.tab-links li.tab-active img{
+    margin-left: -5px;
 }
 .tab-content-home{
     width: 75%;
@@ -260,3 +295,4 @@ img{
     top: 17px;
     z-index: -1;
 }
+
