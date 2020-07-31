@@ -1,0 +1,23 @@
+.inspire-navigation{
+    margin: 40px 165px;
+}
+.top-nav{
+    margin: 0 5px;
+    font-family: 'Vision Regular';
+}
+a.top-nav{
+    color: #042330;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+a.top-nav:hover{
+    color: #042330;
+    text-decoration: none;
+}
+.millionaire-header{
+    margin-left: 165px;
+    margin-right: 165px;
+}
+img{
+    object-fit: cover;
+}
