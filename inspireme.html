@@ -313,9 +313,9 @@
     <div class="bg-header">
         <img src="assets-InspireMe/BG-Shapes-2.svg" class="bg1">
         <div class="tabs mt-5 clearfix">
-            <div class="tab-links float-left">
-                <p class="text-center disc">Discover</p>
-                <ul class="my-4">
+            <div class="tab-links float-left sticky-top">
+                <p class="disc">Discover</p>
+                <ul class="mt-4 mb-5">
                     <li class="tab-li tab-active" onclick="show(event,'home')"><img
                             src="assets-InspireMe/HomeIcon.svg">Home</li>
                     <li class="tab-li" onclick="show(event,'explore')"><img
@@ -323,7 +323,7 @@
                     <li class="tab-li" onclick="show(event,'genre')"><img src="assets-InspireMe/Genre Icon.svg">Genre
                     </li>
                 </ul>
-                <p class="text-center lang">Language</p>
+                <p class="lang">Language</p>
                 <ul class="my-4">
                     <li class="text-warn"><img src="assets-InspireMe/EnglishIcon.svg">English</li>
                     <li><img src="assets-InspireMe/HindiIcon.svg">Hindi</li>
@@ -523,165 +523,142 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-content-explore tab-content float-right mt-4" id="explore">
-                <p>Explore</p>
-            </div>
-            <div class="tab-content-genre tab-content float-right mt-4" id="genre">
-                <p>Genre</p>
-            </div>
-        </div>
-        <!--Subscribe-->
-        <div class="mt-5 subscribe_middle">
-            <div class="d-flex justify-content-between">
-                <div class="subscribe_left">
-                    <p>Get articles directly in your email</p>
-                    <p>Be First to read the articles and other special
-                        contents</p>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Enter email" id="email1">
-                </div>
-                <div class="subscribe_button">
-                    <button class="btn btn-warning">SUBSCRIBE</button>
-                </div>
-            </div>
-        </div>
-        <div class="creativity mt-5">
-            <div class="creative-heading">
-                <h2 class="text-center">Creativity</h2>
-            </div>
-            <div class="d-flex justify-content-between mt-4">
-                <div class="create-card">
-                    <img class="create-card-img"
-                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                        alt="">
-                    <div class="text-center create-card-title">
-                        <a href>One Night Millionaire</a>
-                    </div>
-                    <div class="heart-icon heart-icon-creative bg-light">
-                        <img src="assets/icons/Heart.svg">
+                <!--Subscribe-->
+                <div class="mt-5 newsletter">
+                    <div class="d-flex justify-content-between">
+                        <div class="newsletter_left">
+                            <p>Get articles directly in your email</p>
+                            <p>Be First to read the articles and other special
+                                contents</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter email" id="email-input">
+                        </div>
+                        <div class="newsletter_button">
+                            <button class="btn btn-warning">SUBSCRIBE</button>
+                        </div>
                     </div>
                 </div>
-                <div class="create-card">
-                    <img class="create-card-img"
-                        src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
-                        alt="">
-                    <div class="text-center create-card-title">
-                        <a href>Man behind Revolution</a>
+                <div class="creativity mt-5">
+                    <div class="creative-heading">
+                        <h2 class="text-center">Creativity</h2>
                     </div>
-                    <div class="heart-icon heart-icon-creative bg-light">
-                        <img src="assets/icons/Heart.svg">
+                    <div class="d-flex justify-content-between mt-4">
+                        <div class="create-card">
+                            <img class="create-card-img"
+                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
+                                alt="">
+                            <div class="text-center create-card-title">
+                                <a href>One Night Millionaire</a>
+                            </div>
+                            <div class="heart-icon heart-icon-creative bg-light">
+                                <img src="assets/icons/Heart.svg">
+                            </div>
+                        </div>
+                        <div class="create-card">
+                            <img class="create-card-img"
+                                src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
+                                alt="">
+                            <div class="text-center create-card-title">
+                                <a href>Man behind Revolution</a>
+                            </div>
+                            <div class="heart-icon heart-icon-creative bg-light">
+                                <img src="assets/icons/Heart.svg">
+                            </div>
+                        </div>
+                        <div class="create-card">
+                            <img class="create-card-img"
+                                src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg" alt="">
+                            <div class="text-center create-card-title">
+                                <a href>Internet's own boy</a>
+                            </div>
+                            <div class="heart-icon heart-icon-creative bg-light">
+                                <img src="assets/icons/Heart.svg">
+                            </div>
+                        </div>
+                        <div class="create-card">
+                            <img class="create-card-img"
+                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
+                                alt="">
+                            <div class="text-center create-card-title">
+                                <a href>One Night Millionaire</a>
+                            </div>
+                            <div class="heart-icon heart-icon-creative bg-light">
+                                <img src="assets/icons/Heart.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-warning px-5 mt-4">See all</button>
                     </div>
                 </div>
-                <div class="create-card">
-                    <img class="create-card-img" src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg"
-                        alt="">
-                    <div class="text-center create-card-title">
-                        <a href>Internet's own boy</a>
-                    </div>
-                    <div class="heart-icon heart-icon-creative bg-light">
-                        <img src="assets/icons/Heart.svg">
-                    </div>
-                </div>
-                <div class="create-card">
-                    <img class="create-card-img"
-                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                        alt="">
-                    <div class="text-center create-card-title">
-                        <a href>One Night Millionaire</a>
-                    </div>
-                    <div class="heart-icon heart-icon-creative bg-light">
-                        <img src="assets/icons/Heart.svg">
-                    </div>
-                </div>
-                <div class="create-card">
-                    <img class="create-card-img"
-                        src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
-                        alt="">
-                    <div class="text-center create-card-title">
-                        <a href>Man behind Revolution</a>
-                    </div>
-                    <div class="heart-icon heart-icon-creative bg-light">
-                        <img src="assets/icons/Heart.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <button class="btn btn-warning px-5 mt-4">See all</button>
-            </div>
-        </div>
 
-        <div class="creativity mt-5">
-            <div class="influence-heading">
-                <h2 class="text-center">Influencer</h2>
-            </div>
-            <div class="d-flex justify-content-between mt-4">
-                <div class="create-card">
-                    <img class="create-card-img"
-                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                        alt="">
-                    <div class="text-center create-card-title">
-                        <a href>One Night Millionaire</a>
+                <div class="creativity mt-5">
+                    <div class="influence-heading">
+                        <h2 class="text-center">Influencer</h2>
                     </div>
-                    <div class="heart-icon heart-icon-creative bg-light">
-                        <img src="assets/icons/Heart.svg">
+                    <div class="d-flex justify-content-between mt-4">
+                        <div class="create-card">
+                            <img class="create-card-img"
+                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
+                                alt="">
+                            <div class="text-center create-card-title">
+                                <a href>One Night Millionaire</a>
+                            </div>
+                            <div class="heart-icon heart-icon-creative bg-light">
+                                <img src="assets/icons/Heart.svg">
+                            </div>
+                        </div>
+                        <div class="create-card">
+                            <img class="create-card-img"
+                                src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
+                                alt="">
+                            <div class="text-center create-card-title">
+                                <a href>Man behind Revolution</a>
+                            </div>
+                            <div class="heart-icon heart-icon-creative bg-light">
+                                <img src="assets/icons/Heart.svg">
+                            </div>
+                        </div>
+                        <div class="create-card">
+                            <img class="create-card-img"
+                                src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg" alt="">
+                            <div class="text-center create-card-title">
+                                <a href>Internet's own boy</a>
+                            </div>
+                            <div class="heart-icon heart-icon-creative bg-light">
+                                <img src="assets/icons/Heart.svg">
+                            </div>
+                        </div>
+                        <div class="create-card">
+                            <img class="create-card-img"
+                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
+                                alt="">
+                            <div class="text-center create-card-title">
+                                <a href>One Night Millionaire</a>
+                            </div>
+                            <div class="heart-icon heart-icon-creative bg-light">
+                                <img src="assets/icons/Heart.svg">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="create-card">
-                    <img class="create-card-img"
-                        src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
-                        alt="">
-                    <div class="text-center create-card-title">
-                        <a href>Man behind Revolution</a>
-                    </div>
-                    <div class="heart-icon heart-icon-creative bg-light">
-                        <img src="assets/icons/Heart.svg">
-                    </div>
-                </div>
-                <div class="create-card">
-                    <img class="create-card-img" src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg"
-                        alt="">
-                    <div class="text-center create-card-title">
-                        <a href>Internet's own boy</a>
-                    </div>
-                    <div class="heart-icon heart-icon-creative bg-light">
-                        <img src="assets/icons/Heart.svg">
-                    </div>
-                </div>
-                <div class="create-card">
-                    <img class="create-card-img"
-                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                        alt="">
-                    <div class="text-center create-card-title">
-                        <a href>One Night Millionaire</a>
-                    </div>
-                    <div class="heart-icon heart-icon-creative bg-light">
-                        <img src="assets/icons/Heart.svg">
-                    </div>
-                </div>
-                <div class="create-card">
-                    <img class="create-card-img"
-                        src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
-                        alt="">
-                    <div class="text-center create-card-title">
-                        <a href>Man behind Revolution</a>
-                    </div>
-                    <div class="heart-icon heart-icon-creative bg-light">
-                        <img src="assets/icons/Heart.svg">
+                    <div class="text-center">
+                        <button class="btn btn-warning px-5 mt-4">See all</button>
                     </div>
                 </div>
             </div>
-            <div class="text-center">
-                <button class="btn btn-warning px-5 mt-4">See all</button>
-            </div>
+        <div class="tab-content-explore tab-content float-right mt-4" id="explore">
+            <p>Explore</p>
         </div>
-        <img src="assets-InspireMe/BG-shapes.svg" class="bg2">
+        <div class="tab-content-genre tab-content float-right mt-4" id="genre">
+            <p>Genre</p>
+        </div>
     </div>
-    
+    <img src="assets-InspireMe/BG-shapes.svg" class="bg2">
+    </div>
     <!--Subscribe-->
 
-    <div class="email text-center mb-5">
+    <div class="email text-center my-5">
         <p>Stay <span class="text-warn">Updated</span></p>
         <p>Get selected contents directly in your Email!</p>
         <div class="d-flex mt-5 justify-content-between footer_subscribe">
