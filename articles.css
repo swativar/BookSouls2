@@ -410,11 +410,11 @@ nav .container{
     border: none!important;
     height: 130px;
     margin: 20px 0;
-    box-shadow: 1px 1px 30px rgba(0,0,0,0.12);
+    box-shadow: 1px 1px 30px rgb(236, 234, 234);
 }
 .relation-related-cards .card{
     border: none!important;
-    box-shadow: 1px 1px 30px rgba(0,0,0,0.12);
+    box-shadow: 1px 1px 30px rgb(236, 234, 234);
     height: 90px;
     margin: 20px 0;
 }
@@ -507,12 +507,12 @@ nav .container{
 .relation-cards .card-header,.spirituality .card-header,.enterpreneurship .card-header{
     padding: 10px 18px!important;
     border: none!important;
-    color: #fff!important;
+    background-color: #fff!important;
 }
 .relation-related-cards .card-header{
     padding: 1px 5px!important;
     border: none!important;
-    color: #fff!important;
+    background-color: #fff!important;
 }
 .card-top .card-img-top,.spirituality .card-img-top,.enterpreneurship .card-img-top{
    width: 130px;
@@ -875,7 +875,7 @@ img{
 .spirituality-right .header-flex5,.spirituality-right .header-flex4{
     width: 350px;
     margin: 20px 0;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 30px rgb(236, 234, 234);
 }
 .relation-left{
     width: 65%;
