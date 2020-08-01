@@ -127,7 +127,7 @@ nav .container{
     background-color: rgb(245, 140, 101);
 }*/
 .header-carousel{
-    margin-top: 100px;
+    margin-top: 70px;
     background-color: rgba(0, 0, 0, 0.06);
 }
 #header-cara{
@@ -160,7 +160,7 @@ nav .container{
 .header-card-content{
     width: 450px;
     height: 235px;
-    box-shadow: 1px 1px 30px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 30px rgba(0,0,0,0.1);
     padding:5% 10%;
     background:white;
     border-radius: 10px;
@@ -202,7 +202,7 @@ nav .container{
 .heart-icon-header{
     right:-10px;
     top:-10px;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
 }
 .carousel-indicators .active {
     width: 35px!important;
@@ -387,30 +387,6 @@ nav .container{
 .header-flex1 a:hover,.header-flex2 a:hover,.header-flex4 a:hover, .header-flex5 a:hover{
    color:rgba(255,255,255);
 }
-.relationship-row,.spirituality-row,.etr-ship-row{
-    position: relative;
-    padding: 15px 0;
-}
-.relationship-row::before,.etr-ship-row::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 25%;
-    top:0;
-    bottom: 20%;
-    background-color: #FFF8CA;
-    z-index: -1;
-}
-.spirituality-row::before{
-    content: '';
-    position: absolute;
-    right: 0;
-    left: 25%;
-    top:0;
-    bottom: 20%;
-    background-color: #FFF8CA;
-    z-index: -1;
-}
 .relationship-post-link,.spirituality-post-link,.etr-ship-post-link{
     position: relative;
     top: -30px;
@@ -430,35 +406,20 @@ nav .container{
     color: #042330;
     border-color: transparent!important;
 }
-.relationship-wrapper::before,.etr-ship-wrapper::before{
-    content: url('assets/Quotes.svg');
-    position: absolute;
-    top: -12%;
-    right: 17%;
-    opacity: 0.4;
-}
-.spirituality-wrapper::before{
-    content: url('assets/Quotes.svg');
-    position: absolute;
-    top: -12%;
-    left: 17%;
-    opacity: 0.4;
-    transform: rotate(-180deg);
-}
-.relationship-header-wrapper,.etr-ship-header-wrapper,.spirituality-header-wrapper{
-    margin-right: 165px;
-    margin-left: 165px;
-}
-.relationship-wrapper,.spirituality-wrapper,.etr-ship-wrapper{
-    margin-right: 165px;
-    margin-left: 165px;
-    position: relative;
-}
-.relationship .card,.spirituality .card,.enterpreneurship .card{
+.relation-cards .card,.spirituality .card,.enterpreneurship .card{
     border: none!important;
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
-    z-index: 0;
-    height: 370px;
+    height: 130px;
+    margin: 20px 0;
+    box-shadow: 1px 1px 30px rgba(0,0,0,0.12);
+}
+.relation-related-cards .card{
+    border: none!important;
+    box-shadow: 1px 1px 30px rgba(0,0,0,0.12);
+    height: 90px;
+    margin: 20px 0;
+}
+.relation-related-cards .last-related-card{
+    height: auto;
 }
 .relationship-card-title a,.spirituality-card-title a,.etr-card-title a{
     color:#042330;
@@ -467,54 +428,139 @@ nav .container{
     line-height: 24px;
     z-index:1;
 }
-.relationship-card-title a:hover,.spirituality-card-title a:hover,.etr-card-title a:hover{
-    color:#042330;
+.relation-related-card-title{
+    line-height: 17px;
+    margin-top: 3px;
+    margin-bottom: 5px;
 }
-.relationship-tag, .card-bottom span,.spirituality-tag,.spirituality-card-bottom span,.etr-tag,.etr-ship-card-bottom span{
-    font-family: 'Vision Regular', sans-serif;
+.relation-related-card-title a{
+    color:#042330;
+    font-family: 'Playfair Display', serif;
     font-size: 14px;
-    margin-top: 5%;
-    color:#292929;
 }
-.relationship-tag:hover,.spirituality-tag:hover,.etr-tag:hover{
+.relation-related-lastcard-title{
+    line-height: 15px;
+    margin-top: 10px;
+}
+.relation-related-lastcard-title a{
+    color:#042330;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}
+.relation-related-lastcard-title p{
+    font-family: 'Vision Regular';
+    font-size: 13.5px;
+    line-height: 16px;
+    color: #292929;
+    margin-top: 15px;
+}
+.relationship-card-title a:hover,.spirituality-card-title a:hover,.etr-card-title a:hover,.relation-related-card-title a:hover,.relation-related-lastcard-title a:hover{
     color:#042330;
 }
-.card-bottom span,.spirituality-card-bottom span,.etr-ship-card-bottom span{
+.relationship-card-title p{
+    font-family: 'Vision Regular';
+    font-size: 13px;
+    line-height: 16px;
+    color: #292929;
+    margin-top: 15px;
+}
+.relation-auth,.spirituality-tag,.spirituality-card-bottom span,.etr-tag,.etr-ship-card-bottom span{
+    font-family: 'Vision Regular', sans-serif;
+    font-size: 12px;
     color:#292929;
 }
-.relationship .card::before,.spirituality .card::before,.enterpreneurship .card::before{
-    content: url('assets/triang_svg.svg');
-    position: absolute;
-    right: 0;
-    top: 0;
+.relationship-tag{
+    font-family: 'Vision Regular', sans-serif;
+    font-size: 12px;
+    color:#292929;
 }
-.relationship .card::after,.spirituality .card::after,.enterpreneurship .card::after{
-    content: url('assets/triang_svg.svg');
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: rotate(-180deg);
-    z-index: -1;
+.relation-related-tag{
+    font-family: 'Vision Regular', sans-serif;
+    font-size: 12px;
+    color:#292929;
 }
-.relationship .card-header,.spirituality .card-header,.enterpreneurship .card-header{
-    padding: 25px!important;
+.relationship-tag:hover,.spirituality-tag:hover,.etr-tag:hover,.relation-related-tag:hover{
+    color:#042330;
+}
+.relation-auth,.spirituality-card-bottom span,.etr-ship-card-bottom span{
+    color:#292929;
+}
+.relation-auth span{
+    margin:0 10px;
+}
+.relation-related-auth{
+    font-family: 'Vision Regular', sans-serif;
+    font-size: 12px;
+    color:#292929;
+}
+.relation-related-auth span{
+    margin:0 10px;
+}
+.relation-related-lastauth{
+    font-family: 'Vision Regular', sans-serif;
+    font-size: 12px;
+    color:#292929;
+}
+.relation-related-lastauth span{
+    margin:0 10px;
+}
+.relation-cards .card-header,.spirituality .card-header,.enterpreneurship .card-header{
+    padding: 10px 18px!important;
     border: none!important;
+    color: #fff!important;
 }
-.relationship .card-img-top,.spirituality .card-img-top,.enterpreneurship .card-img-top{
-   height: 160px;
+.relation-related-cards .card-header{
+    padding: 1px 5px!important;
+    border: none!important;
+    color: #fff!important;
+}
+.card-top .card-img-top,.spirituality .card-img-top,.enterpreneurship .card-img-top{
+   width: 130px;
    border-radius: 0px!important;
+   height: 100%;
+}
+.card-related-top .card-img-top{
+    width: 90px;
+   border-radius: 0px!important;
+   height: 100%;
+}
+.card-related-last-top .card-img-top{
+    height: 140px;
+    position: relative;
+}
+.last-card-link{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-family: 'Vision Regular';
+}
+.last-related-card .card-header{
+    position: relative;
+}
+.heart-icon-last{
+    right: 0;
+    bottom: 0;
 }
 .relationship .card-top,.spirituality .spirituality-card-top,.etr-ship-card-top{
     position: relative;
 }
-.heart-icon-relationship,.heart-icon-spirituality,.heart-icon-enterpreneurship{
-    bottom:-5px;
-    right: -5px;
-}
-.relationship-title,.spirituality-title,.etr-ship-title{
+.relationship .card-related-top,.spirituality .spirituality-card-top,.etr-ship-card-top{
     position: relative;
 }
-.relationship-title h2,.spirituality-title h2,.etr-ship-title h2,.view-by-cat-title h2{
+.heart-icon-relationship,.heart-icon-spirituality,.heart-icon-enterpreneurship{
+    top: 50%;
+    transform: translate(0,-50%);
+    right: -15px;
+}
+.heart-icon-relation-rel{
+    bottom: 0;
+    left: -15px;
+}
+.relationship-title,.relation-related-title,.spirituality-title,.etr-ship-title{
+    position: relative;
+}
+.relationship-title h2,.relation-related-title h2,.spirituality-title h2,.etr-ship-title h2,.view-by-cat-title h2{
     font-size: 25px;
     font-family: 'Playfair Display';
     font-style: italic;
@@ -523,8 +569,18 @@ nav .container{
     content: '';
     position: absolute;
     background-color: #FFDE00;
-    left: 43.5%;
-    right: 43.5%;
+    left: 0;
+    right: 79.5%;
+    bottom: 0;
+    top: 17px;
+    z-index: -1;
+}
+.relation-related-title::after{
+    content: '';
+    position: absolute;
+    background-color: #FFDE00;
+    left: 0;
+    right: 75.5%;
     bottom: 0;
     top: 17px;
     z-index: -1;
@@ -796,4 +852,75 @@ footer{
     color: #454545;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+}
+.relationship{
+    margin-left: 165px;
+    margin-right: 165px;
+}
+.relation-left{
+    width: 65%;
+}
+.relation-right{
+    width: 33%;
+}
+img{
+    object-fit: cover;
+}
+.spirituality-right .card-header{
+    height: 100%;
+}
+.spirituality-right .header-flex4-title,.spirituality-right .header-flex5-title{
+    transform: translate(0,20%);
+}
+.spirituality-right .header-flex5,.spirituality-right .header-flex4{
+    width: 350px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+.relation-left{
+    width: 65%;
+}
+.spirituality-right{
+    width: 33%;
+}
+.spirituality-right .header-flex4 .card-header,.spirituality-right .header-flex5 .card-header{
+    position: relative;
+}
+.spirituality-recom-title,.spirituality-title,.relation-view-title{
+    position: relative;
+}
+.spirituality-recom-title h2,.spirituality-title h2,.relation-view-title h2{
+    font-size: 25px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+.spirituality-recom-title::after{
+    content: '';
+    position: absolute;
+    background-color: #FFDE00;
+    left: 0;
+    right: 54.5%;
+    bottom: 0;
+    top: 17px;
+    z-index: -1;
+}
+.spirituality-title::after{
+    content: '';
+    position: absolute;
+    background-color: #FFDE00;
+    left: 0;
+    right: 80.5%;
+    bottom: 0;
+    top: 17px;
+    z-index: -1;
+}
+.relation-view-title::after{
+    content: '';
+    position: absolute;
+    background-color: #FFDE00;
+    left: 0;
+    right: 60.5%;
+    bottom: 0;
+    top: 17px;
+    z-index: -1;
 }
