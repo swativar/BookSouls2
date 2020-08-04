@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booksouls - A blog to inspire million</title>
-    <link rel="stylesheet" href="articles.css">
-    <link rel="stylesheet" href="singleinspire.css">
-    <link rel="stylesheet" href="inspireme.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="quick.css">
     <script src="https://kit.fontawesome.com/509c72249f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,16 +19,15 @@
 
 </head>
 
-<body class="body">
+<body>
     <!--Loader until page loads-->
     <div id="loader" class="center"></div>
-
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md bg-light fixed-top">
+    <nav class="navbar navbar-expand-md">
         <div class="container">
             <!-- Brand -->
             <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-            <p class="nav-tag">inspire me</p>
+            <p class="nav-tag">quick</p>
 
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -43,13 +41,13 @@
                         <a class="nav-link" href="articles.html"><span class="hover-yellow">Articles</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inspireme.html"><span class="nav-yellow">Insipre Me</span></a>
+                        <a class="nav-link" href="inspireme.html"><span class="hover-yellow">Insipre Me</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="podcast.html"><span class="hover-yellow">Podcast</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="hover-yellow">Quick</span></a>
+                        <a class="nav-link" href="#"><span class="nav-yellow">Quick</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><span class="hover-yellow">Publisher</span></a>
@@ -67,119 +65,96 @@
             <a href="" class="search-icon"><img src="assets/icons/Search.svg" alt=""></a>
         </div>
     </nav>
-    <div class="inspire-navigation">
-        <a href="index.html" class="top-nav">Home</a>
-        <span>/</span>
-        <a href="inspireme.html" class="top-nav">Inspire Me</a>
-        <span>/</span>
-        <span class="top-nav">One Night Millionaire</span>
-    </div>
-    <div class="millionaire-header d-flex align-items-center justify-content-center">
-        <div class="millionaire-img">
-            <img class="rounded"
-                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                alt="" width="250" height="300">
-        </div>
-        <div class="millionaire-title">
-            <h2>One Night Millionaire</h2>
-        </div>
-    </div>
-    <div class="millionaire-content mt-5">
-        <p>Kylie Kristen Jenner is an American media personality, socialite, model, and business woman. She has starred
-            in the E! reality television series Keeping Up with the kardashians since 2007 and is the founder and owner
-            of cosmetic company Kylie Cosmetics.
-            At age 14 in 2012, she collaborated with the clothing brand PacSun, along with her sister Kendall, and
-            created a line of clothing, "Kendall & Kylie". In 2015, Jenner launched her own cosmetics line called Kylie
-            Lip Kits, which was renamed to Kylie Cosmetics the following year.</p>
-        <div class="mt-5 millionaire-bottom">
-            <div class="d-flex align-items-center">
-                <a class="btn btn-warning px-3 mr-4 py-2" href="inspiremore.html">Read Now</a>
-                <div class="d-flex align-items-center millionaire-audio">
-                <img class="mr-2" src="assets/icons/Headphones.svg">
-                <p>Audio available</p>
-                </div>
-            </div>
-            <div class="heart-icon heart-icon-audio bg-light">
-                <img src="assets/icons/Heart.svg">
-            </div>
-        </div>
-    </div>
-    <!--Subscribe-->
-    <div class="mt-5 subscribe_middle">
-        <div class="d-flex justify-content-between">
-            <div class="subscribe_left">
-                <p>Get articles directly in your email</p>
-                <p>Be First to read the articles and other special
-                    contents</p>
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control" placeholder="Enter email" id="email1">
-            </div>
-            <div class="subscribe_button">
-                <button class="btn btn-warning">SUBSCRIBE</button>
-            </div>
-        </div>
-    </div>
 
-    <div class="related mt-5">
-        <div class="related-heading">
-            <h2>Related</h2>
-        </div>
-        <div class="d-flex justify-content-between mt-4">
-            <div class="create-card">
-                <img class="create-card-img"
-                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                    alt="">
-                <div class="text-center create-card-title">
-                    <a href>One Night Millionaire</a>
-                </div>
-                <div class="heart-icon heart-icon-creative bg-light">
-                    <img src="assets/icons/Heart.svg">
-                </div>
+    <div class="wrapper quick-top my-5">
+        <div class="d-flex justify-content-between">
+            <div class="quick-header-left">
+                <h2 class="text-center">Quick</h2>
+                <p class="mt-5">Explore book summary in different categories to keep you motivated.</p>
+                <p>We have a wide range of quicks for you.Explore audio contents in different categories to keep you
+                    motivated.</p>
             </div>
-            <div class="create-card">
-                <img class="create-card-img"
-                    src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
-                    alt="">
-                <div class="text-center create-card-title">
-                    <a href>Man behind Revolution</a>
-                </div>
-                <div class="heart-icon heart-icon-creative bg-light">
-                    <img src="assets/icons/Heart.svg">
-                </div>
-            </div>
-            <div class="create-card">
-                <img class="create-card-img" src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg" alt="">
-                <div class="text-center create-card-title">
-                    <a href>Internet's own boy</a>
-                </div>
-                <div class="heart-icon heart-icon-creative bg-light">
-                    <img src="assets/icons/Heart.svg">
-                </div>
-            </div>
-            <div class="create-card">
-                <img class="create-card-img"
-                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                    alt="">
-                <div class="text-center create-card-title">
-                    <a href>One Night Millionaire</a>
-                </div>
-                <div class="heart-icon heart-icon-creative bg-light">
-                    <img src="assets/icons/Heart.svg">
-                </div>
-            </div>
-            <div class="create-card">
-                <img class="create-card-img"
-                    src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
-                    alt="">
-                <div class="text-center create-card-title">
-                    <a href>Man behind Revolution</a>
-                </div>
-                <div class="heart-icon heart-icon-creative bg-light">
-                    <img src="assets/icons/Heart.svg">
+            <div class="quick-header-right">
+                <div id="quick-books-cara" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#quick-books-cara" data-slide-to="0" class="active"></li>
+                        <li data-target="#quick-books-cara" data-slide-to="1"></li>
+                        <li data-target="#quick-books-cara" data-slide-to="2"></li>
+                    </ul>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                <img class="book-img-1"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg">
+                                <img class="book-img-2"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg">
+                                <img class="book-img-3"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                <img class="book-img-1"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg">
+                                <img class="book-img-2"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg">
+                                <img class="book-img-3"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                <img class="book-img-1"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg">
+                                <img class="book-img-2"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg">
+                                <img class="book-img-3"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <hr class="hr">
+
+    <div class="quick-tab wrapper clearfix">
+        <div class="quick-tab-links float-left">
+            <div class="quick-tab-title title1">
+                <p class="text-light">Explore</p>
+            </div>
+            <ul class="quick-tab-cat">
+                <li>Authors</li>
+                <li>Genre</li>
+                <ul class="quick-tab-sub-cat">
+                    <li>Fiction</li>
+                    <li>Non-Fiction</li>
+                    <li>Drama</li>
+                    <li>Adventure</li>
+                    <li>Thriller</li>
+                    <li>Romance</li>
+                    <li>Comedy</li>
+                    <li>Mystery</li>
+                    <li>Fantasy</li>
+                    <li>Motivational</li>
+                </ul>
+            </ul>
+            <div class="quick-tab-title title2">
+                <p class="text-light">Discover</p>
+            </div>
+            <ul class="quick-tab-cat">
+                <li>New</li>
+                <li>Trending</li>
+                <li>Recommended</li>
+            </ul>
+            <div class="quick-tab-title title3">
+                <p class="text-light">Language</p>
+            </div>
+        </div>
+        <div class="quick-tab-home float-right"></div>
     </div>
     <!--Subscribe-->
 
@@ -270,7 +245,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="inspireme.js"></script>
+    <script src="podcast.js"></script>
 </body>
 
 </html>

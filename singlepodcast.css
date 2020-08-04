@@ -1,0 +1,185 @@
+.reader-celeb{
+   width: 21%;
+}
+.reader-audio-player{
+  width: 79%;
+}
+.celeb-name p{
+    margin-bottom: 0!important;
+}
+.celeb-name p:first-child{
+    width: 50%;
+    line-height: 15px;
+    font-family: 'Vision Heavy';
+    font-size: 14px;
+}
+.celeb-name p:last-child{
+    font-family: 'Vision Regular';
+    font-size: 12px;
+    margin-top: 10px;
+}
+.audio-container{
+    margin: 4% 0;
+}
+.reader-audio{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem;
+}
+.reader-audio-player-element{
+    flex-grow: 1;
+}
+.ranger {
+    width: 100%;
+    padding-right: .375rem;
+    padding-left: .375rem;
+}
+.ranger-path {
+    position: relative;
+    width: 100%;
+    height: .13rem;
+    background: #9da8ad;
+    cursor: pointer;
+}
+.ranger-trail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #FFDE00;
+    cursor: pointer;
+}
+.ranger-thumb {
+    position: absolute;
+    top: 50%;
+    width: .75rem;
+    height: .75rem;
+    background: #FFDE00;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+.audio-controls img{
+    margin-right:35px;
+}
+.millionaire-title{
+    padding: 50px 30px;
+    position: relative;
+    left: -15px;
+    background-color: #fff;
+    position: relative;
+}
+.millionaire-title h2{
+    font-size: 40px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+.millionaire-img{
+    position: relative;
+    left: 15px;
+}
+.heart-icon-mill{
+    bottom: -5px;
+    right: -5px;
+}
+.top-nav{
+    margin: 0 5px;
+    font-family: 'Vision Regular';
+}
+a.top-nav{
+    color: #042330;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+a.top-nav:hover{
+    color: #042330;
+    text-decoration: none;
+}
+.podcast-navigation{
+    margin: 40px 165px;
+}
+.millionaire-links,.podcast-topics,.hr2{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.podcast-topics h3{
+    /*font-family: 'Vision Regular';*/
+    color: #042330;
+}
+.podcast-topics ol{
+    padding: 25px!important;
+}
+.podcast-topics li{
+    font-family: 'Montserrat';
+    font-size: 22px;
+    position: relative;
+    left: 0;
+}
+.share-left p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.social-links a{
+    margin-right: 10px;
+}
+.start-time span , .end-time span{
+    font-family: 'Vision Regular';
+    font-size: 14px;
+}
+.podcast-card{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 2% 0;
+}
+.podcast-card-background{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+}
+.podcast-card-play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.podcast-card-play img{
+    width:70px;
+    height: 70px;
+}
+.podcast-card-heart-icon{
+    right: -5px;
+    top:-5px;
+}
+.podcast-card-container{
+    position: relative;
+    height: 250px;
+}
+.podcast-card-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.podcast-card-desc p{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+}
+.single-related-heading h2{
+    font-size: 26px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+.audio-vol-button,.prev-button,.play-button,.next-button{
+    cursor: pointer;
+}

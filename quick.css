@@ -1,0 +1,95 @@
+.quick-header-left{
+    width: 45%;
+}
+.quick-header-right{
+    width: 45%;
+}
+.quick-header-left h2{
+    font-size: 38px;
+    font-family: 'Playfair Display';
+}
+.quick-header-left p{
+    font-family: 'Montserrat';
+    font-size: 25px;
+    line-height: 31px;
+    margin-bottom: 0!important;
+}
+.book-img-2{
+    width: 170px;
+    height: 260px;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+.book-img-1,.book-img-3{
+    width: 160px;
+    height: 230px;
+    border-radius: 5px;
+}
+.book-img-1{
+    position: relative;
+    left: 30px;
+}
+.book-img-3{
+    position: relative;
+    left: -30px;
+}
+#quick-books-cara .carousel-indicators{
+    bottom: -50px;
+}
+.quick-tab-links{
+    width: 22.5%;
+    box-shadow: 1px 1px 40px rgb(223, 221, 221);
+    border-radius: 20px;
+    z-index: 1;
+    background-color: #fff;
+}
+.quick-tab-cat{
+    list-style-type: none;
+    padding: 0!important;
+}
+.quick-tab-sub-cat{
+    list-style-type: none;
+    padding-left: 15px!important;
+}
+.quick-tab-links li{
+    width: 100%;
+    cursor: pointer;
+    padding: 0 40px;
+    margin: 6% 0;
+    font-family: 'Vision Regular';
+    font-size: 18px;
+    position: relative;
+}
+.quick-tab-title{
+    background-color: #000;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.title1::after,.title2::after{
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 10%;
+    border-width: 12px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+.quick-tab-title:first-child{
+    border-radius: 20px 20px 0 0;
+}
+.quick-tab-title:last-child{
+    border-radius: 0 0 20px 20px;
+}
+.quick-tab-title p{
+    font-size: 22px;
+    font-family: 'Vision Regular';
+    margin-bottom: 0!important;
+}
+.quick-tab-home{
+    width: 75%;
+}
