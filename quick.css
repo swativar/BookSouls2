@@ -1,3 +1,24 @@
+.quick-top{
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+.quick-top-background{
+    position: relative;
+}
+.quick-top-background::before{
+    content: url('assets-Quick-Page/HeaderTriangle.svg');
+    position: absolute;
+    right: 0;
+    top:0;
+    z-index: -1;
+}
+.quick-top-background::after{
+    content: url('assets-Quick-Page/DotsHeader.svg');
+    position: absolute;
+    right: 0;
+    top:2%;
+    z-index: -1;
+}
 .quick-header-left{
     width: 45%;
 }
@@ -18,8 +39,10 @@
     width: 170px;
     height: 260px;
     border-radius: 10px;
-    z-index: 1;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+.book-img-link-2{
+    z-index: 1;
 }
 .book-img-1,.book-img-3{
     width: 160px;
@@ -154,12 +177,15 @@ li.quick-sub-active::before{
     position: relative;
     
 }
+.quick-tab-popular{
+    position: relative;
+}
 .quick-home-title p{
     font-size: 22px;
     font-family: 'Playfair Display';
     font-style: italic;
 }
-#tab-popular{
+#tab-popular,#tab-genre,#tab-new,#tab-recomm{
     position: initial;
 }
 .controls{
@@ -174,6 +200,7 @@ li.quick-sub-active::before{
     height: 30px;
     position: relative;
     border: 1px solid #FFDE00;
+    cursor: default;
 }
 .previous a{
     position: absolute;
@@ -204,4 +231,98 @@ li.quick-sub-active::before{
     top: 50%;
     transform: translate(-50%,-50%);
     color: #042330;
+}
+.quick-tab-genre{
+    position: relative;
+}
+ .bq-card1,.bq-card2{
+    width: 230px;
+    height: 420px;
+    border: none!important;
+    border-radius: 10px!important;
+}
+.bq-card1{
+    box-shadow: 0px 0px 30px rgba(255,69,0,0.1);
+}
+.bq-card2{
+    box-shadow: 0px 0px 30px rgba(0,0,255,0.1);
+}
+.tab-popular-carousel-inner{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 430px;
+}
+.bq-card1 .card-header, .bq-card2 .card-header{
+    border: none!important;
+    padding: 1.25rem 0.46rem!important;
+    background-color:#fff!important;
+}
+.bq-card1 .card-header > p,.bq-card2 .card-header > p{
+    color:#292929;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+}
+.quick-card-img{
+    position: relative;
+}
+.quick-card-img img{
+    border-radius: 5px;
+}
+.heart-icon-quick{
+    right: 17px;
+    top: -5px;
+}
+.quick-card-title{
+    margin-top: 5%;
+}
+.quick-card-title a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  line-height:25px;
+  color: #042330;
+}
+.quick-card-title a:hover{
+    color: #042330;
+}
+.quick_item_bottom{
+    padding: 0 1.20rem;
+}
+.quick_item_bottom span:last-child{
+    font-size: 12px;
+    line-height: 14px;
+    width: 28%;
+    text-align: left;
+    font-family: 'Vision Regular';
+}
+.quick_item_bottom span:first-child button{
+    font-size: 13px;
+}
+.quick_item_bottom .audio-icon::before{
+    content: url('assets/icons/Headphones.svg');
+    display: inline-block;
+    margin-left: 10%;
+}
+.quick-tab-new{
+    position: relative;
+}
+.quick-tab-new .quick-home-title{
+    position: relative;
+}
+.quick-tab-new .quick-home-title::after{
+    left: 0;
+    right: 94%;
+}
+.quick-tab-recomm{
+    position: relative;
+}
+.quick-tab-recomm .quick-home-title{
+    position: relative;
+}
+.quick-tab-recomm .quick-home-title::after{
+    left: 0;
+    right: 81%;
 }

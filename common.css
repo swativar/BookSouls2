@@ -337,3 +337,42 @@ img{
 .carousel-indicators li:first-child{
     margin-right: 1%;
 }
+.newsletter{
+    background-color: #eeedec;
+    padding: 40px 20px 20px 20px;
+}
+.newsletter_left p:first-child{
+    font-size:22px;
+    line-height: 20px;
+    font-family: 'Vision Regular', sans-serif;
+}
+.newsletter_left p:last-child{
+    font-size: 14px;
+    font-family: 'Vision', sans-serif;
+    line-height: 24px;
+}
+.newsletter_button button{
+    font-size: 16px;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+.newsletter .form-group{
+    margin-bottom: 0!important;
+}
+#email-input{
+    width: 260px;
+    border:none;
+    padding:3.5% 5%;
+    margin-left: 20px;
+}
+#email-input::placeholder{
+    font-size: 17px;
+    font-family: 'Vision';
+}
+#email-input:focus{
+    border-color: #FFDE00!important;
+    box-shadow: 0 0 0 0.2rem #FFDE00;
+    color: #495057;
+    background-color: #fff;
+    outline: 0;
+}
