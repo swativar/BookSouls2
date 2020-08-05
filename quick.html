@@ -126,12 +126,12 @@
             <div class="quick-tab-title title1">
                 <p class="text-light">Explore</p>
             </div>
-            <ul class="quick-tab-cat">
+            <ul class="quick-tab-cat mt-4">
                 <li>Authors</li>
-                <li>Genre</li>
+                <li class="quick-active">Genre</li>
                 <ul class="quick-tab-sub-cat">
                     <li>Fiction</li>
-                    <li>Non-Fiction</li>
+                    <li class="quick-sub-active">Non-Fiction</li>
                     <li>Drama</li>
                     <li>Adventure</li>
                     <li>Thriller</li>
@@ -147,14 +147,79 @@
             </div>
             <ul class="quick-tab-cat">
                 <li>New</li>
-                <li>Trending</li>
+                <li class="quick-active">Trending</li>
                 <li>Recommended</li>
             </ul>
             <div class="quick-tab-title title3">
                 <p class="text-light">Language</p>
             </div>
         </div>
-        <div class="quick-tab-home float-right"></div>
+        <div class="quick-tab-home float-right">
+            <div class="quick-tab-popular">
+                <div class="quick-home-title">
+                    <p>Popular</p>
+                </div>
+                <div id="tab-popular" class="carousel slide" data-ride="carousel">
+                    <div class="controls">
+                        <div class="previous">
+                            <a href="#tab-popular" data-slide="prev"><span>&#10094</span></a>
+                        </div>
+                        <div class="next">
+                            <a href="#tab-popular" data-slide="next"><span>&#10095</span></a>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-between">
+                                <div class="card bq-card1 text-center">
+                                    <div class="card-header">
+                                        <div class="quick-card-img">
+                                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
+                                                alt="" width="176" height="265">
+                                            <div class="heart-icon heart-icon-quick bg-light">
+                                                <img src="assets/icons/Heart.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="text-center quick-card-title">
+                                            <a href="">The Alchemist</a>
+                                        </div>
+                                        <p>Paulo Coelho</p>
+                                        <div class="clearfix mt-3 quick_item_bottom">
+                                            <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                                    Now</button></span>
+                                            <span class="audio-icon"></span>
+                                            <span class="float-right">Audio available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card bq-card2 text-center">
+                                    <div class="card-header">
+                                        <div class="quick-card-img">
+                                            <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
+                                                alt="" width="176" height="265">
+                                            <div class="heart-icon heart-icon-quick bg-light">
+                                                <img src="assets/icons/Heart.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="text-center quick-card-title">
+                                            <a href="">The Fault In Our Stars</a>
+                                        </div>
+                                        <p>John Green</p>
+                                        <div class="clearfix mt-3 quick_item_bottom">
+                                            <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                                    Now</button></span>
+                                            <span class="audio-icon"></span>
+                                            <span class="float-right">Audio available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <!--Subscribe-->
 

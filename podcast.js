@@ -35,6 +35,7 @@ function show(evt, name) {
   $('#pod-tab-home').carousel({interval:false,wrap:false});
   $('#pod-recom').carousel({interval:false,wrap:false});
   $('#pod-genre').carousel({interval:false,wrap:false});
+  $("#pod-header-slider").carousel({interval: 2500});
 
   var tot_item = document.querySelectorAll('#pod-tab-home .carousel-item').length;
   $("#pod-tab-home").on('slid.bs.carousel', function(event){
