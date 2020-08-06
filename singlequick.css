@@ -1,0 +1,58 @@
+.quick-navigation{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.alchemist-title{
+    padding: 50px 100px;
+    position: relative;
+    left: -15px;
+    background-color: #fff;
+    position: relative;
+}
+.alchemist-title h2{
+    font-size: 45px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+.alchemist-img{
+    position: relative;
+    left: 15px;
+}
+.alchemist-content{
+    padding-left: 390px;
+    padding-right: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1366px;
+}
+.alchemist-content > p{
+    font-size: 22px;
+    font-family: 'Montserrat',sans-serif;
+} 
+.millionaire-audio p{
+    width: 20%;
+    line-height: 15px;
+    margin-bottom: 0!important;
+    font-family: 'Vision Regular';
+    font-size: 15px;
+}
+.millionaire-bottom{
+    position: relative;
+}
+.heart-icon-audio{
+    right: 0;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.quick-related-title p{
+    font-size: 22px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+.quick-related-title{
+    position: relative;
+}
+.quick-related-title::after{
+    left: 0;
+    right: 93%;
+}

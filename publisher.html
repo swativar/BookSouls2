@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksouls - A blog to inspire million</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="publisher.css">
+    <script src="https://kit.fontawesome.com/509c72249f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://www.fontfabric.com/fonts/vision/' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Loader until page loads-->
+    <div id="loader" class="center"></div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md sticky-top bg-light">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
+            <p class="nav-tag">publishers</p>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html"><span class="hover-yellow">Articles</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inspireme.html"><span class="hover-yellow">Insipre Me</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="podcast.html"><span class="hover-yellow">Podcast</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quick.html"><span class="hover-yellow">Quick</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publisher.html"><span class="nav-yellow">Publisher</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="search-icon"><img src="assets/icons/Search.svg" alt=""></a>
+        </div>
+    </nav>
+    <div class="wrapper">
+    <div class="publisher-top">
+        <div class="d-flex justify-content-between">
+            <div class="publisher-header-left">
+                <h2 class="text-center">Publishers</h2>
+                <p class="mt-5">Explore editorials and articles from your favorite authors.</p>
+                <p>Wide range of categoried and stuffs to read.</p>
+                <p>Explore editorials and articles from your favorite authors.</p>
+            </div>
+            <div class="publisher-header-right">
+                 <img class="pub-background-img1" src="assets-Publishers-Page/HederDesign1 RightSide.svg">
+                 <img class="pub-background-img2" src="assets-Publishers-Page/HederDesign2 RightSide.svg">
+                 <img class="pub-background-img3" src="assets-Publishers-Page/HederDesign3 RightSide.svg">
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr class="hr">
+    <div class="quick-tab wrapper clearfix">
+        <div class="quick-tab-links float-left sticky-top">
+            <div class="quick-tab-title title1">
+                <p class="text-light">Explore</p>
+            </div>
+            <ul class="quick-tab-cat mt-4">
+                <li>Authors</li>
+                <li class="quick-active">Genre</li>
+                <ul class="quick-tab-sub-cat">
+                    <li>Fiction</li>
+                    <li class="quick-sub-active">Non-Fiction</li>
+                    <li>Drama</li>
+                    <li>Adventure</li>
+                    <li>Thriller</li>
+                    <li>Romance</li>
+                    <li>Comedy</li>
+                    <li>Mystery</li>
+                    <li>Fantasy</li>
+                    <li>Motivational</li>
+                </ul>
+            </ul>
+            <div class="quick-tab-title title2">
+                <p class="text-light">Discover</p>
+            </div>
+            <ul class="quick-tab-cat">
+                <li>New</li>
+                <li class="quick-active">Trending</li>
+                <li>Recommended</li>
+            </ul>
+            <div class="quick-tab-title title3">
+                <p class="text-light">Language</p>
+            </div>
+        </div>
+        <div class="publisher-tab-home float-right">
+            <div class="publisher-tab-most-viewed mt-4">
+                <div class="publisher-home-title">
+                    <p>Most Viewed</p>
+                </div>
+                <div id="tab-most-viewed" class="carousel slide" data-ride="carousel">
+                    <div class="controls">
+                        <div class="previous">
+                            <a href="#tab-most-viewed" data-slide="prev"><span>&#10094</span></a>
+                        </div>
+                        <div class="next">
+                            <a href="#tab-most-viewed" data-slide="next"><span>&#10095</span></a>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="singlepublisher.html">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="singlepublisher.html">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="singlepublisher.html">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="singlepublisher.html">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="singlepublisher.html">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="singlepublisher.html">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="publisher-tab-trending mt-3">
+                <div class="publisher-home-title italic-heading">
+                    <p>Trending</p>
+                </div>
+                <div id="tab-trending" class="carousel slide" data-ride="carousel">
+                    <div class="controls">
+                        <div class="previous">
+                            <a href="#tab-trending" data-slide="prev"><span>&#10094</span></a>
+                        </div>
+                        <div class="next">
+                            <a href="#tab-trending" data-slide="next"><span>&#10095</span></a>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="publisher-tab-recent mt-3">
+                <div class="publisher-home-title italic-heading">
+                    <p>Recent</p>
+                </div>
+                <div id="tab-recent" class="carousel slide" data-ride="carousel">
+                    <div class="controls">
+                        <div class="previous">
+                            <a href="#tab-recent" data-slide="prev"><span>&#10094</span></a>
+                        </div>
+                        <div class="next">
+                            <a href="#tab-recent" data-slide="next"><span>&#10095</span></a>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="publisher-tab-recent mt-3">
+                <div class="publisher-home-title italic-heading">
+                    <p>Recent</p>
+                </div>
+                <div id="tab-recent2" class="carousel slide" data-ride="carousel">
+                    <div class="controls">
+                        <div class="previous">
+                            <a href="#tab-recent2" data-slide="prev"><span>&#10094</span></a>
+                        </div>
+                        <div class="next">
+                            <a href="#tab-recent2" data-slide="next"><span>&#10095</span></a>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                                <div class="publisher-home-card">
+                                    <div class="home-card-img">
+                                        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80" alt="">
+                                        <div class="heart-icon heart-icon-home-card bg-light">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="home-card-content">
+                                        <div class="home-card-title">
+                                        <a href="">The Situation of life and death!</a>
+                                        </div>
+                                        <p>The situation of life and death! in the recent novel...</p>
+                                        <p>by Mohammad Sahil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     <!--Subscribe-->
+
+     <div class="email text-center my-5">
+        <p>Stay <span class="text-warn">Updated</span></p>
+        <p>Get selected contents directly in your Email!</p>
+        <div class="d-flex mt-5 justify-content-between footer_subscribe">
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
+            </div>
+
+            <div class="text-center sub_button">
+                <button class="btn btn-outline-warning text-dark">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="d-flex justify-content-between footer">
+            <div class="footer-logo">
+                <img src="assets/Booksouls-LOGO.svg" alt="Booksouls logo">
+                <p>A blog to <span>inspire</span> millions</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Services</li>
+                    <li><a href="">Articles</a></li>
+                    <li><a href="">Inspire Me</a></li>
+                    <li><a href="">Podcasts</a></li>
+                    <li><a href="">Publishers</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Community</li>
+                    <li><a href="">Write for Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Company</li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Help Desk</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>FAQ's</li>
+                    <li><a href="">What Booksouls is?</a></li>
+                    <li><a href="">What is our purpose?</a></li>
+                    <li><a href="">is Everything for free?</a></li>
+                    <li><a href="">Why are we doing this?</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between footer_in">
+            <div class="footer-illustration">
+                <img src="assets/Footer_Illustration-removedbg.png" alt="">
+            </div>
+            <div>
+                <p class="footer_p"><span>.</span> &copy; 2020, Booksouls.com <span>.</span></p>
+            </div>
+            <div>
+                <a href="#!" class="mr-3"><img src="assets/icons/Facebook.svg" alt="facebook icon" width="25"
+                        height="25"></a>
+                <a href="#!" class="mr-3"><img src="assets/icons/Twitter.svg" alt="twitter icon" width="28"
+                        height="28"></a>
+                <a href="#!" class="mr-3"><img src="assets/icons/Instagram.svg" alt="instagram icon" width="28"
+                        height="28"></a>
+                <a href="#!"><img src="assets/icons/Pinterest.svg" alt="pinterest" width="25" height="25"></a>
+            </div>
+        </div>
+        <div class="text-center footer_last mt-5">
+            <p>Made with <img src="assets/icons/Heart.svg"> in india</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="publisher.js"></script>
+</body>
+
+</html>

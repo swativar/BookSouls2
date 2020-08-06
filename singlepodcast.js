@@ -13,6 +13,7 @@ document.onreadystatechange = function () {
 function setTime() {
   var player = document.getElementById('player-js');
   var length = player.duration;
+  console.log(length);
   var current_time = player.currentTime;
   // calculate total length of value
   var totalLength = calculateTotalValue(length);
@@ -58,11 +59,12 @@ ranger_path.onclick =
 
 function calculateTotalValue(length) {
   var minutes = Math.floor(length / 60),
-    seconds_int = length - minutes * 60,
+    seconds_int = Math.floor(length - minutes * 60),
     seconds_str = seconds_int.toString(),
     seconds = seconds_str.substr(0, 2),
-    time = minutes + ':' + seconds
-
+    //time = minutes + ':' + seconds
+    time = (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+    console.log(seconds_str,seconds,minutes);
   return time;
 }
 

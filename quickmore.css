@@ -1,0 +1,75 @@
+.heart-icon-audio{
+    right: 30%;
+    top:0;
+}
+.quick-navigation{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.audio-version{
+    position: relative;
+    margin-top: 40px;
+}
+.audio-version a{
+    color: #042330;
+    text-decoration: underline;
+    font-size: 24px;
+    font-family: 'Vision Regular';
+
+}
+.audio-version a:hover{
+    color: #042330;
+    text-decoration: none;
+}
+.alchemist-cont{
+    padding-left: 280px;
+    padding-right: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1366px;
+}
+.alchemist-cont p{
+    font-size: 21px;
+    font-family: 'Montserrat',sans-serif;
+    line-height: 31px;
+}
+.alchemist-cont q{
+    font-family: 'Playfair Display';
+    font-size: 24px;
+}
+.alchemist-cont cite{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 23px;
+}
+.alchemist-cont h3{
+    font-size: 24px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+.hr2{
+    margin-left: 280px;
+    margin-right: 280px;
+}
+.share-left p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.social-links a{
+    margin-right: 10px;
+}
+.quick-related-title p{
+    font-size: 22px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+.quick-related-title{
+    position: relative;
+}
+.quick-related-title::after{
+    left: 0;
+    right: 93%;
+}

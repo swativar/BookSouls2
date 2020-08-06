@@ -1,0 +1,77 @@
+.publisher-navigation{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.publisher-article-heading h2{
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 38px;
+}
+.social-links a{
+    margin-right: 10px;
+}
+.publisher-article-content{
+    margin-left: 250px;
+    margin-right: 250px;
+    position: relative;
+    margin-top: 5%;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    line-height: 31px;
+}
+.publisher-article-content p{
+    margin-bottom: 3%;
+}
+#wiki{
+    color: #042330;
+    text-decoration: underline;
+    font-weight: 500;
+}
+#wiki:hover{
+    color: #042330;
+    text-decoration: none;
+}
+cite,i{
+    font-family: 'Playfair Display';
+}
+.bold-line{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.quote{
+    font-size: 27px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    line-height: 35px;
+}
+.share{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.share-left p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.author_desc{
+    background-color: rgba(0,0,0,0.06);
+    width:55%;
+    margin: 0 auto;
+    padding: 15px 8%;
+}
+.author_desc .auth-desc{
+    font-family:'Montserrat',sans-serif;
+    font-size: 14px;
+    color: #242424;
+    
+}
+.author_desc .auth-desc-name{
+    font-family: 'Vision Regular';
+    font-size: 16px;
+    line-height: 31px;
+}
+.relationship-title::after{
+    left:0;
+    right:75%;
+}

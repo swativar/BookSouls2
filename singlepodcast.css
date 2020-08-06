@@ -64,6 +64,13 @@
 .audio-controls img{
     margin-right:35px;
 }
+.start-time span , .end-time span{
+    font-family: 'Vision Regular';
+    font-size: 14px;
+}
+.audio-vol-button,.prev-button,.play-button,.next-button{
+    cursor: pointer;
+}
 .millionaire-title{
     padding: 50px 30px;
     position: relative;
@@ -126,10 +133,6 @@ a.top-nav:hover{
 .social-links a{
     margin-right: 10px;
 }
-.start-time span , .end-time span{
-    font-family: 'Vision Regular';
-    font-size: 14px;
-}
 .podcast-card{
     position: relative;
     width: 180px;
@@ -179,7 +182,4 @@ a.top-nav:hover{
     font-size: 26px;
     font-family: 'Playfair Display';
     font-style: italic;
-}
-.audio-vol-button,.prev-button,.play-button,.next-button{
-    cursor: pointer;
 }
