@@ -152,8 +152,17 @@ li.quick-sub-active::before{
 .quick-tab-title:first-child{
     border-radius: 20px 20px 0 0;
 }
-.quick-tab-title:last-child{
+.title3{
     border-radius: 0 0 20px 20px;
+}
+.quick-tab-sub-cat{
+    display: none;
+}
+#explore,#discover,#language{
+    display: none;
+}
+.title1 p,.title2 p,.title3 p{
+    cursor: pointer;
 }
 .quick-tab-title p{
     font-size: 26px;

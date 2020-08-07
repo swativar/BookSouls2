@@ -426,7 +426,7 @@ header{
     font-family: 'Vision', sans-serif;
     line-height: 24px;
 }
-.subscribe_button button{
+.subscribe_button .btn{
     padding: 6% 20%!important;
     font-size: 18px;
 }

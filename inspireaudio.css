@@ -1,0 +1,21 @@
+.inspireaudio-navigation{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.body-background::before{
+    content: url('assets-InspireMe/BG-Shapes-2.svg');
+    position: absolute;
+    right: 0;
+    top: -53%;
+    z-index: -1;
+}
+.body-background::after{
+    content: url('assets-InspireMe/BG-shapes.svg');
+    position: absolute;
+    left:0;
+    top: -95%;
+    z-index: -1;
+}
+.audio-container{
+    margin-top: 7%;
+}

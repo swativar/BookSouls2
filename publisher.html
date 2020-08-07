@@ -86,11 +86,11 @@
     <div class="quick-tab wrapper clearfix">
         <div class="quick-tab-links float-left sticky-top">
             <div class="quick-tab-title title1">
-                <p class="text-light">Explore</p>
+                <p class="text-light" onclick="collapse(event,'explore')">Explore</p>
             </div>
-            <ul class="quick-tab-cat mt-4">
-                <li>Authors</li>
-                <li class="quick-active">Genre</li>
+            <ul class="quick-tab-cat mt-4" id="explore">
+                <li class="quick-active">Authors</li>
+                <li>Genre</li>
                 <ul class="quick-tab-sub-cat">
                     <li>Fiction</li>
                     <li class="quick-sub-active">Non-Fiction</li>
@@ -105,16 +105,20 @@
                 </ul>
             </ul>
             <div class="quick-tab-title title2">
-                <p class="text-light">Discover</p>
+                <p class="text-light" onclick="collapse(event,'discover')">Discover</p>
             </div>
-            <ul class="quick-tab-cat">
+            <ul class="quick-tab-cat" id="discover">
                 <li>New</li>
-                <li class="quick-active">Trending</li>
+                <li>Trending</li>
                 <li>Recommended</li>
             </ul>
             <div class="quick-tab-title title3">
-                <p class="text-light">Language</p>
+                <p class="text-light" onclick="collapse(event,'language')">Language</p>
             </div>
+            <ul class="quick-tab-cat" id="language">
+                <li>Hindi</li>
+                <li>English</li>
+            </ul>
         </div>
         <div class="publisher-tab-home float-right">
             <div class="publisher-tab-most-viewed mt-4">

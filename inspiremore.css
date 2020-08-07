@@ -29,6 +29,22 @@ img{
     font-family: 'Playfair Display';
     font-weight: 600;
 }
+.millionaire-audio{
+    position: absolute;
+    right:0;
+    top:-30%;
+}
+.millionaire-audio a{
+    color: #042330;
+    text-decoration: underline;
+    font-size: 24px;
+    font-family: 'Vision Regular';
+
+}
+.millionaire-audio a:hover{
+    color: #042330;
+    text-decoration: none;
+}
 .millionaire-img{
     position: relative;
     left: 15px;
