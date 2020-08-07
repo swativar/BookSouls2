@@ -231,22 +231,29 @@
 }
 .newsletter{
     background-color: #eeedec;
-    padding: 40px 20px 20px 20px;
+    padding: 40px 20px;
+}
+.newsletter_left{
+    width: 45%;
+}
+.newsletter_right{
+    width: 53%;
 }
 .newsletter_left p:first-child{
     font-size:22px;
-    line-height: 20px;
+    line-height: 30px;
     font-family: 'Vision Regular', sans-serif;
+    margin-bottom: 0!important;
 }
 .newsletter_left p:last-child{
     font-size: 14px;
     font-family: 'Vision', sans-serif;
-    line-height: 24px;
+    line-height: 25px;
+    margin-bottom: 0!important;
 }
-.newsletter_button button{
+.newsletter_button{
     font-size: 16px;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding: 0.4rem 1.1rem!important;
 }
 .newsletter .form-group{
     margin-bottom: 0!important;
@@ -254,8 +261,7 @@
 #email-input{
     width: 260px;
     border:none;
-    padding:3.5% 5%;
-    margin-left: 20px;
+    padding:4% 5%;
 }
 #email-input::placeholder{
     font-size: 17px;
