@@ -201,3 +201,6 @@ cite,i{
     opacity: 0.4;
     z-index: -1;
 }
+.bg-white{
+    background-color: #fff;
+}

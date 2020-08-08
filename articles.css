@@ -936,3 +936,6 @@ img{
     top: 17px;
     z-index: -1;
 }
+.bg-white{
+    background-color: #fff;
+}

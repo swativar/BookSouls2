@@ -809,3 +809,6 @@ footer{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+.bg-white{
+    background-color: #fff;
+}

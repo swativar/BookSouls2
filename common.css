@@ -400,3 +400,6 @@ a.top-nav:hover{
     color: #042330;
     text-decoration: none;
 }
+.bg-white{
+    background-color: #fff!important;
+}
