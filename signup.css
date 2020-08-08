@@ -1,0 +1,136 @@
+.join{
+    background: linear-gradient(
+        #042330 0%,
+        #042330 45%,
+        #fff 45%,
+        #fff 100%
+    );
+    margin-bottom: 5%;
+}
+.join-links-wrapper{
+    width:800px;
+    margin: 2% auto;
+    padding: 5% 13%;
+    box-shadow: 1px 1px 30px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.join-tag1{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    line-height: 22px;
+}
+.join-tag2{
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+.join-tag2 a{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.join-tag3{
+    font-size: 13px;
+    font-family: 'Montserrat';
+    color: #504f4f;
+    margin-top: 15%;
+    padding: 0 15%;
+}
+.join-tag3 a{
+    font-size: 13px;
+    font-family: 'Montserrat';
+    color: #504f4f;
+    text-decoration: underline;
+}
+.join-title{
+    padding-top: 9%;
+    margin-bottom: 5%;
+}
+.join-title h2{
+    font-size: 4.5rem;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+.join-links{
+    width: 340px;
+    height: 50px;
+    border: 1px solid rgba(0,0,0,0.4);
+    position: relative;
+    margin: 5% auto;
+    border-radius: 5px;
+}
+.join-links img{
+    margin-right: 8%;
+}
+.join-links p{
+    font-size: 13px;
+    font-family: 'Montserrat';
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.join-links-box:hover{
+    color: #042330;
+    text-decoration: none;
+}
+.join-links-box{
+    color: #042330;
+}
+.hr2{
+    width: 800px;
+}
+.password-group{
+    position: relative;
+}
+.eye-icon{
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translate(0,-50%);
+    cursor: pointer;
+}
+.join-form label{
+    font-family: 'Montserrat';
+    font-size: 13px;
+    margin-bottom: 0.2rem!important;
+}
+.join-form input{
+    padding-top: 0.5rem!important;
+    padding-bottom: 0.5rem!important;
+    border-color: #989ca0!important;
+}
+.signup-btn .btn{
+    padding: 0.375rem 5rem!important;
+}
+input:focus{
+    border-color: #FFDE00!important;
+    box-shadow: 0 0 0 0.2rem #FFDE00!important;
+    color: #495057!important;
+    background-color: #fff!important;
+    outline: 0!important;
+}
+.join-form{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.back_arrow{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+.back_arrow a{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+}
+.back_arrow a:hover{
+    text-decoration: none;
+}
+.back_arrow a img{
+    margin-right: 8px;
+    position: relative;
+    top:-2px;
+}

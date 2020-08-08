@@ -7,13 +7,6 @@ header_explore.onclick = function scroll(){
     window.scrollBy(0,top);
 }
 
-/*document.body.classList.add('js-loading');
-window.addEventListener('load', showAnimation());
-
-function showAnimation(){
-    document.body.classList.remove('js-loading');
-}*/
-
 var before_loadtime = new Date().getTime();  
 window.onload = Pageloadtime;  
 function Pageloadtime() {  
@@ -30,6 +23,7 @@ function Pageloadtime() {
     header_illus2.style.animationDelay = pgloadtime+'s';
     header_content.style.animationDelay = pgloadtime+'s';
 }
+
 document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
         document.querySelector("body").style.visibility = "hidden"; 
@@ -41,6 +35,7 @@ document.onreadystatechange = function() {
         document.documentElement.style.overflow = 'auto'; 
     } 
 };
+
 $("#quick").carousel({interval: 2500});
 $("#publisher").carousel({interval: 2500});
 $("#podcast").carousel({interval: 2500});

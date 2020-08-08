@@ -1,0 +1,54 @@
+.error-left{
+    width: 48%;
+}
+.error-right{
+    width: 48%;
+    position: relative;
+}
+.error-right p:first-child{
+    font-size: 45px;
+    font-family: 'Playfair Display';
+    line-height: 50px;
+}
+.error-right p:nth-child(2),.error-right p:nth-child(3){
+     font-size: 24px;
+     font-family: 'Montserrat';
+     margin-bottom: 0!important;
+     line-height: 31px;
+}
+.arrow-img{
+   position: absolute;
+   bottom: 3%;
+   right: 0;
+   width: 150px;
+   height: 150px;
+}
+.error-button{
+    margin-top: 15%;
+    font-size: 20px!important;
+    font-family: 'Vision Regular';
+}
+.errorpage-header{
+    position: relative;
+}
+.errorpage-header > div{
+    margin-top: 12%;
+    margin-bottom: 7%;
+}
+.errorpage-header::before{
+    content: url('assets-Error-Page/Large404.svg');
+    position: absolute;
+    top: -23%;
+    left: 0;
+    z-index: -1;
+}
+.errorpage-header::after{
+    content: url('assets-Error-Page/Side404.svg');
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.hr2{
+    width: 60%;
+}

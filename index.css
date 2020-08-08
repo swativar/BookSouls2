@@ -920,7 +920,7 @@ footer{
     font-family: Vision Heavy;
     src:url('assets/Vision/Vision-Heavy.ttf');
 }
-button{
+.btn{
     font-family: 'Vision Regular'!important;
 }
 
