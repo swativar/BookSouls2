@@ -21,3 +21,20 @@ function toggleText(elem){
    };
 }
 
+var form = document.querySelector('.join-form');
+var arrow = document.querySelector('.back_arrow p');
+form.style.display = "none";
+arrow.style.display = "none";
+
+function signinEmail(elem){
+    elem.parentElement.style.display = "none";
+    form.style.display = "block";
+    arrow.style.display = "block";
+}
+
+var links = document.querySelector('.links-container');
+function signin(elem){
+    links.style.display = "block";
+    elem.style.display = "none";
+    form.style.display = "none";
+}

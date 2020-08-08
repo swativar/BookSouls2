@@ -7,10 +7,8 @@
     <title>Booksouls - A blog to inspire million</title>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="signup.css">
-    <script src="https://kit.fontawesome.com/509c72249f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href='https://www.fontfabric.com/fonts/vision/' rel='stylesheet'>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap"
         rel="stylesheet">
@@ -68,28 +66,55 @@
         <div class="join-title text-center">
             <h2 class="text-light">Join <span class="text-warn">Booksouls</span></h2>
         </div>
-        <div class="text-center join-links-wrapper">
-            <p class="join-tag1">Create a free account to get contents in your inbox, save your favourite contents, and make a wishlist of
+        <div class="join-links-wrapper">
+            <div class="back_arrow">
+                <p onclick="signin(this)" class="text-warn"><img src="assets-SignIn-SignOut/BackArrow.svg">Other Sign up
+                    options</p>
+            </div>
+            <p class="join-tag1 text-center">Create a free account to get contents in your inbox, save your favourite contents, and make a wishlist of
                 contents that you love.</p>
-            <div class="my-5">
-            <a href class="join-links-box">
+            <div class="my-5 links-container text-center">
                 <div class="join-links">
                     <p><img src="assets-SignIn-SignOut/GoogleIcon.svg">Sign up with Google</p>
                 </div>
-            </a>
-            <a href class="join-links-box">
                 <div class="join-links">
                     <p><img src="assets-SignIn-SignOut/FacebookIcon.svg">Sign up with Facebook</p>
                 </div>
-            </a>
-            <a href="signup-email.html" class="join-links-box">
-                <div class="join-links">
+                <div class="join-links" onclick="signinEmail(this)">
                     <p><img src="assets-SignIn-SignOut/EmailIcon.svg">Sign up with Email</p>
                 </div>
-            </a>
             </div>
-            <p class="join-tag2">Already have an account? <a href="signin.html" class="text-warn">Sign in</a></p>
-            <p class="join-tag3">Click <q>Sign Up</q> to agree to our <a href>Terms of Service</a> and acknowledge that our <a href>Privacy
+            <div class="mt-4 mb-5 join-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password</label>
+                        <div class="password-group">
+                            <img src="assets-SignIn-SignOut/EyeClosed.svg" class="eye-icon" onclick = 'toggleText(this)'>
+                            <input type="password" class="form-control" id="pwd" name="pwd" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpwd">Confirm password</label>
+                        <div class="password-group">
+                            <img src="assets-SignIn-SignOut/EyeOpen.svg" class="eye-icon" onclick = 'toggleText(this)'>
+                            <input type="text" class="form-control" id="cpwd" name="cpwd" required>
+                        </div>
+                    </div>
+                    <div class="text-center signup-btn mt-4">
+                        <button type="submit" class="btn btn-warning">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            <p class="join-tag2 text-center">Already have an account? <a href="signin.html" class="text-warn">Sign in</a></p>
+            <p class="join-tag3 text-center">Click <q>Sign Up</q> to agree to our <a href>Terms of Service</a> and acknowledge that our <a href>Privacy
                         Policy</a> applies to you.</p>
         </div>
     </div>
@@ -183,7 +208,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="podcast.js"></script>
+    <script src="signup-email.js"></script>
 </body>
 
 </html>

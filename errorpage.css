@@ -22,6 +22,7 @@
    right: 0;
    width: 150px;
    height: 150px;
+   z-index: -1;
 }
 .error-button{
     margin-top: 15%;

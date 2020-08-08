@@ -1,8 +1,8 @@
 .join{
     background: linear-gradient(
         #042330 0%,
-        #042330 45%,
-        #fff 45%,
+        #042330 400px,
+        #fff 400px,
         #fff 100%
     );
     margin-bottom: 5%;
@@ -59,6 +59,7 @@
     position: relative;
     margin: 5% auto;
     border-radius: 5px;
+    cursor: pointer;
 }
 .join-links img{
     margin-right: 8%;
@@ -71,13 +72,6 @@
     top:50%;
     transform: translate(-50%,-50%);
     width: 100%;
-}
-.join-links-box:hover{
-    color: #042330;
-    text-decoration: none;
-}
-.join-links-box{
-    color: #042330;
 }
 .hr2{
     width: 800px;
@@ -121,15 +115,13 @@ input:focus{
     top: 2%;
     left: 2%;
 }
-.back_arrow a{
+.back_arrow p{
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 16px;
+    cursor: pointer;
 }
-.back_arrow a:hover{
-    text-decoration: none;
-}
-.back_arrow a img{
+.back_arrow p img{
     margin-right: 8px;
     position: relative;
     top:-2px;
