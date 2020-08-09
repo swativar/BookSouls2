@@ -20,7 +20,10 @@ button{
     width: 70px; 
     height: 70px; 
     animation: spin 1s linear infinite;
-} 
+}
+body{
+    visibility: hidden;
+}
 @keyframes spin{
     0% {
         border-top-color: #FFDE00;
@@ -428,7 +431,7 @@ a.top-nav:hover{
     position: absolute;
 }
 .cross-sign{
-    top:2%;
+    top:3.5%;
     right:13.5%;
     position: absolute;
     cursor: pointer;

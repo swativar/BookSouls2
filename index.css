@@ -5,7 +5,7 @@
     width: 70px; 
     height: 70px; 
     animation: spin 1s linear infinite;
-} 
+}
 @keyframes spin{
     0% {
         border-top-color: #FFDE00;
@@ -20,13 +20,16 @@
         transform: rotate(360deg);
     }
 }
+body{
+    visibility: hidden;
+}
 .center { 
     position: fixed; 
     top: 0; 
     bottom: 0; 
     left: 0; 
     right: 0; 
-    margin: auto; 
+    margin: auto;
 }
 body,html{
     height: 100%;
@@ -161,7 +164,7 @@ header{
     position: absolute;
 }
 .cross-sign{
-    top:2%;
+    top:3.5%;
     right:13.5%;
     position: absolute;
     cursor: pointer;
