@@ -413,6 +413,7 @@ a.top-nav:hover{
     margin: auto; 
     background-color: #fff;
     z-index: 1031;
+    display: none;
 }
 .search-input{
     top:50%;
