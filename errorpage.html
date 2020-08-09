@@ -17,6 +17,18 @@
 <body>
     <!--Loader until page loads-->
     <div id="loader" class="center"></div>
+    <!--Search bar-->
+    <div class="search">
+        <div class="logo-searchpage">
+        <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
+        </div>
+        <div class="cross-sign">
+            <span class="cross-icon" onclick="allPage()">x</span>
+        </div>
+        <div class="search-input">
+            <input type="text" placeholder="SEARCH ANYTHING..." name="search">
+        </div>
+    </div>
     <!--Navbar-->
     <nav class="navbar navbar-expand-md bg-white fixed-top">
         <div class="container">
@@ -57,7 +69,7 @@
                     </li>
                 </ul>
             </div>
-            <a href="" class="search-icon"><img src="assets/icons/Search.svg" alt=""></a>
+            <a class="search-icon" onclick="searchPage()"><img src="assets/icons/Search.svg" alt=""></a>
         </div>
     </nav>
     <div class="errorpage-header">

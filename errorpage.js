@@ -10,3 +10,14 @@ document.onreadystatechange = function() {
         document.documentElement.style.overflow = 'auto'; 
     } 
 };
+
+var search = document.querySelector('.search');
+search.style.display = "none";
+
+function searchPage(){
+    search.style.display = "block";
+}
+
+function allPage(){
+    search.style.display = "none";
+}
