@@ -41,3 +41,13 @@ $("#publisher").carousel({interval: 2500});
 $("#podcast").carousel({interval: 2500});
 $("#article").carousel({interval: 2500});
 
+var search = document.querySelector('.search');
+search.style.display = "none";
+
+function searchPage(){
+    search.style.display = "block";
+}
+
+function allPage(){
+    search.style.display = "none";
+}
