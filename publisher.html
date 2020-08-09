@@ -20,6 +20,18 @@
 <body>
     <!--Loader until page loads-->
     <div id="loader" class="center"></div>
+    <!--Search bar-->
+    <div class="search">
+        <div class="logo-searchpage">
+        <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
+        </div>
+        <div class="cross-sign">
+            <img class="cross-icon" src="assets-Search-Page/Close.svg" onclick="allPage()">
+        </div>
+        <div class="search-input">
+            <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search">
+        </div>
+    </div>
     <!--Navbar-->
     <nav class="navbar navbar-expand-md sticky-top bg-white">
         <div class="container">
@@ -60,7 +72,7 @@
                     </li>
                 </ul>
             </div>
-            <a href="" class="search-icon"><img src="assets/icons/Search.svg" alt=""></a>
+            <a class="search-icon" onclick="searchPage()"><img src="assets/icons/Search.svg" alt=""></a>
         </div>
     </nav>
     <div class="wrapper">
@@ -671,6 +683,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="common.js"></script>
     <script src="publisher.js"></script>
 </body>
 
