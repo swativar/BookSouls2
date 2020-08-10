@@ -1,8 +1,8 @@
 .join{
     background: linear-gradient(
         #042330 0%,
-        #042330 400px,
-        #fff 400px,
+        #042330 420px,
+        #fff 420px,
         #fff 100%
     );
     margin-bottom: 5%;
@@ -10,7 +10,7 @@
 .join-links-wrapper{
     width:800px;
     margin: 2% auto;
-    padding: 5% 13%;
+    padding: 68px 175px;
     box-shadow: 1px 1px 30px rgba(0,0,0,0.1);
     background-color: #fff;
     border-radius: 5px;
@@ -90,6 +90,9 @@
     font-family: 'Montserrat';
     font-size: 13px;
     margin-bottom: 0.2rem!important;
+}
+.forget-pass a{
+    font-family: 'Montserrat';
 }
 .join-form input{
     padding-top: 0.5rem!important;
