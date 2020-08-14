@@ -734,6 +734,7 @@ header{
     padding-bottom: 0.5rem!important;
     height: 100%;
     border: none!important;
+    background-color: rgba(0, 0, 0, 0);
 }
 .pub_card_content{
     line-height: 31px;
@@ -1387,6 +1388,8 @@ footer li a:hover{
         padding-top:0.6rem;
         padding-bottom: 0.6rem;
         padding-left: 10%;
+        margin-left: auto;
+        margin-right: auto;
      }
      #usr::placeholder{
          font-size: 12px;
