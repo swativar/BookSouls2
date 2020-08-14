@@ -948,9 +948,9 @@ footer li a:hover{
         padding-right: 16px;
         max-width: 100%;
     }
-    .inspire .wrapper,.articles .wrapper{
+   /* .inspire .wrapper,.articles .wrapper{
         padding-right: 0px;
-    }
+    }*/
     .btn{
         font-size: 0.7rem!important;
     }
@@ -1027,6 +1027,9 @@ footer li a:hover{
         padding-right: 2.5rem;
         font-size: 15px;
     }
+    nav .container{
+        max-width: 100%;
+    }
     .navbar{
         padding-left: 16px!important;
         padding-right: 16px!important;
@@ -1054,6 +1057,9 @@ footer li a:hover{
       background-color: white;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
       transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    }
+    .search-icon{
+        margin-left: 0;
     }
     .navbar-collapse.show {
       visibility: visible;
