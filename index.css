@@ -758,6 +758,9 @@ header{
     width:65%;
     background-color: #dddbdb;
 }
+.footer_subscribe{
+    padding: 0 80px;
+}
 .email{
     padding-top: 2%;
     padding-bottom: 2%;
@@ -1377,6 +1380,9 @@ footer li a:hover{
         top: -73%;
         left: -9%;
         transform: scale(0.4) rotate(-180deg);
+    }
+    .footer_subscribe{
+        padding: 0px;
     }
     .email p:first-child{
         font-size:25px;
