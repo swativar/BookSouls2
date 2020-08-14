@@ -36,10 +36,11 @@ document.onreadystatechange = function() {
     } 
 };
 
-$("#quick").carousel({interval: 2500});
-$("#publisher").carousel({interval: 2500});
-$("#podcast").carousel({interval: 2500});
+$("#quick").carousel({interval: 2500,touch:true});
+$("#publisher").carousel({interval: 2500,touch:true});
+$("#podcast").carousel({interval: 2500,touch:true});
 $("#article").carousel({interval: 2500});
+
 
 var search = document.querySelector('.search');
 search.style.display = "none";
