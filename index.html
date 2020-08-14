@@ -33,17 +33,21 @@
         <!--Navbar-->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
-                <!-- Brand -->
-                <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-
-
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                
+                  <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
+
                 <!-- Navbar links -->
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <div class="navbar-collapse justify-content-end" id="collapsibleNavbar">
+                      <div class="offcanvas-header mt-3 d-block d-md-none">
+                     <img class="float-right btn-close" src="assets-Search-Page/Close.svg">
+                     <img class="py-2" src="assets/Booksouls-LOGO.svg" width="40%">
+                     </div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="articles.html"><span class="hover-yellow">Articles</span></a>
@@ -73,13 +77,10 @@
                 <a class="search-icon" onclick="searchPage()"><img src="assets/icons/Search.svg" alt=""></a>
             </div>
         </nav>
-        <div class="header_illustration">
-            <img src="assets/Header-Illustration-1.svg" alt="">
-            <img src="assets/Header-Illustration-2.svg" alt="">
-        </div>
+        <div class="home-header d-flex flex-md-row flex-column-reverse justify-content-between wrapper">
         <div class="header_content">
-            <h2>Read, listen and explore</h2>
-            <p class="mt-4">Feed your inner mind with the contents which you like the most. You'll find articles,
+            <h2 class="d-none d-md-block">Read, listen and explore</h2>
+            <p class="mt-md-4">Feed your inner mind with the contents which you like the most. You'll find articles,
                 inspirational
                 stories, podcasts, quick and stuff from our Booksouls publishers.</p>
             <div class="clearfix mt-5">
@@ -88,11 +89,19 @@
                         id="header_explore">Explore</button></span>
             </div>
         </div>
+         <div class="header_illustration">
+            <h2 class="d-block d-md-none">Read, listen and explore</h2>
+            <div class="my-3 my-md-auto">
+            <img class="header-illus1" src="assets/Header-Illustration-1.svg" alt="">
+            <img class="header-illus2" src="assets/Header-Illustration-2.svg" alt="">
+            </div>
+        </div>
+        </div>
     </header>
     <!--Articles-->
     <div class="articles" id="scroll_article">
-        <div class="article-wrapper">
-            <div class="row text-center">
+        <div class="wrapper">
+            <div class="row text-center flex-md-row flex-column-reverse">
                 <div class="col-sm-12 col-lg-6 article_left">
                     <div id="article" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -104,10 +113,10 @@
                         <!-- The slideshow -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="d-flex flex-column">
+                                <div class="d-flex flex-row flex-md-column justify-content-between">
                                     <div class="d-flex mb-4 article_carousel_item1">
-                                        <div class="text-center card p-4 mr-4">
-                                            <div class="card-header py-4">
+                                        <div class="text-center card p-3 p-md-4 mr-4">
+                                            <div class="card-header">
                                                 <a href="" class="text-light">Drawing from dante's epic dark poem,
                                                     Langdon races
                                                     to find answers and...</a>
@@ -116,8 +125,8 @@
                                                 <img src="assets/icons/Heart.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="text-center card p-4">
-                                            <div class="card-header py-4">
+                                        <div class="text-center card p-3 p-md-4">
+                                            <div class="card-header">
                                                 <a href="" class="text-light">Drawing from dante's epic dark poem,
                                                     Langdon races
                                                     to find answers and...</a>
@@ -127,8 +136,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-center card p-4 article_carousel_item2">
-                                        <div class="card-header py-5">
+                                    <div class="text-center card p-3 p-md-4 article_carousel_item2">
+                                        <div class="card-header">
                                             <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon
                                                 races to
                                                 find answers and...</a>
@@ -139,11 +148,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="d-flex flex-column">
+                             <div class="carousel-item">
+                                <div class="d-flex flex-row flex-md-column justify-content-between">
                                     <div class="d-flex mb-4 article_carousel_item1">
-                                        <div class="text-center card p-4 mr-4">
-                                            <div class="card-header py-4">
+                                        <div class="text-center card p-3 p-md-4 mr-4">
+                                            <div class="card-header">
                                                 <a href="" class="text-light">Drawing from dante's epic dark poem,
                                                     Langdon races
                                                     to find answers and...</a>
@@ -152,8 +161,8 @@
                                                 <img src="assets/icons/Heart.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="text-center card p-4">
-                                            <div class="card-header py-4">
+                                        <div class="text-center card p-3 p-md-4">
+                                            <div class="card-header">
                                                 <a href="" class="text-light">Drawing from dante's epic dark poem,
                                                     Langdon races
                                                     to find answers and...</a>
@@ -163,8 +172,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-center card p-4 article_carousel_item2">
-                                        <div class="card-header py-5">
+                                    <div class="text-center card p-3 p-md-4 article_carousel_item2">
+                                        <div class="card-header">
                                             <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon
                                                 races to
                                                 find answers and...</a>
@@ -175,11 +184,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="d-flex flex-column">
+                             <div class="carousel-item">
+                                <div class="d-flex flex-row flex-md-column justify-content-between">
                                     <div class="d-flex mb-4 article_carousel_item1">
-                                        <div class="text-center card p-4 mr-4">
-                                            <div class="card-header py-4">
+                                        <div class="text-center card p-3 p-md-4 mr-4">
+                                            <div class="card-header">
                                                 <a href="" class="text-light">Drawing from dante's epic dark poem,
                                                     Langdon races
                                                     to find answers and...</a>
@@ -188,8 +197,8 @@
                                                 <img src="assets/icons/Heart.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="text-center card p-4">
-                                            <div class="card-header py-4">
+                                        <div class="text-center card p-3 p-md-4">
+                                            <div class="card-header">
                                                 <a href="" class="text-light">Drawing from dante's epic dark poem,
                                                     Langdon races
                                                     to find answers and...</a>
@@ -199,8 +208,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-center card p-4 article_carousel_item2">
-                                        <div class="card-header py-5">
+                                    <div class="text-center card p-3 p-md-4 article_carousel_item2">
+                                        <div class="card-header">
                                             <a href="" class="text-light">Drawing from dante's epic dark poem, Langdon
                                                 races to
                                                 find answers and...</a>
@@ -213,13 +222,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="text-center d-block d-md-none">
+                    <button class="btn btn-warning mt-5 px-4 btn-sm">Explore Articles</button>
+                    </div>
                 </div>
                 <div class="col-sm-12 col-lg-6">
                     <div class="text-center articles_right">
                         <h2>Article<span class="text-warn">s</span></h2>
                         <p>Dive deeper into some cool and motivational articles to keep up your daily pace and feed your
                             inner worm.</p>
-                        <button class="btn btn-warning mt-4 px-4">Explore Articles</button>
+                        <button class="btn btn-warning mt-4 px-4 d-none d-md-block mx-auto">Explore Articles</button>
                     </div>
                 </div>
             </div>
@@ -228,19 +240,19 @@
 
     <!--Inspire Me-->
     <div class="inspire">
-        <div class="inspire-wrapper">
-            <div class="row">
+        <div class="wrapper">
+            <div class="row flex-column flex-md-row">
                 <div class="col-sm-12 col-lg-6 inspire_left">
-                    <div class="text-center mt-5">
+                    <div class="text-center mt-4 mt-md-5">
                         <h2>Inspire<span class="text-warn"> Me</span></h2>
                         <p>Get inspired with your idols. Explore how they rose above everyone and made their names
                             beyond the world.</p>
-                        <button class="btn btn-warning mt-4 px-4">Explore Inspire Me</button>
+                        <button class="btn btn-warning mt-4 px-4 d-none d-md-block mx-auto">Explore Inspire Me</button>
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-6 inspire_right">
                     <div class="d-flex justify-content-between inspire_item_row">
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-row justify-content-center flex-md-column">
                             <div class="inspire_item">
                                 <img src="https://femina.wwmindia.com/content/2019/jul/ajeynagar1562839404.jpg">
                                 <div class="inspire_item_content">
@@ -263,7 +275,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-row flex-md-column justify-content-center">
                             <div class="inspire_item">
                                 <img
                                     src="https://www.dkoding.in/wp-content/uploads/Gaurav-Chaudhary-Technical-Guruji-Tech-Startups-Business-DKODING.jpg">
@@ -287,13 +299,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="text-center d-block d-md-none">
+                    <button class="btn btn-warning mt-4 px-4">Explore Inspire Me</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!--Subscribe-->
-    <div class="wrapper">
+    <div class="wrapper d-none d-md-block">
         <div class="mt-5 subscribe_middle">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="subscribe_left">
@@ -312,9 +327,9 @@
     </div>
     <!--Podcasts-->
     <div class="podcasts">
-        <div class="podcast-wrapper">
-            <div class="row">
-                <div class="col-sm-12 col-lg-6">
+        <div class="wrapper">
+            <div class="row flex-md-row flex-column-reverse">
+                <div class="col-sm-12 col-lg-6 podcast-relative">
                     <div id="podcast" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -367,13 +382,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="text-center d-block d-md-none mt-5">
+                    <button class="btn btn-warning mt-4 px-4 btn-sm">Explore Podcasts</button>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 w-25">
+                <div class="col-sm-12 col-lg-6 w-100 w-md-25">
                     <div class="text-center podcasts_right">
                         <h2 class="text-light">Pod<span class="text-warn">casts</span></h2>
                         <p class="text-light">Listen to some original podcasts on one of your favourite topics from the
                             Booksouls team</p>
-                        <button class="btn btn-warning mt-4 px-4">Explore Podcasts</button>
+                        <button class="btn btn-warning mt-4 px-4 d-none d-md-block mx-auto">Explore Podcasts</button>
                     </div>
                 </div>
             </div>
@@ -382,13 +400,13 @@
 
     <!--Booksouls quick-->
     <div class="booksouls_quick">
-        <div class="quick-wrapper">
-            <h2 class="text-center mb-5">Booksouls<span class="text-warn"> Quick</span></h2>
+        <div class="wrapper">
+            <h2 class="text-center mb-md-5">Booksouls<span class="text-warn"> Quick</span></h2>
             <div class="row">
                 <div class="col-sm-12 col-md-6 quick_left text-center">
                     <p>Running out of time? We got your back. Read quicks of books which you love. Over 1000 collection
                         of books in different categories.</p>
-                    <button class="btn btn-warning mt-4 px-4">Explore Quick</button>
+                    <button class="btn btn-warning mt-4 px-4 d-none d-md-block mx-auto">Explore Quick</button>
                 </div>
                 <div class="col-sm-12 col-md-6 quick-cards-row">
                     <div id="quick" class="carousel slide" data-ride="carousel">
@@ -406,7 +424,7 @@
                                         <div class="card-header">
                                             <div class="quick-card-img">
                                                 <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                    alt="" width="176" height="265">
+                                                    alt="">
                                                 <div class="heart-icon heart-icon-quick bg-light">
                                                     <img src="assets/icons/Heart.svg" alt="">
                                                 </div>
@@ -423,11 +441,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card bq-card2 text-center">
+                                    <div class="card bq-card2 text-center d-none d-md-block">
                                         <div class="card-header">
                                             <div class="quick-card-img">
                                                 <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
-                                                    alt="" width="176" height="265">
+                                                    alt="">
                                                 <div class="heart-icon heart-icon-quick bg-light">
                                                     <img src="assets/icons/Heart.svg" alt="">
                                                 </div>
@@ -452,7 +470,7 @@
                                         <div class="card-header">
                                             <div class="quick-card-img">
                                                 <img src="https://format-com-cld-res.cloudinary.com/image/private/s--Scrn3blx--/c_crop,h_1129,w_735,x_0,y_0/c_fill,g_center,h_583,w_380/dpr_2,fl_keep_iptc.progressive,q_95/v1/56a891bf30e3ffc5f5409a5ac5ba031c/The_Da_Vinci_Code.jpg"
-                                                    alt="" width="176" height="265">
+                                                    alt="">
                                                 <div class="heart-icon heart-icon-quick bg-light">
                                                     <img src="assets/icons/Heart.svg" alt="">
                                                 </div>
@@ -469,11 +487,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card bq-card4 text-center">
+                                    <div class="card bq-card4 text-center d-none d-md-block">
                                         <div class="card-header">
                                             <div class="quick-card-img">
                                                 <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                    alt="" width="176" height="265">
+                                                    alt="">
                                                 <div class="heart-icon heart-icon-quick bg-light">
                                                     <img src="assets/icons/Heart.svg" alt="">
                                                 </div>
@@ -498,7 +516,7 @@
                                         <div class="card-header">
                                             <div class="quick-card-img">
                                                 <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                    alt="" width="176" height="265">
+                                                    alt="">
                                                 <div class="heart-icon heart-icon-quick bg-light">
                                                     <img src="assets/icons/Heart.svg" alt="">
                                                 </div>
@@ -515,11 +533,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card bq-card6 text-center">
+                                    <div class="card bq-card6 text-center d-none d-md-block">
                                         <div class="card-header">
                                             <div class="quick-card-img">
                                                 <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                                                    alt="" width="176" height="265">
+                                                    alt="">
                                                 <div class="heart-icon heart-icon-quick bg-light">
                                                     <img src="assets/icons/Heart.svg" alt="">
                                                 </div>
@@ -540,18 +558,21 @@
                             </div>
                         </div>
                     </div>
+                    <div class="text-center d-block d-md-none">
+                    <button class="btn btn-warning mt-5 px-4 btn-sm">Explore Quick</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--Publishers-->
+   <!--Publishers-->
     <div class="publishers">
-        <div class="publisher-wrapper">
+        <div class="wrapper">
             <div class="publishers_header text-center">
                 <h2 class="text-light">Booksouls <span class="text-warn">Publishers</span></h2>
-                <p class="text-light mt-4">Read original contents & editorials from the famous authors</p>
+                <p class="text-light mt-2 mt-md-4">Read original contents & editorials from the famous authors</p>
             </div>
-            <div id="publisher" class="carousel slide mt-5" data-ride="carousel">
+            <div id="publisher" class="carousel slide mt-md-5" data-ride="carousel">
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
                     <li data-target="#publisher" data-slide-to="0" class="active"></li>
@@ -573,15 +594,17 @@
                                                 <img src="assets/icons/Heart.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem,
+                                        <div class="mt-2 mt-md-4">
+                                            <div  class="pub_card_content">
+                                            <a href="#">Drawing from dante's dark epic poem,
                                                 Langdon races to find answers and...</a>
+                                            </div>
                                             <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 d-none d-md-block">
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="publisher-card-top">
@@ -592,15 +615,17 @@
                                                 <img src="assets/icons/Heart.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem,
+                                        <div class="mt-2 mt-md-4">
+                                            <div  class="pub_card_content">
+                                            <a href="#">Drawing from dante's dark epic poem,
                                                 Langdon races to find answers and...</a>
+                                            </div>
                                             <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 d-none d-md-block">
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="publisher-card-top">
@@ -611,70 +636,11 @@
                                                 <img src="assets/icons/Heart.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem,
+                                        <div class="mt-2 mt-md-4">
+                                            <div  class="pub_card_content">
+                                            <a href="#">Drawing from dante's dark epic poem,
                                                 Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                            <img class="card-img-top"
-                                                src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                                alt="">
-                                            <div class="heart-icon heart-icon-publisher bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
                                             </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem,
-                                                Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                            <img class="card-img-top"
-                                                src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                                alt="">
-                                            <div class="heart-icon heart-icon-publisher bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem,
-                                                Langdon races to find answers and...</a>
-                                            <p>by Mohammad Sahil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="publisher-card-top">
-                                            <img class="card-img-top"
-                                                src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
-                                                alt="">
-                                            <div class="heart-icon heart-icon-publisher bg-light">
-                                                <img src="assets/icons/Heart.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem,
-                                                Langdon races to find answers and...</a>
                                             <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
@@ -695,14 +661,62 @@
                                                 <img src="assets/icons/Heart.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem,
+                                       <div class="mt-2 mt-md-4">
+                                            <div  class="pub_card_content">
+                                            <a href="#">Drawing from dante's dark epic poem,
                                                 Langdon races to find answers and...</a>
+                                            </div>
                                             <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-4 d-none d-md-block">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="publisher-card-top">
+                                            <img class="card-img-top"
+                                                src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
+                                                alt="">
+                                            <div class="heart-icon heart-icon-publisher bg-light">
+                                                <img src="assets/icons/Heart.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 mt-md-4">
+                                            <div  class="pub_card_content">
+                                            <a href="#">Drawing from dante's dark epic poem,
+                                                Langdon races to find answers and...</a>
+                                            </div>
+                                            <p>by Mohammad Sahil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-none d-md-block">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="publisher-card-top">
+                                            <img class="card-img-top"
+                                                src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
+                                                alt="">
+                                            <div class="heart-icon heart-icon-publisher bg-light">
+                                                <img src="assets/icons/Heart.svg" alt="">
+                                            </div>
+                                        </div>
+                                       <div class="mt-2 mt-md-4">
+                                            <div  class="pub_card_content">
+                                            <a href="#">Drawing from dante's dark epic poem,
+                                                Langdon races to find answers and...</a>
+                                            </div>
+                                            <p>by Mohammad Sahil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
                                     <div class="card-header">
@@ -714,15 +728,17 @@
                                                 <img src="assets/icons/Heart.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem,
+                                        <div class="mt-2 mt-md-4">
+                                            <div  class="pub_card_content">
+                                            <a href="#">Drawing from dante's dark epic poem,
                                                 Langdon races to find answers and...</a>
+                                            </div>
                                             <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 d-none d-md-block">
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="publisher-card-top">
@@ -733,9 +749,32 @@
                                                 <img src="assets/icons/Heart.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="pub_card_content">Drawing from dante's dark epic poem,
+                                       <div class="mt-2 mt-md-4">
+                                            <div  class="pub_card_content">
+                                            <a href="#">Drawing from dante's dark epic poem,
                                                 Langdon races to find answers and...</a>
+                                            </div>
+                                            <p>by Mohammad Sahil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-none d-md-block">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="publisher-card-top">
+                                            <img class="card-img-top"
+                                                src="https://3.bp.blogspot.com/-9S6oUERmQtw/V2K7A5q12zI/AAAAAAAAp7g/qBaQXUVAQrcoG9UANqJq-dsrc1rNb2FFQCHM/s1600/graffiti-wall-full-wallpaper-hd-wallpaper-gallery.jpg"
+                                                alt="">
+                                            <div class="heart-icon heart-icon-publisher bg-light">
+                                                <img src="assets/icons/Heart.svg" alt="">
+                                            </div>
+                                        </div>
+                                       <div class="mt-2 mt-md-4">
+                                            <div  class="pub_card_content">
+                                            <a href="#">Drawing from dante's dark epic poem,
+                                                Langdon races to find answers and...</a>
+                                            </div>
                                             <p>by Mohammad Sahil</p>
                                         </div>
                                     </div>
@@ -745,7 +784,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center" style="margin-top:10%;font-size: 18px;">
+            <div class="text-center pub-button">
                 <button class="btn btn-warning px-4">Explore Publishers</button>
             </div>
         </div>
@@ -753,10 +792,10 @@
     <hr class="hr">
     <!--Subscribe-->
 
-    <div class="email text-center mb-5">
+   <div class="wrapper email text-center mb-5">
         <p>Stay <span class="text-warn">Updated</span></p>
-        <p>Get selected contents directly in your Email!</p>
-        <div class="d-flex mt-5 justify-content-between footer_subscribe">
+        <p>Get selected contents directly in your email</p>
+        <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
 
             <div class="form-group">
                 <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
@@ -768,12 +807,13 @@
         </div>
     </div>
     <!--Footer-->
-    <footer>
-        <div class="d-flex justify-content-between footer wrapper">
-            <div class="footer-logo">
+     <footer>
+        <div class="d-flex flex-column flex-md-row justify-content-between footer wrapper">
+            <div class="footer-logo text-center text-md-left">
                 <img src="assets/Booksouls-LOGO.svg" alt="Booksouls logo">
                 <p>A blog to <span>inspire</span> millions</p>
             </div>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between footer-links">
             <div>
                 <ul>
                     <li>Services</li>
@@ -809,25 +849,23 @@
                     <li><a href="">Why are we doing this?</a></li>
                 </ul>
             </div>
+            </div>
         </div>
-        <div class="d-flex justify-content-between footer_in wrapper">
-            <div class="footer-illustration">
+        <div class="d-flex flex-wrap flex-md-nowrap align-items-around justify-content-between footer_in wrapper">
+            <div class="footer-illustration order-1 order-md-1">
                 <img src="assets/footer-illustration-cropped.png" alt="">
             </div>
-            <div class="footer_p">
-                <p>&copy; 2020, Booksouls.com</p>
+            <div class="footer_p order-3 order-md-2 mx-auto">
+                <p><span class="dot"></span>&copy; 2020, Booksouls.com<span class="dot"></span></p>
             </div>
-            <div>
-                <a href="#!" class="mr-3"><img src="assets/icons/Facebook.svg" alt="facebook icon" width="25"
-                        height="25"></a>
-                <a href="#!" class="mr-3"><img src="assets/icons/Twitter.svg" alt="twitter icon" width="28"
-                        height="28"></a>
-                <a href="#!" class="mr-3"><img src="assets/icons/Instagram.svg" alt="instagram icon" width="28"
-                        height="28"></a>
-                <a href="#!"><img src="assets/icons/Pinterest.svg" alt="pinterest" width="25" height="25"></a>
+            <div class="order-2 order-md-3 footer-social-links">
+                <a href="#!" class="mr-2 mr-md-3 facebook-logo"><img src="assets/icons/Facebook.svg" alt="facebook icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 twitter-logo"><img src="assets/icons/Twitter.svg" alt="twitter icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 insta-logo"><img src="assets/icons/Instagram.svg" alt="instagram icon"></a>
+                <a href="#!" class="pin-logo"><img src="assets/icons/Pinterest.svg" alt="pinterest"></a>
             </div>
         </div>
-        <div class="text-center footer_last mt-5">
+        <div class="text-center footer_last mt-3 mt-md-5">
             <p>Made with <img src="assets/icons/Heart.svg"> in india</p>
         </div>
     </footer>
