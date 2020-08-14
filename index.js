@@ -1,11 +1,15 @@
 
-/*var header_explore = document.querySelector('#header_explore');
+var header_explore = document.querySelector('#header_explore');
 
 header_explore.onclick = function scroll(){
-    var article = document.querySelector('#scroll_article')
+    var article = document.querySelector('#scroll_article');
+    if(screen.width >= 575){
     var top = article.getBoundingClientRect().top-50;
+    }else{
+    var top = article.getBoundingClientRect().top-100;  
+    }
     window.scrollBy(0,top);
-}*/
+}
 
 var before_loadtime = new Date().getTime();  
 window.onload = Pageloadtime;  
