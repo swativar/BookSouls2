@@ -948,6 +948,9 @@ footer li a:hover{
         padding-right: 16px;
         max-width: 100%;
     }
+    .inspire .wrapper,.articles .wrapper{
+        padding-right: 0px;
+    }
     .btn{
         font-size: 0.7rem!important;
     }
@@ -1056,8 +1059,12 @@ footer li a:hover{
       visibility: visible;
       transform: translateX(100%);
     }
+    .navbar-toggler{
+        border-color: transparent!important;
+    }
     header{
-        height: 132vw;
+        height: 135vw;
+        background-image: url('assets-Home-mobile/HeaderdesignBG.svg');
     }
     .articles{
         background:none;
@@ -1347,6 +1354,7 @@ footer li a:hover{
     .inspire_left h2{
         font-size: 35px;
         text-align: right;
+        padding-right: 16px;
     }
     .inspire_left p{
         font-size: 12px;
