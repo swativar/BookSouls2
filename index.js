@@ -1,11 +1,11 @@
 
-var header_explore = document.querySelector('#header_explore');
+/*var header_explore = document.querySelector('#header_explore');
 
 header_explore.onclick = function scroll(){
     var article = document.querySelector('#scroll_article')
     var top = article.getBoundingClientRect().top-50;
     window.scrollBy(0,top);
-}
+}*/
 
 var before_loadtime = new Date().getTime();  
 window.onload = Pageloadtime;  
@@ -36,11 +36,26 @@ document.onreadystatechange = function() {
     } 
 };
 
-$("#quick").carousel({interval: 2500,touch:true});
-$("#publisher").carousel({interval: 2500,touch:true});
-$("#podcast").carousel({interval: 2500,touch:true});
+$("#quick").carousel({interval: 2500});
+$("#publisher").carousel({interval: 2500});
+$("#podcast").carousel({interval: 2500});
 $("#article").carousel({interval: 2500});
 
+$("#podcast,#publisher,#quick").on("touchstart", function(event){
+    var xClick = event.originalEvent.touches[0].pageX;
+$(this).on("touchmove", function(event){
+    var xMove = event.originalEvent.touches[0].pageX;
+    if( Math.floor(xClick - xMove) > 5 ){
+        $(this).carousel('next');
+    }
+    else if( Math.floor(xClick - xMove) < -5 ){
+        $(this).carousel('prev');
+    }
+});
+$(".carousel").on("touchend", function(){
+        $(this).off("touchmove");
+});
+});
 
 var search = document.querySelector('.search');
 search.style.display = "none";

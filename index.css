@@ -1189,18 +1189,6 @@ footer li a:hover{
     #podcast{
         margin-top: 15%;
     }
-    #podcast .carousel-inner{
-        overflow-x: scroll!important;
-    }
-    #podcast .carousel-inner::-webkit-scrollbar{
-        display: none;
-        }
-     
-        /* Hide scrollbar for IE, Edge and Firefox */
-        #podcast .carousel-inner{
-       -ms-overflow-style: none;  /* IE and Edge */
-       scrollbar-width: none;  /* Firefox */
-        } 
     .podcast_1{
         width: 76vw;
         height: 170px;
