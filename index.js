@@ -66,10 +66,12 @@ search.style.display = "none";
 
 function searchPage(){
     search.style.display = "block";
+    document.documentElement.style.overflow = 'hidden'; 
 }
 
 function allPage(){
     search.style.display = "none";
+    document.documentElement.style.overflow = 'auto';
 }
 
 
