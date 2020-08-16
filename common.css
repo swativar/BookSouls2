@@ -531,7 +531,7 @@ a.top-nav:hover{
         padding-right: 0px;
     }*/
     .btn{
-        font-size: 0.7rem!important;
+        font-size: 0.8rem!important;
     }
     .heart-icon{
         position: absolute;
@@ -747,6 +747,6 @@ a.top-nav:hover{
     .top-nav{
         margin: 0 3px;
         font-family: 'Vision Regular';
-        font-size: 14px;
+        font-size: 13px;
     }
 }

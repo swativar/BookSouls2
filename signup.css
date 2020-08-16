@@ -159,6 +159,7 @@
     }
     .join-title h2{
         font-size: 3.5rem;
+        line-height:60px;
     }
     .join-links p{
         font-size:12px;
@@ -171,9 +172,12 @@
         font-size: 12px;
         line-height:15px;
     }
+    .join-tag3 a,.join-tag3 q{
+        font-size: 12px;
+    }
     .join-title{
         padding-top: 30%;
-        margin-bottom: 5%;
+        margin-bottom: 6%;
     }
     .join-form{
         padding-left: 1rem;

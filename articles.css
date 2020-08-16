@@ -610,8 +610,22 @@
     .relationship-title h2,.relation-related-title h2,.spirituality-title h2,.view-by-cat-title h2{
         font-size: 18px;
     }
+    .relation-related-lastcard-title a {
+        font-size: 14px;
+    }
+    .relation-related-lastcard-title p {
+        font-family: 'Vision Regular';
+        font-size: 12px;
+        line-height: 14px;
+        color: #292929;
+        margin-top: 10px;
+    }
     .relationship-post-link a{
         font-size: 12px;
+    }
+    .heart-icon-last{
+        right: 5px;
+        bottom: 5px;
     }
     .relation-related-smallcards .card{
         height: 50%;
