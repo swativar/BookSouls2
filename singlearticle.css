@@ -27,7 +27,6 @@ header{
 .article-navigation{
     margin-top: 15px;
     margin-bottom:15px;
-    line-height: 14px;
 }
 .top-nav{
     margin: 0 5px;
@@ -186,6 +185,10 @@ cite,i{
 @media screen and (max-width:576px){
     header{
         height: 250px;
+    }
+    .article-navigation{
+        margin-top: 20px;
+        line-height: 16px;
     }
     .heart-icon-sart{
         height: 40px;

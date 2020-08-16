@@ -700,6 +700,8 @@ a.top-nav:hover{
     }
     .footer_p{
         margin-top: 7%;
+        position: relative;
+        left:-5px;
     }
     .footer_p .dot::before{
         width: 2px;
