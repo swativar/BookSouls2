@@ -612,6 +612,9 @@ a.top-nav:hover{
         margin-left: 0;
         padding-right: 0.75rem;
     }
+    .cross-icon{
+        padding-right: 0.75rem;
+    }
     .navbar-collapse.show {
       visibility: visible;
       transform: translateX(100%);
