@@ -1088,6 +1088,7 @@ footer li a:hover{
     }
     .search-icon{
         margin-left: 0;
+        padding-right: 0.75rem;
     }
     .navbar-collapse.show {
       visibility: visible;
