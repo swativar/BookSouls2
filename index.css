@@ -1362,21 +1362,8 @@ footer li a:hover{
         height: 160px;
         margin: 3% 2%;
     }
-    .inspire_right{
-     overflow: hidden;
-    }
     .inspire_item_row{
-        padding: 2% 0;
-        animation: marquee 5s linear infinite;
-        width: 600px;
-    }
-    @keyframes marquee{
-        0% {
-            transform: translateX(60%);
-          }
-          100% {
-            transform: translateX(-100%);
-          }
+       overflow-x:scroll;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
     .inspire_item_row::-webkit-scrollbar{

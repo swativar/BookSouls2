@@ -36,7 +36,7 @@
     /*margin-top: 5%;*/
     margin-bottom: 8%;
 }
-.publisher-top::before{
+/*.publisher-top::before{
     content: url('assets-Publishers-Page/HeaderDesign1-LeftSide.svg');
     position: absolute;
     left: 0;
@@ -47,7 +47,7 @@
     position: absolute;
     left: 15%;
     top: 0;
-}
+}*/
 .quick-tab-links{
     width: 24%;
     box-shadow: 1px 1px 40px rgb(223, 221, 221);
@@ -89,7 +89,7 @@
     align-items: center;
     position: relative;
 }
-.title1::after,.title2::after{
+.arrow::after,.title2 .arrow::after,.title3 .arrow::after{
     content: " ";
     position: absolute;
     top: 100%; /* At the bottom of the tooltip */
