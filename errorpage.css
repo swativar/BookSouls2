@@ -53,3 +53,51 @@
 .hr2{
     width: 60%;
 }
+@media screen and (max-width:576px) {
+    .error-left{
+        width: 100%;
+    }
+    .error-left img{
+        width: 100%;
+    }
+    .error-right{
+        width: 100%;
+        position: relative;
+    }
+    .hr2{
+        width: 95%;
+    }
+    .error-left p{
+        font-family: 'Playfair Display';
+        text-align:center;
+        font-size: 32px;
+        line-height: 42px;
+        margin-top: 15%;
+    }
+    .error-right p:nth-child(2),.error-right p:nth-child(3){
+         font-size: 16px;
+         line-height: 20px;
+    }
+    .arrow-img{
+        bottom: -6%;
+        right: -5%;
+        width: 120px;
+        height: 120px;
+     }
+     .error-button{
+        font-size: 14px!important;
+    }
+    .errorpage-header::after{
+        display: none;
+    }
+    .errorpage-header::before{
+        content: url('assets-Error-Page/Large404.svg');
+        position: absolute;
+        top: -3%;
+        right: 100%;
+        z-index: -1;
+        transform: scale(0.42);
+        
+        
+    }
+}

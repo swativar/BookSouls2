@@ -25,7 +25,9 @@ header{
     height:30px;
 }
 .article-navigation{
-    margin: 15px 165px 15px 165px;
+    margin-top: 15px;
+    margin-bottom:15px;
+    line-height: 14px;
 }
 .top-nav{
     margin: 0 5px;
@@ -51,9 +53,6 @@ a.top-nav:hover{
 }
 .social-links a{
     margin-right: 10px;
-}
-.singlearticle-author img{
-   object-fit: cover;
 }
 .author-name p{
     font-family: 'Vision Regular';
@@ -118,10 +117,14 @@ cite,i{
     position: relative;
     top: -10px;
     transform: rotate(-180deg);
+    width: 20px;
+    height: 20px;
 }
 .quote .qu-l{
     position: relative;
     top: -10px;
+    width: 20px;
+    height: 20px;
 }
 .single-article-quote{
     position: absolute;
@@ -130,6 +133,9 @@ cite,i{
     transform: rotate(-180deg);
     opacity: 0.5;
     z-index: -1;
+}
+.middle-image{
+    height: 300px;
 }
 .share{
     margin-left: 250px;
@@ -147,6 +153,10 @@ cite,i{
     margin: 0 auto;
     padding: 15px 8%;
 }
+.author_desc img{
+    width: 80px;
+    height: 80px;
+}
 .author_desc .auth-desc{
     font-family:'Montserrat',sans-serif;
     font-size: 14px;
@@ -158,49 +168,137 @@ cite,i{
     font-size: 16px;
     line-height: 31px;
 }
-.related-title{
-    position: relative;
-}
-.related-title h2{
-    font-size: 24px;
-    font-family: 'Playfair Display';
-    font-style: italic;
-}
-.related-title::after{
-    content: '';
-    position: absolute;
-    background-color: #FFDE00;
-    left: 5%;
-    right: 80.5%;
-    bottom: 0;
-    top: 17px;
-    z-index: -1;
-}
-.related-article-wrapper{
-    margin-left: 165px;
-    margin-right: 165px;
-}
-.related-article-row{
-    position: relative;
-}
-.related-article-row::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 25%;
-    top:-3%;
-    bottom: 15%;
-    background-color: #FFF8CA;
-    z-index: -1;
-}
-.related-article-row::after{
-    content: url('assets/Quotes.svg');
-    position: absolute;
-    top: -22%;
-    right: 25%;
-    opacity: 0.4;
-    z-index: -1;
-}
 .bg-white{
     background-color: #fff;
+}
+.singlearticle-author div:first-child img{
+    width: 65px;
+    height: 65px;
+}
+.social-links img:not(.whats-app){
+    width: 30px;
+    height: 30px;
+}
+.whats-app{
+    width: 35px;
+    height: 35px;
+}
+@media screen and (max-width:576px){
+    header{
+        height: 250px;
+    }
+    .heart-icon-sart{
+        height: 40px;
+        width: 40px;
+        bottom: -20px;
+        right:10%;
+    }
+    .heart-icon-sart img{
+        width:22px;
+        height:22px;
+    }
+    .single-article > h2{
+        font-size: 25px;
+    }
+    .single-article-social{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 56px;
+    }
+    .single-article-content{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 5%;
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .quote{
+        font-size: 17px;
+        font-family: 'Playfair Display';
+        font-weight: 500;
+        line-height: 20px;
+        quotes: none;
+    }
+    .share{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .related-article-wrapper{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .single-article-quote{
+        top: 40px;
+        left: 50px;
+        transform: scale(0.3) rotate(-180deg);
+        transform-origin:0 0;
+    }
+    .singlearticle-author div:first-child img{
+        width: 45px;
+        height: 45px;
+    }
+    .author-name p{
+        font-size: 12px;
+        font-family: 'Vision Regular';
+        margin-bottom: 0!important;
+        line-height: 16px;
+    }
+    .author-name{
+        transform: translate(0,10%);
+    }
+    .social-links{
+        transform: translate(0,30%);
+    }
+    .social-links img:not(.whats-app){
+        width: 23px;
+        height: 23px;
+    }
+    .whats-app{
+        width: 28px;
+        height: 28px;
+    }
+    .quote .qu-u{
+        position: relative;
+        top: -10px;
+        transform: rotate(-180deg);
+        width: 10px;
+        height: 10px;
+    }
+    .quote .qu-l{
+        position: relative;
+        top: -10px;
+        width: 10px;
+        height: 10px;
+    }
+    .middle-image{
+        height: 200px;
+    }
+    .author_desc{
+        background-color: rgba(0,0,0,0.06);
+        width:95%;
+        margin: 0 auto;
+        padding: 15px 2%;
+    }
+    .author_desc .auth-desc-name {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 0.5rem!important;
+    }
+    .author_desc img{
+        width: 60px;
+        height: 60px;
+    }
+    .author_desc .auth-desc {
+        font-size: 12px;
+    }
+    .share-left{
+        transform: translate(0,75%);
+    }
+    .share-left p{
+        font-size:12px;
+        margin-bottom:0!important;
+    }
+    .social-links a{
+        margin-right: 8px;
+    }
 }

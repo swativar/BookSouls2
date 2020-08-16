@@ -51,8 +51,13 @@ body,html{
     scroll-behavior: smooth;
 }
 nav .container{
-    margin-right: 165px;
-    margin-left: 165px;
+    padding-right: 165px;
+    padding-left: 165px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    max-width: 1366px;
+}
+.navbar{
     padding-left: 0!important;
     padding-right: 0!important;
 }
@@ -91,10 +96,13 @@ nav .container{
 .navbar-brand{
     position: relative;
 }
+.booksouls-logo{
+    position: relative;
+}
 .nav-tag{
     position: absolute;
-    bottom:-20%;
-    left: 19%;
+    bottom:-40%;
+    left: 50%;
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'Vision Heavy';
@@ -114,6 +122,12 @@ nav .container{
 }
 .hr{
     width:76%;
+}
+.bg-light1{
+    background-color: #fff!important;
+}
+.bg-white{
+    background-color: #fff;
 }
 .text-warn{
     color:#FFDE00!important; 
@@ -177,10 +191,15 @@ nav .container{
     background-color: #fff;
     outline: 0;
 }
+.footer_subscribe{
+    padding: 0 80px;
+}
 .email{
-    padding: 2% 0;
-    margin-left: 165px;
-    margin-right: 165px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.email .form-group{
+    width: 100%;
 }
  .email p:first-child{
    font-size:36px;
@@ -198,7 +217,7 @@ nav .container{
    border-radius: 5px;
    padding-left: 10%;
    background-color: rgba(0, 0, 0, 0.06);
-   width: 650px;
+   width: 95%;
 }
 #usr:focus{
     border-color: #FFDE00!important;
@@ -211,9 +230,6 @@ nav .container{
     font-size: 19px;
     font-family: 'Vision', sans-serif;
 }
-.footer_subscribe{
-    padding: 0 80px;
-}
 .email .sub_button button{
    border-width: 2.5px!important;
    border-radius: 7px;
@@ -223,6 +239,19 @@ nav .container{
 }
 footer{
     font-family: 'Vision Regular', sans-serif;
+}
+footer{
+    background: url(assets/footer_bg2.png),linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75));
+    background-blend-mode: lighten;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.footer-logo{
+    width: 25%;
+}
+.footer-links{
+    width:75%;
 }
 .footer-logo img{
     width: 190px;
@@ -254,19 +283,13 @@ footer ul li:first-child{
     margin-bottom: 15px;
 }
 footer ul li:first-child a{
-    color:#042330;
+    color:#042330
 }
 footer li a:hover{
     color:#444444;
 }
 .footer{
-    padding: 5% 0 0 0;
-}
-footer{
-    background: url(assets/footer_bg2.png),linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75));
-    background-blend-mode: lighten;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    padding-top: 5%;
 }
 .footer-illustration{
     height: 100px;
@@ -276,34 +299,35 @@ footer{
 .footer-illustration img{
     width: 240px;
     position: absolute;
-    bottom:-15px;
+    bottom:-5px;
+}
+.facebook-logo img,.pin-logo img{
+   width:25px;
+   height: 25px;
+}
+.twitter-logo img,.insta-logo img{
+    width:28px;
+   height: 28px;
 }
 .footer_in{
     align-items: flex-end;
 }
-.footer_p{
-    position: relative;
-}
-.footer_p p::before{
-    content: '\00b7';
-    position: absolute;
-    left: -10px;
-    bottom: 0px;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.footer_p p::after{
-    content: '\00b7';
-    position: absolute;
-    right: -10px;
-    bottom: 0px;
-    font-size: 1.5rem;
-    font-weight: bold;
+.footer_p .dot::before{
+    content: '';
+    display: inline-block;
+    width: 3.5px;
+    height: 3.5px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .footer_p p{
     font-size: 16px;
-    margin-bottom: 0.3rem!important;
-    line-height: 0;
+    margin-bottom: 0rem!important;
+}
+.footer-social-links{
+    margin-bottom: 3.2px;
 }
 .footer_last{
     background-color: rgba(0, 0, 0, 0.2);
@@ -432,17 +456,27 @@ a.top-nav:hover{
     transform: translate(-50%,-50%);
     position: absolute;
 }
+.search-header{ 
+    position: relative;
+    width: 100%;
+    height: 68px;
+}
 .logo-searchpage{
-    top:2%;
+    top:50%;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%,-50%);
     position: absolute;
+    padding-left: inherit;
+    padding-right: inherit;
 }
 .cross-sign{
-    top:3.5%;
-    right:13.5%;
+    top:50%;
+    transform: translate(0,-50%);
+    right:0%;
     position: absolute;
     cursor: pointer;
+    padding-left: inherit;
+    padding-right: inherit;
 }
 .search-input input{
     width: 55vw;
@@ -473,4 +507,246 @@ a.top-nav:hover{
     outline: 0;
     font-size: 27px;
     font-family: 'Playfair Display';
+}
+.h2 span{
+    position: relative;
+}
+.h2 span::after{
+    content: '';
+    position: absolute;
+    background-color: #FFDE00;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    top: 60%;
+    z-index: -1;
+}
+@media screen and (max-width:576px){
+    .wrapper{
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 100%;
+    }
+   /* .inspire .wrapper,.articles .wrapper{
+        padding-right: 0px;
+    }*/
+    .btn{
+        font-size: 0.7rem!important;
+    }
+    .heart-icon{
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .heart-icon img{
+        width:14px;
+        height:14px;
+    }
+    .carousel-indicators .active {
+        width: 35px!important;
+        height: 8px!important;
+    }
+    .carousel-indicators li {
+        width: 8px!important;
+        height: 8px!important;
+    }
+    .hr{
+        width:95%;
+    }
+    .navbar-brand{
+        margin-right: 0!important;
+        animation: none;
+    }
+    .navbar-brand img{
+        width: 100px;
+        height: 30px;
+    }
+    nav .container{
+        max-width: 100%;
+    }
+    .navbar{
+        padding-left: 16px!important;
+        padding-right: 16px!important;
+        position: fixed!important;
+        top:0;
+        left: 0;
+        right: 0;
+        z-index: 1030;
+        background-color: #fff;
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.04);
+        height: 70px;
+        max-width: 100%;
+    }
+    .offcanvas-header{ display:block;}
+    .offcanvas-active{position: relative;}
+    .offcanvas-active::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background-color:rgba(0, 0, 0, 0.8);
+     z-index: 1;
+    }
+    .navbar-collapse {
+      position: fixed;
+      top:0; 
+      bottom: 0;
+      right: 100%;
+      width: 80%;
+      padding-left: 4%;
+      padding-right: 5%;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: white;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+      z-index: 1;
+    }
+    .search-icon{
+        margin-left: 0;
+    }
+    .navbar-collapse.show {
+      visibility: visible;
+      transform: translateX(100%);
+    }
+    .navbar-toggler{
+        border-color: transparent!important;
+    }
+    .footer_subscribe{
+        padding: 0px;
+    }
+    .email p:first-child{
+        font-size:25px;
+     }
+     .email p:nth-child(2){
+        font-size:0.9rem;
+     }
+     #usr{
+        padding-top:0.6rem;
+        padding-bottom: 0.6rem;
+        padding-left: 10%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+     #usr::placeholder{
+         font-size: 12px;
+     }
+     .email .sub_button button{
+        padding: 0.65rem 2rem;
+     }
+     .footer-logo{
+        width: 100%;
+    }
+    .footer-links{
+        width: 90%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer ul{
+        padding-left: 20px!important;
+    }
+    footer ul li{
+        margin-bottom: 5px;
+        font-size: 13px;
+        letter-spacing:0.8%;
+    }
+    footer ul li:first-child{
+        font-size: 14px;
+        letter-spacing:0.8%;
+        margin-bottom: 15px;
+    }
+    .footer-logo img{
+        width: 80px;
+        height: 25px;
+    }
+    .footer-logo p{
+        font-size: 12px;
+        letter-spacing: 0.8%;
+    }
+    .footer-logo p span{
+        font-size: 12px;
+        font-family: 'Vision Heavy';
+    }
+    .footer-illustration{
+        height: 50px;
+        position: relative;
+        width: 50%;
+    }
+    .footer-illustration img{
+        width: 80px;
+        position: absolute;
+        bottom:0;
+    }
+    .facebook-logo img,.pin-logo img{
+        width:20px;
+        height: 20px;
+     }
+     .twitter-logo img,.insta-logo img{
+         width:23px;
+        height: 23px;
+     }
+    .footer_in{
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 30px;
+    }
+    .footer_p{
+        margin-top: 7%;
+    }
+    .footer_p .dot::before{
+        width: 2px;
+        height: 2px;
+       vertical-align: middle;
+
+    }
+    .footer_p p{
+        font-size: 10px;
+    }
+    .footer_last p{
+        font-size: 10px;
+    }
+    .footer_last img{
+        width: 12px;
+        height: 12px;
+    }
+    .footer-social-links{
+        margin-bottom: 0px;
+    }
+    .nav-tag{
+        font-size: 12px;
+        bottom: -50%;
+    }
+    .search-header{ 
+        height: 70px;
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.04);
+    }
+    .logo-searchpage img{
+        width: 100px;
+        height: 30px;
+    }
+    .search-input input{
+        width: 95vw;
+        height: 10vw;
+        padding: 0 15px;
+        font-size: 13px;
+    }
+    .search-input input::placeholder{
+        font-size: 13px;
+    }
+    .search-input input:focus{
+        font-size: 13px;
+    }
+    .top-nav{
+        margin: 0 3px;
+        font-family: 'Vision Regular';
+        font-size: 14px;
+    }
 }

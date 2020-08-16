@@ -29,3 +29,19 @@ cat_cards.forEach(function(cat_card){
 })
 
 $('#header-cara').carousel({interval:2500});
+
+$("#header-cara").on("touchstart", function(event){
+    var xClick = event.originalEvent.touches[0].pageX;
+$(this).on("touchmove", function(event){
+    var xMove = event.originalEvent.touches[0].pageX;
+    if( Math.floor(xClick - xMove) > 5 ){
+        $(this).carousel('next');
+    }
+    else if( Math.floor(xClick - xMove) < -5 ){
+        $(this).carousel('prev');
+    }
+});
+$(".carousel").on("touchend", function(){
+        $(this).off("touchmove");
+});
+});

@@ -169,17 +169,27 @@ header{
     transform: translate(-50%,-50%);
     position: absolute;
 }
+.search-header{ 
+    position: relative;
+    width: 100%;
+    height: 68px;
+}
 .logo-searchpage{
-    top:2%;
+    top:50%;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%,-50%);
     position: absolute;
+    padding-left: inherit;
+    padding-right: inherit;
 }
 .cross-sign{
-    top:3.5%;
-    right:13.5%;
+    top:50%;
+    transform: translate(0,-50%);
+    right:0%;
     position: absolute;
     cursor: pointer;
+    padding-left: inherit;
+    padding-right: inherit;
 }
 .search-input input{
     width: 55vw;
@@ -1051,6 +1061,17 @@ footer li a:hover{
         max-width: 100%;
     }
     .offcanvas-header{ display:block; }
+    .offcanvas-active{position: relative;}
+    .offcanvas-active::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color:rgba(0, 0, 0, 0.8);
+        z-index: 1;
+       }
     .navbar-collapse {
       position: fixed;
       top:0; 
@@ -1341,9 +1362,21 @@ footer li a:hover{
         height: 160px;
         margin: 3% 2%;
     }
+    .inspire_right{
+     overflow: hidden;
+    }
     .inspire_item_row{
         padding: 2% 0;
-        overflow-x: scroll;
+        animation: marquee 5s linear infinite;
+        width: 600px;
+    }
+    @keyframes marquee{
+        0% {
+            transform: translateX(60%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
     .inspire_item_row::-webkit-scrollbar{
@@ -1482,5 +1515,25 @@ footer li a:hover{
     }
     .footer-social-links{
         margin-bottom: 0px;
+    }
+    .search-header{ 
+        height: 70px;
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.04);
+    }
+    .logo-searchpage img{
+        width: 100px;
+        height: 30px;
+    }
+    .search-input input{
+        width: 95vw;
+        height: 10vw;
+        padding: 0 15px;
+        font-size: 13px;
+    }
+    .search-input input::placeholder{
+        font-size: 13px;
+    }
+    .search-input input:focus{
+        font-size: 13px;
     }
 }

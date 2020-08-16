@@ -74,7 +74,7 @@
     width: 100%;
 }
 .hr2{
-    width: 800px;
+    width: 52.5%;
 }
 .password-group{
     position: relative;
@@ -128,4 +128,75 @@
     margin-right: 8px;
     position: relative;
     top:-2px;
+}
+@media screen and (max-width:576px) {
+    .join-links-wrapper{
+        width:93%;
+        margin: 2% auto;
+        padding: 60px 15px;
+    }
+    .join{
+        background: linear-gradient(
+            #042330 0%,
+            #042330 350px,
+            #fff 350px,
+            #fff 100%
+        );
+        margin-bottom: 5%;
+    }
+    .join-tag1{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .join-tag2{
+        font-size: 12px;
+    }
+    .join-tag2 a{
+        font-size: 12px;
+    }
+    .join-links{
+        width: 93%;
+    }
+    .join-title h2{
+        font-size: 3.5rem;
+    }
+    .join-links p{
+        font-size:12px;
+    }
+    .join-links p img{
+        width: 20px;
+    }
+    .join-tag3{
+        padding: 0 1%;
+        font-size: 12px;
+        line-height:15px;
+    }
+    .join-title{
+        padding-top: 30%;
+        margin-bottom: 5%;
+    }
+    .join-form{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .hr2{
+        width: 95%;
+    }
+    .join-form input{
+        padding-top: 0.4rem!important;
+        padding-bottom: 0.4rem!important;
+    }
+    .forget-pass a{
+        font-size: 12px;
+    }
+    .signup-btn .btn{
+        padding: 0.375rem 3.5rem!important;
+    }
+    .back_arrow p{
+        font-size: 13px;
+    }
+    .back_arrow p img{
+       width: 20px;
+    }
+
 }

@@ -22,11 +22,13 @@
     <div id="loader" class="center"></div>
     <!--Search bar-->
     <div class="search">
-        <div class="logo-searchpage">
-        <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
-        </div>
-        <div class="cross-sign">
-            <img class="cross-icon" src="assets-Search-Page/Close.svg" onclick="allPage()">
+        <div class="search-header wrapper">
+            <div class="logo-searchpage">
+                <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
+            </div>
+            <div class="cross-sign">
+                <img class="cross-icon" src="assets-Search-Page/Close.svg" onclick="allPage()">
+            </div>
         </div>
         <div class="search-input">
             <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search">
@@ -35,17 +37,21 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-md bg-white fixed-top">
         <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-            <p class="nav-tag">articles</p>
-
             <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
+                <img src="assets-Home-mobile/Menu.svg" alt="">
             </button>
-
+            <!-- Brand -->
+            <div class="booksouls-logo">
+                <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
+                <p class="nav-tag">articles</p>
+            </div>
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <div class="navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <div class="offcanvas-header mt-3 d-block d-md-none">
+                    <img class="float-right btn-close" src="assets-Search-Page/Close.svg">
+                    <a href="index.html"><img class="py-2" src="assets/Booksouls-LOGO.svg" width="40%"></a>
+                </div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="articles.html"><span class="nav-yellow">Articles</span></a>
@@ -75,123 +81,125 @@
             <a class="search-icon" onclick="searchPage()"><img src="assets/icons/Search.svg" alt=""></a>
         </div>
     </nav>
-    <!--<ul class="text-center categories-nav">
-        <a href="" class="text-light"><li id="cat1">Relationship</li></a>
-        <a href="" class="text-light"><li id="cat2">Spirituality</li></a>
-        <a href="" class="text-light"><li id="cat3">Health</li></a>
-        <a href="" class="text-light"><li id="cat4">Life</li></a>
-        <a href="" class="text-light"><li id="cat5">Enterpreneurship</li></a>
-    </ul>-->
+
 
     <!--Header carousel-->
 
     <div class="header-carousel">
-        <div id="header-cara" class="carousel slide my-5" data-ride="carousel">
-            <!-- Left and right controls -->
-            <div class="controls">
-                <a class="prev_in px-4 py-1 text-dark" href="#header-cara" data-slide="prev"><span>&#10094</span></a>
-                <a class="next_in px-4 py-1 text-dark" href="#header-cara" data-slide="next"><span>&#10095</span></a>
-            </div>
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#header-cara" data-slide-to="0" class="active"></li>
-                <li data-target="#header-cara" data-slide-to="1"></li>
-                <li data-target="#header-cara" data-slide-to="2"></li>
-                <li data-target="#header-cara" data-slide-to="3"></li>
-            </ul>
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center header-cards">
-                        <div class="header-card-left">
-                            <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
-                        </div>
-                        <div class="header-card-right my-5">
-                            <div class="header-card-content">
-                                <img src="assets/Quotes.svg" alt="" class="quote_u">
-                                <p class="text-center text-warn header-card-cat">Lifestyle</p>
-                                <div class="header-card-title text-center">
-                                    <a href="singlearticle.html">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN RELIEF?</a>
-                                </div>
-                                <img src="assets/Quotes.svg" alt="" class="quote_l">
-                                <div class="heart-icon heart-icon-header bg-light">
-                                    <img src="assets/icons/Heart.svg">
-                                </div>
+        <div class="wrapper">
+            <div id="header-cara" class="carousel slide my-5" data-ride="carousel">
+                <!-- Left and right controls -->
+                <div class="controls d-none d-md-block">
+                    <a class="prev_in px-4 py-1 text-dark" href="#header-cara"
+                        data-slide="prev"><span>&#10094</span></a>
+                    <a class="next_in px-4 py-1 text-dark" href="#header-cara"
+                        data-slide="next"><span>&#10095</span></a>
+                </div>
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#header-cara" data-slide-to="0" class="active"></li>
+                    <li data-target="#header-cara" data-slide-to="1"></li>
+                    <li data-target="#header-cara" data-slide-to="2"></li>
+                    <li data-target="#header-cara" data-slide-to="3"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column flex-md-row justify-content-center header-cards">
+                            <div class="header-card-left">
+                                <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
                             </div>
-                            <a href="singlearticle.html">VIEW POST</a>
+                            <div class="header-card-right my-md-5">
+                                <div class="header-card-content">
+                                    <img src="assets/Quotes.svg" alt="" class="quote_u">
+                                    <p class="text-center text-warn header-card-cat d-none d-md-block">Lifestyle</p>
+                                    <div class="header-card-title text-center">
+                                        <a href="singlearticle.html">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN
+                                            RELIEF?</a>
+                                    </div>
+                                    <img src="assets/Quotes.svg" alt="" class="quote_l">
+                                    <div class="heart-icon heart-icon-header bg-light1 d-none d-md-flex">
+                                        <img src="assets/icons/Heart.svg">
+                                    </div>
+                                </div>
+                                <a href="singlearticle.html" class="d-none d-md-block">VIEW POST</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center header-cards">
-                        <div class="header-card-left">
-                            <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
-                        </div>
-                        <div class="header-card-right my-5">
-                            <div class="header-card-content">
-                                <img src="assets/Quotes.svg" alt="" class="quote_u">
-                                <p class="text-center text-warn header-card-cat">Lifestyle</p>
-                                <div class="header-card-title text-center">
-                                    <a href="singlearticle.html">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN RELIEF?</a>
-                                </div>
-                                <img src="assets/Quotes.svg" alt="" class="quote_l">
-                                <div class="heart-icon heart-icon-header bg-light">
-                                    <img src="assets/icons/Heart.svg">
-                                </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column flex-md-row justify-content-center header-cards">
+                            <div class="header-card-left">
+                                <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
                             </div>
-                            <a href="singlearticle.html">VIEW POST</a>
+                            <div class="header-card-right my-md-5">
+                                <div class="header-card-content">
+                                    <img src="assets/Quotes.svg" alt="" class="quote_u">
+                                    <p class="text-center text-warn header-card-cat d-none d-md-block">Lifestyle</p>
+                                    <div class="header-card-title text-center">
+                                        <a href="singlearticle.html">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN
+                                            RELIEF?</a>
+                                    </div>
+                                    <img src="assets/Quotes.svg" alt="" class="quote_l">
+                                    <div class="heart-icon heart-icon-header bg-light1 d-none d-md-flex">
+                                        <img src="assets/icons/Heart.svg">
+                                    </div>
+                                </div>
+                                <a href="singlearticle.html" class="d-none d-md-block">VIEW POST</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center header-cards">
-                        <div class="header-card-left">
-                            <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
-                        </div>
-                        <div class="header-card-right my-5">
-                            <div class="header-card-content">
-                                <img src="assets/Quotes.svg" alt="" class="quote_u">
-                                <p class="text-center text-warn header-card-cat">Lifestyle</p>
-                                <div class="header-card-title text-center">
-                                    <a href="singlearticle.html">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN RELIEF?</a>
-                                </div>
-                                <img src="assets/Quotes.svg" alt="" class="quote_l">
-                                <div class="heart-icon heart-icon-header bg-light">
-                                    <img src="assets/icons/Heart.svg">
-                                </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column flex-md-row justify-content-center header-cards">
+                            <div class="header-card-left">
+                                <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
                             </div>
-                            <a href="singlearticle.html">VIEW POST</a>
+                            <div class="header-card-right my-md-5">
+                                <div class="header-card-content">
+                                    <img src="assets/Quotes.svg" alt="" class="quote_u">
+                                    <p class="text-center text-warn header-card-cat d-none d-md-block">Lifestyle</p>
+                                    <div class="header-card-title text-center">
+                                        <a href="singlearticle.html">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN
+                                            RELIEF?</a>
+                                    </div>
+                                    <img src="assets/Quotes.svg" alt="" class="quote_l">
+                                    <div class="heart-icon heart-icon-header bg-light1 d-none d-md-flex">
+                                        <img src="assets/icons/Heart.svg">
+                                    </div>
+                                </div>
+                                <a href="singlearticle.html" class="d-none d-md-block">VIEW POST</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center header-cards">
-                        <div class="header-card-left">
-                            <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
-                        </div>
-                        <div class="header-card-right my-5">
-                            <div class="header-card-content">
-                                <img src="assets/Quotes.svg" alt="" class="quote_u">
-                                <p class="text-center text-warn header-card-cat">Lifestyle</p>
-                                <div class="header-card-title text-center">
-                                    <a href="singlearticle.html">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN RELIEF?</a>
-                                </div>
-                                <img src="assets/Quotes.svg" alt="" class="quote_l">
-                                <div class="heart-icon heart-icon-header bg-light">
-                                    <img src="assets/icons/Heart.svg">
-                                </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column flex-md-row justify-content-center header-cards">
+                            <div class="header-card-left">
+                                <img src="https://i.pinimg.com/originals/6d/ab/c2/6dabc268ba6ce85485f250ecd7e5876d.jpg">
                             </div>
-                            <a href="singlearticle.html">VIEW POST</a>
+                            <div class="header-card-right my-md-5">
+                                <div class="header-card-content">
+                                    <img src="assets/Quotes.svg" alt="" class="quote_u">
+                                    <p class="text-center text-warn header-card-cat d-none d-md-block">Lifestyle</p>
+                                    <div class="header-card-title text-center">
+                                        <a href="singlearticle.html">WHAT'S THE REASON BEHIND COVID 19 LOCKDOWN
+                                            RELIEF?</a>
+                                    </div>
+                                    <img src="assets/Quotes.svg" alt="" class="quote_l">
+                                    <div class="heart-icon heart-icon-header bg-light1 d-none d-md-flex">
+                                        <img src="assets/icons/Heart.svg">
+                                    </div>
+                                </div>
+                                <a href="singlearticle.html" class="d-none d-md-block">VIEW POST</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <hr class="hr">
+    <hr class=" d-none d-md-block hr">
     <!---->
-    <div class="header-flex my-5">
-        <div class="d-flex justify-content-between">
+    <div class="header-flex wrapper my-5 d-none d-md-block">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="d-flex flex-column">
                 <div class="card header-flex1 mb-5">
                     <div class="card-header text-light text-center">
@@ -201,7 +209,7 @@
                         <div class="header-flex1-title text-center">
                             <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
                         </div>
-                        <div class="heart-icon heart-icon-flex bg-light">
+                        <div class="heart-icon heart-icon-flex bg-light1 ">
                             <img src="assets/icons/Heart.svg">
                         </div>
                     </div>
@@ -214,7 +222,7 @@
                         <div class="header-flex2-title text-center">
                             <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
                         </div>
-                        <div class="heart-icon heart-icon-flex bg-light">
+                        <div class="heart-icon heart-icon-flex bg-light1 ">
                             <img src="assets/icons/Heart.svg">
                         </div>
                     </div>
@@ -225,7 +233,7 @@
                     <div class="header-flex3-top">
                         <img class="card-img-top" src="https://cdn.wallpapersafari.com/16/51/Xl9qge.jpg" alt=""
                             height="220">
-                        <div class="heart-icon heart-icon-flex bg-light">
+                        <div class="heart-icon heart-icon-flex bg-light1 ">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -247,7 +255,7 @@
                         <div class="header-flex4-title text-center">
                             <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
                         </div>
-                        <div class="heart-icon heart-icon-flex bg-light">
+                        <div class="heart-icon heart-icon-flex bg-light1 ">
                             <img src="assets/icons/Heart.svg">
                         </div>
                     </div>
@@ -260,7 +268,7 @@
                         <div class="header-flex5-title text-center">
                             <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
                         </div>
-                        <div class="heart-icon heart-icon-flex bg-light">
+                        <div class="heart-icon heart-icon-flex bg-light1 ">
                             <img src="assets/icons/Heart.svg">
                         </div>
                     </div>
@@ -268,23 +276,23 @@
             </div>
         </div>
     </div>
-    <hr class="hr">
-    <div class="relationship my-5 d-flex justify-content-between">
+    <hr class="hr d-none d-md-block">
+    <div class="relationship wrapper my-3 my-md-5 d-flex flex-column flex-md-row justify-content-between">
         <div class="relation-left">
             <div class="relation-header">
                 <div class="relationship-title">
-                    <h2>Relationship</h2>
+                    <h2 class="h2"><span>Relationship</span></h2>
                 </div>
                 <div class="relationship-post-link">
                     <a href="" class="float-right">VIEW ALL</a>
                 </div>
             </div>
-            <div class="relation-cards mt-5">
+            <div class="relation-cards mt-5 h-100">
                 <div class="card d-flex flex-row">
                     <div class="card-top">
                         <img class="card-img-top"
                             src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -297,7 +305,8 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
@@ -307,7 +316,7 @@
                         <img class="card-img-top"
                             src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
                             alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -320,7 +329,8 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
@@ -330,7 +340,7 @@
                         <img class="card-img-top"
                             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80"
                             alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -343,7 +353,8 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
@@ -353,7 +364,7 @@
                         <img class="card-img-top"
                             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"
                             alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -366,7 +377,8 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
@@ -375,7 +387,7 @@
                     <div class="card-top">
                         <img class="card-img-top"
                             src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -388,94 +400,99 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center mt-5">
-                <button class="btn btn-warning px-5">See all</button>
+                <div class="text-center mt-5">
+                    <button class="btn btn-warning px-5">See all</button>
+                </div>
             </div>
         </div>
         <div class="relation-right">
             <div class="relation-related-header">
                 <div class="relation-related-title">
-                    <h2>Related</h2>
+                    <h2 class="h2"><span>Related</span></h2>
                 </div>
             </div>
-            <div class="relation-related-cards mt-5">
-                <div class="card d-flex flex-row">
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <a href class="relation-related-tag">Sci-Fi</a>
-                            <div class="relation-related-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+            <div class="relation-related-cards mt-4 mt-md-5">
+                <div class="relation-related-smallcards h-100">
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                             </div>
-                            <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                         </div>
-                    </div>
-                    <div class="card-related-top">
-                        <img class="card-img-top"
-                            src="https://images.unsplash.com/photo-1588339260976-5ba6f52ac951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                            alt="">
-                        <div class="heart-icon heart-icon-relation-rel bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row">
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <a href class="relation-related-tag">Sci-Fi</a>
-                            <div class="relation-related-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1588339260976-5ba6f52ac951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
                             </div>
-                            <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                         </div>
                     </div>
-                    <div class="card-related-top">
-                        <img class="card-img-top"
-                            src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
-                            alt="">
-                        <div class="heart-icon heart-icon-relation-rel bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row">
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <a href class="relation-related-tag">Sci-Fi</a>
-                            <div class="relation-related-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                             </div>
-                            <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                         </div>
-                    </div>
-                    <div class="card-related-top">
-                        <img class="card-img-top"
-                            src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relation-rel bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row">
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <a href class="relation-related-tag">Sci-Fi</a>
-                            <div class="relation-related-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
                             </div>
-                            <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                         </div>
                     </div>
-                    <div class="card-related-top">
-                        <img class="card-img-top"
-                            src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relation-rel bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
+                            </div>
+                        </div>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
+                            </div>
+                        </div>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -497,7 +514,7 @@
                             </div>
                             <p class="relation-related-lastauth">by Mohammad Sahil<span>|</span>8 min read</p>
                         </div>
-                        <div class="heart-icon heart-icon-last bg-light">
+                        <div class="heart-icon heart-icon-last bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -505,17 +522,17 @@
             </div>
         </div>
     </div>
-    <hr class="hr">
-    <div class="view-by-cat my-5">
+    <hr class="hr d-none d-md-block">
+    <div class="view-by-cat wrapper my-2 my-md-5">
         <div class="text-center view-by-cat-title">
-            <h2>View by categories</h2>
+            <h2 class="h2"><span>View by categories</span></h2>
         </div>
-        <div class="row mt-5">
-            <div class="col-md-3">
+        <div class="d-flex justify-content-between cat-row mt-5">
+            <div class="w-100">
                 <a href class="view-card-link">
                     <div class="card view-cat-card">
-                        <img src="assets-article/InspirationIcon.svg" alt="" width="50" height="50">
-                        <p class="view-card-title mt-3">Inspiration</p>
+                        <img src="assets-article/InspirationIcon.svg" alt="">
+                        <p class="view-card-title mt-2 mt-md-3">Inspiration</p>
                         <p class="view-card-content">Inspirational and motivational articles</p>
                         <div class="view-arrow">
                             <img src="assets-article/Right-Arrow-Not-Active.svg" alt="">
@@ -523,11 +540,11 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="w-100">
                 <a href class="view-card-link">
                     <div class="card view-cat-card">
-                        <img src="assets-article/SpiritualIcon.svg" alt="" width="50" height="50">
-                        <p class="view-card-title mt-3">Spiritual</p>
+                        <img src="assets-article/SpiritualIcon.svg" alt="">
+                        <p class="view-card-title mt-2 mt-md-3">Spiritual</p>
                         <p class="view-card-content">Spiritual articles to feed your soul.</p>
                         <div class="view-arrow">
                             <img src="assets-article/Right-Arrow-Not-Active.svg" alt="">
@@ -535,11 +552,11 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="w-100">
                 <a href class="view-card-link">
                     <div class="card view-cat-card">
-                        <img src="assets-article/EntreIcon.svg" alt="" width="50" height="50">
-                        <p class="view-card-title mt-3">Enterpreneur</p>
+                        <img src="assets-article/EntreIcon.svg" alt="">
+                        <p class="view-card-title mt-2 mt-md-3">Enterpreneur</p>
                         <p class="view-card-content">Enterpreneurship and much more corporate topics.</p>
                         <div class="view-arrow">
                             <img src="assets-article/Right-Arrow-Not-Active.svg" alt="">
@@ -547,11 +564,11 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="d-none d-md-block">
                 <a href class="view-card-link">
                     <div class="card view-cat-card">
-                        <img src="assets-article/CreativityIcon.svg" alt="" width="50" height="50">
-                        <p class="view-card-title mt-3">Creativity</p>
+                        <img src="assets-article/CreativityIcon.svg" alt="">
+                        <p class="view-card-title mt-2 mt-md-3">Creativity</p>
                         <p class="view-card-content">Creative articles for daily hobbies.</p>
                         <div class="view-arrow">
                             <img src="assets-article/Right-Arrow-Not-Active.svg" alt="">
@@ -560,12 +577,12 @@
                 </a>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-3">
+        <div class="d-flex justify-content-between cat-row mt-2 mt-md-4">
+            <div class="w-100">
                 <a href class="view-card-link">
                     <div class="card view-cat-card">
-                        <img src="assets-article/SciFiIcon.svg" alt="" width="50" height="50">
-                        <p class="view-card-title mt-3">Sci-Fi</p>
+                        <img src="assets-article/SciFiIcon.svg" alt="">
+                        <p class="view-card-title mt-2 mt-md-3">Sci-Fi</p>
                         <p class="view-card-content">Science and fictional articles for the cosmologist in you.</p>
                         <div class="view-arrow">
                             <img src="assets-article/Right-Arrow-Not-Active.svg" alt="">
@@ -573,11 +590,11 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="w-100">
                 <a href class="view-card-link">
                     <div class="card view-cat-card">
-                        <img src="assets-article/LifestyleIcon.svg" alt="" width="50" height="50">
-                        <p class="view-card-title mt-3">Lifestyle</p>
+                        <img src="assets-article/LifestyleIcon.svg" alt="">
+                        <p class="view-card-title mt-2 mt-md-3">Lifestyle</p>
                         <p class="view-card-content">Lifestyle articles for you to manage things effectively.</p>
                         <div class="view-arrow">
                             <img src="assets-article/Right-Arrow-Not-Active.svg" alt="">
@@ -585,11 +602,11 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="w-100">
                 <a href class="view-card-link">
                     <div class="card view-cat-card">
-                        <img src="assets-article/ReadingIcon.svg" alt="" width="50" height="50">
-                        <p class="view-card-title mt-3">Reading</p>
+                        <img src="assets-article/ReadingIcon.svg" alt="">
+                        <p class="view-card-title mt-2 mt-md-3">Reading</p>
                         <p class="view-card-content">Read articles related to book &amp; authors.</p>
                         <div class="view-arrow">
                             <img src="assets-article/Right-Arrow-Not-Active.svg" alt="">
@@ -597,11 +614,11 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="d-none d-md-block">
                 <a href class="view-card-link">
                     <div class="card view-cat-card">
-                        <img src="assets-article/RelationIcon.svg" alt="" width="50" height="50">
-                        <p class="view-card-title mt-3">Relationship</p>
+                        <img src="assets-article/RelationIcon.svg" alt="">
+                        <p class="view-card-title mt-2 mt-md-3">Relationship</p>
                         <p class="view-card-content">Articles related to relationships &amp; couples</p>
                         <div class="view-arrow">
                             <img src="assets-article/Right-Arrow-Not-Active.svg" alt="">
@@ -613,11 +630,11 @@
     </div>
     <hr class="hr">
 
-    <div class="relationship mt-5 d-flex justify-content-between">
+    <div class="relationship wrapper mt-5 justify-content-between d-none d-md-flex">
         <div class="relation-left">
             <div class="spirituality-header">
                 <div class="spirituality-title">
-                    <h2>Spirituality</h2>
+                    <h2 class="h2"><span>Spirituality</span></h2>
                 </div>
                 <div class="relationship-post-link">
                     <a href="" class="float-right">VIEW ALL</a>
@@ -628,7 +645,7 @@
                     <div class="card-top">
                         <img class="card-img-top"
                             src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -651,7 +668,7 @@
                         <img class="card-img-top"
                             src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
                             alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -674,7 +691,7 @@
                         <img class="card-img-top"
                             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80"
                             alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -697,7 +714,7 @@
                         <img class="card-img-top"
                             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"
                             alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -719,7 +736,7 @@
                     <div class="card-top">
                         <img class="card-img-top"
                             src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -745,7 +762,7 @@
         <div class="spirituality-right">
             <div class="spirituality-recom-header">
                 <div class="spirituality-recom-title">
-                    <h2>Recommended</h2>
+                    <h2 class="h2"><span>Recommended</span></h2>
                 </div>
             </div>
             <div class="mt-5">
@@ -757,7 +774,7 @@
                         <div class="header-flex4-title text-center">
                             <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
                         </div>
-                        <div class="heart-icon heart-icon-flex bg-light">
+                        <div class="heart-icon heart-icon-flex bg-light1">
                             <img src="assets/icons/Heart.svg">
                         </div>
                     </div>
@@ -770,7 +787,7 @@
                         <div class="header-flex5-title text-center">
                             <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
                         </div>
-                        <div class="heart-icon heart-icon-flex bg-light">
+                        <div class="heart-icon heart-icon-flex bg-light1">
                             <img src="assets/icons/Heart.svg">
                         </div>
                     </div>
@@ -783,7 +800,7 @@
                         <div class="header-flex5-title text-center">
                             <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
                         </div>
-                        <div class="heart-icon heart-icon-flex bg-light">
+                        <div class="heart-icon heart-icon-flex bg-light1">
                             <img src="assets/icons/Heart.svg">
                         </div>
                     </div>
@@ -796,7 +813,7 @@
                         <div class="header-flex5-title text-center">
                             <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
                         </div>
-                        <div class="heart-icon heart-icon-flex bg-light">
+                        <div class="heart-icon heart-icon-flex bg-light1">
                             <img src="assets/icons/Heart.svg">
                         </div>
                     </div>
@@ -805,7 +822,7 @@
         </div>
     </div>
     <!--Subscribe-->
-    <div class="wrapper">
+    <div class="wrapper d-none d-md-block">
         <div class="mt-5 subscribe_middle">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="subscribe_left">
@@ -823,22 +840,22 @@
         </div>
     </div>
     <!--Enterpreneurship-->
-    <div class="relationship mt-5 d-flex justify-content-between">
+    <div class="relationship wrapper my-5 d-flex flex-column flex-md-row justify-content-between">
         <div class="relation-left">
             <div class="relation-header">
                 <div class="relationship-title">
-                    <h2>Relationship</h2>
+                    <h2 class="h2"><span>Relationship</span></h2>
                 </div>
                 <div class="relationship-post-link">
                     <a href="" class="float-right">VIEW ALL</a>
                 </div>
             </div>
-            <div class="relation-cards mt-5">
+            <div class="relation-cards mt-5 h-100">
                 <div class="card d-flex flex-row">
                     <div class="card-top">
                         <img class="card-img-top"
                             src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -851,7 +868,8 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
@@ -861,7 +879,7 @@
                         <img class="card-img-top"
                             src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
                             alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -874,7 +892,8 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
@@ -884,7 +903,7 @@
                         <img class="card-img-top"
                             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80"
                             alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -897,7 +916,8 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
@@ -907,7 +927,7 @@
                         <img class="card-img-top"
                             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"
                             alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -920,7 +940,8 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
@@ -929,7 +950,7 @@
                     <div class="card-top">
                         <img class="card-img-top"
                             src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -942,94 +963,99 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center mt-5">
-                <button class="btn btn-warning px-5">See all</button>
+                <div class="text-center mt-5">
+                    <button class="btn btn-warning px-5">See all</button>
+                </div>
             </div>
         </div>
         <div class="relation-right">
             <div class="relation-related-header">
-                <div class="relation-view-title">
-                    <h2>Most Viewed</h2>
+                <div class="relation-related-title">
+                    <h2 class="h2"><span>Related</span></h2>
                 </div>
             </div>
-            <div class="relation-related-cards mt-5">
-                <div class="card d-flex flex-row">
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <a href class="relation-related-tag">Sci-Fi</a>
-                            <div class="relation-related-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+            <div class="relation-related-cards mt-4 mt-md-5">
+                <div class="relation-related-smallcards h-100">
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                             </div>
-                            <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                         </div>
-                    </div>
-                    <div class="card-related-top">
-                        <img class="card-img-top"
-                            src="https://images.unsplash.com/photo-1588339260976-5ba6f52ac951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                            alt="">
-                        <div class="heart-icon heart-icon-relation-rel bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row">
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <a href class="relation-related-tag">Sci-Fi</a>
-                            <div class="relation-related-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1588339260976-5ba6f52ac951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light1 ">
+                                <img src="assets/icons/Heart.svg" alt="">
                             </div>
-                            <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                         </div>
                     </div>
-                    <div class="card-related-top">
-                        <img class="card-img-top"
-                            src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
-                            alt="">
-                        <div class="heart-icon heart-icon-relation-rel bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row">
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <a href class="relation-related-tag">Sci-Fi</a>
-                            <div class="relation-related-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                             </div>
-                            <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                         </div>
-                    </div>
-                    <div class="card-related-top">
-                        <img class="card-img-top"
-                            src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relation-rel bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row">
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <a href class="relation-related-tag">Sci-Fi</a>
-                            <div class="relation-related-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light1 ">
+                                <img src="assets/icons/Heart.svg" alt="">
                             </div>
-                            <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
                         </div>
                     </div>
-                    <div class="card-related-top">
-                        <img class="card-img-top"
-                            src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relation-rel bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
+                            </div>
+                        </div>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light1 ">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
+                            </div>
+                        </div>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light1 ">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1051,7 +1077,7 @@
                             </div>
                             <p class="relation-related-lastauth">by Mohammad Sahil<span>|</span>8 min read</p>
                         </div>
-                        <div class="heart-icon heart-icon-last bg-light">
+                        <div class="heart-icon heart-icon-last bg-light1 ">
                             <img src="assets/icons/Heart.svg" alt="">
                         </div>
                     </div>
@@ -1061,10 +1087,12 @@
     </div>
     <!--Subscribe-->
 
-    <div class="email text-center my-5">
+    <!--Subscribe-->
+
+    <div class="wrapper email text-center mb-5">
         <p>Stay <span class="text-warn">Updated</span></p>
-        <p>Get selected contents directly in your Email!</p>
-        <div class="d-flex mt-5 justify-content-between footer_subscribe">
+        <p>Get selected contents directly in your email</p>
+        <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
 
             <div class="form-group">
                 <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
@@ -1077,65 +1105,67 @@
     </div>
     <!--Footer-->
     <footer>
-        <div class="d-flex justify-content-between footer wrapper">
-            <div class="footer-logo">
+        <div class="d-flex flex-column flex-md-row justify-content-between footer wrapper">
+            <div class="footer-logo text-center text-md-left">
                 <img src="assets/Booksouls-LOGO.svg" alt="Booksouls logo">
                 <p>A blog to <span>inspire</span> millions</p>
             </div>
-            <div>
-                <ul>
-                    <li>Services</li>
-                    <li><a href="">Articles</a></li>
-                    <li><a href="">Inspire Me</a></li>
-                    <li><a href="">Podcasts</a></li>
-                    <li><a href="">Publishers</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Community</li>
-                    <li><a href="">Write for Us</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Company</li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Company</a></li>
-                    <li><a href="">Help Desk</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>FAQ's</li>
-                    <li><a href="">What Booksouls is?</a></li>
-                    <li><a href="">What is our purpose?</a></li>
-                    <li><a href="">is Everything for free?</a></li>
-                    <li><a href="">Why are we doing this?</a></li>
-                </ul>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between footer-links">
+                <div>
+                    <ul>
+                        <li>Services</li>
+                        <li><a href="">Articles</a></li>
+                        <li><a href="">Inspire Me</a></li>
+                        <li><a href="">Podcasts</a></li>
+                        <li><a href="">Publishers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Community</li>
+                        <li><a href="">Write for Us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Company</li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Company</a></li>
+                        <li><a href="">Help Desk</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>FAQ's</li>
+                        <li><a href="">What Booksouls is?</a></li>
+                        <li><a href="">What is our purpose?</a></li>
+                        <li><a href="">is Everything for free?</a></li>
+                        <li><a href="">Why are we doing this?</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="d-flex justify-content-between footer_in wrapper">
-            <div class="footer-illustration">
+        <div class="d-flex flex-wrap flex-md-nowrap align-items-around justify-content-between footer_in wrapper">
+            <div class="footer-illustration order-1 order-md-1">
                 <img src="assets/footer-illustration-cropped.png" alt="">
             </div>
-            <div class="footer_p">
-                <p>&copy; 2020, Booksouls.com</p>
+            <div class="footer_p order-3 order-md-2 mx-auto">
+                <p><span class="dot"></span>&copy; 2020, Booksouls.com<span class="dot"></span></p>
             </div>
-            <div>
-                <a href="#!" class="mr-3"><img src="assets/icons/Facebook.svg" alt="facebook icon" width="25"
-                        height="25"></a>
-                <a href="#!" class="mr-3"><img src="assets/icons/Twitter.svg" alt="twitter icon" width="28"
-                        height="28"></a>
-                <a href="#!" class="mr-3"><img src="assets/icons/Instagram.svg" alt="instagram icon" width="28"
-                        height="28"></a>
-                <a href="#!"><img src="assets/icons/Pinterest.svg" alt="pinterest" width="25" height="25"></a>
+            <div class="order-2 order-md-3 footer-social-links">
+                <a href="#!" class="mr-2 mr-md-3 facebook-logo"><img src="assets/icons/Facebook.svg"
+                        alt="facebook icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 twitter-logo"><img src="assets/icons/Twitter.svg"
+                        alt="twitter icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 insta-logo"><img src="assets/icons/Instagram.svg"
+                        alt="instagram icon"></a>
+                <a href="#!" class="pin-logo"><img src="assets/icons/Pinterest.svg" alt="pinterest"></a>
             </div>
         </div>
-        <div class="text-center footer_last mt-5">
+        <div class="text-center footer_last mt-3 mt-md-5">
             <p>Made with <img src="assets/icons/Heart.svg"> in india</p>
         </div>
     </footer>

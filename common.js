@@ -21,3 +21,18 @@ function searchPage(){
 function allPage(){
     search.style.display = "none";
 }
+
+//
+$("[data-trigger]").on("click", function () {
+    var trigger_id = $(this).attr('data-trigger');
+    $(trigger_id).toggleClass("show");
+    $('body').toggleClass("offcanvas-active");
+});
+
+// close button 
+$(".btn-close, body").click(function (e) {
+    if( e.target.parentNode.className !== 'navbar-toggler'){
+    $(".navbar-collapse").removeClass("show");
+    $("body").removeClass("offcanvas-active");
+    }
+});

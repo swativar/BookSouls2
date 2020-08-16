@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booksouls - A blog to inspire million</title>
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="articles2.css">
     <link rel="stylesheet" href="singlearticle.css">
+    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
@@ -23,12 +23,14 @@
     <div id="loader" class="center"></div>
     <!--Search bar-->
     <div class="search">
+        <div class="search-header wrapper">
         <div class="logo-searchpage">
         <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
         </div>
         <div class="cross-sign">
             <img class="cross-icon" src="assets-Search-Page/Close.svg" onclick="allPage()">
         </div>
+    </div>
         <div class="search-input">
             <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search">
         </div>
@@ -37,17 +39,23 @@
         <!--Navbar-->
         <nav class="navbar navbar-expand-md bg-white fixed-top">
             <div class="container">
-                <!-- Brand -->
-                <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-                <p class="nav-tag">articles</p>
-
                 <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
+                    <img src="assets-Home-mobile/Menu.svg" alt="">
                 </button>
+                <!-- Brand -->
+                <div class="booksouls-logo">
+                    <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg"
+                            alt="booksouls logo"></a>
+                    <p class="nav-tag">articles</p>
+                </div>
 
                 <!-- Navbar links -->
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <div class="navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <div class="offcanvas-header mt-3 d-block d-md-none">
+                        <img class="float-right btn-close" src="assets-Search-Page/Close.svg">
+                        <a href="index.html"><img class="py-2" src="assets/Booksouls-LOGO.svg" width="40%"></a>
+                    </div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="articles.html"><span class="nav-yellow">Articles</span></a>
@@ -81,7 +89,7 @@
             <img src="assets/icons/Heart.svg">
         </div>
     </header>
-    <div class="article-navigation">
+    <div class="article-navigation wrapper">
         <a href="index.html" class="top-nav">Home</a>
         <span>/</span>
         <a href="articles.html" class="top-nav">Articles</a>
@@ -95,10 +103,10 @@
         <div class="single-article-social">
             <div class="clearfix mt-5">
                 <div class="float-left singlearticle-author d-flex align-items-center">
-                    <div class="mr-3">
+                    <div class="mr-1 mr-md-3">
                         <img class="rounded-circle"
                             src="https://www.westcoastnest.org/files/callouts-3/5e28cce8d660e/display/SimonNessman_IanHarland_cropped.png"
-                            alt="" width="65" height="65">
+                            alt="">
                     </div>
                     <div class="author-name">
                         <p>Mohammad Sahil</p>
@@ -106,10 +114,10 @@
                     </div>
                 </div>
                 <div class="float-right social-links">
-                    <a href><img src="assets-singlearticle/WhatsApp.svg" width="35" height="35"></a>
-                    <a href><img src="assets-singlearticle/Facebook.svg" width="30" height="30"></a>
-                    <a href><img src="assets-singlearticle/Twitter.svg" width="30" height="30"></a>
-                    <a href><img src="assets-singlearticle/Instagram.svg" width="30" height="30"></a>
+                    <a href><img src="assets-singlearticle/WhatsApp.svg" class="whats-app"></a>
+                    <a href><img src="assets-singlearticle/Facebook.svg"></a>
+                    <a href><img src="assets-singlearticle/Twitter.svg"></a>
+                    <a href><img src="assets-singlearticle/Instagram.svg"></a>
                 </div>
             </div>
         </div>
@@ -135,13 +143,13 @@
             Yo Yo Ma to enjoy Bach’s cello suites. Why should
             reading be any different?</p>
         <div class="text-center">
-            <q class="quote"><img class="qu-u" src="assets/Quotes.svg" width="20" height="20">Good friends, good books,
+            <q class="quote"><img class="qu-u" src="assets/Quotes.svg">Good friends, good books,
                 and a sleepy conscience:
-                this is the ideal life.<img class="qu-l" src="assets/Quotes.svg" width="20" height="20"></q>
+                this is the ideal life.<img class="qu-l" src="assets/Quotes.svg"></q>
         </div>
     </div>
     <!--Subscribe-->
-    <div class="wrapper">
+    <div class="wrapper d-none d-md-block">
         <div class="mt-5 subscribe_middle">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="subscribe_left">
@@ -203,9 +211,9 @@
             series
             cut right to the core of the plot. <cite>The Martian</cite> by Andy
             Weir is as hilarious as it is fast-paced and readable.</p>
-        <img class="mt-3 mb-4"
+        <img class="mt-3 mb-4 middle-image"
             src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-            alt="" width="100%" height="300">
+            alt="" width="100%">
         <p>Short chapters and cliffhangers do not indicate a book
             of “lesser” value. They simply indicate the author
             knows how to keep you guessing and keep you reading. If
@@ -221,7 +229,7 @@
             anyone of any age can read YA books and enjoy them.</p>
     </div>
     <!--Subscribe-->
-    <div class="wrapper">
+    <div class="wrapper d-none d-md-block">
         <div class="mt-5 subscribe_middle">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="subscribe_left">
@@ -261,9 +269,9 @@
             commute, more enjoyable. Even better, many audiobooks
             are available for free through your local library
             through apps like Hoopla, Libby, and Overdrive.</p>
-        <img class="mt-3 mb-4"
+        <img class="mt-3 mb-4 middle-image"
             src="https://images.unsplash.com/photo-1487537023671-8dce1a785863?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-            alt="" width="100%" height="300">
+            alt="" width="100%">
         <p>A pro tip for finding an audiobook you like: find a
             narrator you like. Famous actors will often perform
             audiobooks. If The <cite>Handmaid’s Tale</cite> or <cite>Tom Sawyer</cite> have
@@ -291,135 +299,183 @@
             informed at all times.</p>
     </div>
     <div class="share">
-        <div class="clearfix mt-5">
+        <div class="clearfix my-5">
             <div class="float-left share-left">
                 <p>Share it with your friends!</p>
             </div>
             <div class="float-right social-links">
-                <a href><img src="assets-singlearticle/WhatsApp.svg" width="35" height="35"></a>
-                <a href><img src="assets-singlearticle/Facebook.svg" width="30" height="30"></a>
-                <a href><img src="assets-singlearticle/Twitter.svg" width="30" height="30"></a>
-                <a href><img src="assets-singlearticle/Instagram.svg" width="30" height="30"></a>
+                <a href><img class="whats-app" src="assets-singlearticle/WhatsApp.svg"></a>
+                <a href><img src="assets-singlearticle/Facebook.svg"></a>
+                <a href><img src="assets-singlearticle/Twitter.svg"></a>
+                <a href><img src="assets-singlearticle/Instagram.svg"></a>
             </div>
         </div>
         <div class="text-center mt-4 author_desc">
             <img class="rounded-circle"
                 src="https://www.westcoastnest.org/files/callouts-3/5e28cce8d660e/display/SimonNessman_IanHarland_cropped.png"
-                alt="" width="80" height="80">
+                alt="">
             <p class="auth-desc-name">Mohammad Sahil</p>
             <p class="auth-desc">UI/UX designer intern at the Booksouls.com, who's a book enthusiast...but doesn't read
                 books</p>
 
         </div>
     </div>
-    <div class="related-article">
-        <div class="enterpreneurship mt-5">
-            <div class="related-article-wrapper">
-                <div class="related-title">
-                    <h2 class="ml-5">Related aricles</h2>
+    <div class="relationship wrapper my-3 my-md-5 d-flex flex-column flex-md-row justify-content-between">
+        <div class="relation-left">
+            <div class="relation-header">
+                <div class="relationship-title">
+                    <h2 class="h2"><span>Related</span></h2>
                 </div>
             </div>
-            <div class="related-article-row mt-5">
-                <div class="related-article-wrapper">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="etr-ship-card-top">
-                                        <img class="card-img-top"
-                                            src="https://startupistanbul.com/wp-content/uploads/2014/11/startup1.jpg"
-                                            alt="">
-                                        <div class="heart-icon heart-icon-enterpreneurship bg-light">
-                                            <img src="assets/icons/Heart.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="mt-2 etr-ship-card-bottom">
-                                        <a href class="etr-tag">ENTREPRENEURSHIP</a>
-                                        <div class="etr-card-title mt-2">
-                                            <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                                answers
-                                                and...</a>
-                                        </div>
-                                        <div class="clearfix mt-1">
-                                            <span class="float-left">by Mohammad Sahil</span>
-                                            <span class="float-right">8 min read</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="relation-cards mt-4 h-100">
+                <div class="card d-flex flex-row">
+                    <div class="card-top">
+                        <img class="card-img-top"
+                            src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
+                            <img src="assets/icons/Heart.svg" alt="">
                         </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="etr-ship-card-top">
-                                        <img class="card-img-top"
-                                            src="https://albandri98home.files.wordpress.com/2018/10/entrepreneurship-background.jpg?w=840"
-                                            alt="">
-                                        <div class="heart-icon heart-icon-enterpreneurship bg-light">
-                                            <img src="assets/icons/Heart.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="mt-2 etr-ship-card-bottom">
-                                        <a href class="etr-tag">ENTERPRENEURSHIP</a>
-                                        <div class="etr-card-title mt-2">
-                                            <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                                answers
-                                                and...</a>
-                                        </div>
-                                        <div class="clearfix mt-1">
-                                            <span class="float-left">by Mohammad Sahil</span>
-                                            <span class="float-right">8 min read</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="card-header">
+                        <div class="card-bottom">
+                            <div class="relationship-card-title">
+                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                <p>For thousands of years, humans have looked up at the endless sky and wondered if
+                                    there was anyone out there.</p>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="etr-ship-card-top">
-                                        <img class="card-img-top"
-                                            src="https://corporate-entrepreneurs.com/wp-content/uploads/2019/09/iStock-464731840-2-e1569785543163.jpg"
-                                            alt="">
-                                        <div class="heart-icon heart-icon-enterpreneurship bg-light">
-                                            <img src="assets/icons/Heart.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="mt-2 etr-ship-card-bottom">
-                                        <a href class="etr-tag">ENTERPRENEURSHIP</a>
-                                        <div class="etr-card-title mt-2">
-                                            <a href="#">Drawing from dante's dark epic poem, Langdon races to find
-                                                answers
-                                                and...</a>
-                                        </div>
-                                        <div class="clearfix mt-1">
-                                            <span class="float-left">by Mohammad Sahil</span>
-                                            <span class="float-right">8 min read</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="clearfix">
+                                <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center" style="margin-top: 5%;">
-                    <button class="btn btn-warning px-5">Load more</button>
+                <div class="card d-flex flex-row">
+                    <div class="card-top">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
+                            <img src="assets/icons/Heart.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-header">
+                        <div class="card-bottom">
+                            <div class="relationship-card-title">
+                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                <p>For thousands of years, humans have looked up at the endless sky and wondered if
+                                    there was anyone out there.</p>
+                            </div>
+                            <div class="clearfix">
+                                <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card d-flex flex-row d-md-none">
+                    <div class="card-top">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-relationship bg-light1">
+                            <img src="assets/icons/Heart.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-header">
+                        <div class="card-bottom">
+                            <div class="relationship-card-title">
+                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                <p>For thousands of years, humans have looked up at the endless sky and wondered if
+                                    there was anyone out there.</p>
+                            </div>
+                            <div class="clearfix">
+                                <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
+                                <span class="float-right d-none d-md-inline"><a href
+                                        class="relationship-tag">RELATIONSHIP</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relation-right d-none d-md-block">
+            <div class="relation-related-cards mt-4 mt-md-5">
+                <div class="relation-related-smallcards h-100">
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
+                            </div>
+                        </div>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1588339260976-5ba6f52ac951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
+                            </div>
+                        </div>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-row">
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <a href class="relation-related-tag">Sci-Fi</a>
+                                <div class="relation-related-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                </div>
+                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
+                            </div>
+                        </div>
+                        <div class="card-related-top">
+                            <img class="card-img-top"
+                                src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg"
+                                alt="">
+                            <div class="heart-icon heart-icon-relation-rel bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
     <!--Subscribe-->
 
-    <div class="email text-center mb-5">
+    <div class="wrapper email text-center mb-5">
         <p>Stay <span class="text-warn">Updated</span></p>
-        <p>Get selected contents directly in your Email!</p>
-        <div class="d-flex mt-5 justify-content-between footer_subscribe">
-
+        <p>Get selected contents directly in your email</p>
+        <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
+    
             <div class="form-group">
                 <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
             </div>
-
+    
             <div class="text-center sub_button">
                 <button class="btn btn-outline-warning text-dark">SUBSCRIBE</button>
             </div>
@@ -427,65 +483,67 @@
     </div>
     <!--Footer-->
     <footer>
-        <div class="d-flex justify-content-between footer wrapper">
-            <div class="footer-logo">
+        <div class="d-flex flex-column flex-md-row justify-content-between footer wrapper">
+            <div class="footer-logo text-center text-md-left">
                 <img src="assets/Booksouls-LOGO.svg" alt="Booksouls logo">
                 <p>A blog to <span>inspire</span> millions</p>
             </div>
-            <div>
-                <ul>
-                    <li>Services</li>
-                    <li><a href="">Articles</a></li>
-                    <li><a href="">Inspire Me</a></li>
-                    <li><a href="">Podcasts</a></li>
-                    <li><a href="">Publishers</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Community</li>
-                    <li><a href="">Write for Us</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Company</li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Company</a></li>
-                    <li><a href="">Help Desk</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>FAQ's</li>
-                    <li><a href="">What Booksouls is?</a></li>
-                    <li><a href="">What is our purpose?</a></li>
-                    <li><a href="">is Everything for free?</a></li>
-                    <li><a href="">Why are we doing this?</a></li>
-                </ul>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between footer-links">
+                <div>
+                    <ul>
+                        <li>Services</li>
+                        <li><a href="">Articles</a></li>
+                        <li><a href="">Inspire Me</a></li>
+                        <li><a href="">Podcasts</a></li>
+                        <li><a href="">Publishers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Community</li>
+                        <li><a href="">Write for Us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Company</li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Company</a></li>
+                        <li><a href="">Help Desk</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>FAQ's</li>
+                        <li><a href="">What Booksouls is?</a></li>
+                        <li><a href="">What is our purpose?</a></li>
+                        <li><a href="">is Everything for free?</a></li>
+                        <li><a href="">Why are we doing this?</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="d-flex justify-content-between footer_in wrapper">
-            <div class="footer-illustration">
+        <div class="d-flex flex-wrap flex-md-nowrap align-items-around justify-content-between footer_in wrapper">
+            <div class="footer-illustration order-1 order-md-1">
                 <img src="assets/footer-illustration-cropped.png" alt="">
             </div>
-            <div class="footer_p">
-                <p>&copy; 2020, Booksouls.com</p>
+            <div class="footer_p order-3 order-md-2 mx-auto">
+                <p><span class="dot"></span>&copy; 2020, Booksouls.com<span class="dot"></span></p>
             </div>
-            <div>
-                <a href="#!" class="mr-3"><img src="assets/icons/Facebook.svg" alt="facebook icon" width="25"
-                        height="25"></a>
-                <a href="#!" class="mr-3"><img src="assets/icons/Twitter.svg" alt="twitter icon" width="28"
-                        height="28"></a>
-                <a href="#!" class="mr-3"><img src="assets/icons/Instagram.svg" alt="instagram icon" width="28"
-                        height="28"></a>
-                <a href="#!"><img src="assets/icons/Pinterest.svg" alt="pinterest" width="25" height="25"></a>
+            <div class="order-2 order-md-3 footer-social-links">
+                <a href="#!" class="mr-2 mr-md-3 facebook-logo"><img src="assets/icons/Facebook.svg"
+                        alt="facebook icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 twitter-logo"><img src="assets/icons/Twitter.svg"
+                        alt="twitter icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 insta-logo"><img src="assets/icons/Instagram.svg"
+                        alt="instagram icon"></a>
+                <a href="#!" class="pin-logo"><img src="assets/icons/Pinterest.svg" alt="pinterest"></a>
             </div>
         </div>
-        <div class="text-center footer_last mt-5">
+        <div class="text-center footer_last mt-3 mt-md-5">
             <p>Made with <img src="assets/icons/Heart.svg"> in india</p>
         </div>
     </footer>

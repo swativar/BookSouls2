@@ -22,11 +22,13 @@
     <div id="loader" class="center"></div>
     <!--Search bar-->
     <div class="search">
-        <div class="logo-searchpage">
-        <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
-        </div>
-        <div class="cross-sign">
-            <img class="cross-icon" src="assets-Search-Page/Close.svg" onclick="allPage()">
+        <div class="search-header wrapper">
+            <div class="logo-searchpage">
+                <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
+            </div>
+            <div class="cross-sign">
+                <img class="cross-icon" src="assets-Search-Page/Close.svg" onclick="allPage()">
+            </div>
         </div>
         <div class="search-input">
             <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search">
@@ -35,17 +37,22 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-md sticky-top bg-white">
         <div class="container">
+             <!-- Toggler/collapsibe Button -->
+             <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
+                <img src="assets-Home-mobile/Menu.svg" alt="">
+            </button>
             <!-- Brand -->
+            <div class="booksouls-logo">
             <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
             <p class="nav-tag">publishers</p>
-
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            </div>
 
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <div class="navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <div class="offcanvas-header mt-3 d-block d-md-none">
+                    <img class="float-right btn-close" src="assets-Search-Page/Close.svg">
+                    <a href="index.html"><img class="py-2" src="assets/Booksouls-LOGO.svg" width="40%"></a>
+                </div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="articles.html"><span class="hover-yellow">Articles</span></a>
@@ -594,12 +601,12 @@
 
         </div>
     </div>
-     <!--Subscribe-->
+    <!--Subscribe-->
 
-     <div class="email text-center my-5">
+    <div class="wrapper email text-center mt-5 mb-5">
         <p>Stay <span class="text-warn">Updated</span></p>
-        <p>Get selected contents directly in your Email!</p>
-        <div class="d-flex mt-5 justify-content-between footer_subscribe">
+        <p>Get selected contents directly in your email</p>
+        <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
 
             <div class="form-group">
                 <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
@@ -612,65 +619,67 @@
     </div>
     <!--Footer-->
     <footer>
-        <div class="d-flex justify-content-between footer wrapper">
-            <div class="footer-logo">
+        <div class="d-flex flex-column flex-md-row justify-content-between footer wrapper">
+            <div class="footer-logo text-center text-md-left">
                 <img src="assets/Booksouls-LOGO.svg" alt="Booksouls logo">
                 <p>A blog to <span>inspire</span> millions</p>
             </div>
-            <div>
-                <ul>
-                    <li>Services</li>
-                    <li><a href="">Articles</a></li>
-                    <li><a href="">Inspire Me</a></li>
-                    <li><a href="">Podcasts</a></li>
-                    <li><a href="">Publishers</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Community</li>
-                    <li><a href="">Write for Us</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Company</li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Company</a></li>
-                    <li><a href="">Help Desk</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>FAQ's</li>
-                    <li><a href="">What Booksouls is?</a></li>
-                    <li><a href="">What is our purpose?</a></li>
-                    <li><a href="">is Everything for free?</a></li>
-                    <li><a href="">Why are we doing this?</a></li>
-                </ul>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between footer-links">
+                <div>
+                    <ul>
+                        <li>Services</li>
+                        <li><a href="">Articles</a></li>
+                        <li><a href="">Inspire Me</a></li>
+                        <li><a href="">Podcasts</a></li>
+                        <li><a href="">Publishers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Community</li>
+                        <li><a href="">Write for Us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Company</li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Company</a></li>
+                        <li><a href="">Help Desk</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>FAQ's</li>
+                        <li><a href="">What Booksouls is?</a></li>
+                        <li><a href="">What is our purpose?</a></li>
+                        <li><a href="">is Everything for free?</a></li>
+                        <li><a href="">Why are we doing this?</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="d-flex justify-content-between footer_in wrapper">
-            <div class="footer-illustration">
+        <div class="d-flex flex-wrap flex-md-nowrap align-items-around justify-content-between footer_in wrapper">
+            <div class="footer-illustration order-1 order-md-1">
                 <img src="assets/footer-illustration-cropped.png" alt="">
             </div>
-            <div class="footer_p">
-                <p>&copy; 2020, Booksouls.com</p>
+            <div class="footer_p order-3 order-md-2 mx-auto">
+                <p><span class="dot"></span>&copy; 2020, Booksouls.com<span class="dot"></span></p>
             </div>
-            <div>
-                <a href="#!" class="mr-3"><img src="assets/icons/Facebook.svg" alt="facebook icon" width="25"
-                        height="25"></a>
-                <a href="#!" class="mr-3"><img src="assets/icons/Twitter.svg" alt="twitter icon" width="28"
-                        height="28"></a>
-                <a href="#!" class="mr-3"><img src="assets/icons/Instagram.svg" alt="instagram icon" width="28"
-                        height="28"></a>
-                <a href="#!"><img src="assets/icons/Pinterest.svg" alt="pinterest" width="25" height="25"></a>
+            <div class="order-2 order-md-3 footer-social-links">
+                <a href="#!" class="mr-2 mr-md-3 facebook-logo"><img src="assets/icons/Facebook.svg"
+                        alt="facebook icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 twitter-logo"><img src="assets/icons/Twitter.svg"
+                        alt="twitter icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 insta-logo"><img src="assets/icons/Instagram.svg"
+                        alt="instagram icon"></a>
+                <a href="#!" class="pin-logo"><img src="assets/icons/Pinterest.svg" alt="pinterest"></a>
             </div>
         </div>
-        <div class="text-center footer_last mt-5">
+        <div class="text-center footer_last mt-3 mt-md-5">
             <p>Made with <img src="assets/icons/Heart.svg"> in india</p>
         </div>
     </footer>
