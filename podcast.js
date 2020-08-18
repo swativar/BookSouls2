@@ -36,6 +36,22 @@ function show(evt, name) {
   $('#pod-recom').carousel({interval:false,wrap:false});
   $('#pod-genre').carousel({interval:false,wrap:false});
   $("#pod-header-slider").carousel({interval: 2500});
+  
+  $("#page-header,#pod-header-slider").on("touchstart", function(event){
+    var xClick = event.originalEvent.touches[0].pageX;
+$(this).on("touchmove", function(event){
+    var xMove = event.originalEvent.touches[0].pageX;
+    if( Math.floor(xClick - xMove) > 5 ){
+        $(this).carousel('next');
+    }
+    else if( Math.floor(xClick - xMove) < -5 ){
+        $(this).carousel('prev');
+    }
+});
+$(".carousel").on("touchend", function(){
+        $(this).off("touchmove");
+});
+});
 
   var tot_item = document.querySelectorAll('#pod-tab-home .carousel-item').length;
   $("#pod-tab-home").on('slid.bs.carousel', function(event){

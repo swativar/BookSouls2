@@ -142,9 +142,14 @@
                 <li><img src="assets-InspireMe/HindiIcon.svg">Hindi</li>
             </ul>
         </div>
+        <div class="tab-mobile-links d-md-none text-center">
+            <button class="btn btn-outline-warning text-dark px-4 tab-li tab-active" onclick="show(event,'home')">Home</button>
+            <button class="btn btn-outline-warning text-dark tab-li px-4" onclick="show(event,'explore')">New</button>
+            <button class="btn btn-outline-warning text-dark tab-li px-4" onclick="show(event,'genre')">Trending</button>
+        </div>
         <div class="tab-content-home tab-content float-right mt-4" id="home">
-            <div class="pod-tab-title">
-                <p>Popular</p>
+            <div class="pod-tab-title text-center text-md-left h2">
+                <p><span>Popular</span></p>
             </div>
             <div id="pod-tab-home" class="carousel slide" data-ride="carousel">
                 <div class="controls tab-home-controls">
@@ -157,7 +162,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="d-flex justify-content-between mt-2 flex-wrap">
+                        <div class="d-flex justify-content-between mt-2 flex-nowrap flex-md-wrap">
                             <div class="podcast-card-container">
                                 <div class="podcast-card">
                                     <img class="podcast-card-background"
@@ -281,7 +286,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-flex justify-content-between mt-2 flex-wrap">
+                        <div class="d-flex justify-content-between mt-2 flex-nowrap flex-md-wrap">
                             <div class="podcast-card-container">
                                 <div class="podcast-card">
                                     <img class="podcast-card-background"
@@ -407,7 +412,7 @@
                 </div>
             </div>
             <!--Subscribe-->
-            <div class="mt-5 newsletter">
+            <div class="mt-5 newsletter d-none d-md-block">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="newsletter_left">
                         <p>Get articles directly in your email</p>
@@ -422,10 +427,10 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row justify-content-between mt-5 w-100">
+            <div class="d-flex flex-column flex-md-row justify-content-between mt-5 w-100">
                 <div class="podcast-recomm">
-                    <div class="pod-tab-title">
-                        <p>Recommended</p>
+                    <div class="pod-tab-title h2 text-center text-md-left">
+                        <p><span>Recommended</span></p>
                     </div>
                     <div id="pod-recom" class="carousel slide" data-ride="carousel">
                         <div class="controls tab-home-controls">
@@ -573,8 +578,8 @@
                     </div>
                 </div>
                 <div class="podcast-genre">
-                    <div class="pod-tab-title">
-                        <p>Genre</p>
+                    <div class="pod-tab-title h2 text-center text-md-left">
+                        <p><span>Genre</span></p>
                     </div>
                     <div id="pod-genre" class="carousel slide" data-ride="carousel">
                         <div class="controls tab-home-controls">
@@ -612,9 +617,9 @@
             </div>
             <div class="mt-5">
                 <div class="pod-creativity-heading">
-                    <h2 class="text-center">Creativity</h2>
+                    <h2 class="text-center text-md-left h2"><span>Creativity</span></h2>
                 </div>
-                <div class="d-flex justify-content-between mt-4">
+                <div class="d-flex justify-content-between mt-4 podcast-creativity">
                     <div class="podcast-card-container">
                         <div class="podcast-card">
                             <img class="podcast-card-background"
@@ -677,14 +682,14 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button class="btn btn-warning px-5 mt-4">See all</button>
+                    <button class="btn btn-warning px-4 px-md-5 mt-4">See all</button>
                 </div>
             </div>
             <div class="mt-5">
                 <div class="pod-lifestyle-heading">
-                    <h2 class="text-center">Lifestyle</h2>
+                    <h2 class="text-center text-md-left h2"><span>Lifestyle</span></h2>
                 </div>
-                <div class="d-flex justify-content-between mt-4">
+                <div class="d-flex justify-content-between mt-4 podcast-lifestyle">
                     <div class="podcast-card-container">
                         <div class="podcast-card">
                             <img class="podcast-card-background"
@@ -747,18 +752,18 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button class="btn btn-warning px-5 mt-4">See all</button>
+                    <button class="btn btn-warning px-4 px-md-5 mt-4">See all</button>
                 </div>
             </div>
         </div>
         <div class="tab-content-explore tab-content float-right mt-4" id="explore">
-            <div class="pod-tab-title">
-                <p>New</p>
+            <div class="pod-tab-title h2 text-center text-md-left">
+                <p><span>New</span></p>
             </div>
         </div>
         <div class="tab-content-genre tab-content float-right mt-4" id="genre">
-            <div class="pod-tab-title">
-                <p>Trending</p>
+            <div class="pod-tab-title h2 text-center text-md-left">
+                <p><span>Trending</span></p>
             </div>
         </div>
     </div>
