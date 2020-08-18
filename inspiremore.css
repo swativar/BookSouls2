@@ -149,19 +149,19 @@
         font-size: 16px;
     }
     .millionaire-img{
-        position: relative;
-        left: 5px;
+        left: 0px;
     }
     .millionaire-img img{
         width:110px;
         height: 125px;
     }
     .millionaire-title h2{
-        font-size: 16px;
+        font-size: 18px;
+        margin-bottom: 0;
     }
     .millionaire-title{
-        padding: 20px 26px;
-        left: -5px;
+        padding: 22px 19px;
+        left: -10px;
     }
     .millionaire-audio{
         position: absolute;

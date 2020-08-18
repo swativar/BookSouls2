@@ -425,8 +425,10 @@ img{
     outline: 0;
 }
 .top-nav{
-    margin: 0 5px;
     font-family: 'Vision Regular';
+}
+.top-nav + span{
+    margin: 0 5px;
 }
 a.top-nav{
     color: #042330;
@@ -752,12 +754,12 @@ a.top-nav:hover{
         font-size: 13px;
     }
     .top-nav{
-        margin: 0 3px;
         font-family: 'Vision Regular';
         font-size: 13px;
     }
     .top-nav + span{
         font-size: 13px;
+        margin: 0 3px;
     }
     .newsletter{
         background-color: #eeedec;

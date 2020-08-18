@@ -85,20 +85,19 @@
         margin-bottom:0rem!important;
     } 
     .millionaire-title{
-        padding: 25px;
+        padding: 22px 19px;
         position: relative;
         left: -10px;
         background-color: #fff;
         position: relative;
     }
     .millionaire-title h2{
-        font-size: 20px;
-        font-family: 'Playfair Display';
-        font-weight: 600;
+        font-size: 18px;
+        margin-bottom:0;
     }
     .millionaire-img{
         position: relative;
-        left: 10px;
+        left: 0px;
     }
     .millionaire-img img{
         width:110px;
