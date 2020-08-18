@@ -31,8 +31,24 @@ function show(evt, name) {
     document.getElementById(name).style.display = "block";
     evt.currentTarget.className += " tab-active";
   }
-  $('#page-header').carousel({interval:false});
+  $('#page-header').carousel({interval:2500});
   $('#tab-home').carousel({interval:false,wrap:false});
+
+  $("#page-header").on("touchstart", function(event){
+    var xClick = event.originalEvent.touches[0].pageX;
+$(this).on("touchmove", function(event){
+    var xMove = event.originalEvent.touches[0].pageX;
+    if( Math.floor(xClick - xMove) > 5 ){
+        $(this).carousel('next');
+    }
+    else if( Math.floor(xClick - xMove) < -5 ){
+        $(this).carousel('prev');
+    }
+});
+$(".carousel").on("touchend", function(){
+        $(this).off("touchmove");
+});
+});
 
   var tot_item = document.querySelectorAll('.tab-content-home .carousel-item').length;
   $("#tab-home").on('slid.bs.carousel', function(event){
