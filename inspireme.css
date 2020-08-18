@@ -336,6 +336,10 @@
         transform: scale(0.6);
         transform-origin: right top;
     }
+    .bg-header{
+        position: relative;
+        overflow-x: hidden;
+    }
     .bg1{
         position: absolute;
         right: 0;
@@ -371,9 +375,15 @@
     .inspire-header-left{
         width: 100%;
     }
+    .tab-content > p{
+        font-size: 18px;
+    }
+    .inspire-page-header{
+        margin-bottom:50px;
+    }
     .inspire-header-right{
         width: 100%;
-        margin-top:2%;
+        margin-top:5%;
     }
     .insp-header-card1,.insp-header-card3{
         width: 31%;
@@ -384,7 +394,7 @@
         height: 200px;
     }
     .insp-header-card1 .insp-cara-pic,.insp-header-card3 .insp-cara-pic{
-        width: 100%;
+        width: 42px;
     }
     .insp-header-card2 .insp-cara-pic{
         width: 100%;
@@ -462,6 +472,6 @@
         background-color: #fff!important;
     }
     .creative-heading h2,.influence-heading h2{
-        font-size: 21px;
+        font-size: 18px;
     }
 }
