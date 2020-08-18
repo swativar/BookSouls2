@@ -19,3 +19,32 @@
 .audio-container{
     margin-top: 7%;
 }
+@media screen and (max-width:576px){
+    .inspireaudio-navigation{
+        margin-top: 10px;
+        margin-bottom: 40px;
+        position: relative;
+        top: 220px;
+        line-height: 15px;
+    }
+    .body-background{
+        position: relative;
+        overflow-x: hidden;
+    }
+    .body-background::before{
+        right: 0;
+        top: 33%;
+        transform:scale(0.4);
+        transform-origin: right top;
+    }
+    .body-background::after{
+        left:0;
+        top: -8%;
+        transform:scale(0.28);
+        transform-origin: left top;
+    }
+    .audio-container{
+        margin-top: 25%;
+        margin-bottom: 15%;
+    }
+}

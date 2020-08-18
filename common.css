@@ -106,6 +106,7 @@ nav .container{
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'Vision Heavy';
+    width: 100%;
 }
 .heart-icon{
     position: absolute;
@@ -591,7 +592,7 @@ a.top-nav:hover{
      bottom: 0;
      right: 0;
      background-color:rgba(0, 0, 0, 0.8);
-     z-index: 1;
+     z-index: 999;
     }
     .navbar-collapse {
       position: fixed;
@@ -754,5 +755,44 @@ a.top-nav:hover{
         margin: 0 3px;
         font-family: 'Vision Regular';
         font-size: 13px;
+    }
+    .top-nav + span{
+        font-size: 13px;
+    }
+    .newsletter{
+        background-color: #eeedec;
+        padding: 25px 16px;
+    }
+    .newsletter_left{
+        width: 100%;
+    }
+    .newsletter_right{
+        width: 100%;
+        margin-top:5%;
+    }
+    .newsletter_left p:first-child{
+        font-size:16px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .newsletter_left p:last-child{
+        font-size: 12px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .newsletter_button{
+        font-size: 16px;
+        padding: 0.4rem!important;
+    }
+    .newsletter .form-group{
+        margin-bottom: 0!important;
+        width: 100%;
+    }
+    #email-input{
+        width: 95%;
+        padding:0.4rem 5%;
+    }
+    #email-input::placeholder{
+        font-size: 12px;
     }
 }

@@ -1,21 +1,6 @@
 .inspire-navigation{
-    margin: 80px 165px 40px 165px;
-}
-.top-nav{
-    margin: 0 5px;
-    font-family: 'Vision Regular';
-}
-a.top-nav{
-    color: #042330;
-    opacity: 0.8;
-    text-decoration: underline;
-}
-a.top-nav:hover{
-    color: #042330;
-    text-decoration: none;
-}
-img{
-    object-fit: cover;
+    margin-top: 80px;
+    margin-bottom:40px;
 }
 .millionaire-title{
     padding: 50px 30px;
@@ -33,9 +18,14 @@ img{
     position: relative;
     left: 15px;
 }
+.millionaire-img img{
+    width:250px;
+    height: 300px;
+}
 .millionaire-content{
     margin-left: 390px;
     margin-right: 390px;
+    margin-top:3rem;
 }
 .millionaire-content > p{
     font-size: 22px;
@@ -61,9 +51,9 @@ img{
     font-family: 'Playfair Display';
     font-style: italic;
 }
-.related{
-    margin-left: 165px;
-    margin-right: 165px;
+.body{
+    position: relative;
+    overflow-x: hidden;
 }
 .body::before{
     content: url('assets-InspireMe/BG-Shapes-2.svg');
@@ -78,4 +68,56 @@ img{
     left:0;
     top: -85%;
     z-index: -1;
+}
+@media screen and (max-width:576px){
+    .inspire-navigation{
+        position: relative;
+        top:210px;
+        margin-top: 30px;
+    }
+    .millionaire-content{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 4rem;
+    }
+    .millionaire-content > p{
+        font-size: 14.5px;
+        margin-bottom:0rem!important;
+    } 
+    .millionaire-title{
+        padding: 25px;
+        position: relative;
+        left: -10px;
+        background-color: #fff;
+        position: relative;
+    }
+    .millionaire-title h2{
+        font-size: 20px;
+        font-family: 'Playfair Display';
+        font-weight: 600;
+    }
+    .millionaire-img{
+        position: relative;
+        left: 10px;
+    }
+    .millionaire-img img{
+        width:110px;
+        height: 135px;
+    }
+    .body::before{
+        right: 0;
+        top: 16%;
+        transform: scale(0.4);
+        transform-origin: right top;
+        
+    }
+    .body::after{
+        left:0;
+        top: -15%;
+        transform:scale(0.4);
+        transform-origin: left top;
+    }
+    .millionaire-audio p{
+        font-size: 13px;
+    }
 }

@@ -28,13 +28,24 @@ function allPage(){
 $("[data-trigger]").on("click", function () {
     var trigger_id = $(this).attr('data-trigger');
     $(trigger_id).toggleClass("show");
-    $('body').toggleClass("offcanvas-active");
+    $('html').toggleClass("offcanvas-active");
 });
 
 // close button 
-$(".btn-close, body").click(function (e) {
+$(".btn-close, html").click(function (e) {
     if( e.target.parentNode.className !== 'navbar-toggler'){
     $(".navbar-collapse").removeClass("show");
-    $("body").removeClass("offcanvas-active");
+    $("html").removeClass("offcanvas-active");
     }
 });
+
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+    document.querySelectorAll('*'),
+    function (el) {
+        if (el.offsetWidth > docWidth) {
+            console.log(el);
+        }
+    }
+);

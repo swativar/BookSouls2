@@ -84,22 +84,22 @@
             <a class="search-icon" onclick="searchPage()"><img src="assets/icons/Search.svg" alt=""></a>
         </div>
     </nav>
-    <div class="inspire-navigation">
+    <div class="wrapper inspire-navigation">
         <a href="index.html" class="top-nav">Home</a>
         <span>/</span>
         <a href="inspireme.html" class="top-nav">Inspire Me</a>
         <span>/</span>
         <span class="top-nav">One Night Millionaire</span>
     </div>
-    <div class="millionaire-header d-flex align-items-center justify-content-center">
+    <div class="millionaire-header wrapper d-flex align-items-center justify-content-center">
         <div class="millionaire-img">
             <img class="rounded"
                 src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                alt="" width="210" height="250">
+                alt="">
         </div>
         <div class="millionaire-title">
             <h2>One Night Millionaire</h2>
-            <div class="heart-icon heart-icon-mill bg-light">
+            <div class="heart-icon heart-icon-mill bg-light1">
                 <img src="assets/icons/Heart.svg" alt="">
             </div>
             <div class="text-center millionaire-audio">
@@ -107,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class="millionaire-cont mt-5">
+    <div class="millionaire-cont" id="top-content">
         <h3>Who Is Kylie Jenner?</h3>
         <p>Kylie Jenner was born in 1997 in California. Jenner grew up in the spotlight among her famous siblings in the
             reality series, Keeping Up With The Kardashians. She’s harnessed her family's fame to launch her own
@@ -126,7 +126,7 @@
             School. She considers Calabasas, California, her hometown.</p>
     </div>
     <!--Subscribe-->
-    <div class="wrapper">
+    <div class="wrapper d-none d-md-block">
         <div class="my-5 subscribe_middle">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="subscribe_left">
@@ -170,7 +170,7 @@
             of six people who turned their painful experiences of being bullied into something positive.</p>
     </div>
     <!--Subscribe-->
-    <div class="wrapper">
+    <div class="wrapper d-none d-md-block">
         <div class="my-5 subscribe_middle">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="subscribe_left">
@@ -209,18 +209,19 @@
             <p>Share it with your friends!</p>
         </div>
         <div class="float-right social-links">
-            <a href><img src="assets-singlearticle/WhatsApp.svg" width="35" height="35"></a>
-            <a href><img src="assets-singlearticle/Facebook.svg" width="30" height="30"></a>
-            <a href><img src="assets-singlearticle/Twitter.svg" width="30" height="30"></a>
-            <a href><img src="assets-singlearticle/Instagram.svg" width="30" height="30"></a>
+            <a href><img class="whats-app" src="assets-singlearticle/WhatsApp.svg"></a>
+            <a href><img src="assets-singlearticle/Facebook.svg"></a>
+            <a href><img src="assets-singlearticle/Twitter.svg"></a>
+            <a href><img src="assets-singlearticle/Instagram.svg"></a>
         </div>
     </div>
     <hr class="hr2">
     <!---->
-    <div class="related mt-5">
+    <div class="wrapper related mt-5">
         <div class="related-heading">
-            <h2>Related</h2>
+            <h2 class="h2"><span>Related</span></h2>
         </div>
+        <div class="creativity-cards">
         <div class="d-flex justify-content-between mt-4">
             <div class="create-card">
                 <img class="create-card-img"
@@ -275,6 +276,7 @@
                     <img src="assets/icons/Heart.svg">
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <!--Subscribe-->

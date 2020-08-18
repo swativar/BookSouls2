@@ -203,6 +203,9 @@ cite,i{
     .single-article > h2{
         font-size: 25px;
     }
+    .single-article-content p{
+        margin-bottom: 1.5rem;
+    }
     .single-article-social{
         margin-left: 16px;
         margin-right: 16px;
@@ -212,7 +215,7 @@ cite,i{
         margin-left: 16px;
         margin-right: 16px;
         margin-top: 5%;
-        font-size: 15px;
+        font-size: 14.5px;
         line-height: 23px;
     }
     .quote{
@@ -249,7 +252,7 @@ cite,i{
     .author-name{
         transform: translate(0,10%);
     }
-    .social-links{
+    .single-article-social .social-links{
         transform: translate(0,30%);
     }
     .social-links img:not(.whats-app){
@@ -295,7 +298,7 @@ cite,i{
         font-size: 12px;
     }
     .share-left{
-        transform: translate(0,75%);
+        transform: translate(0,25%);
     }
     .share-left p{
         font-size:12px;

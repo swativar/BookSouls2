@@ -31,7 +31,7 @@ function show(evt, name) {
     document.getElementById(name).style.display = "block";
     evt.currentTarget.className += " tab-active";
   }
-  $('#page-header').carousel({interval:2500});
+  $('#page-header').carousel({interval:false});
   $('#tab-home').carousel({interval:false,wrap:false});
 
   var tot_item = document.querySelectorAll('.tab-content-home .carousel-item').length;

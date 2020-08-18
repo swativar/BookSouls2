@@ -39,14 +39,14 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-md fixed-top bg-white">
         <div class="container">
-             <!-- Toggler/collapsibe Button -->
-             <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
                 <img src="assets-Home-mobile/Menu.svg" alt="">
             </button>
             <!-- Brand -->
             <div class="booksouls-logo">
-            <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-            <p class="nav-tag">inspire me</p>
+                <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
+                <p class="nav-tag">inspire me</p>
             </div>
 
             <!-- Navbar links -->
@@ -93,15 +93,15 @@
         <span>/</span>
         <span class="top-nav">One Night Millionaire (audio)</span>
     </div>
-    <div class="millionaire-header d-flex align-items-center justify-content-center">
+    <div class="millionaire-header wrapper d-flex align-items-center justify-content-center">
         <div class="millionaire-img">
             <img class="rounded"
                 src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                alt="" width="210" height="250">
+                alt="" >
         </div>
         <div class="millionaire-title">
             <h2>One Night Millionaire</h2>
-            <div class="heart-icon heart-icon-mill bg-light">
+            <div class="heart-icon heart-icon-mill bg-light1">
                 <img src="assets/icons/Heart.svg" alt="">
             </div>
         </div>
@@ -111,41 +111,48 @@
             <div class="reader-celeb">
                 <div class="d-flex align-items-center justify-content-between">
                     <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                        width="64" height="64" class="rounded" alt="">
+                        width="64" height="64" class="rounded d-none d-md-block" alt="">
                     <div class="celeb-name">
                         <p>One Night Millionaire</p>
                         <p>Kylie Jenner</p>
                     </div>
                 </div>
             </div>
-            <div class="reader-audio-player d-flex align-items-center">
+            <div class="reader-audio-player d-flex flex-column-reverse flex-md-row align-items-center">
+                <div class="d-flex align-items-center justify-content-between audio-controls-flex">
                 <div class="audio-controls mr-1">
                     <img class="prev-button" src="assets-InspireMe/Previous.svg">
                     <img class="play-button" src="assets-InspireMe/Play.svg">
                     <img class="next-button" src="assets-InspireMe/Next.svg">
                 </div>
-                <div class="start-time mr-3">
-                    <span>00:00</span>
+                <div class="audio-volume d-md-none">
+                    <img class="audio-vol-button" src="assets-InspireMe/Volume-ON.svg">
                 </div>
-                <div class="reader-audio-player-element mr-3">
-                    <audio id="player-js">
-                        <source src="assets/audio.mp3" type="audio/mp3">
-                    </audio>
-                    <div class="ranger">
-                        <div class="ranger-path">
-                            <div class="ranger-trail">
+                </div>
+                <div class="d-flex justify-content-between audio-player">
+                    <div class="start-time mr-3">
+                        <span>00:00</span>
+                    </div>
+                    <div class="reader-audio-player-element mr-md-3">
+                        <audio id="player-js">
+                            <source src="assets/audio.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="ranger">
+                            <div class="ranger-path">
+                                <div class="ranger-trail">
 
-                            </div>
-                            <div class="ranger-thumb">
+                                </div>
+                                <div class="ranger-thumb">
 
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="end-time mr-md-4">
+                        <span>00:00</span>
+                    </div>
                 </div>
-                <div class="end-time mr-4">
-                    <span>00:00</span>
-                </div>
-                <div class="audio-volume">
+                <div class="audio-volume d-none d-md-block">
                     <img class="audio-vol-button" src="assets-InspireMe/Volume-ON.svg">
                 </div>
             </div>
@@ -156,14 +163,14 @@
             <p>Share it with your friends!</p>
         </div>
         <div class="float-right social-links">
-            <a href><img src="assets-singlearticle/WhatsApp.svg" width="35" height="35"></a>
-            <a href><img src="assets-singlearticle/Facebook.svg" width="30" height="30"></a>
-            <a href><img src="assets-singlearticle/Twitter.svg" width="30" height="30"></a>
-            <a href><img src="assets-singlearticle/Instagram.svg" width="30" height="30"></a>
+            <a href><img class="whats-app" src="assets-singlearticle/WhatsApp.svg" ></a>
+            <a href><img src="assets-singlearticle/Facebook.svg" ></a>
+            <a href><img src="assets-singlearticle/Twitter.svg" ></a>
+            <a href><img src="assets-singlearticle/Instagram.svg"></a>
         </div>
     </div>
-        <!--Subscribe-->
-    <div class="wrapper">
+    <!--Subscribe-->
+    <div class="wrapper d-none d-md-block">
         <div class="mt-5 subscribe_middle">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="subscribe_left">
@@ -182,8 +189,9 @@
     </div>
     <div class="wrapper mt-5">
         <div class="single-related-heading">
-            <h2>Related</h2>
+            <h2 class="h2"><span>Related</span></h2>
         </div>
+        <div class="creativity-cards">
         <div class="d-flex justify-content-between mt-3">
             <div class="create-card">
                 <img class="create-card-img"
@@ -208,8 +216,7 @@
                 </div>
             </div>
             <div class="create-card">
-                <img class="create-card-img"
-                    src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg" alt="">
+                <img class="create-card-img" src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg" alt="">
                 <div class="text-center create-card-title">
                     <a href>Internet's own boy</a>
                 </div>
@@ -240,89 +247,90 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
-   <!--Subscribe-->
+    <!--Subscribe-->
 
-   <div class="wrapper email text-center mt-5 mb-5">
-    <p>Stay <span class="text-warn">Updated</span></p>
-    <p>Get selected contents directly in your email</p>
-    <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
+    <div class="wrapper email text-center mt-5 mb-5">
+        <p>Stay <span class="text-warn">Updated</span></p>
+        <p>Get selected contents directly in your email</p>
+        <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
 
-        <div class="form-group">
-            <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
-        </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
+            </div>
 
-        <div class="text-center sub_button">
-            <button class="btn btn-outline-warning text-dark">SUBSCRIBE</button>
-        </div>
-    </div>
-</div>
-<!--Footer-->
-<footer>
-    <div class="d-flex flex-column flex-md-row justify-content-between footer wrapper">
-        <div class="footer-logo text-center text-md-left">
-            <img src="assets/Booksouls-LOGO.svg" alt="Booksouls logo">
-            <p>A blog to <span>inspire</span> millions</p>
-        </div>
-        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between footer-links">
-            <div>
-                <ul>
-                    <li>Services</li>
-                    <li><a href="">Articles</a></li>
-                    <li><a href="">Inspire Me</a></li>
-                    <li><a href="">Podcasts</a></li>
-                    <li><a href="">Publishers</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Community</li>
-                    <li><a href="">Write for Us</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Company</li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Company</a></li>
-                    <li><a href="">Help Desk</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>FAQ's</li>
-                    <li><a href="">What Booksouls is?</a></li>
-                    <li><a href="">What is our purpose?</a></li>
-                    <li><a href="">is Everything for free?</a></li>
-                    <li><a href="">Why are we doing this?</a></li>
-                </ul>
+            <div class="text-center sub_button">
+                <button class="btn btn-outline-warning text-dark">SUBSCRIBE</button>
             </div>
         </div>
     </div>
-    <div class="d-flex flex-wrap flex-md-nowrap align-items-around justify-content-between footer_in wrapper">
-        <div class="footer-illustration order-1 order-md-1">
-            <img src="assets/footer-illustration-cropped.png" alt="">
+    <!--Footer-->
+    <footer>
+        <div class="d-flex flex-column flex-md-row justify-content-between footer wrapper">
+            <div class="footer-logo text-center text-md-left">
+                <img src="assets/Booksouls-LOGO.svg" alt="Booksouls logo">
+                <p>A blog to <span>inspire</span> millions</p>
+            </div>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between footer-links">
+                <div>
+                    <ul>
+                        <li>Services</li>
+                        <li><a href="">Articles</a></li>
+                        <li><a href="">Inspire Me</a></li>
+                        <li><a href="">Podcasts</a></li>
+                        <li><a href="">Publishers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Community</li>
+                        <li><a href="">Write for Us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Company</li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Company</a></li>
+                        <li><a href="">Help Desk</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>FAQ's</li>
+                        <li><a href="">What Booksouls is?</a></li>
+                        <li><a href="">What is our purpose?</a></li>
+                        <li><a href="">is Everything for free?</a></li>
+                        <li><a href="">Why are we doing this?</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer_p order-3 order-md-2 mx-auto">
-            <p><span class="dot"></span>&copy; 2020, Booksouls.com<span class="dot"></span></p>
+        <div class="d-flex flex-wrap flex-md-nowrap align-items-around justify-content-between footer_in wrapper">
+            <div class="footer-illustration order-1 order-md-1">
+                <img src="assets/footer-illustration-cropped.png" alt="">
+            </div>
+            <div class="footer_p order-3 order-md-2 mx-auto">
+                <p><span class="dot"></span>&copy; 2020, Booksouls.com<span class="dot"></span></p>
+            </div>
+            <div class="order-2 order-md-3 footer-social-links">
+                <a href="#!" class="mr-2 mr-md-3 facebook-logo"><img src="assets/icons/Facebook.svg"
+                        alt="facebook icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 twitter-logo"><img src="assets/icons/Twitter.svg"
+                        alt="twitter icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 insta-logo"><img src="assets/icons/Instagram.svg"
+                        alt="instagram icon"></a>
+                <a href="#!" class="pin-logo"><img src="assets/icons/Pinterest.svg" alt="pinterest"></a>
+            </div>
         </div>
-        <div class="order-2 order-md-3 footer-social-links">
-            <a href="#!" class="mr-2 mr-md-3 facebook-logo"><img src="assets/icons/Facebook.svg"
-                    alt="facebook icon"></a>
-            <a href="#!" class="mr-2 mr-md-3 twitter-logo"><img src="assets/icons/Twitter.svg"
-                    alt="twitter icon"></a>
-            <a href="#!" class="mr-2 mr-md-3 insta-logo"><img src="assets/icons/Instagram.svg"
-                    alt="instagram icon"></a>
-            <a href="#!" class="pin-logo"><img src="assets/icons/Pinterest.svg" alt="pinterest"></a>
+        <div class="text-center footer_last mt-3 mt-md-5">
+            <p>Made with <img src="assets/icons/Heart.svg"> in india</p>
         </div>
-    </div>
-    <div class="text-center footer_last mt-3 mt-md-5">
-        <p>Made with <img src="assets/icons/Heart.svg"> in india</p>
-    </div>
-</footer>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

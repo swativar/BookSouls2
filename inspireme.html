@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booksouls - A blog to inspire million</title>
-    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="articles.css">
     <link rel="stylesheet" href="inspireme.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
@@ -86,10 +86,10 @@
             </div>
         </nav>
 
-        <div class="d-flex justify-content-between inspire-page-header">
+        <div class="d-flex flex-column flex-md-row justify-content-between inspire-page-header wrapper">
             <div class="inspire-header-left">
-                <h2 class="text-center">Inspire Me</h2>
-                <p class="mt-5">Explore inspirational contents in different categories to keep you motivated.</p>
+                <h2 class="text-md-center">Inspire Me</h2>
+                <p class="mt-3 mt-md-5">Explore inspirational contents in different categories to keep you motivated.</p>
                 <p>Explore inspirational contents in different categories.</p>
             </div>
             <div class="inspire-header-right">
@@ -126,7 +126,7 @@
                                 <div class="card insp-header-card2 flex-row">
                                     <div class="card-header">
                                         <p>Man behind Revolution</p>
-                                        <p class="mt-4">Story of the Elon Musk, founder of Tesla and Paypal...</p>
+                                        <p class="mt-2 mt-md-4">Story of the Elon Musk, founder of Tesla and Paypal...</p>
                                         <div class="header-button">
                                             <button class="btn btn-sm btn-dark">Read Now</button>
                                         </div>
@@ -181,7 +181,7 @@
                                 <div class="card insp-header-card2 flex-row">
                                     <div class="card-header">
                                         <p>Man behind Revolution</p>
-                                        <p class="mt-4">Story of the Elon Musk, founder of Tesla and Paypal...</p>
+                                        <p class="mt-2 mt-md-4">Story of the Elon Musk, founder of Tesla and Paypal...</p>
                                         <div class="header-button">
                                             <button class="btn btn-sm btn-dark">Read Now</button>
                                         </div>
@@ -236,7 +236,7 @@
                                 <div class="card insp-header-card2 flex-row">
                                     <div class="card-header">
                                         <p>Man behind Revolution</p>
-                                        <p class="mt-4">Story of the Elon Musk, founder of Tesla and Paypal...</p>
+                                        <p class="mt-2 mt-md-4">Story of the Elon Musk, founder of Tesla and Paypal...</p>
                                         <div class="header-button">
                                             <button class="btn btn-sm btn-dark">Read Now</button>
                                         </div>
@@ -291,7 +291,7 @@
                                 <div class="card insp-header-card2 flex-row">
                                     <div class="card-header">
                                         <p>Man behind Revolution</p>
-                                        <p class="mt-4">Story of the Elon Musk, founder of Tesla and Paypal...</p>
+                                        <p class="mt-2 mt-md-4">Story of the Elon Musk, founder of Tesla and Paypal...</p>
                                         <div class="header-button">
                                             <button class="btn btn-sm btn-dark">Read Now</button>
                                         </div>
@@ -328,11 +328,11 @@
             </div>
         </div>
     </header>
-    <hr class="hr">
+    <hr class="hr d-none d-md-block">
     <div class="bg-header">
         <img src="assets-InspireMe/BG-Shapes-2.svg" class="bg1">
-        <div class="tabs mt-5 clearfix">
-            <div class="tab-links float-left sticky-top">
+        <div class="tabs wrapper mt-1 mt-md-5 clearfix">
+            <div class="tab-links float-left sticky-top d-none d-md-block">
                 <p class="disc">Discover</p>
                 <ul class="mt-4 mb-5">
                     <li class="tab-li tab-active" onclick="show(event,'home')"><img
@@ -348,10 +348,10 @@
                     <li><img src="assets-InspireMe/HindiIcon.svg">Hindi</li>
                 </ul>
             </div>
-            <div class="tab-content-home tab-content float-right mt-4" id="home">
-                <p>Trending</p>
+            <div class="tab-content-home tab-content float-right mt-1 mt-md-4" id="home">
+                <p class="h2 mb-3 mb-md-0"><span>Trending</span></p>
                 <div id="tab-home" class="carousel slide" data-ride="carousel">
-                    <div class="controls tab-home-controls">
+                    <div class="controls tab-home-controls d-none d-md-block">
                         <div class="previous">
                             <a href="#tab-home" data-slide="prev"><span>&#10094</span></a>
                         </div>
@@ -359,9 +359,9 @@
                             <a href="#tab-home" data-slide="next"><span>&#10095</span></a>
                         </div>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner px-3 px-md-0">
                         <div class="carousel-item active">
-                            <div class="d-flex justify-content-between mt-2 flex-wrap">
+                            <div class="d-flex justify-content-between mt-2 flex-nowrap flex-md-wrap">
                                 <div class="create-card">
                                     <img class="create-card-img"
                                         src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
@@ -543,8 +543,8 @@
                     </div>
                 </div>
                 <!--Subscribe-->
-                <div class="mt-5 newsletter">
-                    <div class="d-flex justify-content-between align-items-center">
+                <div class="mt-3 mt-md-5 newsletter">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                         <div class="newsletter_left">
                             <p>Get articles directly in your email</p>
                             <p>Be First to read the articles and other special
@@ -560,8 +560,9 @@
                 </div>
                 <div class="creativity mt-5">
                     <div class="creative-heading">
-                        <h2 class="text-center">Creativity</h2>
+                        <h2 class="text-md-center h2"><span>Creativity</span></h2>
                     </div>
+                    <div class="creativity-cards">
                     <div class="d-flex justify-content-between mt-4">
                         <div class="create-card">
                             <img class="create-card-img"
@@ -607,15 +608,17 @@
                             </div>
                         </div>
                     </div>
+                   </div>
                     <div class="text-center">
-                        <button class="btn btn-warning px-5 mt-4">See all</button>
+                        <button class="btn btn-warning px-4 px-md-5 mt-4">See all</button>
                     </div>
                 </div>
 
                 <div class="creativity mt-5">
                     <div class="influence-heading">
-                        <h2 class="text-center">Influencer</h2>
+                        <h2 class="text-md-center h2"><span>Influencer</span></h2>
                     </div>
+                    <div class="creativity-cards">
                     <div class="d-flex justify-content-between mt-4">
                         <div class="create-card">
                             <img class="create-card-img"
@@ -661,8 +664,9 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <div class="text-center">
-                        <button class="btn btn-warning px-5 mt-4">See all</button>
+                        <button class="btn btn-warning px-4 px-md-5 mt-4">See all</button>
                     </div>
                 </div>
             </div>

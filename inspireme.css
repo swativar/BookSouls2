@@ -1,6 +1,4 @@
-img{
-    object-fit: cover;
-}
+
 .inspireme-header::before{
     content: url('assets-InspireMe/HEADER-BG-Right.svg');
     background-repeat: no-repeat;
@@ -30,7 +28,8 @@ img{
     background-color: transparent!important;
 }
 .inspire-page-header{
-    margin: 100px 165px;
+    margin-top: 100px;
+    margin-bottom:100px;
 }
 .insp-header-card1,.insp-header-card3{
     height: 200px;
@@ -144,6 +143,10 @@ img{
         );
     border-radius: 5px;
     box-shadow: 1px 1px 40px rgb(211, 210, 210);
+    margin-top: 2%;
+    margin-bottom:2%;
+    margin-left:0;
+    margin-right: 0;
 }
 .create-card-img{
     width: 100%;
@@ -169,10 +172,6 @@ img{
 .heart-icon-creative{
     right: -5px;
     top: -5px;
-}
-.tabs{
-    margin-left: 165px;
-    margin-right: 165px;
 }
 .tab-links{
     width: 22.5%;
@@ -264,9 +263,6 @@ img{
     font-family: 'Playfair Display';
     font-style: italic;
 }
-.tab-content-home .create-card{
-    margin: 2% 0;
-}
 .tab-content-explore{
     width: 75%;
     position: relative;
@@ -284,16 +280,6 @@ img{
     font-size: 26px;
     font-family: 'Playfair Display';
     font-style: italic;
-}
-.creative-heading::after,.influence-heading::after{
-    content: '';
-    position: absolute;
-    background-color: #FFDE00;
-    left: 42.5%;
-    right: 42.5%;
-    bottom: 0;
-    top: 17px;
-    z-index: -1;
 }
 .newsletter{
     background-color: #eeedec;
@@ -342,4 +328,140 @@ img{
 }
 .bg-white{
     background-color: #fff;
+}
+@media screen and (max-width:576px){
+    .inspireme-header::before{
+        right: 0;
+        top: 70px;
+        transform: scale(0.6);
+        transform-origin: right top;
+    }
+    .bg1{
+        position: absolute;
+        right: 0;
+        top: -20%;
+        height: 100%;
+        z-index:-1;  
+        transform:scale(0.5);
+        transform-origin: right top;
+    }
+    .bg2{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top:-37%;
+        transform:scale(0.32);
+        overflow-x: hidden;
+        transform-origin: right top;
+        height: 100%;
+        z-index: -1; 
+        transform-origin: left bottom; 
+    }
+    .create-card{
+        height: 200px;
+        margin-top: 1%;
+        margin-bottom:1%;
+        margin-right: 15px;
+        box-shadow: none;
+    }
+    .create-card-title{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .inspire-header-left{
+        width: 100%;
+    }
+    .inspire-header-right{
+        width: 100%;
+        margin-top:2%;
+    }
+    .insp-header-card1,.insp-header-card3{
+        width: 31%;
+        height: 170px;
+    }
+    .insp-header-card2{
+        width: 33%;
+        height: 200px;
+    }
+    .insp-header-card1 .insp-cara-pic,.insp-header-card3 .insp-cara-pic{
+        width: 100%;
+    }
+    .insp-header-card2 .insp-cara-pic{
+        width: 100%;
+    }
+    .inspire-header-left h2{
+        font-size: 30px;
+        font-family: 'Playfair Display';
+    }
+    .inspire-header-left p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .insp-header-card1 .card-header p:first-child,.insp-header-card3 .card-header p:first-child{
+        font-family: 'Vision Regular';
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .insp-header-card2 .card-header p:first-child{
+        font-family: 'Vision Regular';
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .insp-header-card1 .card-header p:nth-child(2),.insp-header-card3 .card-header p:nth-child(2){
+        font-family: 'Montserrat';
+        font-size: 8px;
+        line-height: 10px;
+        font-weight: 500;
+    }
+    .insp-header-card2 .card-header p:nth-child(2){
+        font-family: 'Montserrat';
+        font-size: 10px;
+        line-height: 11px;
+        font-weight: 500;
+    }
+    .insp-header-card1 .card-header .btn,.insp-header-card3 .card-header .btn{
+        font-size: 10px!important;
+        padding: 5px 5px;
+    }
+    .insp-header-card2 .card-header .btn{
+        padding:5px;
+        font-size: 10px!important;
+    }
+    .insp-header-card1 .card-header,.insp-header-card3 .card-header{
+        padding: 0.45rem 0.15rem!important;
+    }
+    .insp-header-card2 .card-header{
+        padding: 0.85rem 0.15rem!important;
+    }
+    #tab-home .carousel-item,.creativity-cards{
+        overflow-x: scroll!important;
+        overflow-y: hidden!important;
+    }
+    #tab-home .carousel-item > div,.creativity-cards > div{
+        min-width: min-content;
+    }
+    .creativity-cards::-webkit-scrollbar, #tab-home .carousel-item::-webkit-scrollbar{
+         display: none;
+     }
+     .creativity-cards, #tab-home .carousel-item{
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+     } 
+   .tab-content-explore,.tab-content-genre{
+    width: 100%;
+    position: relative;
+    display: none;
+    }
+    .tab-content-home{
+        width: 100%;
+    }
+    #tab-home{
+        background-color: #f0eeee
+    }
+    .inspireme-header nav{
+        background-color: #fff!important;
+    }
+    .creative-heading h2,.influence-heading h2{
+        font-size: 21px;
+    }
 }

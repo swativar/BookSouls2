@@ -545,7 +545,7 @@
         line-height: 17px;
     }
     .header-card-title a{
-        font-size:14px;
+        font-size:15px;
     }
     .header-card-right{
         left: 0px;
@@ -589,16 +589,20 @@
         height: 100%;
     }
     .relation-cards .card{
-        height: 50%;
+        width: 100%;
+        height: auto;
         margin: 10px 0;
     }
     .card-related-top,.card-related-last-top{
         padding: 5px;
     }
+    .heart-icon-relation-rel{
+        bottom: 0;
+        left:-8px;
+    }
     .relationship-card-title p{
-        font-size: 12px;
-        line-height: 15px;
-        margin-top: 5px;
+        font-size: 10.5px;
+        line-height: 13px;
         margin-bottom: 5px!important;
     }
     .relation-cards .card-header{
@@ -606,6 +610,9 @@
     }
     .relation-auth{
         font-size: 10px;
+    }
+    .relation-related-lastauth {
+        margin-bottom: 0.1rem;
     }
     .relationship-title h2,.relation-related-title h2,.spirituality-title h2,.view-by-cat-title h2{
         font-size: 18px;
@@ -628,8 +635,13 @@
         bottom: 5px;
     }
     .relation-related-smallcards .card{
-        height: 50%;
-        margin: 10px 0;
+        width:96%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .relation-related-auth{
+        margin-bottom: 0.1rem;
+        margin-top: 0.6rem;
     }
     .view-card-title{
         font-size: 12px;
