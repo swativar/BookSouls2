@@ -32,7 +32,7 @@
 .reader-celeb{
     width: 21%;
  }
- .reader-celeb img{
+ .reader-celeb > div:first-child img{
      border-radius: 8px;
  }
  .reader-audio-player{
@@ -143,10 +143,10 @@
         margin-top: 30px;
         margin-bottom: 40px;
         position: relative;
-        top: 220px;
+        top: 240px;
     }
     .alchemist-header{
-        margin-bottom:15%;
+        margin-top:0;
     }
     .alchemist-title{
         padding: 22px 45px;
@@ -165,6 +165,10 @@
     .alchemist-img img{
        width: 100px;
        height: 150px;
+    }
+    .audio-container{
+        margin-top: 25%;
+        margin-bottom:15%;
     }
     .reader-audio{
         display: flex;
@@ -189,6 +193,7 @@
     }
     .reader-celeb{
         width: 100%;
+        position: relative;
     }
     .audio-controls-flex{
         position: relative;
@@ -288,7 +293,7 @@
         height: 28px;
     }
     .heart-icon-alchemist{
-        bottom:-154px;
-        right: -25px;
+        top:-3px;
+        right: 0px;
     }
 }
