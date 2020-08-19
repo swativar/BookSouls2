@@ -3,7 +3,7 @@
     margin-bottom: 40px;
 }
 .alchemist-header{
-    margin-top: 2%;
+    margin-top: 8px;
 }
 .alchemist-title{
     padding: 50px 100px;
@@ -141,12 +141,12 @@
 @media screen and (max-width:576px){
     .quick-navigation{
      position: absolute;
-     top:43%;
+     top:270px;
      margin-top:0px;
-     margin-bottom:0px;
+     line-height: 15px;
     }
     .alchemist-header{
-      margin-top:25%;
+      margin-top:90px;
     } 
     .alchemist-title{
         padding: 22px 45px;
@@ -167,8 +167,8 @@
        height: 150px;
     }
     .audio-container{
-        margin-top: 25%;
-        margin-bottom:15%;
+        margin-top: 90px;
+        margin-bottom:54px;
     }
     .reader-audio{
         display: flex;

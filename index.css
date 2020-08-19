@@ -152,6 +152,9 @@ header{
     line-height: 26px;
     font-family: 'Montserrat', sans-serif;
 }
+button.navbar-toggler:focus{
+    outline: 5px auto #FFDE00!important;
+}
 .search { 
     position: fixed;
     top: 0; 

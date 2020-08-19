@@ -105,7 +105,7 @@
         transform: translate(0,-50%);
     }
     .quick-related-title p{
-        font-size: 22px;
+        font-size: 18px;
     }
     .quick-cards-container{
         overflow-x: scroll;
