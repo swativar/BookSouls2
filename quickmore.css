@@ -150,4 +150,7 @@
         width: 28px;
         height: 28px;
     }
+    .quick-related-title p{
+        font-size: 18px;
+    }
 }
