@@ -347,18 +347,17 @@
         margin-bottom: 15%;
     }
     .podcast-topics h3{
-        /*font-family: 'Vision Regular';*/
+        font-family: 'Vision Heavy';
         color: #042330;
-        font-size: 19px;
+        font-size: 18px;
     }
     .podcast-topics ol{
         padding: 16px!important;
     }
     .podcast-topics li{
         font-family: 'Montserrat';
-        font-size: 15px;
+        font-size: 14px;
         position: relative;
         left: 0;
-        margin-bottom: 5px;
     }
 }
