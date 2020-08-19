@@ -28,19 +28,6 @@ header{
     margin-top: 15px;
     margin-bottom:15px;
 }
-.top-nav{
-    margin: 0 5px;
-    font-family: 'Vision Regular';
-}
-a.top-nav{
-    color: #042330;
-    opacity: 0.8;
-    text-decoration: underline;
-}
-a.top-nav:hover{
-    color: #042330;
-    text-decoration: none;
-}
 .single-article > h2{
     font-family: 'Playfair Display';
     font-weight: 500;

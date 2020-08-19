@@ -251,10 +251,10 @@ li.quick-sub-active::before{
     border-radius: 10px!important;
 }
 .bq-card1{
-    box-shadow: 0px 0px 30px rgba(255,69,0,0.1);
+    box-shadow: 1px 1px 30px rgba(255,69,0,0.05);
 }
 .bq-card2{
-    box-shadow: 0px 0px 30px rgba(0,0,255,0.1);
+    box-shadow: 1px 1px 30px rgba(0,0,255,0.05);
 }
 .tab-popular-carousel-inner{
     width: 98%;
@@ -277,8 +277,10 @@ li.quick-sub-active::before{
 .quick-card-img{
     position: relative;
 }
-.quick-card-img img{
+.quick-card-img > img{
     border-radius: 5px;
+    width:176px;
+    height: 265px;
 }
 .heart-icon-quick{
     right: 17px;
@@ -286,12 +288,12 @@ li.quick-sub-active::before{
 }
 .quick-card-title{
     margin-top: 5%;
+    line-height:25px;
 }
 .quick-card-title a{
   font-family: 'Montserrat', sans-serif;
   font-size: 19px;
   font-weight: 600;
-  line-height:25px;
   color: #042330;
 }
 .quick-card-title a:hover{
@@ -334,5 +336,71 @@ li.quick-sub-active::before{
 .quick-tab-recomm .quick-home-title::after{
     left: 0;
     right: 81%;
+}
+@media screen and (max-width:576px){
+    .quick-header-left{
+        width: 100%;
+    }
+    .quick-header-right{
+        width: 100%;
+    }
+    .quick-header-left h2{
+        font-size: 30px;
+        font-family: 'Playfair Display';
+        margin-top: 25%;
+    }
+    .quick-header-left p{
+        font-family: 'Montserrat';
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 0!important;
+    }
+    .quick-tab-home{
+        width: 100%;
+        position: relative;
+        
+    }
+    .bq-card1,.bq-card2{
+        width: 180px;
+        height: auto;
+    }
+    .bq-card1 .card-header > p,.bq-card2 .card-header > p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .quick-card-img{
+        position: relative;
+    }
+    .quick-card-img > img{
+        border-radius: 5px;
+        width: 85%;
+        height: 200px;
+    }
+    .heart-icon-quick{
+        right: 10px;
+        top: -5px;
+    }
+    .quick-card-title{
+        margin-top: 5%;
+        line-height:18px;
+    }
+    .quick-card-title a{
+      font-size: 14px;
+    }
+    .quick_item_bottom{
+        padding: 0 0.20rem;
+    }
+    .quick_item_bottom span:last-child{
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .quick_item_bottom span:first-child button{
+        font-size: 13px;
+    }
+    .quick_item_bottom .audio-icon::before{
+        content: url('assets/icons/Headphones.svg');
+        display: inline-block;
+        margin-left: 7%;
+    }
 }
 

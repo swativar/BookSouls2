@@ -625,6 +625,9 @@ a.top-nav:hover{
     .navbar-toggler{
         border-color: transparent!important;
     }
+    button.navbar-toggler:focus{
+        outline: 5px auto #FFDE00!important;
+    }
     .footer_subscribe{
         padding: 0px;
     }

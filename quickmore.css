@@ -28,7 +28,7 @@
     margin-right: auto;
     max-width: 1366px;
 }
-.alchemist-cont p{
+.alchemist-cont > p{
     font-size: 21px;
     font-family: 'Montserrat',sans-serif;
     line-height: 31px;
@@ -58,6 +58,14 @@
     font-weight: 500;
     opacity: 0.7;
 }
+.social-links img:not(.whats-app){
+    width: 30px;
+    height: 30px;
+}
+.whats-app{
+    width: 35px;
+    height: 35px;
+}
 .social-links a{
     margin-right: 10px;
 }
@@ -72,4 +80,74 @@
 .quick-related-title::after{
     left: 0;
     right: 93%;
+}
+@media screen and (max-width:576px){
+
+    .audio-version{
+        position: relative;
+        margin-top: 40px;
+    }
+    .audio-version a{
+        font-size: 14px;
+    }
+    .heart-icon-audio{
+        right: 16px;
+    }
+    .alchemist-cont{
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 100%;
+    }
+    .alchemist-cont > p{
+        font-size: 14.5px;
+        line-height: 24px;
+        margin-bottom:1.5rem;
+        margin-top: 1.5rem;
+    }
+    .alchemist-cont q{
+        font-size: 15px;
+    }
+    .alchemist-cont cite{
+        font-size: 15px;
+    }
+    .alchemist-cont h3{
+        font-size: 15.5px;
+    }
+    .hr2{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .quick-cards-container{
+        overflow-x: scroll;
+        height: 370px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .quick-cards-container::-webkit-scrollbar{
+        display: none;
+    }
+    .quick-related-cards{
+        min-width: min-content;
+    }
+    .quick-related-cards .card{
+        margin-right:15px;
+    }
+    .share-left{
+        transform: translate(0,25%);
+    }
+    .share-left p{
+        font-size:12px;
+        margin-bottom:0!important;
+    }
+    .social-links a{
+        margin-right: 8px;
+    }
+    .social-links img:not(.whats-app){
+        width: 23px;
+        height: 23px;
+    }
+    .whats-app{
+        width: 28px;
+        height: 28px;
+    }
 }

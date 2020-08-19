@@ -7,7 +7,6 @@
     position: relative;
     left: -15px;
     background-color: #fff;
-    position: relative;
 }
 .alchemist-title h2{
     font-size: 45px;
@@ -18,12 +17,17 @@
     position: relative;
     left: 15px;
 }
+.alchemist-img img{
+    width: 210px;
+    height: 310px;
+ }
 .alchemist-content{
     padding-left: 390px;
     padding-right: 390px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1366px;
+    margin-top:3rem;
 }
 .alchemist-content > p{
     font-size: 22px;
@@ -52,7 +56,70 @@
 .quick-related-title{
     position: relative;
 }
-.quick-related-title::after{
-    left: 0;
-    right: 93%;
+@media screen and (max-width:576px){
+    .quick-navigation{
+        margin-top: 30px;
+        position: relative;
+        top:230px;
+        margin-bottom: 40px;
+    }
+    .alchemist-title{
+        padding: 22px 40px;
+        left: -15px;
+    }
+    .alchemist-title h2{
+        font-size: 18px;
+    }
+    .alchemist-img{
+        position: relative;
+        left: 0px;
+    }
+    .alchemist-img img{
+       width: 100px;
+       height: 150px;
+    }
+    .alchemist-content{
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 100%;
+        margin-top:4rem;
+    }
+    .alchemist-content > p{
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom:0;
+    } 
+    .millionaire-audio p{
+        width: 20%;
+        line-height: 15px;
+        margin-bottom: 0!important;
+        font-family: 'Vision Regular';
+        font-size: 13px;
+    }
+    .millionaire-bottom{
+        position: relative;
+    }
+    .heart-icon-audio{
+        right: 0;
+        top:50%;
+        transform: translate(0,-50%);
+    }
+    .quick-related-title p{
+        font-size: 22px;
+    }
+    .quick-cards-container{
+        overflow-x: scroll;
+        height: 370px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .quick-cards-container::-webkit-scrollbar{
+        display: none;
+    }
+    .quick-related-cards{
+        min-width: min-content;
+    }
+    .quick-related-cards .card{
+        margin-right:15px;
+    }
 }

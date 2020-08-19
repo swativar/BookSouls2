@@ -101,10 +101,18 @@
     right: -5px;
 }
 .podcast-navigation{
-    margin: 40px 165px;
+    margin-top: 80px;
+    margin-bottom:40px;
 }
 .millionaire-links,.podcast-topics,.hr2{
-    margin-left: 250px;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-left: auto;
+    margin-right:auto;
+    max-width: 1366px;
+}
+.hr2{
+    margin-left:250px;
     margin-right: 250px;
 }
 .podcast-topics h3{
@@ -278,7 +286,11 @@
         padding: 22px 19px;
         left: -10px;
     }
-    .millionaire-links,.podcast-topics,.hr2{
+    .millionaire-links,.podcast-topics{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .hr2{
         margin-left: 16px;
         margin-right: 16px;
     }
@@ -301,10 +313,52 @@
         height: 28px;
     }
     .single-related-heading h2{
-        font-size: 20px;
+        font-size: 18px;
     }
     .heart-icon-mill {
         bottom: -154px;
         right: -15px;
+    }
+    .podcast-creativity{
+        overflow-x:scroll;
+    }
+    .podcast-creativity::-webkit-scrollbar{
+        display: none;
+    }
+    .podcast-creativity{
+   -ms-overflow-style: none; 
+   scrollbar-width: none; 
+    } 
+    .podcast-card-container{
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    .podcast-card-desc p{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .podcast-navigation{
+        position: relative;
+        top:220px;
+        margin-top:10px;
+    }
+    .audio-container{
+        margin-top: 25%;
+        margin-bottom: 15%;
+    }
+    .podcast-topics h3{
+        /*font-family: 'Vision Regular';*/
+        color: #042330;
+        font-size: 19px;
+    }
+    .podcast-topics ol{
+        padding: 16px!important;
+    }
+    .podcast-topics li{
+        font-family: 'Montserrat';
+        font-size: 15px;
+        position: relative;
+        left: 0;
+        margin-bottom: 5px;
     }
 }

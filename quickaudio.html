@@ -38,14 +38,14 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-md fixed-top bg-white">
         <div class="container">
-             <!-- Toggler/collapsibe Button -->
-             <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
                 <img src="assets-Home-mobile/Menu.svg" alt="">
             </button>
             <!-- Brand -->
             <div class="booksouls-logo">
-            <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-            <p class="nav-tag">quicks</p>
+                <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
+                <p class="nav-tag">quicks</p>
             </div>
 
             <!-- Navbar links -->
@@ -95,61 +95,67 @@
         <span class="top-nav">The Alchemist (audio)</span>
     </div>
     <!---->
-     <!---->
-     <div class="alchemist-header d-flex align-items-center justify-content-center">
+    <!---->
+    <div class="alchemist-header wrapper d-flex align-items-center justify-content-center">
         <div class="alchemist-img">
-            <img class="rounded"
-                src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                alt="" width="210" height="310">
+            <img class="rounded" src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt=""
+                width="210" height="310">
         </div>
         <div class="alchemist-title">
             <h2>The Alchemist</h2>
-            <div class="heart-icon heart-icon-alchemist bg-light">
+            <div class="heart-icon heart-icon-alchemist bg-light1">
                 <img src="assets/icons/Heart.svg">
             </div>
-        </div> 
+        </div>
     </div>
     <!---->
     <div class="wrapper audio-container">
         <div class="reader-audio">
             <div class="reader-celeb">
-                <div class="d-flex align-items-center justify-content-between px-4">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
-                        width="54" height="74" alt="">
+                <div class="d-flex align-items-center justify-content-between">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" width="54" height="74"
+                        class="rounded d-none d-md-block" alt="">
                     <div class="celeb-name">
                         <p>The Alchemist</p>
                         <p>Paulo Coelho</p>
                     </div>
                 </div>
             </div>
-            <div class="reader-audio-player d-flex align-items-center">
-                <div class="audio-controls mr-1">
-                    <img class="prev-button" src="assets-InspireMe/Previous.svg">
-                    <img class="play-button" src="assets-InspireMe/Play.svg">
-                    <img class="next-button" src="assets-InspireMe/Next.svg">
+            <div class="reader-audio-player d-flex flex-column-reverse flex-md-row align-items-center">
+                <div class="d-flex align-items-center justify-content-between audio-controls-flex">
+                    <div class="audio-controls mr-1">
+                        <img class="prev-button" src="assets-InspireMe/Previous.svg">
+                        <img class="play-button" src="assets-InspireMe/Play.svg">
+                        <img class="next-button" src="assets-InspireMe/Next.svg">
+                    </div>
+                    <div class="audio-volume d-md-none">
+                        <img class="audio-vol-button" src="assets-InspireMe/Volume-ON.svg">
+                    </div>
                 </div>
-                <div class="start-time mr-3">
-                    <span>00:00</span>
-                </div>
-                <div class="reader-audio-player-element mr-3">
-                    <audio id="player-js">
-                        <source src="assets/audio3.mp3" type="audio/mp3">
-                    </audio>
-                    <div class="ranger">
-                        <div class="ranger-path">
-                            <div class="ranger-trail">
+                <div class="d-flex justify-content-between audio-player">
+                    <div class="start-time mr-3">
+                        <span>00:00</span>
+                    </div>
+                    <div class="reader-audio-player-element mr-md-3">
+                        <audio id="player-js">
+                            <source src="assets/audio3.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="ranger">
+                            <div class="ranger-path">
+                                <div class="ranger-trail">
 
-                            </div>
-                            <div class="ranger-thumb">
+                                </div>
+                                <div class="ranger-thumb">
 
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="end-time mr-md-4">
+                        <span>00:00</span>
+                    </div>
                 </div>
-                <div class="end-time mr-4">
-                    <span>00:00</span>
-                </div>
-                <div class="audio-volume">
+                <div class="audio-volume d-none d-md-block">
                     <img class="audio-vol-button" src="assets-InspireMe/Volume-ON.svg">
                 </div>
             </div>
@@ -158,18 +164,18 @@
     <!---->
     <div class="clearfix audio-share">
         <div class="float-left share-left">
-         <p>Share it with your friends!</p>
+            <p>Share it with your friends!</p>
         </div>
         <div class="float-right social-links">
-            <a href><img src="assets-singlearticle/WhatsApp.svg" width="35" height="35"></a>
-            <a href><img src="assets-singlearticle/Facebook.svg" width="30" height="30"></a>
-            <a href><img src="assets-singlearticle/Twitter.svg" width="30" height="30"></a>
-            <a href><img src="assets-singlearticle/Instagram.svg" width="30" height="30"></a>
+            <a href><img class="whats-app" src="assets-singlearticle/WhatsApp.svg"></a>
+            <a href><img src="assets-singlearticle/Facebook.svg"></a>
+            <a href><img src="assets-singlearticle/Twitter.svg"></a>
+            <a href><img src="assets-singlearticle/Instagram.svg"></a>
         </div>
     </div>
     </div>
     <!--Subscribe-->
-    <div class="wrapper">
+    <div class="wrapper d-none d-md-block">
         <div class="my-5 subscribe_middle">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="subscribe_left">
@@ -188,80 +194,80 @@
     </div>
     <hr class="hr2">
     <div class="wrapper quick-tab-new mt-5">
-        <div class="quick-related-title italic-heading">
-            <p>Related</p>
+        <div class="quick-related-title h2">
+            <p><span>Related</span></p>
         </div>
-        <div class="d-flex justify-content-between">
-            <div class="card bq-card1 text-center">
-                <div class="card-header">
-                    <div class="quick-card-img">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="" width="176"
-                            height="265">
-                        <div class="heart-icon heart-icon-quick bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-center quick-card-title">
-                        <a href="">The Alchemist</a>
-                    </div>
-                    <p>Paulo Coelho</p>
-                    <div class="clearfix mt-3 quick_item_bottom">
-                        <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                Now</button></span>
-                        <span class="audio-icon"></span>
-                        <span class="float-right">Audio available</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card bq-card2 text-center">
-                <div class="card-header">
-                    <div class="quick-card-img">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
-                            alt="" width="176" height="265">
-                        <div class="heart-icon heart-icon-quick bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-center quick-card-title">
-                        <a href="">The Fault In Our Stars</a>
-                    </div>
-                    <p>John Green</p>
-                    <div class="clearfix mt-3 quick_item_bottom">
-                        <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                Now</button></span>
-                        <span class="audio-icon"></span>
-                        <span class="float-right">Audio available</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card bq-card1 text-center">
-                <div class="card-header">
-                    <div class="quick-card-img">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="" width="176"
-                            height="265">
-                        <div class="heart-icon heart-icon-quick bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-center quick-card-title">
-                        <a href="">The Alchemist</a>
-                    </div>
-                    <p>Paulo Coelho</p>
-                    <div class="clearfix mt-3 quick_item_bottom">
-                        <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                Now</button></span>
-                        <span class="audio-icon"></span>
-                        <span class="float-right">Audio available</span>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-between">
+        <div class="quick-cards-container">
+            <div class="d-flex justify-content-between quick-related-cards">
                 <div class="card bq-card1 text-center">
                     <div class="card-header">
                         <div class="quick-card-img">
                             <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt=""
                                 width="176" height="265">
-                            <div class="heart-icon heart-icon-quick bg-light">
+                            <div class="heart-icon heart-icon-quick bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center quick-card-title">
+                            <a href="">The Alchemist</a>
+                        </div>
+                        <p>Paulo Coelho</p>
+                        <div class="clearfix mt-3 quick_item_bottom">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                    Now</button></span>
+                            <span class="audio-icon"></span>
+                            <span class="float-right">Audio available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bq-card2 text-center">
+                    <div class="card-header">
+                        <div class="quick-card-img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
+                                alt="" width="176" height="265">
+                            <div class="heart-icon heart-icon-quick bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center quick-card-title">
+                            <a href="">The Fault In Our Stars</a>
+                        </div>
+                        <p>John Green</p>
+                        <div class="clearfix mt-3 quick_item_bottom">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                    Now</button></span>
+                            <span class="audio-icon"></span>
+                            <span class="float-right">Audio available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bq-card1 text-center">
+                    <div class="card-header">
+                        <div class="quick-card-img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt=""
+                                width="176" height="265">
+                            <div class="heart-icon heart-icon-quick bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center quick-card-title">
+                            <a href="">The Alchemist</a>
+                        </div>
+                        <p>Paulo Coelho</p>
+                        <div class="clearfix mt-3 quick_item_bottom">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                    Now</button></span>
+                            <span class="audio-icon"></span>
+                            <span class="float-right">Audio available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bq-card1 text-center">
+                    <div class="card-header">
+                        <div class="quick-card-img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt=""
+                                width="176" height="265">
+                            <div class="heart-icon heart-icon-quick bg-light1">
                                 <img src="assets/icons/Heart.svg" alt="">
                             </div>
                         </div>
@@ -280,6 +286,7 @@
             </div>
         </div>
     </div>
+    <hr class="hr2">
     <!--Subscribe-->
 
     <div class="wrapper email text-center mt-5 mb-5">
