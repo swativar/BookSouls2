@@ -1,6 +1,23 @@
 $('#tab-genre,#tab-recomm,#tab-popular,#tab-new').carousel({interval:false,wrap:false});
 $('#pod-recom').carousel({interval:false,wrap:false});
 $('#pod-genre').carousel({interval:false,wrap:false});
+$('#quick-books-cara').carousel({interval:2500});
+
+$("#quick-books-cara").on("touchstart", function(event){
+  var xClick = event.originalEvent.touches[0].pageX;
+$(this).on("touchmove", function(event){
+  var xMove = event.originalEvent.touches[0].pageX;
+  if( Math.floor(xClick - xMove) > 5 ){
+      $(this).carousel('next');
+  }
+  else if( Math.floor(xClick - xMove) < -5 ){
+      $(this).carousel('prev');
+  }
+});
+$(".carousel").on("touchend", function(){
+      $(this).off("touchmove");
+});
+});
 
 document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
@@ -229,3 +246,15 @@ function collapse(event,name){
     }
   }
 }
+
+var genre_buttons = document.querySelectorAll('.genre-buttons button');
+var len = genre_buttons.length;
+console.log(len);
+genre_buttons.forEach(function(genre_button){
+  genre_button.onclick = function(e){
+    for (i = 0; i < len; i++) {
+      genre_buttons[i].className = genre_buttons[i].className.replace(" genre-active-button", "");
+    }
+     e.target.className += " genre-active-button";
+  }
+})

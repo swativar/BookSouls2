@@ -260,6 +260,8 @@ li.quick-sub-active::before{
     width: 98%;
     margin-left: auto;
     margin-right: auto;
+}
+.quick-cards-container{
     height: 430px;
 }
 .bq-card1 .card-header, .bq-card2 .card-header{
@@ -343,22 +345,33 @@ li.quick-sub-active::before{
     }
     .quick-header-right{
         width: 100%;
+        margin-top: 15px;
+    }
+    .quick-top-background::before{
+        right: 0;
+        top:55%;
+        z-index: -1;
+        transform:scale(0.45);
+        transform-origin: right top;
+    }
+    .quick-top-background::after{
+        right: 2%;
+        top:51%;
+        z-index: -1;
+        transform: scale(0.55);
+        transform-origin: right top;
     }
     .quick-header-left h2{
-        font-size: 30px;
-        font-family: 'Playfair Display';
+        font-size: 24px;
         margin-top: 25%;
     }
     .quick-header-left p{
-        font-family: 'Montserrat';
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 0!important;
+        font-size: 14px;
+        line-height: 20px;
     }
     .quick-tab-home{
         width: 100%;
         position: relative;
-        
     }
     .bq-card1,.bq-card2{
         width: 180px;
@@ -401,6 +414,54 @@ li.quick-sub-active::before{
         content: url('assets/icons/Headphones.svg');
         display: inline-block;
         margin-left: 7%;
+    }
+    .book-img-2{
+        width: 120px;
+        height: 190px;
+    }
+    .book-img-1,.book-img-3{
+        width: 110px;
+        height: 170px;
+    }
+    .quick-cards-container{
+        height: 370px;
+    }
+    .tab-popular-carousel-inner{
+        width: 100%;
+        min-width: min-content;
+    }
+    .tab-popular-carousel-inner .card{
+        margin-right: 15px;
+    }
+    .carousel-item{
+        overflow-x:scroll;
+        scrollbar-width: none;
+    }
+    .carousel-item::-webkit-scrollbar{
+        display: none;
+    }
+    .genre-buttons button{
+     margin:6px 0;
+     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+     outline: none!important;
+    }
+    .genre-buttons button:active,.genre-buttons button:focus{
+        border: none;
+        outline:0;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+       }
+    .genre-buttons button.genre-active-button{
+        border: 2px solid #FFDE00;
+    }
+    .previous,.next{
+        width: 22px;
+        height: 22px;
+    }
+    .next{
+        margin-left:10px;
+    }
+    .quick-home-title p{
+        font-size:18px;
     }
 }
 
