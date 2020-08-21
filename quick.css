@@ -363,7 +363,7 @@ li.quick-sub-active::before{
     }
     .quick-header-left h2{
         font-size: 24px;
-        margin-top: 25%;
+        margin-top: 23%;
     }
     .quick-header-left p{
         font-size: 14px;
@@ -444,6 +444,7 @@ li.quick-sub-active::before{
      margin:6px 0;
      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
      outline: none!important;
+     background-color:rgb(240, 239, 239);
     }
     .genre-buttons button:active,.genre-buttons button:focus{
         border: none;
