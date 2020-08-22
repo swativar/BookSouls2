@@ -311,8 +311,13 @@ li.quick-sub-active::before{
         transform-origin:right top;
     }
     .publisher-top::after{
+        display: none;
+    }
+    .publisher-header-right::after{
+        content: url('assets-Publishers-Page/HeaderDesign2-LeftSide.svg');
+        position: absolute;
         left: 0%;
-        top: 25%;
+        top: 0%;
         transform:scale(0.7);
         transform-origin:left top;
     }
