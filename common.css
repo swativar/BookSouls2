@@ -95,18 +95,18 @@ nav .container{
 }
 .navbar-brand{
     position: relative;
+    margin-right: 0!important;
 }
 .booksouls-logo{
     position: relative;
 }
 .nav-tag{
     position: absolute;
-    bottom:-40%;
-    left: 50%;
+    bottom:-9%;
+    right:0%;
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'Vision Heavy';
-    width: 100%;
 }
 .heart-icon{
     position: absolute;
@@ -734,7 +734,7 @@ a.top-nav:hover{
     }
     .nav-tag{
         font-size: 12px;
-        bottom: -50%;
+        bottom:-12.5%;
     }
     .search-header{ 
         height: 70px;

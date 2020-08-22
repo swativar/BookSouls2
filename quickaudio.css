@@ -211,7 +211,8 @@
         transform: translate(-50%,0);
     }
     .audio-controls img{
-        margin-right: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .celeb-name p:first-child {
         width: 100%;

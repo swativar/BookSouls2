@@ -71,6 +71,19 @@ nav .container{
     font-family: 'Vision Regular', serif;
     font-size: 16px!important;
 }
+.dropdown-item{
+    color: #000!important;
+    opacity: 1!important;
+    font-family: 'Vision Regular', serif;
+    font-size: 16px!important;
+    cursor: pointer;
+}
+.dropdown-item:active{
+    background-color: #FFDE00!important;
+}
+.dropdown-menu{
+    border: 1px solid #FFDE00!important;
+}
 .dropdown-toggle::after{
     content: url('assets/icons/Dropdown-icon.svg')!important;
     vertical-align: -0.5em!important;
@@ -223,6 +236,94 @@ button.navbar-toggler:focus{
     outline: 0;
     font-size: 27px;
     font-family: 'Playfair Display';
+}
+.preference { 
+    position: fixed;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    background-color: #fff;
+    z-index: 1031;
+    display: none;
+}
+.preference-tags{
+   padding-left:165px;
+   padding-right: 165px;
+   max-width: 1366px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.preference-header{ 
+    position: relative;
+    width: 100%;
+    height: 68px;
+}
+.logo-preferencepage{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+.preference-cross-sign{
+    top:50%;
+    transform: translate(0,-50%);
+    right:0%;
+    position: absolute;
+    cursor: pointer;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+.preference-tags > h2{
+    font-family:'Playfair Display';
+    font-size:35px;
+}
+.preference-tag-box{
+    background-color:#eceaea;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid transparent;
+    padding: .5rem 2rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    font-family:'Vision Regular';
+    margin: 12px 15px 12px 0;
+    cursor: pointer;
+}
+.preference-save-button .btn{
+    font-size: 22px!important;
+}
+.custom-control-label{
+    cursor: pointer;
+}
+.custom-control{
+    padding-left:1.8rem!important;
+    min-height: 0!important;
+}
+.custom-control-label::before {
+    background-color:#fff!important;
+    top:50%!important;
+    transform: translate(0,-50%);
+}
+.custom-control-label::after {
+    top:50%!important;
+    transform: translate(0,-50%);
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #FFDE00!important;
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none!important;
 }
 .articles{
     background:linear-gradient(
@@ -1531,5 +1632,47 @@ footer li a:hover{
     }
     .search-input input:focus{
         font-size: 13px;
+    }
+    .preference-tags{
+        padding-left:16px;
+        padding-right: 16px;
+        max-width: 100%;
+     }
+     .logo-preferencepage img{
+        width: 100px;
+        height: 30px;
+    }
+    .preference-cross-icon{
+        padding-right: 0.75rem;
+    }
+     .preference-header{ 
+         height: 70px;
+         box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.04);
+     }
+     .preference-tags > h2{
+         font-family:'Playfair Display';
+         font-size:18px;
+         margin-top:15px;
+     }
+     .preference-tag-box{
+         padding: .4rem 0.7rem;
+         font-size: 13px;
+         line-height: 1.5;
+         border-radius: .25rem;
+         margin: 5px 5px 5px 0;
+     }
+     .preference-save-button .btn{
+         font-size: 14px!important;
+     }
+     .custom-control{
+        padding-left:1.2rem!important;
+    }
+    .custom-control-label::before{
+        width: 12px !important;
+        height: 12px !important;
+    }
+    .custom-control-label::after{
+        width: 12px !important;
+        height: 12px !important;
     }
 }
