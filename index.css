@@ -1676,7 +1676,7 @@ footer li a:hover{
          margin-top:15px;
      }
      .preference-tag-box{
-         padding: .3rem 0.7rem;
+         padding: .4rem 0.7rem;
          font-size: 13px;
          line-height: 1.5;
          border-radius: .25rem;
@@ -1703,6 +1703,6 @@ footer li a:hover{
         margin:8px 5px 8px 0;
     }
     .preference-tags-wrapper{
-        width: 150%;
+        width: 200%;
     }
 }
