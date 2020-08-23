@@ -71,7 +71,102 @@ cite,i{
     font-size: 16px;
     line-height: 31px;
 }
-.relationship-title::after{
-    left:0;
-    right:75%;
+.middle-image{
+    width: 100%;
+}
+@media screen and (max-width:576px){
+    .publisher-navigation{
+        margin-top: 20px;
+        line-height: 16px;
+    }
+    .heart-icon-pub img{
+        width:22px;
+        height:22px;
+        position: relative;
+        top:3px;
+    }
+    .publisher-article-heading > h2{
+        font-size: 24px;
+    }
+    .publisher-article-content p{
+        margin-bottom: 1.5rem;
+    }
+    .single-article-social{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 56px;
+    }
+    .publisher-article-content{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 5%;
+        font-size: 14.5px;
+        line-height: 23px;
+    }
+    .quote{
+        font-size: 17px;
+        font-family: 'Playfair Display';
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .share{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .singlearticle-author div:first-child img{
+        width: 45px;
+        height: 45px;
+    }
+    .author-name p{
+        font-size: 12px;
+        font-family: 'Vision Regular';
+        margin-bottom: 0!important;
+        line-height: 16px;
+    }
+    .author-name{
+        transform: translate(0,10%);
+    }
+    .single-article-social .social-links{
+        transform: translate(0,30%);
+    }
+    .social-links img:not(.whats-app){
+        width: 23px;
+        height: 23px;
+    }
+    .whats-app{
+        width: 28px;
+        height: 28px;
+    }
+    .middle-image{
+        height: 200px;
+        width: 100%;
+    }
+    .author_desc{
+        background-color: rgba(0,0,0,0.06);
+        width:95%;
+        margin: 0 auto;
+        padding: 15px 2%;
+    }
+    .author_desc .auth-desc-name {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 0.5rem!important;
+    }
+    .author_desc img{
+        width: 60px;
+        height: 60px;
+    }
+    .author_desc .auth-desc {
+        font-size: 12px;
+    }
+    .share-left{
+        transform: translate(0,25%);
+    }
+    .share-left p{
+        font-size:12px;
+        margin-bottom:0!important;
+    }
+    .social-links a{
+        margin-right: 8px;
+    }
 }

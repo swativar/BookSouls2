@@ -82,7 +82,8 @@ nav .container{
     background-color: #FFDE00!important;
 }
 .dropdown-menu{
-    border: 1px solid #FFDE00!important;
+    border: none!important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 .dropdown-toggle::after{
     content: url('assets/icons/Dropdown-icon.svg')!important;
@@ -302,6 +303,26 @@ button.navbar-toggler:focus{
 }
 .preference-save-button .btn{
     font-size: 22px!important;
+}
+.preference-tags-scroll{
+    overflow-x: scroll;
+    
+}
+.preference-tags-scroll::-webkit-scrollbar{
+    height: 12px;
+}
+.preference-tags-scroll::-webkit-scrollbar-thumb {
+    background-color: #FFDE00;
+    border-radius:10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.preference-tags-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #f5f5f5;
+    border-radius:10px;
+}
+.preference-tags-wrapper{
+    width: 140%;
 }
 .custom-control-label{
     cursor: pointer;
@@ -1674,5 +1695,11 @@ footer li a:hover{
     .custom-control-label::after{
         width: 12px !important;
         height: 12px !important;
+    }
+    .preference-tags-scroll::-webkit-scrollbar{
+        display: none;
+    }
+    .preference-tag-box{
+        margin:8px 5px 8px 0;
     }
 }

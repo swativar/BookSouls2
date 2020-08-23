@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booksouls - A blog to inspire million</title>
-    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="articles.css">
     <link rel="stylesheet" href="singlepublisher.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
@@ -95,12 +95,12 @@
             <h2>How to start reading (if you've never liked reading before)</h2>
         </div>
         <div class="publisher-article-content">
-            <div class="clearfix mb-5">
-                <div class="float-left">
+            <div class="clearfix mt-4 mt-md-0 mb-5">
+                <div class="float-left heart-icon-pub">
                     <img src="assets/icons/Heart.svg" alt="" width="30" height="30">
                 </div>
                 <div class="float-right social-links">
-                    <a href><img src="assets-singlearticle/WhatsApp.svg" width="35" height="35"></a>
+                    <a href><img class="whats-app" src="assets-singlearticle/WhatsApp.svg" width="35" height="35"></a>
                     <a href><img src="assets-singlearticle/Facebook.svg" width="30" height="30"></a>
                     <a href><img src="assets-singlearticle/Twitter.svg" width="30" height="30"></a>
                     <a href><img src="assets-singlearticle/Instagram.svg" width="30" height="30"></a>
@@ -127,7 +127,7 @@
             </div>
         </div>
         <!--Subscribe-->
-        <div class="wrapper">
+        <div class="wrapper d-none d-md-block">
             <div class="mt-5 subscribe_middle">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="subscribe_left">
@@ -180,9 +180,9 @@
                 series
                 cut right to the core of the plot. <cite>The Martian</cite> by Andy
                 Weir is as hilarious as it is fast-paced and readable.</p>
-            <img class="mt-3 mb-4"
+            <img class="mt-3 mb-4 middle-image"
                 src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                alt="" width="100%" height="300">
+                alt="" height="300">
             <p>Short chapters and cliffhangers do not indicate a book
                 of “lesser” value. They simply indicate the author
                 knows how to keep you guessing and keep you reading. If
@@ -198,7 +198,7 @@
                 anyone of any age can read YA books and enjoy them.</p>
         </div>
         <!--Subscribe-->
-        <div class="wrapper">
+        <div class="wrapper d-none d-md-block">
             <div class="mt-5 subscribe_middle">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="subscribe_left">
@@ -238,9 +238,9 @@
                 commute, more enjoyable. Even better, many audiobooks
                 are available for free through your local library
                 through apps like Hoopla, Libby, and Overdrive.</p>
-            <img class="mt-3 mb-4"
+            <img class="mt-3 mb-4 middle-image"
                 src="https://images.unsplash.com/photo-1487537023671-8dce1a785863?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                alt="" width="100%" height="300">
+                alt="" height="300">
             <p>A pro tip for finding an audiobook you like: find a
                 narrator you like. Famous actors will often perform
                 audiobooks. If The <cite>Handmaid’s Tale</cite> or <cite>Tom Sawyer</cite> have
@@ -273,7 +273,7 @@
                     <p>Share it with your friends!</p>
                 </div>
                 <div class="float-right social-links">
-                    <a href><img src="assets-singlearticle/WhatsApp.svg" width="35" height="35"></a>
+                    <a href><img class="whats-app" src="assets-singlearticle/WhatsApp.svg" width="35" height="35"></a>
                     <a href><img src="assets-singlearticle/Facebook.svg" width="30" height="30"></a>
                     <a href><img src="assets-singlearticle/Twitter.svg" width="30" height="30"></a>
                     <a href><img src="assets-singlearticle/Instagram.svg" width="30" height="30"></a>
@@ -290,6 +290,7 @@
             </div>
         </div>
     </div>
+    <hr class="hr">
     <div class="relationship wrapper my-3 my-md-5 d-flex flex-column flex-md-row justify-content-between">
         <div class="relation-left">
             <div class="relation-header">
@@ -316,7 +317,7 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-block"><a href class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
@@ -338,7 +339,30 @@
                             </div>
                             <div class="clearfix">
                                 <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                                <span class="float-right d-none d-md-block"><a href class="relationship-tag">RELATIONSHIP</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card d-flex flex-row d-md-none">
+                    <div class="card-top">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-relationship bg-light">
+                            <img src="assets/icons/Heart.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-header">
+                        <div class="card-bottom">
+                            <div class="relationship-card-title">
+                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                <p>For thousands of years, humans have looked up at the endless sky and wondered if
+                                    there was anyone out there.</p>
+                            </div>
+                            <div class="clearfix">
+                                <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
+                                <span class="float-right d-none d-md-block"><a href class="relationship-tag">RELATIONSHIP</a></span>
                             </div>
                         </div>
                     </div>
@@ -409,6 +433,7 @@
             </div>
         </div>
     </div>
+    <hr class="hr">
     <!--Subscribe-->
 
     <div class="wrapper email text-center mt-5 mb-5">
@@ -501,7 +526,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="common.js"></script>
-    <script src="publisher.js"></script>
 </body>
 
 </html>

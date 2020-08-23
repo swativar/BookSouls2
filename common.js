@@ -49,3 +49,46 @@ var docWidth = document.documentElement.offsetWidth;
         }
     }
 );
+
+// 
+var preference = document.querySelector('.preference');
+preference.style.display = "none";
+
+function preferencePage(){
+    preference.style.display = "block";
+    document.documentElement.style.overflow = 'hidden'; 
+}
+
+function exitPage(){
+    preference.style.display = "none";
+    document.documentElement.style.overflow = 'auto';
+}
+
+var preferences = document.querySelectorAll('.preference-tag-box input');
+var preferences_box = document.querySelectorAll('.preference-tag-box');
+preferences.forEach(function (preference){
+    preference.onclick = function(e){
+        if(e.target.checked){
+            e.target.parentNode.parentNode.style.backgroundColor = '#fff';
+            e.target.parentNode.parentNode.style.border = '2px solid #ffde00';
+        }else{
+            e.target.parentNode.parentNode.style.backgroundColor = '#eceaea';
+            e.target.parentNode.parentNode.style.border = '2px solid transparent';
+        }
+    }
+});
+
+preferences_box.forEach(function(preference_box){
+    preference_box.onclick = function(e){
+      var input =  document.querySelector('#' +e.currentTarget.children[0].children[0].id);
+      if(input.checked){
+       input.checked = false;
+       preference_box.style.backgroundColor = '#eceaea';
+       preference_box.style.border = '2px solid transparent';
+      }else{
+          input.checked = true;
+          preference_box.style.backgroundColor = '#fff';
+          preference_box.style.border = '2px solid #ffde00';
+      }
+    }
+})
