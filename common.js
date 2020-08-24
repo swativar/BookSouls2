@@ -29,15 +29,18 @@ $("[data-trigger]").on("click", function () {
     var trigger_id = $(this).attr('data-trigger');
     $(trigger_id).toggleClass("show");
     $('html').toggleClass("offcanvas-active");
+    $('html').css('overflow', 'hidden');
 });
 
 // close button 
-$(".btn-close, html").click(function (e) {
+$(".btn-close , html").click(function (e) {
     if( e.target.parentNode.className !== 'navbar-toggler'){
     $(".navbar-collapse").removeClass("show");
     $("html").removeClass("offcanvas-active");
+    $('html').css('overflow', 'auto');
     }
 });
+
 
 var docWidth = document.documentElement.offsetWidth;
 

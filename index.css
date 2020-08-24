@@ -1186,10 +1186,9 @@ footer li a:hover{
         max-width: 100%;
     }
     .offcanvas-header{ display:block; }
-    .offcanvas-active{position: relative;}
     .offcanvas-active::before{
         content: '';
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
@@ -1637,10 +1636,22 @@ footer li a:hover{
     .search-header{ 
         height: 70px;
         box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.04);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        width:100%;
+    }
+    .logo-searchpage{
+        padding-right:3.2px;
     }
     .logo-searchpage img{
         width: 100px;
         height: 30px;
+    }
+    .logo-searchpage a{
+        padding-top:5px;
+        padding-bottom: 5px;
+        font-size:1.25rem;
     }
     .search-input input{
         width: 95vw;
@@ -1659,6 +1670,14 @@ footer li a:hover{
         padding-right: 16px;
         max-width: 100%;
      }
+     .logo-preferencepage{
+        padding-right:3.2px;
+    }
+    .logo-preferencepage a{
+        padding-top:5px;
+        padding-bottom: 5px;
+        font-size:1.25rem;
+    }
      .logo-preferencepage img{
         width: 100px;
         height: 30px;
@@ -1669,6 +1688,10 @@ footer li a:hover{
      .preference-header{ 
          height: 70px;
          box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.04);
+         padding-top: 8px;
+         padding-bottom: 8px;
+         padding-left: 16px;
+         width:100%;
      }
      .preference-tags > h2{
          font-family:'Playfair Display';
