@@ -96,14 +96,23 @@ $("[data-trigger]").on("click", function () {
 });
 
 // close button 
-$(".btn-close, body").click(function (e) {
+var body = document.querySelector('body');
+$(".btn-close").click(function (e) {
     if( e.target.parentNode.className !== 'navbar-toggler'){
     $(".navbar-collapse").removeClass("show");
     $("body").removeClass("offcanvas-active");
     $('html').css('overflow', 'auto');
     }
 });
+// close collapsible navbar by clicking outside of it
+window.onclick = function (e) {
+    if(e.target === body){
+        $(".navbar-collapse").removeClass("show");
+        $("body").removeClass("offcanvas-active");
+        $('html').css('overflow', 'auto');  
+    }
 
+}
 
 
 var docWidth = document.documentElement.offsetWidth;

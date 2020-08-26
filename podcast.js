@@ -52,107 +52,133 @@ $(".carousel").on("touchend", function(){
         $(this).off("touchmove");
 });
 });
+  
+$("#pod-tab-home,#pod-recom,#pod-genre").on('slid.bs.carousel', function (event) {
+  var tot_item_genre = document.querySelectorAll('#' + event.target.id + ' .carousel-item').length;
+  if (event.to === tot_item_genre - 1) {
+    document.querySelector('#' + event.target.id + ' .next').style.backgroundColor = '#fff';
+    document.querySelector('#' + event.target.id + ' .next').style.border = '1px solid #FFDE00';
+    document.querySelector('#' + event.target.id + ' .next a').style.color = "#FFDE00";
+    document.querySelector('#' + event.target.id + ' .next a').style.cursor = "default";
+  } else {
+    document.querySelector('#' + event.target.id + ' .next').style.backgroundColor = '#FFDE00';
+    document.querySelector('#' + event.target.id + ' .next').style.border = 'none';
+    document.querySelector('#' + event.target.id + ' .next a').style.color = "#042330";
+    document.querySelector('#' + event.target.id + ' .next a').style.cursor = "pointer";
+  }
+  if (event.from === 0) {
+    document.querySelector('#' + event.target.id + ' .previous').style.backgroundColor = '#FFDE00';
+    document.querySelector('#' + event.target.id + ' .previous').style.border = 'none';
+    document.querySelector('#' + event.target.id + ' .previous a').style.color = "#042330";
+    document.querySelector('#' + event.target.id + ' .previous a').style.cursor = "pointer";
+  } else {
+    document.querySelector('#' + event.target.id + ' .previous').style.backgroundColor = '#fff';
+    document.querySelector('#' + event.target.id + ' .previous').style.border = '1px solid #FFDE00';
+    document.querySelector('#' + event.target.id + ' .previous a').style.color = "#FFDE00";
+    document.querySelector('#' + event.target.id + ' .previous a').style.cursor = "default";
+  }
+});
+  
+  // var tot_item = document.querySelectorAll('#pod-tab-home .carousel-item').length;
+  // $("#pod-tab-home").on('slid.bs.carousel', function(event){
+  //     if (event.to === tot_item-1){
+  //       var next = document.querySelector('.next');
+  //       next.style.backgroundColor = '#fff';
+  //       next.style.border = '1px solid #FFDE00';
+  //       var aTag = document.querySelector('.next a');
+  //       aTag.style.color = "#FFDE00";
+  //       aTag.style.cursor = "default";
+  //     }else{
+  //       var next = document.querySelector('.next');
+  //       next.style.backgroundColor = '#FFDE00';
+  //       next.style.border = 'none';
+  //       var aTag = document.querySelector('.next a');
+  //       aTag.style.color = "#042330";
+  //       aTag.style.cursor = "pointer";
+  //     }
+  //     if (event.from === 0){
+  //       var prev = document.querySelector('.previous');
+  //       prev.style.backgroundColor = '#FFDE00';
+  //       prev.style.border = 'none';
+  //       var aTag = document.querySelector('.previous a');
+  //       aTag.style.color = "#042330";
+  //       aTag.style.cursor = "pointer";
+  //     }else{
+  //       var prev = document.querySelector('.previous');
+  //       prev.style.backgroundColor = '#fff';
+  //       prev.style.border = '1px solid #FFDE00';
+  //       var aTag_prev = document.querySelector('.previous a');
+  //       aTag_prev.style.color = "#FFDE00";
+  //       aTag_prev.style.cursor = "default";
+  //     }
+  // });
 
-  var tot_item = document.querySelectorAll('#pod-tab-home .carousel-item').length;
-  $("#pod-tab-home").on('slid.bs.carousel', function(event){
-      if (event.to === tot_item-1){
-        var next = document.querySelector('.next');
-        next.style.backgroundColor = '#fff';
-        next.style.border = '1px solid #FFDE00';
-        var aTag = document.querySelector('.next a');
-        aTag.style.color = "#FFDE00";
-        aTag.style.cursor = "default";
-      }else{
-        var next = document.querySelector('.next');
-        next.style.backgroundColor = '#FFDE00';
-        next.style.border = 'none';
-        var aTag = document.querySelector('.next a');
-        aTag.style.color = "#042330";
-        aTag.style.cursor = "pointer";
-      }
-      if (event.from === 0){
-        var prev = document.querySelector('.previous');
-        prev.style.backgroundColor = '#FFDE00';
-        prev.style.border = 'none';
-        var aTag = document.querySelector('.previous a');
-        aTag.style.color = "#042330";
-        aTag.style.cursor = "pointer";
-      }else{
-        var prev = document.querySelector('.previous');
-        prev.style.backgroundColor = '#fff';
-        prev.style.border = '1px solid #FFDE00';
-        var aTag_prev = document.querySelector('.previous a');
-        aTag_prev.style.color = "#FFDE00";
-        aTag_prev.style.cursor = "default";
-      }
-  });
+  // var tot_item_recom = document.querySelectorAll('#pod-recom .carousel-item').length;
+  // $("#pod-recom").on('slid.bs.carousel', function(event){
+  //     if (event.to === tot_item_recom-1){
+  //       var next_recom = document.querySelector('#pod-recom .next');
+  //       next_recom.style.backgroundColor = '#fff';
+  //       next_recom.style.border = '1px solid #FFDE00';
+  //       var aTag_recom = document.querySelector('#pod-recom .next a');
+  //       aTag_recom.style.color = "#FFDE00";
+  //       aTag_recom.style.cursor = "default";
+  //     }else{
+  //       var next_recom = document.querySelector('#pod-recom .next');
+  //       next_recom.style.backgroundColor = '#FFDE00';
+  //       next_recom.style.border = 'none';
+  //       var aTag_recom = document.querySelector('#pod-recom .next a');
+  //       aTag_recom.style.color = "#042330";
+  //       aTag_recom.style.cursor = "pointer";
+  //     }
+  //     if (event.from === 0){
+  //       var prev_recom = document.querySelector('#pod-recom .previous');
+  //       prev_recom.style.backgroundColor = '#FFDE00';
+  //       prev_recom.style.border = 'none';
+  //       var aTag_prev_recom = document.querySelector('#pod-recom .previous a');
+  //       aTag_prev_recom.style.color = "#042330";
+  //       aTag_prev_recom.style.cursor = "pointer";
+  //     }else{
+  //       var prev_recom = document.querySelector('#pod-recom .previous');
+  //       prev_recom.style.backgroundColor = '#fff';
+  //       prev_recom.style.border = '1px solid #FFDE00';
+  //       var aTag_prev_recom = document.querySelector('#pod-recom .previous a');
+  //       aTag_prev_recom.style.color = "#FFDE00";
+  //       aTag_prev_recom.style.cursor = "default";
+  //     }
+  // });
 
-  var tot_item_recom = document.querySelectorAll('#pod-recom .carousel-item').length;
-  $("#pod-recom").on('slid.bs.carousel', function(event){
-      if (event.to === tot_item_recom-1){
-        var next_recom = document.querySelector('#pod-recom .next');
-        next_recom.style.backgroundColor = '#fff';
-        next_recom.style.border = '1px solid #FFDE00';
-        var aTag_recom = document.querySelector('#pod-recom .next a');
-        aTag_recom.style.color = "#FFDE00";
-        aTag_recom.style.cursor = "default";
-      }else{
-        var next_recom = document.querySelector('#pod-recom .next');
-        next_recom.style.backgroundColor = '#FFDE00';
-        next_recom.style.border = 'none';
-        var aTag_recom = document.querySelector('#pod-recom .next a');
-        aTag_recom.style.color = "#042330";
-        aTag_recom.style.cursor = "pointer";
-      }
-      if (event.from === 0){
-        var prev_recom = document.querySelector('#pod-recom .previous');
-        prev_recom.style.backgroundColor = '#FFDE00';
-        prev_recom.style.border = 'none';
-        var aTag_prev_recom = document.querySelector('#pod-recom .previous a');
-        aTag_prev_recom.style.color = "#042330";
-        aTag_prev_recom.style.cursor = "pointer";
-      }else{
-        var prev_recom = document.querySelector('#pod-recom .previous');
-        prev_recom.style.backgroundColor = '#fff';
-        prev_recom.style.border = '1px solid #FFDE00';
-        var aTag_prev_recom = document.querySelector('#pod-recom .previous a');
-        aTag_prev_recom.style.color = "#FFDE00";
-        aTag_prev_recom.style.cursor = "default";
-      }
-  });
-
-  var tot_item_genre = document.querySelectorAll('#pod-genre .carousel-item').length;
-  $("#pod-genre").on('slid.bs.carousel', function(event){
-      if (event.to === tot_item_recom-1){
-        var next_genre = document.querySelector('#pod-genre .next');
-        next_genre.style.backgroundColor = '#fff';
-        next_genre.style.border = '1px solid #FFDE00';
-        var aTag_genre = document.querySelector('#pod-genre .next a');
-        aTag_genre.style.color = "#FFDE00";
-        aTag_genre.style.cursor = "default";
-      }else{
-        var next_genre = document.querySelector('#pod-genre .next');
-        next_genre.style.backgroundColor = '#FFDE00';
-        next_genre.style.border = 'none';
-        var aTag_genre = document.querySelector('#pod-genre .next a');
-        aTag_genre.style.color = "#042330";
-        aTag_genre.style.cursor = "pointer";
-      }
-      if (event.from === 0){
-        var prev_genre = document.querySelector('#pod-genre .previous');
-        prev_genre.style.backgroundColor = '#FFDE00';
-        prev_genre.style.border = 'none';
-        var aTag_prev_genre = document.querySelector('#pod-genre .previous a');
-        aTag_prev_genre.style.color = "#042330";
-        aTag_prev_genre.style.cursor = "pointer";
-      }else{
-        var prev_genre = document.querySelector('#pod-genre .previous');
-        prev_genre.style.backgroundColor = '#fff';
-        prev_genre.style.border = '1px solid #FFDE00';
-        var aTag_prev_genre = document.querySelector('#pod-genre .previous a');
-        aTag_prev_genre.style.color = "#FFDE00";
-        aTag_prev_genre.style.cursor = "default";
-      }
-  });
+  // var tot_item_genre = document.querySelectorAll('#pod-genre .carousel-item').length;
+  // $("#pod-genre").on('slid.bs.carousel', function(event){
+  //     if (event.to === tot_item_recom-1){
+  //       var next_genre = document.querySelector('#pod-genre .next');
+  //       next_genre.style.backgroundColor = '#fff';
+  //       next_genre.style.border = '1px solid #FFDE00';
+  //       var aTag_genre = document.querySelector('#pod-genre .next a');
+  //       aTag_genre.style.color = "#FFDE00";
+  //       aTag_genre.style.cursor = "default";
+  //     }else{
+  //       var next_genre = document.querySelector('#pod-genre .next');
+  //       next_genre.style.backgroundColor = '#FFDE00';
+  //       next_genre.style.border = 'none';
+  //       var aTag_genre = document.querySelector('#pod-genre .next a');
+  //       aTag_genre.style.color = "#042330";
+  //       aTag_genre.style.cursor = "pointer";
+  //     }
+  //     if (event.from === 0){
+  //       var prev_genre = document.querySelector('#pod-genre .previous');
+  //       prev_genre.style.backgroundColor = '#FFDE00';
+  //       prev_genre.style.border = 'none';
+  //       var aTag_prev_genre = document.querySelector('#pod-genre .previous a');
+  //       aTag_prev_genre.style.color = "#042330";
+  //       aTag_prev_genre.style.cursor = "pointer";
+  //     }else{
+  //       var prev_genre = document.querySelector('#pod-genre .previous');
+  //       prev_genre.style.backgroundColor = '#fff';
+  //       prev_genre.style.border = '1px solid #FFDE00';
+  //       var aTag_prev_genre = document.querySelector('#pod-genre .previous a');
+  //       aTag_prev_genre.style.color = "#FFDE00";
+  //       aTag_prev_genre.style.cursor = "default";
+  //     }
+  // });
 
 

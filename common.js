@@ -33,14 +33,22 @@ $("[data-trigger]").on("click", function () {
 });
 
 // close button 
-$(".btn-close , html").click(function (e) {
+$(".btn-close").click(function (e) {
     if( e.target.parentNode.className !== 'navbar-toggler'){
     $(".navbar-collapse").removeClass("show");
     $("html").removeClass("offcanvas-active");
     $('html').css('overflow', 'auto');
     }
 });
-
+var html = document.querySelector('html');
+window.onclick = function (e) {
+    console.log(e.target,html);
+    if(e.target === html){
+        $(".navbar-collapse").removeClass("show");
+        $("html").removeClass("offcanvas-active");
+        $('html').css('overflow', 'auto');  
+    }
+}
 
 var docWidth = document.documentElement.offsetWidth;
 
