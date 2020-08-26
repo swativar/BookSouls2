@@ -37,14 +37,14 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-md bg-white">
         <div class="container">
-             <!-- Toggler/collapsibe Button -->
-             <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
                 <img src="assets-Home-mobile/Menu.svg" alt="">
             </button>
             <!-- Brand -->
             <div class="booksouls-logo">
-            <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-            <span class="nav-tag">podcast</span>
+                <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
+                <span class="nav-tag">podcast</span>
             </div>
 
             <!-- Navbar links -->
@@ -87,7 +87,8 @@
         <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="podcast-header-left">
                 <h2 class="text-md-center">Podcast</h2>
-                <p class="mt-2 mt-md-5">Explore audio contents in different categories to keep you motivated. We have a wide
+                <p class="mt-2 mt-md-5">Explore audio contents in different categories to keep you motivated. We have a
+                    wide
                     range of podcasts for you.</p>
                 <p>Explore audio contents in different categories to keep you motivated.</p>
             </div>
@@ -143,9 +144,11 @@
             </ul>
         </div>
         <div class="tab-mobile-links d-md-none text-center">
-            <button class="btn btn-outline-warning text-dark px-4 tab-li tab-active" onclick="show(event,'home')">Home</button>
+            <button class="btn btn-outline-warning text-dark px-4 tab-li tab-active"
+                onclick="show(event,'home')">Home</button>
             <button class="btn btn-outline-warning text-dark tab-li px-4" onclick="show(event,'explore')">New</button>
-            <button class="btn btn-outline-warning text-dark tab-li px-4" onclick="show(event,'genre')">Trending</button>
+            <button class="btn btn-outline-warning text-dark tab-li px-4"
+                onclick="show(event,'genre')">Trending</button>
         </div>
         <div class="tab-content-home tab-content float-right mt-4" id="home">
             <div class="pod-tab-title text-center text-md-left h2">
@@ -153,12 +156,14 @@
             </div>
             <div id="pod-tab-home" class="carousel slide" data-ride="carousel">
                 <div class="controls tab-home-controls">
-                    <div class="previous">
-                        <a href="#pod-tab-home" data-slide="prev"><span>&#10094;</span></a>
-                    </div>
-                    <div class="next">
-                        <a href="#pod-tab-home" data-slide="next"><span>&#10095;</span></a>
-                    </div>
+                    <a href="#pod-tab-home" data-slide="prev">
+                        <div class="previous"><span>&#10094;</span></div>
+                    </a>
+                    <a href="#pod-tab-home" data-slide="next">
+                        <div class="next">
+                            <span>&#10095;</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -434,12 +439,16 @@
                     </div>
                     <div id="pod-recom" class="carousel slide" data-ride="carousel">
                         <div class="controls tab-home-controls">
-                            <div class="previous">
-                                <a href="#pod-recom" data-slide="prev"><span>&#10094;</span></a>
-                            </div>
-                            <div class="next">
-                                <a href="#pod-recom" data-slide="next"><span>&#10095;</span></a>
-                            </div>
+                            <a href="#pod-recom" data-slide="prev">
+                                <div class="previous">
+                                    <span>&#10094;</span>
+                                </div>
+                            </a>
+                            <a href="#pod-recom" data-slide="next">
+                                <div class="next">
+                                    <span>&#10095;</span>
+                                </div>
+                            </a>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -583,12 +592,16 @@
                     </div>
                     <div id="pod-genre" class="carousel slide" data-ride="carousel">
                         <div class="controls tab-home-controls">
-                            <div class="previous">
-                                <a href="#pod-genre" data-slide="prev"><span>&#10094;</span></a>
-                            </div>
-                            <div class="next">
-                                <a href="#pod-genre" data-slide="next"><span>&#10095;</span></a>
-                            </div>
+                            <a href="#pod-genre" data-slide="prev">
+                                <div class="previous">
+                                    <span>&#10094;</span>
+                                </div>
+                            </a>
+                            <a href="#pod-genre" data-slide="next">
+                                <div class="next">
+                                    <span>&#10095;</span>
+                                </div>
+                            </a>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -769,90 +782,90 @@
     </div>
 
 
-   <hr class="hr mt-4 d-md-none">
+    <hr class="hr mt-4 d-md-none">
 
-   <!--Subscribe-->
+    <!--Subscribe-->
 
-   <div class="wrapper email text-center mt-3 mt-md-5 mb-5">
-    <p>Stay <span class="text-warn">Updated</span></p>
-    <p>Get selected contents directly in your email</p>
-    <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
+    <div class="wrapper email text-center mt-3 mt-md-5 mb-5">
+        <p>Stay <span class="text-warn">Updated</span></p>
+        <p>Get selected contents directly in your email</p>
+        <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
 
-        <div class="form-group">
-            <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
-        </div>
-
-        <div class="text-center sub_button">
-            <button class="btn btn-outline-warning text-dark">SUBSCRIBE</button>
-        </div>
-    </div>
-</div>
-<!--Footer-->
-<footer>
-    <div class="d-flex flex-column flex-md-row justify-content-between footer wrapper">
-        <div class="footer-logo text-center text-md-left">
-            <img src="assets/Booksouls-LOGO.svg" alt="Booksouls logo">
-            <p>A blog to <span>inspire</span> millions</p>
-        </div>
-        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between footer-links">
-            <div>
-                <ul>
-                    <li>Services</li>
-                    <li><a href="">Articles</a></li>
-                    <li><a href="">Inspire Me</a></li>
-                    <li><a href="">Podcasts</a></li>
-                    <li><a href="">Publishers</a></li>
-                </ul>
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
             </div>
-            <div>
-                <ul>
-                    <li>Community</li>
-                    <li><a href="">Write for Us</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Company</li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Company</a></li>
-                    <li><a href="">Help Desk</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>FAQ's</li>
-                    <li><a href="">What Booksouls is?</a></li>
-                    <li><a href="">What is our purpose?</a></li>
-                    <li><a href="">is Everything for free?</a></li>
-                    <li><a href="">Why are we doing this?</a></li>
-                </ul>
+
+            <div class="text-center sub_button">
+                <button class="btn btn-outline-warning text-dark">SUBSCRIBE</button>
             </div>
         </div>
     </div>
-    <div class="d-flex flex-wrap flex-md-nowrap align-items-around justify-content-between footer_in wrapper">
-        <div class="footer-illustration order-1 order-md-1">
-            <img src="assets/footer-illustration-cropped.png" alt="">
+    <!--Footer-->
+    <footer>
+        <div class="d-flex flex-column flex-md-row justify-content-between footer wrapper">
+            <div class="footer-logo text-center text-md-left">
+                <img src="assets/Booksouls-LOGO.svg" alt="Booksouls logo">
+                <p>A blog to <span>inspire</span> millions</p>
+            </div>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between footer-links">
+                <div>
+                    <ul>
+                        <li>Services</li>
+                        <li><a href="">Articles</a></li>
+                        <li><a href="">Inspire Me</a></li>
+                        <li><a href="">Podcasts</a></li>
+                        <li><a href="">Publishers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Community</li>
+                        <li><a href="">Write for Us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Company</li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Company</a></li>
+                        <li><a href="">Help Desk</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>FAQ's</li>
+                        <li><a href="">What Booksouls is?</a></li>
+                        <li><a href="">What is our purpose?</a></li>
+                        <li><a href="">is Everything for free?</a></li>
+                        <li><a href="">Why are we doing this?</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer_p order-3 order-md-2 mx-auto">
-            <p><span class="dot"></span>&copy; 2020, Booksouls.com<span class="dot"></span></p>
+        <div class="d-flex flex-wrap flex-md-nowrap align-items-around justify-content-between footer_in wrapper">
+            <div class="footer-illustration order-1 order-md-1">
+                <img src="assets/footer-illustration-cropped.png" alt="">
+            </div>
+            <div class="footer_p order-3 order-md-2 mx-auto">
+                <p><span class="dot"></span>&copy; 2020, Booksouls.com<span class="dot"></span></p>
+            </div>
+            <div class="order-2 order-md-3 footer-social-links">
+                <a href="#!" class="mr-2 mr-md-3 facebook-logo"><img src="assets/icons/Facebook.svg"
+                        alt="facebook icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 twitter-logo"><img src="assets/icons/Twitter.svg"
+                        alt="twitter icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 insta-logo"><img src="assets/icons/Instagram.svg"
+                        alt="instagram icon"></a>
+                <a href="#!" class="pin-logo"><img src="assets/icons/Pinterest.svg" alt="pinterest"></a>
+            </div>
         </div>
-        <div class="order-2 order-md-3 footer-social-links">
-            <a href="#!" class="mr-2 mr-md-3 facebook-logo"><img src="assets/icons/Facebook.svg"
-                    alt="facebook icon"></a>
-            <a href="#!" class="mr-2 mr-md-3 twitter-logo"><img src="assets/icons/Twitter.svg"
-                    alt="twitter icon"></a>
-            <a href="#!" class="mr-2 mr-md-3 insta-logo"><img src="assets/icons/Instagram.svg"
-                    alt="instagram icon"></a>
-            <a href="#!" class="pin-logo"><img src="assets/icons/Pinterest.svg" alt="pinterest"></a>
+        <div class="text-center footer_last mt-3 mt-md-5">
+            <p>Made with <img src="assets/icons/Heart.svg"> in india</p>
         </div>
-    </div>
-    <div class="text-center footer_last mt-3 mt-md-5">
-        <p>Made with <img src="assets/icons/Heart.svg"> in india</p>
-    </div>
-</footer>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

@@ -197,23 +197,22 @@ li.quick-sub-active::before{
     height: 30px;
     position: relative;
     border: 1px solid #FFDE00;
-    cursor: default;
+    cursor:default;
 }
-.previous a{
+.previous span{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     color: #FFDE00;
-    cursor: default;
 }
-.next a:hover, .previous a:hover{
+.next span:hover, .previous span:hover{
     text-decoration: none;
 }
-.next a:hover{
+.next span:hover{
     color: #042330;
 }
-.previous a:hover{
+.previous span:hover{
     color: #FFDE00;
 }
 .next{
@@ -223,7 +222,7 @@ li.quick-sub-active::before{
     position: relative;
     margin-left: 20px;
 }
-.next a{
+.next span{
     position: absolute;
     left: 50%;
     top: 50%;

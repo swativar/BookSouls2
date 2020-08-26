@@ -233,15 +233,16 @@
     height: 30px;
     position: relative;
     border: 1px solid #FFDE00;
+    cursor: default;
 }
-.previous a{
+.previous span{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     color: #FFDE00;
 }
-.next a:hover, .previous a:hover{
+.next span:hover, .previous span:hover{
     text-decoration: none;
 }
 .next{
@@ -251,7 +252,7 @@
     position: relative;
     margin-left: 20px;
 }
-.next a{
+.next span{
     position: absolute;
     left: 50%;
     top: 50%;

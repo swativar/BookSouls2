@@ -31,141 +31,32 @@ document.onreadystatechange = function() {
     } 
 };
 
-var tot_item_genre = document.querySelectorAll('#tab-genre .carousel-item').length;
-$("#tab-genre").on('slid.bs.carousel', function(event){
-    if (event.to === tot_item_genre-1){
-      var next_genre = document.querySelector('#tab-genre .next');
-      next_genre.style.backgroundColor = '#fff';
-      next_genre.style.border = '1px solid #FFDE00';
-      var aTag_genre = document.querySelector('#tab-genre .next a');
-      aTag_genre.style.color = "#FFDE00";
-      aTag_genre.style.cursor = "default";
-    }else{
-      var next_genre = document.querySelector('#tab-genre .next');
-      next_genre.style.backgroundColor = '#FFDE00';
-      next_genre.style.border = 'none';
-      var aTag_genre = document.querySelector('#tab-genre .next a');
-      aTag_genre.style.color = "#042330";
-      aTag_genre.style.cursor = "pointer";
-    }
-    if (event.from === 0){
-      var prev_genre = document.querySelector('#tab-genre .previous');
-      prev_genre.style.backgroundColor = '#FFDE00';
-      prev_genre.style.border = 'none';
-      var aTag_prev_genre = document.querySelector('#tab-genre .previous a');
-      aTag_prev_genre.style.color = "#042330";
-      aTag_prev_genre.style.cursor = "pointer";
-    }else{
-      var prev_genre = document.querySelector('#tab-genre .previous');
-      prev_genre.style.backgroundColor = '#fff';
-      prev_genre.style.border = '1px solid #FFDE00';
-      var aTag_prev_genre = document.querySelector('#tab-genre .previous a');
-      aTag_prev_genre.style.color = "#FFDE00";
-      aTag_prev_genre.style.cursor = "default";
-    }
+$("#tab-genre,#tab-recomm,#tab-popular,#tab-new").on('slid.bs.carousel', function (event) {
+  var tot_item_genre = document.querySelectorAll('#' + event.target.id + ' .carousel-item').length;
+  if (event.to === tot_item_genre-1) {
+    document.querySelector('#' + event.target.id + ' .next').style.backgroundColor = '#fff';
+    document.querySelector('#' + event.target.id + ' .next').style.border = '1px solid #FFDE00';
+    document.querySelector('#' + event.target.id + ' .next span').style.color = "#FFDE00";
+    document.querySelector('#' + event.target.id + ' .next').style.cursor = "default";
+  } else {
+    document.querySelector('#' + event.target.id + ' .next').style.backgroundColor = '#FFDE00';
+    document.querySelector('#' + event.target.id + ' .next').style.border = 'none';
+    document.querySelector('#' + event.target.id + ' .next span').style.color = "#042330";
+    document.querySelector('#' + event.target.id + ' .next').style.cursor = "pointer";
+  }
+  if (event.from === 0 || event.to !== 0) {
+    document.querySelector('#' + event.target.id + ' .previous').style.backgroundColor = '#FFDE00';
+    document.querySelector('#' + event.target.id + ' .previous').style.border = 'none';
+    document.querySelector('#' + event.target.id + ' .previous span').style.color = "#042330";
+    document.querySelector('#' + event.target.id + ' .previous').style.cursor = "pointer";
+  } else {
+    document.querySelector('#' + event.target.id + ' .previous').style.backgroundColor = '#fff';
+    document.querySelector('#' + event.target.id + ' .previous').style.border = '1px solid #FFDE00';
+    document.querySelector('#' + event.target.id + ' .previous span').style.color = "#FFDE00";
+    document.querySelector('#' + event.target.id + ' .previous').style.cursor = "default";
+  }
 });
 
-var tot_item_recomm = document.querySelectorAll('#tab-recomm .carousel-item').length;
-$("#tab-recomm").on('slid.bs.carousel', function(event){
-    if (event.to === tot_item_recomm-1){
-      var next_genre = document.querySelector('#tab-recomm .next');
-      next_genre.style.backgroundColor = '#fff';
-      next_genre.style.border = '1px solid #FFDE00';
-      var aTag_genre = document.querySelector('#tab-recomm .next a');
-      aTag_genre.style.color = "#FFDE00";
-      aTag_genre.style.cursor = "default";
-    }else{
-      var next_genre = document.querySelector('#tab-recomm .next');
-      next_genre.style.backgroundColor = '#FFDE00';
-      next_genre.style.border = 'none';
-      var aTag_genre = document.querySelector('#tab-recomm .next a');
-      aTag_genre.style.color = "#042330";
-      aTag_genre.style.cursor = "pointer";
-    }
-    if (event.from === 0){
-      var prev_genre = document.querySelector('#tab-recomm .previous');
-      prev_genre.style.backgroundColor = '#FFDE00';
-      prev_genre.style.border = 'none';
-      var aTag_prev_genre = document.querySelector('#tab-recomm .previous a');
-      aTag_prev_genre.style.color = "#042330";
-      aTag_prev_genre.style.cursor = "pointer";
-    }else{
-      var prev_genre = document.querySelector('#tab-recomm .previous');
-      prev_genre.style.backgroundColor = '#fff';
-      prev_genre.style.border = '1px solid #FFDE00';
-      var aTag_prev_genre = document.querySelector('#tab-recomm .previous a');
-      aTag_prev_genre.style.color = "#FFDE00";
-      aTag_prev_genre.style.cursor = "default";
-    }
-});
-
-var tot_item_popular = document.querySelectorAll('#tab-popular .carousel-item').length;
-$("#tab-popular").on('slid.bs.carousel', function(event){
-    if (event.to === tot_item_popular-1){
-      var next_genre = document.querySelector('#tab-popular .next');
-      next_genre.style.backgroundColor = '#fff';
-      next_genre.style.border = '1px solid #FFDE00';
-      var aTag_genre = document.querySelector('#tab-popular .next a');
-      aTag_genre.style.color = "#FFDE00";
-      aTag_genre.style.cursor = "default";
-    }else{
-      var next_genre = document.querySelector('#tab-popular .next');
-      next_genre.style.backgroundColor = '#FFDE00';
-      next_genre.style.border = 'none';
-      var aTag_genre = document.querySelector('#tab-popular .next a');
-      aTag_genre.style.color = "#042330";
-      aTag_genre.style.cursor = "pointer";
-    }
-    if (event.from === 0){
-      var prev_genre = document.querySelector('#tab-popular .previous');
-      prev_genre.style.backgroundColor = '#FFDE00';
-      prev_genre.style.border = 'none';
-      var aTag_prev_genre = document.querySelector('#tab-popular .previous a');
-      aTag_prev_genre.style.color = "#042330";
-      aTag_prev_genre.style.cursor = "pointer";
-    }else{
-      var prev_genre = document.querySelector('#tab-popular .previous');
-      prev_genre.style.backgroundColor = '#fff';
-      prev_genre.style.border = '1px solid #FFDE00';
-      var aTag_prev_genre = document.querySelector('#tab-popular .previous a');
-      aTag_prev_genre.style.color = "#FFDE00";
-      aTag_prev_genre.style.cursor = "default";
-    }
-});
-
-var tot_item_new = document.querySelectorAll('#tab-new .carousel-item').length;
-$("#tab-new").on('slid.bs.carousel', function(event){
-    if (event.to === tot_item_popular-1){
-      var next_genre = document.querySelector('#tab-new .next');
-      next_genre.style.backgroundColor = '#fff';
-      next_genre.style.border = '1px solid #FFDE00';
-      var aTag_genre = document.querySelector('#tab-new .next a');
-      aTag_genre.style.color = "#FFDE00";
-      aTag_genre.style.cursor = "default";
-    }else{
-      var next_genre = document.querySelector('#tab-new .next');
-      next_genre.style.backgroundColor = '#FFDE00';
-      next_genre.style.border = 'none';
-      var aTag_genre = document.querySelector('#tab-new .next a');
-      aTag_genre.style.color = "#042330";
-      aTag_genre.style.cursor = "pointer";
-    }
-    if (event.from === 0){
-      var prev_genre = document.querySelector('#tab-new .previous');
-      prev_genre.style.backgroundColor = '#FFDE00';
-      prev_genre.style.border = 'none';
-      var aTag_prev_genre = document.querySelector('#tab-new .previous a');
-      aTag_prev_genre.style.color = "#042330";
-      aTag_prev_genre.style.cursor = "pointer";
-    }else{
-      var prev_genre = document.querySelector('#tab-new .previous');
-      prev_genre.style.backgroundColor = '#fff';
-      prev_genre.style.border = '1px solid #FFDE00';
-      var aTag_prev_genre = document.querySelector('#tab-new .previous a');
-      aTag_prev_genre.style.color = "#FFDE00";
-      aTag_prev_genre.style.cursor = "default";
-    }
-});
 
 function show(evt, name) {
   // Declare all variables

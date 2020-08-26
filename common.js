@@ -42,7 +42,6 @@ $(".btn-close").click(function (e) {
 });
 var html = document.querySelector('html');
 window.onclick = function (e) {
-    console.log(e.target,html);
     if(e.target === html){
         $(".navbar-collapse").removeClass("show");
         $("html").removeClass("offcanvas-active");
