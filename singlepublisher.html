@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booksouls - A blog to inspire million</title>
-    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="publisher.css">
     <link rel="stylesheet" href="singlepublisher.css">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -32,20 +32,20 @@
             </div>
         </div>
         <div class="search-input">
-            <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search">
+            <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search" onkeyup="searchResult()">
         </div>
     </div>
     <!--Navbar-->
     <nav class="navbar navbar-expand-md fixed-top bg-white">
         <div class="container">
-             <!-- Toggler/collapsibe Button -->
-             <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
                 <img src="assets-Home-mobile/Menu.svg" alt="">
             </button>
             <!-- Brand -->
             <div class="booksouls-logo">
-            <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-            <span class="nav-tag">publishers</span>
+                <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
+                <span class="nav-tag">publishers</span>
             </div>
 
             <!-- Navbar links -->
@@ -290,144 +290,75 @@
             </div>
         </div>
     </div>
-    <hr class="hr">
-    <div class="relationship wrapper my-3 my-md-5 d-flex flex-column flex-md-row justify-content-between">
-        <div class="relation-left">
-            <div class="relation-header">
-                <div class="relationship-title h2">
-                    <h2><span>Related</span></h2>
-                </div>
-            </div>
-            <div class="relation-cards mt-4">
-                <div class="card d-flex flex-row">
-                    <div class="card-top">
-                        <img class="card-img-top"
-                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"
-                            alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <div class="relationship-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
-                                <p>For thousands of years, humans have looked up at the endless sky and wondered if
-                                    there was anyone out there.</p>
-                            </div>
-                            <div class="clearfix">
-                                <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right d-none d-md-block"><a href class="relationship-tag">RELATIONSHIP</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row">
-                    <div class="card-top">
-                        <img class="card-img-top"
-                            src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg" alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <div class="relationship-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
-                                <p>For thousands of years, humans have looked up at the endless sky and wondered if
-                                    there was anyone out there.</p>
-                            </div>
-                            <div class="clearfix">
-                                <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right d-none d-md-block"><a href class="relationship-tag">RELATIONSHIP</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row d-md-none">
-                    <div class="card-top">
-                        <img class="card-img-top"
-                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"
-                            alt="">
-                        <div class="heart-icon heart-icon-relationship bg-light">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="card-header">
-                        <div class="card-bottom">
-                            <div class="relationship-card-title">
-                                <a href>In billions of Galaxies and Stars, are we really alone?</a>
-                                <p>For thousands of years, humans have looked up at the endless sky and wondered if
-                                    there was anyone out there.</p>
-                            </div>
-                            <div class="clearfix">
-                                <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min read</span>
-                                <span class="float-right d-none d-md-block"><a href class="relationship-tag">RELATIONSHIP</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <hr class="hr mt-4">
+    <div class="mt-4 mt-md-5 wrapper">
+        <div class="pub-related-heading">
+        <h2 class="h2"><span>Related</span></h2>
         </div>
-        <div class="relation-right d-none d-md-block">
-            <div class="relation-related-cards mt-4 mt-md-5">
-                <div class="relation-related-smallcards h-100">
-                    <div class="card d-flex flex-row">
-                        <div class="card-header">
-                            <div class="card-bottom">
-                                <a href class="relation-related-tag">Sci-Fi</a>
-                                <div class="relation-related-card-title">
-                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
-                                </div>
-                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
-                            </div>
-                        </div>
-                        <div class="card-related-top">
-                            <img class="card-img-top"
-                                src="https://images.unsplash.com/photo-1588339260976-5ba6f52ac951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                                alt="">
-                            <div class="heart-icon heart-icon-relation-rel bg-light1">
-                                <img src="assets/icons/Heart.svg" alt="">
-                            </div>
+        <div class="search-scrolling">
+            <div class="d-flex justify-content-between my-4 my-md-5">
+                <div class="publisher-home-card">
+                    <div class="home-card-img">
+                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-home-card bg-light1">
+                            <img src="assets/icons/Heart.svg">
                         </div>
                     </div>
-                    <div class="card d-flex flex-row">
-                        <div class="card-header">
-                            <div class="card-bottom">
-                                <a href class="relation-related-tag">Sci-Fi</a>
-                                <div class="relation-related-card-title">
-                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
-                                </div>
-                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
-                            </div>
+                    <div class="home-card-content">
+                        <div class="home-card-title">
+                            <a href="">The Situation of life and death!</a>
                         </div>
-                        <div class="card-related-top">
-                            <img class="card-img-top"
-                                src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
-                                alt="">
-                            <div class="heart-icon heart-icon-relation-rel bg-light1">
-                                <img src="assets/icons/Heart.svg" alt="">
-                            </div>
+                        <p>The situation of life and death! in the recent novel...</p>
+                        <p>by Mohammad Sahil</p>
+                    </div>
+                </div>
+                <div class="publisher-home-card">
+                    <div class="home-card-img">
+                        <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-home-card bg-light1">
+                            <img src="assets/icons/Heart.svg">
                         </div>
                     </div>
-                    <div class="card d-flex flex-row">
-                        <div class="card-header">
-                            <div class="card-bottom">
-                                <a href class="relation-related-tag">Sci-Fi</a>
-                                <div class="relation-related-card-title">
-                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
-                                </div>
-                                <p class="relation-related-auth">by Mohammad Sahil<span>|</span>8 min read</p>
-                            </div>
+                    <div class="home-card-content">
+                        <div class="home-card-title">
+                            <a href="">The Situation of life and death!</a>
                         </div>
-                        <div class="card-related-top">
-                            <img class="card-img-top"
-                                src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg"
-                                alt="">
-                            <div class="heart-icon heart-icon-relation-rel bg-light1">
-                                <img src="assets/icons/Heart.svg" alt="">
-                            </div>
+                        <p>The situation of life and death! in the recent novel...</p>
+                        <p>by Mohammad Sahil</p>
+                    </div>
+                </div>
+                <div class="publisher-home-card">
+                    <div class="home-card-img">
+                        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-home-card bg-light1">
+                            <img src="assets/icons/Heart.svg">
                         </div>
+                    </div>
+                    <div class="home-card-content">
+                        <div class="home-card-title">
+                            <a href="">The Situation of life and death!</a>
+                        </div>
+                        <p>The situation of life and death! in the recent novel...</p>
+                        <p>by Mohammad Sahil</p>
+                    </div>
+                </div>
+                <div class="publisher-home-card">
+                    <div class="home-card-img">
+                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-home-card bg-light1">
+                            <img src="assets/icons/Heart.svg">
+                        </div>
+                    </div>
+                    <div class="home-card-content">
+                        <div class="home-card-title">
+                            <a href="">The Situation of life and death!</a>
+                        </div>
+                        <p>The situation of life and death! in the recent novel...</p>
+                        <p>by Mohammad Sahil</p>
                     </div>
                 </div>
             </div>

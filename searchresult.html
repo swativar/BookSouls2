@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksouls - A blog to inspire million</title>
+    <link rel="stylesheet" href="searchresult.css">
+    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="podcast.css">
+    <link rel="stylesheet" href="publisher.css">
+    <link rel="stylesheet" href="quick.css">
+    <link rel="stylesheet" href="inspireme.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader until page loads-->
+    <div id="loader" class="center"></div>
+    <!--Search bar-->
+    <div class="search">
+        <div class="search-header wrapper">
+            <div class="logo-searchpage">
+                <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
+            </div>
+            <div class="cross-sign">
+                <img class="cross-icon" src="assets-Search-Page/Close.svg" onclick="allPage()">
+            </div>
+        </div>
+        <div class="search-input">
+            <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search" onkeyup="searchResult()">
+        </div>
+    </div>
+    <!--Preferences-->
+    <div class="preference">
+        <div class="preference-header wrapper">
+            <div class="logo-preferencepage">
+                <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
+            </div>
+            <div class="preference-cross-sign">
+                <img class="cross-icon" src="assets-Search-Page/Close.svg" onclick="exitPage()">
+            </div>
+        </div>
+        <div class="preference-tags text-center mt-3">
+            <h2 class="text-left mb-3 mb-md-5">Select you preferences...</h2>
+            <div class="preference-tags-scroll">
+                <div class="preference-tags-wrapper">
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="spiritual" name="spiritual">
+                            <label class="custom-control-label" for="spiritual">Spiritual</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="inspirational" name="inspirational">
+                            <label class="custom-control-label" for="inspirational">Inspirational</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="lifestyle" name="lifestyle">
+                            <label class="custom-control-label" for="lifestyle">Lifestyle</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="fashion" name="fashion">
+                            <label class="custom-control-label" for="fashion">Fashion</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="religion" name="religion">
+                            <label class="custom-control-label" for="religion">Religion</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="culture" name="culture">
+                            <label class="custom-control-label" for="culture">Culture</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="history" name="history">
+                            <label class="custom-control-label" for="history">History &amp; Arts</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="enterpreneurship"
+                                name="enterpreneurship">
+                            <label class="custom-control-label" for="enterpreneurship">Enterpreneurship</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="spiritual1" name="spiritual1">
+                            <label class="custom-control-label" for="spiritual1">Spiritual</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="spiritual2" name="spiritual2">
+                            <label class="custom-control-label" for="spiritual2">Spiritual</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="culture1" name="culture1">
+                            <label class="custom-control-label" for="culture1">Culture</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="lifestyle1" name="lifestyle1">
+                            <label class="custom-control-label" for="lifestyle1">Lifestyle</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="fashion1" name="fashion1">
+                            <label class="custom-control-label" for="fashion1">Fashion</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="religion1" name="religion1">
+                            <label class="custom-control-label" for="religion1">Religion</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="spiritual3" name="spiritual3">
+                            <label class="custom-control-label" for="spiritual3">Spiritual</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="inspirational1"
+                                name="inspirational1">
+                            <label class="custom-control-label" for="inspirational1">Inspirational</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="lifestyle2" name="lifestyle2">
+                            <label class="custom-control-label" for="lifestyle2">Lifestyle</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="fashion2" name="fashion2">
+                            <label class="custom-control-label" for="fashion2">Fashion</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="religion2" name="religion2">
+                            <label class="custom-control-label" for="religion2">Religion</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="culture2" name="culture2">
+                            <label class="custom-control-label" for="culture2">Culture</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="history1" name="history1">
+                            <label class="custom-control-label" for="history1">History &amp; Arts</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="enterpreneurship1"
+                                name="enterpreneurship1">
+                            <label class="custom-control-label" for="enterpreneurship1">Enterpreneurship</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="spiritual4" name="spiritual4">
+                            <label class="custom-control-label" for="spiritual4">Spiritual</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="spiritual5" name="spiritual5">
+                            <label class="custom-control-label" for="spiritual5">Spiritual</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="culture3" name="culture3">
+                            <label class="custom-control-label" for="culture3">Culture</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="lifestyle3" name="lifestyle3">
+                            <label class="custom-control-label" for="lifestyle3">Lifestyle</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="fashion3" name="fashion3">
+                            <label class="custom-control-label" for="fashion3">Fashion</label>
+                        </div>
+                    </div>
+                    <div class="preference-tag-box">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="religion3" name="religion3">
+                            <label class="custom-control-label" for="religion3">Religion</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="preference-next-arrows">
+                    <div class="pre-next-arrows">
+                        <span class="preference-next-arrow1">&#10095;</span>
+                        <span class="preference-next-arrow2">&#10095;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3 mt-md-5 preference-save-button">
+            <button class="btn btn-warning px-3 px-md-5">Save &amp; Continue</button>
+        </div>
+    </div>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light1 fixed-top">
+        <div class="container">
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
+                <img src="assets-Home-mobile/Menu.svg" alt="">
+            </button>
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
+
+            <!-- Navbar links -->
+            <div class="navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <div class="offcanvas-header mt-3 d-block d-md-none">
+                    <img class="float-right btn-close" src="assets-Search-Page/Close.svg">
+                    <a href="index.html"><img class="py-2" src="assets/Booksouls-LOGO.svg" width="94" height="44"></a>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html"><span class="hover-yellow">Articles</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inspireme.html"><span class="hover-yellow">Inspire Me</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="podcast.html"><span class="hover-yellow">Podcast</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quick.html"><span class="hover-yellow">Quick</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publisher.html"><span class="hover-yellow">Publisher</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" onclick="preferencePage()">Preferences</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="search-icon" onclick="searchPage()"><img src="assets/icons/Search.svg" alt=""></a>
+        </div>
+    </nav>
+    <div class="wrapper searching-query">
+        <p>You searched for <q><span>mohammad sahil</span></q></p>
+    </div>
+
+    <div class="search-articles mt-5 wrapper">
+        <h2 class="search-heading">Articles</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="search-articles-left">
+                <div class="relation-cards">
+                    <div class="card d-flex flex-row">
+                        <div class="card-top">
+                            <img class="card-img-top"
+                                src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg"
+                                alt="">
+                            <div class="heart-icon heart-icon-relationship bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <div class="relationship-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                    <p>For thousands of years, humans have looked up at the endless sky and wondered if
+                                        there was anyone out there.</p>
+                                </div>
+                                <div class="clearfix">
+                                    <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min
+                                        read</span>
+                                    <span class="float-right d-none d-md-inline"><a href
+                                            class="relationship-tag">RELATIONSHIP</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-row">
+                        <div class="card-top">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
+                                alt="">
+                            <div class="heart-icon heart-icon-relationship bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <div class="relationship-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                    <p>For thousands of years, humans have looked up at the endless sky and wondered if
+                                        there was anyone out there.</p>
+                                </div>
+                                <div class="clearfix">
+                                    <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min
+                                        read</span>
+                                    <span class="float-right d-none d-md-inline"><a href
+                                            class="relationship-tag">RELATIONSHIP</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-row">
+                        <div class="card-top">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80"
+                                alt="">
+                            <div class="heart-icon heart-icon-relationship bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <div class="relationship-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                    <p>For thousands of years, humans have looked up at the endless sky and wondered if
+                                        there was anyone out there.</p>
+                                </div>
+                                <div class="clearfix">
+                                    <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min
+                                        read</span>
+                                    <span class="float-right d-none d-md-inline"><a href
+                                            class="relationship-tag">RELATIONSHIP</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-articles-right">
+                <div class="d-flex flex-column header-flex">
+                    <div class="card header-flex1 mx-auto mx-md-0 mb-4 mb-md-5 mt-4 mt-md-0">
+                        <div class="card-header text-light text-center">
+                            <div class="header-flex1-tag text-center">
+                                <a href>SPIRITUALITY</a>
+                            </div>
+                            <div class="header-flex1-title text-center">
+                                <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
+                            </div>
+                            <div class="heart-icon heart-icon-flex bg-light1 ">
+                                <img src="assets/icons/Heart.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card header-flex2 mx-auto mx-md-0 mb-4 mb-md-0">
+                        <div class="card-header text-light text-center">
+                            <div class="header-flex2-tag text-center">
+                                <a href>LIFE</a>
+                            </div>
+                            <div class="header-flex2-title text-center">
+                                <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
+                            </div>
+                            <div class="heart-icon heart-icon-flex bg-light1 ">
+                                <img src="assets/icons/Heart.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 text-center">
+            <button class="btn btn-warning px-5">See all</button>
+        </div>
+    </div>
+    <div class="search-inspireme mt-5 wrapper">
+        <h2 class="search-heading">Inspire Me</h2>
+        <div class="search-scrolling">
+        <div class="d-flex justify-content-between mt-2 flex-nowrap flex-md-wrap">
+            <div class="create-card">
+                <img class="create-card-img"
+                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
+                    alt="">
+                <div class="text-center create-card-title">
+                    <a href>One Night Millionaire</a>
+                </div>
+                <div class="heart-icon heart-icon-creative bg-light">
+                    <img src="assets/icons/Heart.svg">
+                </div>
+            </div>
+            <div class="create-card">
+                <img class="create-card-img"
+                    src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
+                    alt="">
+                <div class="text-center create-card-title">
+                    <a href>Man behind Revolution</a>
+                </div>
+                <div class="heart-icon heart-icon-creative bg-light">
+                    <img src="assets/icons/Heart.svg">
+                </div>
+            </div>
+            <div class="create-card">
+                <img class="create-card-img"
+                    src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg" alt="">
+                <div class="text-center create-card-title">
+                    <a href>Internet's own boy</a>
+                </div>
+                <div class="heart-icon heart-icon-creative bg-light">
+                    <img src="assets/icons/Heart.svg">
+                </div>
+            </div>
+            <div class="create-card">
+                <img class="create-card-img"
+                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
+                    alt="">
+                <div class="text-center create-card-title">
+                    <a href>One Night Millionaire</a>
+                </div>
+                <div class="heart-icon heart-icon-creative bg-light">
+                    <img src="assets/icons/Heart.svg">
+                </div>
+            </div>
+            <div class="create-card">
+                <img class="create-card-img"
+                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
+                    alt="">
+                <div class="text-center create-card-title">
+                    <a href>One Night Millionaire</a>
+                </div>
+                <div class="heart-icon heart-icon-creative bg-light">
+                    <img src="assets/icons/Heart.svg">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="mt-4 text-center">
+            <button class="btn btn-warning px-5">See all</button>
+        </div>
+    </div>
+    <div class="search-podcast mt-5 wrapper">
+        <h2 class="search-heading">Podcast</h2>
+        <div class="search-scrolling">
+        <div class="d-flex justify-content-between mt-4 flex-nowrap flex-md-wrap">
+            <div class="podcast-card-container">
+                <div class="podcast-card">
+                    <img class="podcast-card-background"
+                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                    <div class="podcast-card-play">
+                        <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                    </div>
+                    <div class="podcast-card-heart-icon heart-icon bg-light">
+                        <img src="assets/icons/Heart.svg">
+                    </div>
+                </div>
+                <div class="podcast-card-desc text-center">
+                    <p>One Night Millionaire</p>
+                </div>
+            </div>
+            <div class="podcast-card-container">
+                <div class="podcast-card">
+                    <img class="podcast-card-background"
+                        src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                    <div class="podcast-card-play">
+                        <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                    </div>
+                    <div class="podcast-card-heart-icon heart-icon bg-light">
+                        <img src="assets/icons/Heart.svg">
+                    </div>
+                </div>
+                <div class="podcast-card-desc text-center">
+                    <p>Man behind Revolution</p>
+                </div>
+            </div>
+            <div class="podcast-card-container">
+                <div class="podcast-card">
+                    <img class="podcast-card-background"
+                        src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                    <div class="podcast-card-play">
+                        <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                    </div>
+                    <div class="podcast-card-heart-icon heart-icon bg-light">
+                        <img src="assets/icons/Heart.svg">
+                    </div>
+                </div>
+                <div class="podcast-card-desc text-center">
+                    <p>Internet's own boy</p>
+                </div>
+            </div>
+            <div class="podcast-card-container">
+                <div class="podcast-card">
+                    <img class="podcast-card-background"
+                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                    <div class="podcast-card-play">
+                        <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                    </div>
+                    <div class="podcast-card-heart-icon heart-icon bg-light">
+                        <img src="assets/icons/Heart.svg">
+                    </div>
+                </div>
+                <div class="podcast-card-desc text-center">
+                    <p>One Night Millionaire</p>
+                </div>
+            </div>
+            <div class="podcast-card-container">
+                <div class="podcast-card">
+                    <img class="podcast-card-background"
+                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                    <div class="podcast-card-play">
+                        <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                    </div>
+                    <div class="podcast-card-heart-icon heart-icon bg-light">
+                        <img src="assets/icons/Heart.svg">
+                    </div>
+                </div>
+                <div class="podcast-card-desc text-center">
+                    <p>One Night Millionaire</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="mt-4 text-center">
+            <button class="btn btn-warning px-5">See all</button>
+        </div>
+    </div>
+    <div class="search-quicks mt-5 wrapper">
+        <h2 class="search-heading">Quicks</h2>
+        <div class="quick-cards-container search-scrolling mt-4">
+            <div class="d-flex justify-content-between tab-popular-carousel-inner">
+                <div class="card bq-card1 text-center">
+                    <div class="card-header">
+                        <div class="quick-card-img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
+                                alt="" width="176" height="265">
+                            <div class="heart-icon heart-icon-quick bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center quick-card-title">
+                            <a href="">The Alchemist</a>
+                        </div>
+                        <p>Paulo Coelho</p>
+                        <div class="clearfix mt-3 quick_item_bottom">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                    Now</button></span>
+                            <span class="audio-icon"></span>
+                            <span class="float-right">Audio available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bq-card2 text-center">
+                    <div class="card-header">
+                        <div class="quick-card-img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
+                                alt="" width="176" height="265">
+                            <div class="heart-icon heart-icon-quick bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center quick-card-title">
+                            <a href="">The Fault In Our Stars</a>
+                        </div>
+                        <p>John Green</p>
+                        <div class="clearfix mt-3 quick_item_bottom">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                    Now</button></span>
+                            <span class="audio-icon"></span>
+                            <span class="float-right">Audio available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bq-card1 text-center">
+                    <div class="card-header">
+                        <div class="quick-card-img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
+                                alt="" width="176" height="265">
+                            <div class="heart-icon heart-icon-quick bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center quick-card-title">
+                            <a href="">The Alchemist</a>
+                        </div>
+                        <p>Paulo Coelho</p>
+                        <div class="clearfix mt-3 quick_item_bottom">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                    Now</button></span>
+                            <span class="audio-icon"></span>
+                            <span class="float-right">Audio available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bq-card2 text-center">
+                    <div class="card-header">
+                        <div class="quick-card-img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
+                                alt="" width="176" height="265">
+                            <div class="heart-icon heart-icon-quick bg-light1">
+                                <img src="assets/icons/Heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center quick-card-title">
+                            <a href="">The Fault In Our Stars</a>
+                        </div>
+                        <p>John Green</p>
+                        <div class="clearfix mt-3 quick_item_bottom">
+                            <span class="float-left"><button class="btn btn-warning btn-sm">Read
+                                    Now</button></span>
+                            <span class="audio-icon"></span>
+                            <span class="float-right">Audio available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 text-center">
+            <button class="btn btn-warning px-5">See all</button>
+        </div>
+    </div>
+    <div class="search-publisher mt-5 wrapper">
+        <h2 class="search-heading">Publishers</h2>
+        <div class="search-scrolling">
+        <div class="d-flex justify-content-between mt-4">
+            <div class="publisher-home-card">
+                <div class="home-card-img">
+                    <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                        alt="">
+                    <div class="heart-icon heart-icon-home-card bg-light1">
+                        <img src="assets/icons/Heart.svg">
+                    </div>
+                </div>
+                <div class="home-card-content">
+                    <div class="home-card-title">
+                        <a href="">The Situation of life and death!</a>
+                    </div>
+                    <p>The situation of life and death! in the recent novel...</p>
+                    <p>by Mohammad Sahil</p>
+                </div>
+            </div>
+            <div class="publisher-home-card">
+                <div class="home-card-img">
+                    <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                        alt="">
+                    <div class="heart-icon heart-icon-home-card bg-light1">
+                        <img src="assets/icons/Heart.svg">
+                    </div>
+                </div>
+                <div class="home-card-content">
+                    <div class="home-card-title">
+                        <a href="">The Situation of life and death!</a>
+                    </div>
+                    <p>The situation of life and death! in the recent novel...</p>
+                    <p>by Mohammad Sahil</p>
+                </div>
+            </div>
+            <div class="publisher-home-card">
+                <div class="home-card-img">
+                    <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80"
+                        alt="">
+                    <div class="heart-icon heart-icon-home-card bg-light1">
+                        <img src="assets/icons/Heart.svg">
+                    </div>
+                </div>
+                <div class="home-card-content">
+                    <div class="home-card-title">
+                        <a href="">The Situation of life and death!</a>
+                    </div>
+                    <p>The situation of life and death! in the recent novel...</p>
+                    <p>by Mohammad Sahil</p>
+                </div>
+            </div>
+            <div class="publisher-home-card">
+                <div class="home-card-img">
+                    <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                        alt="">
+                    <div class="heart-icon heart-icon-home-card bg-light1">
+                        <img src="assets/icons/Heart.svg">
+                    </div>
+                </div>
+                <div class="home-card-content">
+                    <div class="home-card-title">
+                        <a href="">The Situation of life and death!</a>
+                    </div>
+                    <p>The situation of life and death! in the recent novel...</p>
+                    <p>by Mohammad Sahil</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="mt-4 text-center">
+            <button class="btn btn-warning px-5">See all</button>
+        </div>
+    </div>
+    <hr class="hr mt-4 mt-md-5 ">
+    <!--Subscribe-->
+
+    <div class="wrapper email text-center mb-5">
+        <p>Stay <span class="text-warn">Updated</span></p>
+        <p>Get selected contents directly in your email</p>
+        <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
+            </div>
+
+            <div class="text-center sub_button">
+                <button class="btn btn-outline-warning text-dark">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="d-flex flex-column flex-md-row justify-content-between footer wrapper">
+            <div class="footer-logo text-center text-md-left">
+                <img src="assets/Booksouls-LOGO.svg" alt="Booksouls logo">
+                <p>A blog to <span>inspire</span> millions</p>
+            </div>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between footer-links">
+                <div>
+                    <ul>
+                        <li>Services</li>
+                        <li><a href="">Articles</a></li>
+                        <li><a href="">Inspire Me</a></li>
+                        <li><a href="">Podcasts</a></li>
+                        <li><a href="">Publishers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Community</li>
+                        <li><a href="">Write for Us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms <span>&amp;</span> Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Company</li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Company</a></li>
+                        <li><a href="">Help Desk</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>FAQ's</li>
+                        <li><a href="">What Booksouls is?</a></li>
+                        <li><a href="">What is our purpose?</a></li>
+                        <li><a href="">is Everything for free?</a></li>
+                        <li><a href="">Why are we doing this?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap flex-md-nowrap align-items-around justify-content-between footer_in wrapper">
+            <div class="footer-illustration order-1 order-md-1">
+                <img src="assets/footer-illustration-cropped.png" alt="">
+            </div>
+            <div class="footer_p order-3 order-md-2 mx-auto">
+                <p><span class="dot"></span>&copy; 2020, Booksouls.com<span class="dot"></span></p>
+            </div>
+            <div class="order-2 order-md-3 footer-social-links">
+                <a href="#!" class="mr-2 mr-md-3 facebook-logo"><img src="assets/icons/Facebook.svg"
+                        alt="facebook icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 twitter-logo"><img src="assets/icons/Twitter.svg"
+                        alt="twitter icon"></a>
+                <a href="#!" class="mr-2 mr-md-3 insta-logo"><img src="assets/icons/Instagram.svg"
+                        alt="instagram icon"></a>
+                <a href="#!" class="pin-logo"><img src="assets/icons/Pinterest.svg" alt="pinterest"></a>
+            </div>
+        </div>
+        <div class="text-center footer_last mt-3 mt-md-5">
+            <p>Made with <img src="assets/icons/Heart.svg"> in india</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="common.js"></script>
+</body>
+
+</html>

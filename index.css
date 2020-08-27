@@ -305,20 +305,61 @@ button.navbar-toggler:focus{
     font-size: 22px!important;
 }
 .preference-tags-scroll{
-    overflow-x: scroll;
-    
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    transition: all ease-in 5s;
 }
+.preference-next-arrows{
+    position: absolute;
+    right:0;
+    top:0;
+    bottom: 0;
+    left: 95%;
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+}
+.pre-next-arrows{
+    position: absolute;
+    top:40%;
+    left: 50%;
+}
+.preference-next-arrow1,.preference-next-arrow2{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.preference-next-arrow1{
+    animation-delay:0.2s;
+    margin-left: 0;
+}
+.preference-next-arrow2{
+    margin-left: 8px;
+}
+@keyframes bounceAlpha {
+    0% {opacity: 1; transform: translateX(0px) scale(1);}
+    25%{opacity: 0; transform:translateX(10px) scale(0.9);}
+    26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+    55% {opacity: 1; transform: translateX(0px) scale(1);}
+  }
 .preference-tags-scroll::-webkit-scrollbar{
-    height: 12px;
+    height: 9px;
 }
 .preference-tags-scroll::-webkit-scrollbar-thumb {
     background-color: #FFDE00;
     border-radius:10px;
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+   /* box-shadow: inset 0 0 6px rgba(0,0,0,0.15); */
+    border: 1px solid #d4b803;
 }
 .preference-tags-scroll::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #f5f5f5;
+   /* box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+    background-color: #f5f5f5;*/
+    background:#fff;
     border-radius:10px;
 }
 .preference-tags-wrapper{
@@ -1727,5 +1768,11 @@ footer li a:hover{
     }
     .preference-tags-wrapper{
         width: 200%;
+    }
+    .preference-next-arrows{
+        left: 80%;
+    }
+    .preference-next-arrow1,.preference-next-arrow2{
+        font-size: 1.5rem;
     }
 }

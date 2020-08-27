@@ -1,0 +1,46 @@
+.search-heading{
+    font-family:'Playfair Display';
+    font-size:24px;
+    font-weight:600;
+}
+.search-articles-left{
+    width:65%;
+}
+.search-articles-right{
+    width:30%;
+}
+.searching-query{
+    margin-top: 6.5rem;
+}
+.searching-query p{
+   font-family:'Vision Regular';
+   font-size:20px;
+   color: #666666;
+}
+.searching-query q span{
+    font-weight:bold;
+    color: #111;
+}
+@media screen and (max-width:576px){
+    .search-articles-left{
+        width:100%;
+    }
+    .search-articles-right{
+        width:100%;
+    }
+    .search-scrolling{
+        overflow-x:scroll;
+    }
+    .search-scrolling::-webkit-scrollbar{
+        display:none;
+    }
+    .search-scrolling > div{
+        min-width: min-content;
+    }
+    .search-heading{
+        font-size:18px;
+    }
+    .searching-query p{
+        font-size:16px;
+    }
+}
