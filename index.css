@@ -209,8 +209,8 @@ button.navbar-toggler:focus{
     padding-right: inherit;
 }
 .search-input input{
-    width: 55vw;
-    height: 5vw;
+    width: 752px;
+    height: 68px;
     border-bottom: 3px solid #666666!important;
     border-top: none;
     border-left: none;
