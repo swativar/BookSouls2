@@ -90,8 +90,9 @@ play_button.onclick = function () {
   }
 }
 
-var vol_btn = document.querySelector('.audio-vol-button');
-vol_btn.onclick = function () {
+var vol_btns = document.querySelectorAll('.audio-vol-button');
+vol_btns.forEach(function (vol_btn) {
+  vol_btn.onclick = function () {
   if (player.volume) {
     player.volume = false;
     vol_btn.src = "assets-InspireMe/Volume-OFF.svg";
@@ -100,6 +101,7 @@ vol_btn.onclick = function () {
     vol_btn.src = "assets-InspireMe/Volume-ON.svg";
   }
 }
+})
 
 player.onended = function () {
   play_button.src = "assets-InspireMe/Play.svg";

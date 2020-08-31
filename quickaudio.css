@@ -56,6 +56,10 @@
      margin-top: 4%;
      margin-bottom:4%;
  }
+ .audio-player{
+    width:70%;
+    align-items: center;
+}
  .reader-audio{
      display: flex;
      align-items: center;
@@ -67,9 +71,9 @@
      flex-grow: 1;
  }
  .ranger {
-     width: 100%;
-     padding-right: .375rem;
-     padding-left: .375rem;
+    width: 100%;
+    padding-right: .375rem;
+    padding-left: .375rem;
  }
  .ranger-path {
      position: relative;
