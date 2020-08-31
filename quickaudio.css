@@ -30,7 +30,7 @@
     height: 310px;
  }
 .reader-celeb{
-    width: 21%;
+    width: 16%;
  }
  .reader-celeb > div:first-child img{
      border-radius: 8px;
@@ -66,6 +66,7 @@
      height: 4rem;
      padding-top: 0.5rem;
      padding-bottom:0.5rem;
+     justify-content: space-between;
  }
  .reader-audio-player-element{
      flex-grow: 1;

@@ -32,6 +32,7 @@
     height: 4rem;
     padding-top: 0.5rem;
     padding-bottom:0.5rem;
+    justify-content: space-between;
 }
 .reader-audio-player-element{
     flex-grow: 1;
