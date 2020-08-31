@@ -94,17 +94,21 @@
  .ranger-thumb {
      position: absolute;
      top: 50%;
+     left: calc(-0.75rem/2);
      width: .75rem;
      height: .75rem;
      background: #FFDE00;
      border-radius: 50%;
-     transform: translate(-50%,-50%);
+     transform: translate(0%,-50%);
  }
  .audio-controls img{
      margin-right:35px;
  }
  .audio-vol-button,.prev-button,.play-button,.next-button{
     cursor: pointer;
+}
+.start-time{
+    width: 35px;
 }
 .start-time span , .end-time span{
     font-family: 'Vision Regular';
@@ -237,7 +241,8 @@
     }
     .start-time{
         position: absolute;
-        top:70%
+        top:70%;
+        width: auto;
     }
     .start-time span,.end-time span{
         font-size:12px;
