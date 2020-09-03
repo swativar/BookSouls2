@@ -222,6 +222,7 @@
     }
     .reader-celeb{
         width: 100%;
+        position: relative;
     }
     .audio-controls-flex{
         position: relative;
@@ -321,8 +322,8 @@
         font-size: 18px;
     }
     .heart-icon-mill {
-        bottom: -154px;
-        right: -15px;
+        top: -3px;
+        right: 0px;
     }
     .podcast-creativity{
         overflow-x:scroll;
@@ -346,6 +347,7 @@
         position: relative;
         top:220px;
         margin-top:10px;
+        margin-bottom: 50px;
     }
     .audio-container{
         margin-top: 25%;
