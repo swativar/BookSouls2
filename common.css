@@ -817,24 +817,27 @@ a.top-nav:hover{
         width: 100%;
     }
     .footer-links{
-        width: 90%;
+        width: 100%;
         padding-left: 5px;
         padding-right: 5px;
         margin-left: auto;
         margin-right: auto;
     }
+    .footer-links > div{
+        display:flex;
+        justify-content:center;
+        width:45%;
+    }
     footer ul{
-        padding-left: 20px!important;
+        padding-left: 0px!important;
     }
     footer ul li{
         margin-bottom: 5px;
-        font-size: 13px;
-        letter-spacing:0.8%;
+        font-size: 14px;
     }
     footer ul li:first-child{
-        font-size: 14px;
-        letter-spacing:0.8%;
-        margin-bottom: 15px;
+        font-size: 16px;
+        margin-bottom: 16px;
     }
     .footer-logo img{
         width: 80px;
@@ -851,7 +854,9 @@ a.top-nav:hover{
     .footer-illustration{
         height: 50px;
         position: relative;
-        width: 50%;
+        width: 38%;
+        display:flex;
+        justify-content: center;
     }
     .footer-illustration img{
         width: 80px;
