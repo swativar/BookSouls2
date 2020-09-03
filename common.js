@@ -16,12 +16,12 @@ search.style.display = "none";
 
 function searchPage(){
     search.style.display = "block";
-    document.documentElement.style.overflow = 'hidden'; 
+    document.documentElement.className += 'scroll-visibility'; 
 }
 
 function allPage(){
     search.style.display = "none";
-    document.documentElement.style.overflow = 'auto';
+    document.documentElement.className = document.documentElement.className.replace('scroll-visibility','');
 }
 
 //
@@ -66,12 +66,12 @@ preference.style.display = "none";
 
 function preferencePage(){
     preference.style.display = "block";
-    document.documentElement.style.overflow = 'hidden'; 
+    document.documentElement.className += 'scroll-visibility'; 
 }
 
 function exitPage(){
     preference.style.display = "none";
-    document.documentElement.style.overflow = 'auto';
+    document.documentElement.className = document.documentElement.className.replace('scroll-visibility','');
 }
 
 var preferences = document.querySelectorAll('.preference-tag-box input');

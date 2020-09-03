@@ -1013,7 +1013,7 @@ a.top-nav:hover{
          font-size: 13px;
          line-height: 1.5;
          border-radius: .25rem;
-         margin: 4px 5px 4px 0;
+         margin: 1.3vh 5px 1.3vh 0;
      }
      .preference-save-button .btn{
          font-size: 14px!important;
@@ -1031,9 +1031,6 @@ a.top-nav:hover{
     }
     .preference-tags-scroll::-webkit-scrollbar{
         display: none;
-    }
-    .preference-tag-box{
-        margin:8px 5px 8px 0;
     }
     .preference-tags-wrapper{
         width: 200%;
