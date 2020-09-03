@@ -82,7 +82,7 @@ cite,i{
 }
 @media screen and (max-width:576px){
     .publisher-navigation{
-        margin-top: 20px;
+        margin-top: 80px;
         line-height: 16px;
     }
     .heart-icon-pub img{
