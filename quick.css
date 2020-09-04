@@ -217,6 +217,7 @@ li.quick-sub-active::before{
     top: 50%;
     transform: translate(-50%,-50%);
     color: #FFDE00;
+    line-height: 1;
 }
 .next span:hover, .previous span:hover{
     text-decoration: none;
@@ -240,6 +241,7 @@ li.quick-sub-active::before{
     top: 50%;
     transform: translate(-50%,-50%);
     color: #042330;
+    line-height:1;
 }
 .quick-tab-genre{
     position: relative;
@@ -447,8 +449,8 @@ li.quick-sub-active::before{
         border: 2px solid #FFDE00!important;
     }
     .previous,.next{
-        width: 22px;
-        height: 22px;
+        width: 24px;
+        height: 24px;
     }
     .next{
         margin-left:10px;

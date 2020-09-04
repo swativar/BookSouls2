@@ -241,6 +241,7 @@
     top: 50%;
     transform: translate(-50%,-50%);
     color: #FFDE00;
+    line-height: 1;
 }
 .next span:hover, .previous span:hover{
     text-decoration: none;
@@ -258,6 +259,7 @@
     top: 50%;
     transform: translate(-50%,-50%);
     color: #042330;
+    line-height:1;
 }
 .tab-content > p{
     font-size: 21px;
