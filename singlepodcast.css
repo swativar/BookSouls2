@@ -215,10 +215,11 @@
         margin-bottom:10px;
     }
     .reader-audio-player > div{
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
     .reader-audio-player{
         width: 100%;
+        position: relative;
     }
     .reader-celeb{
         width: 100%;
@@ -258,11 +259,10 @@
     }
     .audio-player{
         width: 100%;
-        position: relative;
     }
     .start-time{
         position: absolute;
-        top:70%;
+        top:6%;
         width: auto;
     }
     .start-time span,.end-time span{
@@ -271,7 +271,7 @@
     .end-time{
         position: absolute;
         right: 0;
-        top:70%
+        top:6%
     }
     .ranger{
         padding-left:0;

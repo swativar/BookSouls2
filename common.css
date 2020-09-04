@@ -229,7 +229,7 @@ nav .container{
 #usr{
    border:none;
    padding:0.9rem 0;
-   border-radius: 5px;
+   border-radius: 10px;
    padding-left: 10%;
    background-color: rgba(0, 0, 0, 0.06);
    width: 95%;
@@ -806,10 +806,18 @@ a.top-nav:hover{
         padding-left: 10%;
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
+     }
+     .sub_button{
+      margin-top:4%;
      }
      #usr::placeholder{
          font-size: 12px;
      }
+     #usr[type='text']{
+        font-size: 12px;
+        line-height: 24px;
+    }
      .email .sub_button button{
         padding: 0.65rem 2rem;
      }

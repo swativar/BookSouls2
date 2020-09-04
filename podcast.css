@@ -405,6 +405,10 @@
     .next{
         margin-left:10px;
     }
+    .next span , .previous span{
+        font-size:13px;
+        line-height:22px;
+    }
     .podcast-card-desc p{
         font-size: 18px;
         line-height: 22px;

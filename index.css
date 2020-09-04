@@ -960,7 +960,7 @@ html.scroll-visibility::-webkit-scrollbar{
 #usr{
    border:none;
    padding:0.9rem 0;
-   border-radius: 5px;
+   border-radius: 10px;
    padding-left: 10%;
    background-color: rgba(0, 0, 0, 0.06);
    width: 95%;
@@ -1603,24 +1603,32 @@ footer li a:hover{
     }
     .email p:first-child{
         font-size:25px;
-     }
+    }
      .email p:nth-child(2){
         font-size:0.9rem;
-     }
-     #usr{
+    }
+    #usr{
         padding-top:0.6rem;
         padding-bottom: 0.6rem;
         padding-left: 10%;
         margin-left: auto;
         margin-right: auto;
-     }
-     #usr::placeholder{
-         font-size: 12px;
-     }
-     .email .sub_button button{
+        width: 100%;
+    }
+    .sub_button{
+        margin-top:4%;
+    }
+    #usr::placeholder{
+        font-size: 12px;
+    }
+    #usr[type='text']{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .email .sub_button button{
         padding: 0.65rem 2rem;
-     }
-     .footer-logo{
+    }
+    .footer-logo{
         width: 100%;
     }
     .footer-links{
