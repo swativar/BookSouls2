@@ -10,30 +10,30 @@ document.onreadystatechange = function() {
     } 
 };
 
-function show(evt, name) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
+// function show(evt, name) {
+//     // Declare all variables
+//     var i, tabcontent, tablinks;
   
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tab-content");
-    console.log(tabcontent);
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
+//     // Get all elements with class="tabcontent" and hide them
+//     tabcontent = document.getElementsByClassName("tab-content");
+//     console.log(tabcontent);
+//     for (i = 0; i < tabcontent.length; i++) {
+//       tabcontent[i].style.display = "none";
+//     }
   
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tab-li");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
-    }
+//     // Get all elements with class="tablinks" and remove the class "active"
+//     tablinks = document.getElementsByClassName("tab-li");
+//     for (i = 0; i < tablinks.length; i++) {
+//       tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
+//     }
   
-    // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(name).style.display = "block";
-    evt.currentTarget.className += " tab-active";
-  }
+//     // Show the current tab, and add an "active" class to the link that opened the tab
+//     document.getElementById(name).style.display = "block";
+//     evt.currentTarget.className += " tab-active";
+//   }
   $('#page-header').carousel({interval:2500});
   $('#pod-tab-home').carousel({interval:false,wrap:false});
-  $('#pod-recom').carousel({interval:false,wrap:false});
+  $('#pod-recom,#pod-recom-mobile,#pod-creative,#pod-life-style').carousel({interval:false,wrap:false});
   $('#pod-genre').carousel({interval:false,wrap:false});
   $("#pod-header-slider").carousel({interval: 2500});
   
@@ -53,7 +53,7 @@ $(".carousel").on("touchend", function(){
 });
 });
   
-$("#pod-tab-home,#pod-recom,#pod-genre").on('slid.bs.carousel', function (event) {
+$("#pod-tab-home,#pod-recom,#pod-genre,#pod-recom-mobile,#pod-creative,#pod-life-style").on('slid.bs.carousel', function (event) {
   var tot_item_genre = document.querySelectorAll('#' + event.target.id + ' .carousel-item').length;
   if (event.to === tot_item_genre - 1) {
     document.querySelector('#' + event.target.id + ' .next').style.backgroundColor = '#fff';

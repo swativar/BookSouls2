@@ -31,11 +31,12 @@
             </div>
         </div>
         <div class="search-input">
-            <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search" onkeyup="searchResult()">
+            <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search"
+                onkeyup="searchResult()">
         </div>
     </div>
-     <!--Preferences-->
-     <div class="preference">
+    <!--Preferences-->
+    <div class="preference">
         <div class="preference-header wrapper">
             <div class="logo-preferencepage">
                 <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
@@ -222,8 +223,8 @@
                 </div>
                 <div class="preference-next-arrows">
                     <div class="pre-next-arrows">
-                    <span class="preference-next-arrow1">&#10095;</span>
-                    <span class="preference-next-arrow2">&#10095;</span>
+                        <span class="preference-next-arrow1">&#10095;</span>
+                        <span class="preference-next-arrow2">&#10095;</span>
                     </div>
                 </div>
             </div>
@@ -322,34 +323,10 @@
             </div>
         </div>
     </div>
-    <hr class="hr">
-    <div class="wrapper mt-5 clearfix">
-        <div class="tab-links float-left sticky-top d-none d-md-block">
-            <p class="disc">Discover</p>
-            <ul class="mt-4 mb-5">
-                <li class="tab-li tab-active" onclick="show(event,'home')"><img src="assets-InspireMe/HomeIcon.svg">Home
-                </li>
-                <li class="tab-li" onclick="show(event,'explore')"><img
-                        src="PodcastPage/assets[PodcastPage]/NewIcon.svg">New</li>
-                <li class="tab-li" onclick="show(event,'genre')"><img
-                        src="PodcastPage/assets[PodcastPage]/TrendingIcon.svg">Trending
-                </li>
-            </ul>
-            <p class="lang">Language</p>
-            <ul class="my-4">
-                <li class="text-warn"><img src="assets-InspireMe/EnglishIcon.svg">English</li>
-                <li><img src="assets-InspireMe/HindiIcon.svg">Hindi</li>
-            </ul>
-        </div>
-        <div class="tab-mobile-links d-md-none text-center">
-            <button class="btn btn-outline-warning text-dark px-4 tab-li tab-active"
-                onclick="show(event,'home')">Home</button>
-            <button class="btn btn-outline-warning text-dark tab-li px-4" onclick="show(event,'explore')">New</button>
-            <button class="btn btn-outline-warning text-dark tab-li px-4"
-                onclick="show(event,'genre')">Trending</button>
-        </div>
-        <div class="tab-content-home tab-content float-right mt-5 mt-md-4" id="home">
-            <div class="pod-tab-title text-center text-md-left h2">
+    <hr class="hr mt-4">
+    <div class="wrapper">
+        <div class="tab-content-home">
+            <div class="pod-tab-title text-center text-md-left h2 mt-4">
                 <p><span>Popular</span></p>
             </div>
             <div id="pod-tab-home" class="carousel slide" data-ride="carousel">
@@ -486,6 +463,36 @@
                                     <p>One Night Millionaire</p>
                                 </div>
                             </div>
+                            <div class="podcast-card-container">
+                                <div class="podcast-card">
+                                    <img class="podcast-card-background"
+                                        src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                    <div class="podcast-card-play">
+                                        <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                    </div>
+                                    <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                        <img src="assets/icons/Heart.svg">
+                                    </div>
+                                </div>
+                                <div class="podcast-card-desc text-center">
+                                    <p>Man behind Revolution</p>
+                                </div>
+                            </div>
+                            <div class="podcast-card-container">
+                                <div class="podcast-card">
+                                    <img class="podcast-card-background"
+                                        src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                                    <div class="podcast-card-play">
+                                        <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                    </div>
+                                    <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                        <img src="assets/icons/Heart.svg">
+                                    </div>
+                                </div>
+                                <div class="podcast-card-desc text-center">
+                                    <p>Internet's own boy</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -610,28 +617,61 @@
                                     <p>One Night Millionaire</p>
                                 </div>
                             </div>
+                            <div class="podcast-card-container">
+                                <div class="podcast-card">
+                                    <img class="podcast-card-background"
+                                        src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                    <div class="podcast-card-play">
+                                        <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                    </div>
+                                    <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                        <img src="assets/icons/Heart.svg">
+                                    </div>
+                                </div>
+                                <div class="podcast-card-desc text-center">
+                                    <p>Man behind Revolution</p>
+                                </div>
+                            </div>
+                            <div class="podcast-card-container">
+                                <div class="podcast-card">
+                                    <img class="podcast-card-background"
+                                        src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                                    <div class="podcast-card-play">
+                                        <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                    </div>
+                                    <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                        <img src="assets/icons/Heart.svg">
+                                    </div>
+                                </div>
+                                <div class="podcast-card-desc text-center">
+                                    <p>Internet's own boy</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!--Subscribe-->
-            <div class="mt-5 newsletter d-none d-md-block">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="newsletter_left">
-                        <p>Get articles directly in your email</p>
-                        <p>Be First to read the articles and other special
-                            contents</p>
-                    </div>
-                    <div class="newsletter_right d-flex justify-content-between">
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Enter email" id="email-input">
+
+            <div class="d-none d-md-block">
+                <div class="mt-5 subscribe_middle">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="subscribe_left">
+                            <p>Get articles directly in your email</p>
+                            <p>Be First to read the articles and other special
+                                contents</p>
                         </div>
-                        <button class="btn btn-warning newsletter_button">SUBSCRIBE</button>
+                        <div class="subscribe_right d-flex justify-content-between">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter email" id="email1">
+                            </div>
+                            <button class="btn btn-warning subscribe_btn">SUBSCRIBE</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mt-5 w-100">
-                <div class="podcast-recomm">
+            <div class="d-flex flex-column flex-md-row justify-content-between mt-4 mt-md-5 w-100">
+                <div class="podcast-recomm d-none d-md-block">
                     <div class="pod-tab-title h2 text-center text-md-left">
                         <p><span>Recommended</span></p>
                     </div>
@@ -784,7 +824,276 @@
                         </div>
                     </div>
                 </div>
-                <div class="podcast-genre">
+                <div class="podcast-recomm d-md-none">
+                    <div class="pod-tab-title h2 text-center">
+                        <p><span>Recommended</span></p>
+                    </div>
+                    <div id="pod-recom-mobile" class="carousel slide" data-ride="carousel">
+                        <div class="controls tab-home-controls">
+                            <a href="#pod-recom-mobile" data-slide="prev">
+                                <div class="previous">
+                                    <span>&#10094;</span>
+                                </div>
+                            </a>
+                            <a href="#pod-recom-mobile" data-slide="next">
+                                <div class="next">
+                                    <span>&#10095;</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-between mt-2 flex-nowrap flex-md-wrap">
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>One Night Millionaire</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>Man behind Revolution</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>Internet's own boy</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>One Night Millionaire</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>One Night Millionaire</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>Man behind Revolution</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>Internet's own boy</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>One Night Millionaire</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-between mt-2 flex-nowrap flex-md-wrap">
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>One Night Millionaire</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>Man behind Revolution</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>Internet's own boy</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>One Night Millionaire</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>One Night Millionaire</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>Man behind Revolution</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>Internet's own boy</p>
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-container">
+                                        <div class="podcast-card">
+                                            <img class="podcast-card-background"
+                                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                            <div class="podcast-card-play">
+                                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                            </div>
+                                            <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                                <img src="assets/icons/Heart.svg">
+                                            </div>
+                                        </div>
+                                        <div class="podcast-card-desc text-center">
+                                            <p>One Night Millionaire</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="podcast-genre d-none d-md-block">
                     <div class="pod-tab-title h2 text-center text-md-left">
                         <p><span>Genre</span></p>
                     </div>
@@ -810,6 +1119,10 @@
                                     <a href><img src="PodcastPage/assets[PodcastPage]/Music.svg"></a>
                                     <a href><img src="PodcastPage/assets[PodcastPage]/Travel.svg"></a>
                                     <a href><img src="PodcastPage/assets[PodcastPage]/Spiritual.svg"></a>
+                                    <a href><img src="PodcastPage/assets[PodcastPage]/Music.svg"></a>
+                                    <a href><img src="PodcastPage/assets[PodcastPage]/Movies.svg"></a>
+                                    <a href><img src="PodcastPage/assets[PodcastPage]/News.svg"></a>
+                                    <a href><img src="PodcastPage/assets[PodcastPage]/Spiritual.svg"></a>
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -820,167 +1133,400 @@
                                     <a href><img src="PodcastPage/assets[PodcastPage]/Music.svg"></a>
                                     <a href><img src="PodcastPage/assets[PodcastPage]/Travel.svg"></a>
                                     <a href><img src="PodcastPage/assets[PodcastPage]/Spiritual.svg"></a>
+                                    <a href><img src="PodcastPage/assets[PodcastPage]/Music.svg"></a>
+                                    <a href><img src="PodcastPage/assets[PodcastPage]/Movies.svg"></a>
+                                    <a href><img src="PodcastPage/assets[PodcastPage]/News.svg"></a>
+                                    <a href><img src="PodcastPage/assets[PodcastPage]/Spiritual.svg"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="podcast-genre d-md-none">
+                    <div class="pod-tab-title h2 text-center">
+                        <p><span>Genre</span></p>
+                    </div>
+                    <div class="pod-genre-buttons d-flex flex-wrap">
+                        <button class="btn btn-outline-warning text-dark px-3">Movies</button>
+                        <button class="btn btn-outline-warning text-dark px-3">News</button>
+                        <button class="btn btn-outline-warning text-dark px-3">Fitness</button>
+                        <button class="btn btn-outline-warning text-dark px-3">Travel</button>
+                        <button class="btn btn-outline-warning text-dark px-3">Sci-Fi</button>
+                        <button class="btn btn-outline-warning text-dark px-3">Music</button>
+                        <button class="btn btn-outline-warning text-dark px-3">Spiritual</button>
+                        <button class="btn btn-outline-warning text-dark px-3">Lifestyle</button>
+                    </div>
+                </div>
             </div>
-            <div class="mt-3 mt-md-5">
+            <div class="mt-3 mt-md-5 podcast-creativity-container">
                 <div class="pod-creativity-heading">
-                    <h2 class="text-center text-md-left h2"><span>Creativity</span></h2>
+                    <h2 class="text-center h2"><span>Creativity</span></h2>
                 </div>
-                <div class="d-flex justify-content-between mt-4 podcast-creativity">
-                    <div class="podcast-card-container">
-                        <div class="podcast-card">
-                            <img class="podcast-card-background"
-                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
-                            <div class="podcast-card-play">
-                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                <div id="pod-creative" class="carousel slide" data-ride="carousel">
+                    <div class="controls tab-home-controls d-md-none">
+                        <a href="#pod-creative" data-slide="prev">
+                            <div class="previous">
+                                <span>&#10094;</span>
                             </div>
-                            <div class="podcast-card-heart-icon heart-icon bg-light1">
-                                <img src="assets/icons/Heart.svg">
+                        </a>
+                        <a href="#pod-creative" data-slide="next">
+                            <div class="next">
+                                <span>&#10095;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-between mt-4 podcast-creativity">
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>One Night Millionaire</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Man behind Revolution</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Internet's own boy</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>One Night Millionaire</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Man behind Revolution</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="podcast-card-desc text-center">
-                            <p>One Night Millionaire</p>
+                        <div class="carousel-item d-md-none">
+                            <div class="d-flex justify-content-between mt-4 podcast-creativity">
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>One Night Millionaire</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Man behind Revolution</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Internet's own boy</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>One Night Millionaire</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Man behind Revolution</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="podcast-card-container">
-                        <div class="podcast-card">
-                            <img class="podcast-card-background"
-                                src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
-                            <div class="podcast-card-play">
-                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
-                            </div>
-                            <div class="podcast-card-heart-icon heart-icon bg-light1">
-                                <img src="assets/icons/Heart.svg">
-                            </div>
-                        </div>
-                        <div class="podcast-card-desc text-center">
-                            <p>Man behind Revolution</p>
-                        </div>
+                    <div class="text-center d-none d-md-block">
+                        <button class="btn btn-warning px-4 px-md-5 mt-3">See all</button>
                     </div>
-                    <div class="podcast-card-container">
-                        <div class="podcast-card">
-                            <img class="podcast-card-background"
-                                src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
-                            <div class="podcast-card-play">
-                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
-                            </div>
-                            <div class="podcast-card-heart-icon heart-icon bg-light1">
-                                <img src="assets/icons/Heart.svg">
-                            </div>
-                        </div>
-                        <div class="podcast-card-desc text-center">
-                            <p>Internet's own boy</p>
-                        </div>
-                    </div>
-                    <div class="podcast-card-container">
-                        <div class="podcast-card">
-                            <img class="podcast-card-background"
-                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
-                            <div class="podcast-card-play">
-                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
-                            </div>
-                            <div class="podcast-card-heart-icon heart-icon bg-light1">
-                                <img src="assets/icons/Heart.svg">
-                            </div>
-                        </div>
-                        <div class="podcast-card-desc text-center">
-                            <p>One Night Millionaire</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button class="btn btn-warning px-4 px-md-5 mt-4">See all</button>
                 </div>
             </div>
-            <div class="mt-5">
+            <div class="my-4 my-md-5 podcast-lifestyle-container">
                 <div class="pod-lifestyle-heading">
-                    <h2 class="text-center text-md-left h2"><span>Lifestyle</span></h2>
+                    <h2 class="text-center h2"><span>Lifestyle</span></h2>
                 </div>
-                <div class="d-flex justify-content-between mt-4 podcast-lifestyle">
-                    <div class="podcast-card-container">
-                        <div class="podcast-card">
-                            <img class="podcast-card-background"
-                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
-                            <div class="podcast-card-play">
-                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                <div id="pod-life-style" class="carousel slide" data-ride="carousel">
+                    <div class="controls tab-home-controls d-md-none">
+                        <a href="#pod-life-style" data-slide="prev">
+                            <div class="previous">
+                                <span>&#10094;</span>
                             </div>
-                            <div class="podcast-card-heart-icon heart-icon bg-light1">
-                                <img src="assets/icons/Heart.svg">
+                        </a>
+                        <a href="#pod-life-style" data-slide="next">
+                            <div class="next">
+                                <span>&#10095;</span>
                             </div>
-                        </div>
-                        <div class="podcast-card-desc text-center">
-                            <p>One Night Millionaire</p>
-                        </div>
+                        </a>
                     </div>
-                    <div class="podcast-card-container">
-                        <div class="podcast-card">
-                            <img class="podcast-card-background"
-                                src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
-                            <div class="podcast-card-play">
-                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
-                            </div>
-                            <div class="podcast-card-heart-icon heart-icon bg-light1">
-                                <img src="assets/icons/Heart.svg">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-between mt-4 podcast-lifestyle">
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>One Night Millionaire</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Man behind Revolution</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Internet's own boy</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>One Night Millionaire</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Man behind Revolution</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="podcast-card-desc text-center">
-                            <p>Man behind Revolution</p>
-                        </div>
-                    </div>
-                    <div class="podcast-card-container">
-                        <div class="podcast-card">
-                            <img class="podcast-card-background"
-                                src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
-                            <div class="podcast-card-play">
-                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                        <div class="carousel-item d-md-none">
+                            <div class="d-flex justify-content-between mt-4 podcast-lifestyle">
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>One Night Millionaire</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Man behind Revolution</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Internet's own boy</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>One Night Millionaire</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-card-container">
+                                    <div class="podcast-card">
+                                        <img class="podcast-card-background"
+                                            src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                                        <div class="podcast-card-play">
+                                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                                        </div>
+                                        <div class="podcast-card-heart-icon heart-icon bg-light1">
+                                            <img src="assets/icons/Heart.svg">
+                                        </div>
+                                    </div>
+                                    <div class="podcast-card-desc text-center">
+                                        <p>Man behind Revolution</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="podcast-card-heart-icon heart-icon bg-light1">
-                                <img src="assets/icons/Heart.svg">
-                            </div>
-                        </div>
-                        <div class="podcast-card-desc text-center">
-                            <p>Internet's own boy</p>
-                        </div>
-                    </div>
-                    <div class="podcast-card-container">
-                        <div class="podcast-card">
-                            <img class="podcast-card-background"
-                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
-                            <div class="podcast-card-play">
-                                <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
-                            </div>
-                            <div class="podcast-card-heart-icon heart-icon bg-light1">
-                                <img src="assets/icons/Heart.svg">
-                            </div>
-                        </div>
-                        <div class="podcast-card-desc text-center">
-                            <p>One Night Millionaire</p>
                         </div>
                     </div>
                 </div>
-                <div class="text-center">
-                    <button class="btn btn-warning px-4 px-md-5 mt-4">See all</button>
+                <div class="text-center d-none d-md-block">
+                    <button class="btn btn-warning px-4 px-md-5 mt-3">See all</button>
                 </div>
-            </div>
-        </div>
-        <div class="tab-content-explore tab-content float-right mt-4" id="explore">
-            <div class="pod-tab-title h2 text-center text-md-left">
-                <p><span>New</span></p>
-            </div>
-        </div>
-        <div class="tab-content-genre tab-content float-right mt-4" id="genre">
-            <div class="pod-tab-title h2 text-center text-md-left">
-                <p><span>Trending</span></p>
             </div>
         </div>
     </div>
 
 
-    <hr class="hr mt-4 d-md-none">
+    <hr class="hr mt-4">
 
     <!--Subscribe-->
 
