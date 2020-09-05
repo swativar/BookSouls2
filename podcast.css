@@ -447,7 +447,8 @@
         width:20%;
     }
     .pod-genre-buttons button{
-        margin: 7px 13px 7px 0;
+        margin: 7px 11px 7px 0;
+        border-width: 1.7px!important;
     }
 }
 
