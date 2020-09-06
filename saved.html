@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booksouls - A blog to inspire million</title>
+    <link rel="stylesheet" href="searchresult.css">
+    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="podcast.css">
+    <link rel="stylesheet" href="publisher.css">
     <link rel="stylesheet" href="quick.css">
-    <link rel="stylesheet" href="quickaudio.css">
+    <link rel="stylesheet" href="inspireme.css">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap"
-        rel="stylesheet">
-
 </head>
 
 <body>
@@ -32,11 +33,12 @@
             </div>
         </div>
         <div class="search-input">
-            <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search" onkeyup="searchResult()">
+            <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search"
+                onkeyup="searchResult()">
         </div>
     </div>
-     <!--Preferences-->
-     <div class="preference">
+    <!--Preferences-->
+    <div class="preference">
         <div class="preference-header wrapper">
             <div class="logo-preferencepage">
                 <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
@@ -223,8 +225,8 @@
                 </div>
                 <div class="preference-next-arrows">
                     <div class="pre-next-arrows">
-                    <span class="preference-next-arrow1">&#10095;</span>
-                    <span class="preference-next-arrow2">&#10095;</span>
+                        <span class="preference-next-arrow1">&#10095;</span>
+                        <span class="preference-next-arrow2">&#10095;</span>
                     </div>
                 </div>
             </div>
@@ -233,18 +235,18 @@
             <button class="btn btn-warning px-3 px-md-5">Save &amp; Continue</button>
         </div>
     </div>
+
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md fixed-top bg-white">
+    <nav class="navbar navbar-expand-md navbar-light bg-light1 fixed-top">
         <div class="container">
+
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
                 <img src="assets-Home-mobile/Menu.svg" alt="">
             </button>
+
             <!-- Brand -->
-            <div class="booksouls-logo">
-                <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-                <span class="nav-tag">quicks</span>
-            </div>
+            <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
 
             <!-- Navbar links -->
             <div class="navbar-collapse justify-content-end" id="collapsibleNavbar">
@@ -263,7 +265,7 @@
                         <a class="nav-link" href="podcast.html"><span class="hover-yellow">Podcast</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="quick.html"><span class="nav-yellow">Quick</span></a>
+                        <a class="nav-link" href="quick.html"><span class="hover-yellow">Quick</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="publisher.html"><span class="hover-yellow">Publisher</span></a>
@@ -281,132 +283,279 @@
             <a class="search-icon" onclick="searchPage()"><img src="assets/icons/Search.svg" alt=""></a>
         </div>
     </nav>
-
-    <!---->
-    <div class="wrapper quick-navigation">
-        <a href="index.html" class="top-nav">Home</a>
-        <span>&#47;</span>
-        <a href="quick.html" class="top-nav">Quick</a>
-        <span>&#47;</span>
-        <a href="quickmore.html" class="top-nav">The Alchemist</a>
-        <span>&#47;</span>
-        <span class="top-nav">The Alchemist (audio)</span>
+    <div class="wrapper searching-query">
+        <a href="index.html">Home</a>
+        <span class="saved">Saved</span>
     </div>
-    <!---->
-    <!---->
-    <div class="alchemist-header wrapper d-flex align-items-center justify-content-center">
-        <div class="alchemist-img">
-            <img class="rounded" src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt=""
-                width="210" height="310">
-        </div>
-        <div class="alchemist-title">
-            <h2>The Alchemist</h2>
-            <div class="heart-icon heart-icon-alchemist bg-light1 d-none d-md-flex">
-                <img src="assets/icons/Heart.svg">
-            </div>
-        </div>
-    </div>
-    <!--hh-->
-    <div class="wrapper audio-container">
-        <div class="reader-audio">
-            <div class="reader-celeb">
-                <div class="d-flex align-items-center justify-content-between">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" width="54" height="74"
-                        class="d-none d-md-block" alt="">
-                    <div class="celeb-name">
-                        <p>The Alchemist</p>
-                        <p>Paulo Coelho</p>
-                    </div>
-                </div>
-                <div class="heart-icon heart-icon-alchemist bg-light1 d-md-none">
-                    <img src="assets/icons/Heart.svg">
-                </div>
-            </div>
-            <div class="reader-audio-player justify-content-between d-flex flex-column-reverse flex-md-row align-items-center">
-                <div class="d-flex align-items-center justify-content-between audio-controls-flex">
-                    <div class="audio-controls mr-md-1">
-                        <img class="prev-button" src="assets-InspireMe/Previous.svg">
-                        <img class="play-button" src="assets-InspireMe/Play.svg">
-                        <img class="next-button" src="assets-InspireMe/Next.svg">
-                    </div>
-                    <div class="audio-volume d-md-none">
-                        <img class="audio-vol-button" src="assets-InspireMe/Volume-ON.svg">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between audio-player">
-                    <div class="start-time mr-3">
-                        <span>00:00</span>
-                    </div>
-                    <div class="reader-audio-player-element mr-md-3">
-                        <audio id="player-js">
-                            <source src="assets/audio3.mp3" type="audio/mp3">
-                        </audio>
-                        <div class="ranger">
-                            <div class="ranger-path">
-                                <div class="ranger-trail">
 
+    <div class="search-articles mt-5 wrapper">
+        <h2 class="search-heading">Articles</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="search-articles-left">
+                <div class="relation-cards">
+                    <div class="card d-flex flex-row">
+                        <div class="card-top">
+                            <img class="card-img-top"
+                                src="https://c0.wallpaperflare.com/preview/71/436/956/sunset-heart-hands-love.jpg"
+                                alt="">
+                            <div class="heart-icon heart-icon-relationship bg-light1">
+                                <img src="assets/icons/HeartFill.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <div class="relationship-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                    <p>For thousands of years, humans have looked up at the endless sky and wondered if
+                                        there was anyone out there.</p>
                                 </div>
-                                <div class="ranger-thumb">
-
+                                <div class="clearfix">
+                                    <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min
+                                        read</span>
+                                    <span class="float-right d-none d-md-inline"><a href
+                                            class="relationship-tag">RELATIONSHIP</a></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="end-time mr-md-4">
-                        <span>00:00</span>
+                    <div class="card d-flex flex-row">
+                        <div class="card-top">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
+                                alt="">
+                            <div class="heart-icon heart-icon-relationship bg-light1">
+                                <img src="assets/icons/HeartFill.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <div class="relationship-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                    <p>For thousands of years, humans have looked up at the endless sky and wondered if
+                                        there was anyone out there.</p>
+                                </div>
+                                <div class="clearfix">
+                                    <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min
+                                        read</span>
+                                    <span class="float-right d-none d-md-inline"><a href
+                                            class="relationship-tag">RELATIONSHIP</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-row">
+                        <div class="card-top">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80"
+                                alt="">
+                            <div class="heart-icon heart-icon-relationship bg-light1">
+                                <img src="assets/icons/HeartFill.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <div class="card-bottom">
+                                <div class="relationship-card-title">
+                                    <a href>In billions of Galaxies and Stars, are we really alone?</a>
+                                    <p>For thousands of years, humans have looked up at the endless sky and wondered if
+                                        there was anyone out there.</p>
+                                </div>
+                                <div class="clearfix">
+                                    <span class="float-left relation-auth">by Mohammad Sahil<span>|</span>8 min
+                                        read</span>
+                                    <span class="float-right d-none d-md-inline"><a href
+                                            class="relationship-tag">RELATIONSHIP</a></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="audio-volume d-none d-md-block">
-                    <img class="audio-vol-button" src="assets-InspireMe/Volume-ON.svg">
+            </div>
+            <div class="search-articles-right">
+                <div class="d-flex flex-column header-flex">
+                    <div class="card header-flex1 mx-auto mx-md-0 mb-4 mb-md-5 mt-4 mt-md-3">
+                        <div class="card-header text-light text-center">
+                            <div class="header-flex1-tag text-center">
+                                <a href>SPIRITUALITY</a>
+                            </div>
+                            <div class="header-flex1-title text-center">
+                                <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
+                            </div>
+                            <div class="heart-icon heart-icon-flex bg-light1 ">
+                                <img src="assets/icons/HeartFill.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card header-flex2 mx-auto mx-md-0 mb-4 mb-md-0">
+                        <div class="card-header text-light text-center">
+                            <div class="header-flex2-tag text-center">
+                                <a href>LIFE</a>
+                            </div>
+                            <div class="header-flex2-title text-center">
+                                <a href="">Drawing from dante's dark epic poem, Langdon races to find answers and...</a>
+                            </div>
+                            <div class="heart-icon heart-icon-flex bg-light1 ">
+                                <img src="assets/icons/HeartFill.svg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!---->
-    <div class="clearfix audio-share">
-        <div class="float-left share-left">
-            <p>Share it with your friends!</p>
-        </div>
-        <div class="float-right social-links">
-            <a href><img class="whats-app" src="assets-singlearticle/WhatsApp.svg"></a>
-            <a href><img src="assets-singlearticle/Facebook.svg"></a>
-            <a href><img src="assets-singlearticle/Twitter.svg"></a>
-            <a href><img src="assets-singlearticle/Instagram.svg"></a>
-        </div>
-    </div>
-    </div>
-    <!--Subscribe-->
-    <div class="wrapper d-none d-md-block">
-        <div class="my-5 subscribe_middle">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="subscribe_left">
-                    <p>Get articles directly in your email</p>
-                    <p>Be First to read the articles and other special
-                        contents</p>
-                </div>
-                <div class="subscribe_right d-flex justify-content-between">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter email" id="email1">
+    <div class="search-inspireme mt-5 wrapper">
+        <h2 class="search-heading">Inspire Me</h2>
+        <div class="search-scrolling">
+            <div class="d-flex justify-content-between mt-2 flex-nowrap flex-md-wrap">
+                <div class="create-card">
+                    <img class="create-card-img"
+                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
+                        alt="">
+                    <div class="text-center create-card-title">
+                        <a href>One Night Millionaire</a>
                     </div>
-                    <button class="btn btn-warning subscribe_btn">SUBSCRIBE</button>
+                    <div class="heart-icon heart-icon-creative bg-light">
+                        <img src="assets/icons/HeartFill.svg">
+                    </div>
+                </div>
+                <div class="create-card">
+                    <img class="create-card-img"
+                        src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
+                        alt="">
+                    <div class="text-center create-card-title">
+                        <a href>Man behind Revolution</a>
+                    </div>
+                    <div class="heart-icon heart-icon-creative bg-light">
+                        <img src="assets/icons/HeartFill.svg">
+                    </div>
+                </div>
+                <div class="create-card">
+                    <img class="create-card-img" src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg"
+                        alt="">
+                    <div class="text-center create-card-title">
+                        <a href>Internet's own boy</a>
+                    </div>
+                    <div class="heart-icon heart-icon-creative bg-light">
+                        <img src="assets/icons/HeartFill.svg">
+                    </div>
+                </div>
+                <div class="create-card">
+                    <img class="create-card-img"
+                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
+                        alt="">
+                    <div class="text-center create-card-title">
+                        <a href>One Night Millionaire</a>
+                    </div>
+                    <div class="heart-icon heart-icon-creative bg-light">
+                        <img src="assets/icons/HeartFill.svg">
+                    </div>
+                </div>
+                <div class="create-card">
+                    <img class="create-card-img"
+                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
+                        alt="">
+                    <div class="text-center create-card-title">
+                        <a href>One Night Millionaire</a>
+                    </div>
+                    <div class="heart-icon heart-icon-creative bg-light">
+                        <img src="assets/icons/HeartFill.svg">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <hr class="hr2">
-    <div class="wrapper quick-tab-new mt-5">
-        <div class="quick-related-title h2">
-            <p><span>Related</span></p>
+    <div class="search-podcast mt-5 wrapper">
+        <h2 class="search-heading">Podcast</h2>
+        <div class="search-scrolling">
+            <div class="d-flex justify-content-between mt-4 flex-nowrap flex-md-wrap">
+                <div class="podcast-card-container">
+                    <div class="podcast-card">
+                        <img class="podcast-card-background"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                        <div class="podcast-card-play">
+                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                        </div>
+                        <div class="podcast-card-heart-icon heart-icon bg-light">
+                            <img src="assets/icons/HeartFill.svg">
+                        </div>
+                    </div>
+                    <div class="podcast-card-desc text-center">
+                        <p>One Night Millionaire</p>
+                    </div>
+                </div>
+                <div class="podcast-card-container">
+                    <div class="podcast-card">
+                        <img class="podcast-card-background"
+                            src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg">
+                        <div class="podcast-card-play">
+                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                        </div>
+                        <div class="podcast-card-heart-icon heart-icon bg-light">
+                            <img src="assets/icons/HeartFill.svg">
+                        </div>
+                    </div>
+                    <div class="podcast-card-desc text-center">
+                        <p>Man behind Revolution</p>
+                    </div>
+                </div>
+                <div class="podcast-card-container">
+                    <div class="podcast-card">
+                        <img class="podcast-card-background"
+                            src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg">
+                        <div class="podcast-card-play">
+                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                        </div>
+                        <div class="podcast-card-heart-icon heart-icon bg-light">
+                            <img src="assets/icons/HeartFill.svg">
+                        </div>
+                    </div>
+                    <div class="podcast-card-desc text-center">
+                        <p>Internet's own boy</p>
+                    </div>
+                </div>
+                <div class="podcast-card-container">
+                    <div class="podcast-card">
+                        <img class="podcast-card-background"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                        <div class="podcast-card-play">
+                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                        </div>
+                        <div class="podcast-card-heart-icon heart-icon bg-light">
+                            <img src="assets/icons/HeartFill.svg">
+                        </div>
+                    </div>
+                    <div class="podcast-card-desc text-center">
+                        <p>One Night Millionaire</p>
+                    </div>
+                </div>
+                <div class="podcast-card-container">
+                    <div class="podcast-card">
+                        <img class="podcast-card-background"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg">
+                        <div class="podcast-card-play">
+                            <a href><img src="assets/icons/Play-Button-Podcast.svg" alt></a>
+                        </div>
+                        <div class="podcast-card-heart-icon heart-icon bg-light">
+                            <img src="assets/icons/HeartFill.svg">
+                        </div>
+                    </div>
+                    <div class="podcast-card-desc text-center">
+                        <p>One Night Millionaire</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="quick-cards-container">
-            <div class="d-flex justify-content-between quick-related-cards">
+    </div>
+    <div class="search-quicks mt-5 wrapper">
+        <h2 class="search-heading">Quicks</h2>
+        <div class="quick-cards-container search-scrolling mt-4">
+            <div class="d-flex justify-content-between tab-popular-carousel-inner w-100">
                 <div class="card bq-card1 text-center">
                     <div class="card-header">
                         <div class="quick-card-img">
                             <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt=""
                                 width="176" height="265">
                             <div class="heart-icon heart-icon-quick bg-light1">
-                                <img src="assets/icons/Heart.svg" alt="">
+                                <img src="assets/icons/HeartFill.svg" alt="">
                             </div>
                         </div>
                         <div class="text-center quick-card-title">
@@ -427,7 +576,7 @@
                             <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
                                 alt="" width="176" height="265">
                             <div class="heart-icon heart-icon-quick bg-light1">
-                                <img src="assets/icons/Heart.svg" alt="">
+                                <img src="assets/icons/HeartFill.svg" alt="">
                             </div>
                         </div>
                         <div class="text-center quick-card-title">
@@ -448,7 +597,7 @@
                             <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt=""
                                 width="176" height="265">
                             <div class="heart-icon heart-icon-quick bg-light1">
-                                <img src="assets/icons/Heart.svg" alt="">
+                                <img src="assets/icons/HeartFill.svg" alt="">
                             </div>
                         </div>
                         <div class="text-center quick-card-title">
@@ -463,19 +612,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bq-card1 text-center">
+                <div class="card bq-card2 text-center">
                     <div class="card-header">
                         <div class="quick-card-img">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt=""
-                                width="176" height="265">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
+                                alt="" width="176" height="265">
                             <div class="heart-icon heart-icon-quick bg-light1">
-                                <img src="assets/icons/Heart.svg" alt="">
+                                <img src="assets/icons/HeartFill.svg" alt="">
                             </div>
                         </div>
                         <div class="text-center quick-card-title">
-                            <a href="">The Alchemist</a>
+                            <a href="">The Fault In Our Stars</a>
                         </div>
-                        <p>Paulo Coelho</p>
+                        <p>John Green</p>
                         <div class="clearfix mt-3 quick_item_bottom">
                             <span class="float-left"><button class="btn btn-warning btn-sm">Read
                                     Now</button></span>
@@ -487,10 +636,81 @@
             </div>
         </div>
     </div>
-    <hr class="hr2">
+    <div class="search-publisher mt-3 mt-md-5 wrapper">
+        <h2 class="search-heading">Publishers</h2>
+        <div class="search-scrolling">
+            <div class="d-flex justify-content-between mt-4">
+                <div class="publisher-home-card">
+                    <div class="home-card-img">
+                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-home-card bg-light1">
+                            <img src="assets/icons/HeartFill.svg">
+                        </div>
+                    </div>
+                    <div class="home-card-content">
+                        <div class="home-card-title">
+                            <a href="">The Situation of life and death!</a>
+                        </div>
+                        <p>The situation of life and death! in the recent novel...</p>
+                        <p>by Mohammad Sahil</p>
+                    </div>
+                </div>
+                <div class="publisher-home-card">
+                    <div class="home-card-img">
+                        <img src="https://images.unsplash.com/photo-1503334849647-1d48ae0ba696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-home-card bg-light1">
+                            <img src="assets/icons/HeartFill.svg">
+                        </div>
+                    </div>
+                    <div class="home-card-content">
+                        <div class="home-card-title">
+                            <a href="">The Situation of life and death!</a>
+                        </div>
+                        <p>The situation of life and death! in the recent novel...</p>
+                        <p>by Mohammad Sahil</p>
+                    </div>
+                </div>
+                <div class="publisher-home-card">
+                    <div class="home-card-img">
+                        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-home-card bg-light1">
+                            <img src="assets/icons/HeartFill.svg">
+                        </div>
+                    </div>
+                    <div class="home-card-content">
+                        <div class="home-card-title">
+                            <a href="">The Situation of life and death!</a>
+                        </div>
+                        <p>The situation of life and death! in the recent novel...</p>
+                        <p>by Mohammad Sahil</p>
+                    </div>
+                </div>
+                <div class="publisher-home-card">
+                    <div class="home-card-img">
+                        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                            alt="">
+                        <div class="heart-icon heart-icon-home-card bg-light1">
+                            <img src="assets/icons/HeartFill.svg">
+                        </div>
+                    </div>
+                    <div class="home-card-content">
+                        <div class="home-card-title">
+                            <a href="">The Situation of life and death!</a>
+                        </div>
+                        <p>The situation of life and death! in the recent novel...</p>
+                        <p>by Mohammad Sahil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr mt-4 mt-md-5 ">
     <!--Subscribe-->
 
-    <div class="wrapper email text-center mt-5 mb-5">
+    <div class="wrapper email text-center mb-5">
         <p>Stay <span class="text-warn">Updated</span></p>
         <p>Get selected contents directly in your email</p>
         <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
@@ -580,7 +800,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="common.js"></script>
-    <script src="quickaudio.js"></script>
 </body>
 
 </html>
