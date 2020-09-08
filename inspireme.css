@@ -142,7 +142,7 @@
         rgba(0,0,0,1) 100%
         );
     border-radius: 5px;
-    box-shadow: 1px 1px 40px rgb(211, 210, 210);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
     margin-top: 2%;
     margin-bottom:2%;
     margin-left:0;
@@ -173,57 +173,15 @@
     right: -5px;
     top: -5px;
 }
-.tab-links{
-    width: 22.5%;
-    box-shadow: 1px 1px 40px rgb(223, 221, 221);
-    height: 450px;
-    padding: 3% 0;
-    border-radius: 10px;
-    z-index: 1;
-    background-color: #fff;
-}
-.tab-links ul{
-    list-style-type: none;
-    padding: 0!important;
-}
-.tab-links li{
-    width: 100%;
-    cursor: pointer;
-    padding: 0 40px;
-    margin: 6% 0;
-    font-family: 'Vision Regular';
-    font-size: 18px;
-    position: relative;
-}
-.tab-links li img{
-    margin-right: 20px;
-}
-.tab-links .disc{
-    font-size: 22px;
-    font-family: 'Playfair Display';
-    font-style: italic;
-    margin-left: 40px;
-}
-.tab-links .lang{
-    font-size: 22px;
-    font-family: 'Vision Regular';
-    margin-left: 40px;
-}
-.tab-links li.tab-active{
-    border-left: 4.5px solid #FFDE00;
-    color: #FFDE00;
-}
-.tab-links li.tab-active img{
-    margin-left: -5px;
+.tab-content-home .carousel{
+   position:initial;
 }
 .tab-content-home{
-    width: 75%;
     position: relative;
-    display: block;
 }
 .tab-home-controls{
     position: absolute;
-    top: -9%;
+    top: 0%;
     right: 0;
     display: flex;
 }
@@ -261,20 +219,10 @@
     color: #042330;
     line-height:1;
 }
-.tab-content > p{
+.tab-content-home > p{
     font-size: 21px;
     font-family: 'Playfair Display';
     font-style: italic;
-}
-.tab-content-explore{
-    width: 75%;
-    position: relative;
-    display: none;
-}
-.tab-content-genre{
-    width: 75%;
-    position: relative;
-    display: none;
 }
 .creative-heading,.influence-heading{
     position: relative;
@@ -284,51 +232,7 @@
     font-family: 'Playfair Display';
     font-style: italic;
 }
-.newsletter{
-    background-color: #eeedec;
-    padding: 40px 20px;
-}
-.newsletter_left{
-    width: 45%;
-}
-.newsletter_right{
-    width: 53%;
-}
-.newsletter_left p:first-child{
-    font-size:22px;
-    line-height: 30px;
-    font-family: 'Vision Regular', sans-serif;
-    margin-bottom: 0!important;
-}
-.newsletter_left p:last-child{
-    font-size: 14px;
-    font-family: 'Vision', sans-serif;
-    line-height: 25px;
-    margin-bottom: 0!important;
-}
-.newsletter_button{
-    font-size: 16px;
-    padding: 0.4rem 1.1rem!important;
-}
-.newsletter .form-group{
-    margin-bottom: 0!important;
-}
-#email-input{
-    width: 260px;
-    border:none;
-    padding:4% 5%;
-}
-#email-input::placeholder{
-    font-size: 17px;
-    font-family: 'Vision';
-}
-#email-input:focus{
-    border-color: #FFDE00!important;
-    box-shadow: 0 0 0 0.2rem #FFDE00;
-    color: #495057;
-    background-color: #fff;
-    outline: 0;
-}
+
 .bg-white{
     background-color: #fff;
 }

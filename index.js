@@ -1,3 +1,13 @@
+if ("serviceWorker" in navigator){
+    navigator.serviceWorker.register("sw.js").then(registration => {
+        console.log("registered!");
+        console.log(registration);
+    }).catch((err) => {
+        console.log("registeration failed!");
+        console.log(err);
+    });
+}
+
 
 var header_explore = document.querySelector('#header_explore');
 
@@ -174,3 +184,23 @@ function searchResult(){
     window.location = "searchresult.html";
     }
 }
+
+(() => {
+    'use strict';
+    // Page is loaded
+    const objects = document.getElementsByClassName('asyncImage');
+    Array.from(objects).map((item) => {
+      // Start loading image
+      const img = new Image();
+      img.src = item.dataset.src;
+      // Once image is loaded replace the src of the HTML element
+      img.onload = () => {
+        item.classList.remove('asyncImage');
+        return item.nodeName === 'IMG' ? 
+          item.src = item.dataset.src :        
+          item.style.backgroundImage = `url(${item.dataset.src})`;
+      };
+    });
+  })();
+
+  console.log('Loading images....');

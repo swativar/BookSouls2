@@ -79,3 +79,7 @@ $("#pod-tab-home,#pod-recom,#pod-genre,#pod-recom-mobile,#pod-creative,#pod-life
   }
 });
   
+// if (location.protocol !== 'https:') {
+//   location.replace(`https:${location.href.substring(location.protocol.length)}`);
+// }
+// console.log(location.protocol);

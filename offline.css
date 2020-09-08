@@ -39,28 +39,11 @@
     margin-top: 12%;
     margin-bottom: 7%;
 }
-.errorpage-header::before{
-    content: url('assets-Error-Page/Large404.svg');
-    position: absolute;
-    top: -23%;
-    left: 0;
-    z-index: -1;
-}
-.errorpage-header::after{
-    content: url('assets-Error-Page/Side404.svg');
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-}
 .hr2{
     width: 60%;
 }
 @media screen and (max-width:576px) {
     .error-left{
-        width: 100%;
-    }
-    .error-left img{
         width: 100%;
     }
     .error-right{
@@ -92,15 +75,5 @@
     }
     .errorpage-header::after{
         display: none;
-    }
-    .errorpage-header::before{
-        content: url('assets-Error-Page/Large404.svg');
-        position: absolute;
-        top: -3%;
-        right: 100%;
-        z-index: -1;
-        transform: scale(0.42);
-        
-        
     }
 }

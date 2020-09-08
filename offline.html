@@ -6,16 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booksouls - A blog to inspire million</title>
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="quick.css">
-    <link rel="stylesheet" href="singlequick.css">
+    <link rel="stylesheet" href="offline.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap"
-        rel="stylesheet">
-
 </head>
 
 <body>
@@ -24,12 +20,12 @@
     <!--Search bar-->
     <div class="search">
         <div class="search-header wrapper">
-            <div class="logo-searchpage">
-                <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
-            </div>
-            <div class="cross-sign">
-                <img class="cross-icon" src="assets-Search-Page/Close.svg" onclick="allPage()">
-            </div>
+        <div class="logo-searchpage">
+        <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
+        </div>
+        <div class="cross-sign">
+            <img class="cross-icon" src="assets-Search-Page/Close.svg" onclick="allPage()">
+        </div>
         </div>
         <div class="search-input">
             <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search" onkeyup="searchResult()">
@@ -234,17 +230,16 @@
         </div>
     </div>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md fixed-top bg-white">
+    <nav class="navbar navbar-expand-md bg-white fixed-top">
         <div class="container">
+
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
                 <img src="assets-Home-mobile/Menu.svg" alt="">
             </button>
+
             <!-- Brand -->
-            <div class="booksouls-logo">
-                <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-                <span class="nav-tag">quicks</span>
-            </div>
+            <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
 
             <!-- Navbar links -->
             <div class="navbar-collapse justify-content-end" id="collapsibleNavbar">
@@ -263,7 +258,7 @@
                         <a class="nav-link" href="podcast.html"><span class="hover-yellow">Podcast</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="quick.html"><span class="nav-yellow">Quick</span></a>
+                        <a class="nav-link" href="quick.html"><span class="hover-yellow">Quick</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="publisher.html"><span class="hover-yellow">Publisher</span></a>
@@ -281,167 +276,33 @@
             <a class="search-icon" onclick="searchPage()"><img src="assets/icons/Search.svg" alt=""></a>
         </div>
     </nav>
-
-    <!---->
-    <div class="wrapper quick-navigation">
-        <a href="index.html" class="top-nav">Home</a>
-        <span>&#47;</span>
-        <a href="quick.html" class="top-nav">Quick</a>
-        <span>&#47;</span>
-        <span class="top-nav">The Alchemist</span>
-    </div>
-    <!---->
-    <div class="alchemist-header d-flex align-items-center justify-content-center wrapper">
-        <div class="alchemist-img">
-            <img class="rounded" src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="">
-        </div>
-        <div class="alchemist-title">
-            <h2>The Alchemist</h2>
-        </div>
-    </div>
-    <!---->
-    <div class="alchemist-content">
-        <p>Kylie Kristen Jenner is an American media personality, socialite, model, and business woman. She has starred
-            in the E! reality television series Keeping Up with the kardashians since 2007 and is the founder and owner
-            of cosmetic company Kylie Cosmetics.</p>
-        <p>At age 14 in 2012, she collaborated with the clothing brand PacSun, along with her sister Kendall, and
-            created a line of clothing, "Kendall & Kylie". In 2015, Jenner launched her own cosmetics line called Kylie
-            Lip Kits, which was renamed to Kylie Cosmetics the following year.</p>
-        <div class="mt-5 millionaire-bottom">
-            <div class="d-flex align-items-center">
-                <a class="btn btn-warning px-3 mr-4 py-1 py-md-2" href="quickmore.html">Read Now</a>
-                <div class="d-flex align-items-center millionaire-audio">
-                    <img class="mr-2" src="assets/icons/Headphones.svg">
-                    <p>Audio available</p>
-                </div>
+    <div class="errorpage-header">
+        <div class="wrapper d-flex flex-column flex-md-row justify-content-between">
+            <div class="error-left">
+                <p class="d-block d-md-none">Oops, You appear to be offline...</p>
+                <img src="assets-Error-Page/source.gif" alt="">
             </div>
-            <div class="heart-icon heart-icon-audio bg-light1">
-                <img src="assets/icons/Heart.svg">
+            <div class="error-right text-center">
+                <p class="d-none d-md-block">Oops, You appear to be offline...</p>
+                <p class="mt-5">This app requires an internet connection...</p>
+                <p>Go back to the homepage...</p>
+                <img src="assets-Error-Page/PointerRotated.png" alt="" class="arrow-img">
+                <a href="index.html" class="btn btn-warning error-button px-4">Return to Homepage</a>
             </div>
         </div>
     </div>
-    <!---->
-    <!--Subscribe-->
-    <div class="wrapper d-none d-md-block">
-        <div class="mt-5 subscribe_middle">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="subscribe_left">
-                    <p>Get articles directly in your email</p>
-                    <p>Be First to read the articles and other special
-                        contents</p>
-                </div>
-                <div class="subscribe_right d-flex justify-content-between">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter email" id="email1">
-                    </div>
-                    <button class="btn btn-warning subscribe_btn">SUBSCRIBE</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---->
-    <div class="wrapper quick-tab-new mt-5">
-        <div class="quick-related-title">
-            <p class="h2"><span>Related</span></p>
-        </div>
-        <div class="quick-cards-container">
-        <div class="d-flex justify-content-between mt-4 mt-md-5 quick-related-cards">
-            <div class="card bq-card1 text-center">
-                <div class="card-header">
-                    <div class="quick-card-img">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="" >
-                        <div class="heart-icon heart-icon-quick bg-light1">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-center quick-card-title">
-                        <a href="">The Alchemist</a>
-                    </div>
-                    <p>Paulo Coelho</p>
-                    <div class="clearfix mt-1 mt-md-3 quick_item_bottom">
-                        <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                Now</button></span>
-                        <span class="audio-icon"></span>
-                        <span class="float-right">Audio available</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card bq-card2 text-center">
-                <div class="card-header">
-                    <div class="quick-card-img">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/51BYcXvTimL._SX332_BO1,204,203,200_.jpg"
-                            alt="">
-                        <div class="heart-icon heart-icon-quick bg-light1">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-center quick-card-title">
-                        <a href="">The Fault In Our Stars</a>
-                    </div>
-                    <p>John Green</p>
-                    <div class="clearfix mt-1 mt-md-3 quick_item_bottom">
-                        <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                Now</button></span>
-                        <span class="audio-icon"></span>
-                        <span class="float-right">Audio available</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card bq-card1 text-center">
-                <div class="card-header">
-                    <div class="quick-card-img">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="" >
-                        <div class="heart-icon heart-icon-quick bg-light1">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-center quick-card-title">
-                        <a href="">The Alchemist</a>
-                    </div>
-                    <p>Paulo Coelho</p>
-                    <div class="clearfix mt-1 mt-md-3 quick_item_bottom">
-                        <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                Now</button></span>
-                        <span class="audio-icon"></span>
-                        <span class="float-right">Audio available</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card bq-card1 text-center">
-                <div class="card-header">
-                    <div class="quick-card-img">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="" >
-                        <div class="heart-icon heart-icon-quick bg-light1">
-                            <img src="assets/icons/Heart.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-center quick-card-title">
-                        <a href="">The Alchemist</a>
-                    </div>
-                    <p>Paulo Coelho</p>
-                    <div class="clearfix mt-1 mt-md-3 quick_item_bottom">
-                        <span class="float-left"><button class="btn btn-warning btn-sm">Read
-                                Now</button></span>
-                        <span class="audio-icon"></span>
-                        <span class="float-right">Audio available</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <hr class="hr d-md-none mt-5">
+    <hr class="hr2">
     <!--Subscribe-->
 
-    <div class="wrapper email text-center mt-5 mb-5">
+    <div class="wrapper email text-center mb-5">
         <p>Stay <span class="text-warn">Updated</span></p>
         <p>Get selected contents directly in your email</p>
         <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
-
+    
             <div class="form-group">
                 <input type="text" class="form-control" id="usr" placeholder="Enter your email address">
             </div>
-
+    
             <div class="text-center sub_button">
                 <button class="btn btn-outline-warning text-dark">SUBSCRIBE</button>
             </div>
@@ -523,7 +384,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="common.js"></script>
-    <!--<script src="quick.js"></script>-->
 </body>
 
 </html>
