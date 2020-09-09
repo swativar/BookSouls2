@@ -7,9 +7,52 @@
     "background_color": "#fff",
     "icons": [
         {
-          "src": "assets/Header-Illustration-png.png",
-          "sizes": "1194x1194",
-          "type": "image/png"
+          "src": "Favicons/72_72.png",
+          "sizes": "72x72",
+          "type": "image/png",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "Favicons/96_96.png",
+          "sizes": "96x96",
+          "type": "image/png",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "Favicons/128_128.png",
+          "sizes": "128x128",
+          "type": "image/png",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "Favicons/144_144.png",
+          "sizes": "144x144",
+          "type": "image/png",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "Favicons/152_152.png",
+          "sizes": "152x152",
+          "type": "image/png",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "Favicons/192_192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "Favicons/384_384.png",
+          "sizes": "384x384",
+          "type": "image/png",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "Favicons/512_512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
         }
       ]
 }
