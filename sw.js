@@ -1,5 +1,5 @@
-var CACHE_NAME = "static-v3";
-var DYNAMIC_CACHE_NAME = "dynamic-v3";
+var CACHE_NAME = "static-v1";
+var DYNAMIC_CACHE_NAME = "dynamic-v1";
 var cache_to_add = [
     "/",
     "/index.html",
@@ -12,6 +12,34 @@ var cache_to_add = [
     "/assets-Error-Page/PointerArrowToSearchBtn.svg",
     "/assets-Error-Page/source.gif",
     "/assets-Error-Page/ErrorPageIllustration.svg",
+    "/assets-Home-mobile/Menu.svg",
+    "/assets-Search-Page/Close.svg",
+    "/assets/Booksouls-LOGO.svg",
+    "/assets/Circular-pattern-in-Podcast-BG.svg",
+    "/assets/Header-Illustration-1.svg",
+    "/assets/Header-Illustration-2.svg",
+    "/assets/Header-Illustration-png.png",
+    "/assets/Quotes.svg",
+    "/assets/footer-illustration-cropped.png",
+    "/assets/footer_bg2.png",
+    "/assets/header_background.svg",
+    "/assets/icons/Dropdown-icon.svg",
+    "/assets/icons/Facebook.svg",
+    "/assets/icons/Headphones-White.svg",
+    "/assets/icons/Headphones.svg",
+    "/assets/icons/Heart.svg",
+    "/assets/icons/Instagram.svg",
+    "assets/icons/Pinterest.svg",
+    "/assets/icons/Play-Button-Podcast.svg",
+    "/assets/icons/Search.svg",
+    "/assets/icons/Twitter.svg",
+    "/assets/triang_svg.svg",
+    "/install.js",
+    "/manifest.json",
+    "/assets-Home-mobile/HeaderdesignBG.svg",
+    "/assets/Vision/Vision-Heavy.ttf",
+    "/assets/Vision/Vision-Regular.ttf",
+    "/assets/Vision/Vision-Light.ttf",
 ];
 
 self.addEventListener('install', e => {
