@@ -1,3 +1,19 @@
+@font-face{
+    font-family: Vision;
+    src:url('assets/Vision/Vision-Light.woff');
+    src:url('assets/Vision/Vision-Light.woff2');
+    src:url('assets/Vision/Vision-Light.otf');
+    src:url('assets/Vision/Vision-Light.eot');
+    src:url('assets/Vision/Vision-Light.ttf');
+}
+@font-face{
+    font-family: Vision Regular;
+    src:url('assets/Vision/Vision-Regular.ttf');
+}
+@font-face{
+    font-family: Vision Heavy;
+    src:url('assets/Vision/Vision-Heavy.ttf');
+}
 #loader { 
     border: 12px solid #f3f3f3; 
     border-radius: 50%; 
@@ -1118,19 +1134,6 @@ footer li a:hover{
 .btn-outline-warning:hover{
     background-color: #FFDE00!important;
 }
-
-@font-face{
-    font-family: Vision;
-    src:url('assets/Vision/Vision-Light.ttf');
-}
-@font-face{
-    font-family: Vision Regular;
-    src:url('assets/Vision/Vision-Regular.ttf');
-}
-@font-face{
-    font-family: Vision Heavy;
-    src:url('assets/Vision/Vision-Heavy.ttf');
-}
 .btn{
     font-family: 'Vision Regular'!important;
 }
@@ -1168,7 +1171,12 @@ footer li a:hover{
 }
 @media screen and (max-width:576px){
     #butInstall{
-        display: none;
+        bottom: 5%;
+        z-index: 2;
+        width: 40px;
+        height: 40px;
+        font-size:2rem!important;
+        line-height:30px;
     }
     .wrapper{
         padding-left: 16px;
