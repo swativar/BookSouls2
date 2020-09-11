@@ -1,5 +1,5 @@
-var CACHE_NAME = "static-v2";
-var DYNAMIC_CACHE_NAME = "dynamic-v1";
+var CACHE_NAME = "static-v3";
+var DYNAMIC_CACHE_NAME = "dynamic-v3";
 var cache_to_add = [
     "/",
     "/index.html",
