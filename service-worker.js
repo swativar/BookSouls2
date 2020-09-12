@@ -4,6 +4,9 @@ workbox.setConfig({
   debug: true,
 });
 
+workbox.core.skipWaiting();
+workbox.core.clientsClaim();
+
 if (workbox) {
   console.log(`Yay! Workbox is loaded 🎉`);
   workbox.precaching.precacheAndRoute([
@@ -21,13 +24,13 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
-self.addEventListener('install', e => {
-  e.waitUntil(self.skipWaiting());
-});
+// self.addEventListener('install', e => {
+//   e.waitUntil(self.skipWaiting());
+// });
 
-self.addEventListener('activate', e => {
-  self.clients.claim();
-});
+// self.addEventListener('activate', e => {
+//   self.clients.claim();
+// });
 
 
 workbox.routing.registerRoute(
