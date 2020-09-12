@@ -112,23 +112,36 @@ workbox.routing.registerRoute(
   })
 );
 
-
- workbox.navigationPreload.disable();
-
-const networkOnly = new workbox.strategies.NetworkOnly();
-const navigationHandler = async (params) => {
-  try {
-    // Attempt a network request.
-    return await networkOnly.handle(params);
-  } catch (error) {
-    // If it fails, return the cached HTML.
-    return workbox.precaching.matchPrecache('/offline.html');
-  }
-};
-
-// Register this strategy to handle all navigations.
-workbox.routing.registerRoute(
-  new workbox.routing.NavigationRoute(navigationHandler)
+workbox.routing.setDefaultHandler(
+  new workbox.strategies.NetworkOnly()
 );
 
-workbox.routing.setDefaultHandler(navigationHandler);
+//  workbox.navigationPreload.disable();
+
+// const networkOnly = new workbox.strategies.NetworkOnly();
+// const navigationHandler = async (params) => {
+//   try {
+//     // Attempt a network request.
+//     return await networkOnly.handle(params);
+//   } catch (error) {
+//     // If it fails, return the cached HTML.
+//     return workbox.precaching.matchPrecache('/offline.html');
+//   }
+// };
+
+// // Register this strategy to handle all navigations.
+// workbox.routing.registerRoute(
+//   new workbox.routing.NavigationRoute(navigationHandler)
+// );
+
+workbox.routing.setCatchHandler(({ event }) => {
+  switch (event.request.destination) {
+    case 'document':
+      return workbox.precaching.matchPrecache('/offline.html');
+      break;
+
+    default:
+      // If we don't have a fallback, just return an error response.
+      return Response.error();
+  }
+});
