@@ -1,3 +1,13 @@
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js").then(registration => {
+        console.log("registered!");
+        console.log(registration);
+    }).catch((err) => {
+        console.log("registeration failed!");
+        console.log(err);
+    });
+}
+
 document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
         document.querySelector("body").style.visibility = "hidden"; 
