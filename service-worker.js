@@ -76,7 +76,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  ({ event, url }) => event.request.destination === 'document' && (url.pathname.startsWith('/index.html') || url.pathname.startsWith('/')),
+  ({ event, url }) => event.request.destination === 'document' && (url.pathname === '/index.html' || url.pathname === '/'),
   new workbox.strategies.CacheFirst({
     cacheName: 'static-htmls',
     plugins: [
