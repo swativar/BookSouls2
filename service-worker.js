@@ -9,6 +9,8 @@ if (workbox) {
   workbox.precaching.precacheAndRoute([
     { url: '/manifest.json', revision: null },
     { url: '/offline.css', revision: null },
+    { url: '/', revision: null },
+    { url: '/index.html', revision: null },
     { url: '/offline.html', revision: null },
     { url: '/common.js', revision: null },
     { url: '/common.css', revision: null },
