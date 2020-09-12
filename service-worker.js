@@ -29,6 +29,10 @@ self.addEventListener('activate', e => {
   self.clients.claim();
 });
 
+workbox.routing.setDefaultHandler(
+      new workbox.strategies.StaleWhileRevalidate()
+);
+
 workbox.routing.registerRoute(
   ({ request }) => request.destination === 'style',
   new workbox.strategies.CacheFirst({
