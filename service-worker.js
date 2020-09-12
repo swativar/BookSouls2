@@ -112,9 +112,6 @@ workbox.routing.registerRoute(
   })
 );
 
-workbox.routing.setDefaultHandler(
-  new workbox.strategies.StaleWhileRevalidate()
-);
 
  workbox.navigationPreload.disable();
 
@@ -133,3 +130,5 @@ const navigationHandler = async (params) => {
 workbox.routing.registerRoute(
   new workbox.routing.NavigationRoute(navigationHandler)
 );
+
+workbox.routing.setDefaultHandler(navigationHandler);
