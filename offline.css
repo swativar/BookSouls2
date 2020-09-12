@@ -1,5 +1,10 @@
 .error-left{
     width: 48%;
+    height: 350px;
+}
+.offline-warning{
+    transform:scale(0.7);
+    transform-origin: 50% 0;
 }
 .error-left img{
     width: 100%;
@@ -27,7 +32,7 @@
    height: 150px;
    z-index: -1;
 }
-.error-button{
+.retry-button{
     margin-top: 15%;
     font-size: 20px!important;
     font-family: 'Vision Regular';
@@ -70,7 +75,7 @@
         width: 120px;
         height: 120px;
      }
-     .error-button{
+     .retry-button{
         font-size: 14px!important;
     }
     .errorpage-header::after{

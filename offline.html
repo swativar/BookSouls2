@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booksouls - A blog to inspire million</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#ffde00">
+    <link rel="apple-touch-icon" href="/Favicons/192_192.png">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="offline.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -280,14 +283,13 @@
         <div class="wrapper d-flex flex-column flex-md-row justify-content-between">
             <div class="error-left">
                 <p class="d-block d-md-none">Oops, You appear to be offline...</p>
-                <img src="assets-Error-Page/source.gif" alt="">
+                <img src="assets-Error-Page/warning.gif" class="offline-warning" alt="">
             </div>
             <div class="error-right text-center">
                 <p class="d-none d-md-block">Oops, You appear to be offline...</p>
                 <p class="mt-5">This app requires an internet connection...</p>
-                <p>Go back to the homepage...</p>
                 <img src="assets-Error-Page/PointerRotated.png" alt="" class="arrow-img">
-                <a href="index.html" class="btn btn-warning error-button px-4">Return to Homepage</a>
+                <button href="index.html" class="btn btn-warning retry-button px-4" onclick="(function(){location.reload();})()">Retry Connection</button>
             </div>
         </div>
     </div>

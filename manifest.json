@@ -1,7 +1,7 @@
 {
     "name": "Booksouls - A blog to inspire million",
     "short_name": "Booksouls",
-    "display": "minimal-ui",
+    "display": "standalone",
     "start_url": "/",
     "theme_color": "#ffde00",
     "background_color": "#ffde00",
