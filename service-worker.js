@@ -108,7 +108,7 @@ workbox.routing.registerRoute(
   })
 );
 
-workbox.navigationPreload.enable();
+ workbox.navigationPreload.disable();
 
 const networkOnly = new workbox.strategies.NetworkOnly();
 const navigationHandler = async (params) => {
