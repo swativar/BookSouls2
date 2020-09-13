@@ -8,7 +8,7 @@ workbox.core.skipWaiting();
 workbox.core.clientsClaim();
 workbox.core.setCacheNameDetails({
   prefix: 'workbox',
-  suffix: 'v1',
+  suffix: 'v2',
   precache: 'precache',
 });
 
@@ -27,14 +27,6 @@ if (workbox) {
     { url: "/assets/blur.png", revision: null },
     { url: "/assets/footer_bg2.png", revision: null},
     { url: "/assets/footer-illustration-cropped.png", revision: null},
-    { url: "/Favicons/96_96.png", revision: null},
-    { url: "/Favicons/72_72.png", revision: null},
-    { url: "/Favicons/128_128.png", revision: null},
-    { url: "/Favicons/144_144.png", revision: null},
-    { url: "/Favicons/152_152.png", revision: null},
-    { url: "/Favicons/192_192.png", revision: null},
-    { url: "/Favicons/384_384.png", revision: null},
-    { url: "/Favicons/384_384.png", revision: null},
   ]);
 } else {
   console.log(`Boo! Workbox didn't load 😬`);
@@ -44,7 +36,7 @@ if (workbox) {
 //   e.waitUntil(self.skipWaiting());
 // });
 
-const suffix = 'v1';
+const suffix = 'v2';
 self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys()
@@ -53,10 +45,11 @@ self.addEventListener('activate', function(event) {
   );
 });
 
+
 workbox.routing.registerRoute(
   ({ request }) => request.destination === 'style',
   new workbox.strategies.StaleWhileRevalidate({
-    cacheName: 'static-css-v1',
+    cacheName: 'static-css-v2',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 200,
@@ -71,7 +64,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
   ({ request }) => request.destination === 'script',
   new workbox.strategies.StaleWhileRevalidate({
-    cacheName: 'static-js-v1',
+    cacheName: 'static-js-v2',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 200,
@@ -84,9 +77,9 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  ({url}) => url.pathname.endsWith('.svg'),
+  ({url}) => url.pathname.endsWith('.svg') || url.pathname.startsWith('/Favicons'),
   new workbox.strategies.StaleWhileRevalidate({
-    cacheName: 'static-svg-v1',
+    cacheName: 'static-svg|png-v2',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 50,
@@ -102,12 +95,12 @@ workbox.routing.registerRoute(
   ({ request }) => request.destination === 'image',
   new workbox.strategies.StaleWhileRevalidate({
     // Use a custom cache name.
-    cacheName: 'static-images-v1',
+    cacheName: 'static-images-v2',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 250,
         purgeOnQuotaError: true,
-        maxAgeSeconds: 60 * 60,
+        maxAgeSeconds: 7 * 24 * 60 * 60,
       }),
       new workbox.cacheableResponse.CacheableResponsePlugin({
         statuses: [0, 200]
@@ -135,7 +128,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
   ({ event }) => event.request.destination === 'font',
   new workbox.strategies.CacheFirst({
-    cacheName: 'static-fonts-v1',
+    cacheName: 'static-fonts-v2',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 60,
