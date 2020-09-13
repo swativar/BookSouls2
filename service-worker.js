@@ -19,6 +19,8 @@ if (workbox) {
     { url: '/offline.css', revision: null },
     { url: '/', revision: null },
     { url: '/index.html', revision: null },
+    { url: '/index.css', revision: null },
+    { url: '/index.js', revision: null },
     { url: '/offline.html', revision: null },
     { url: '/common.js', revision: null },
     { url: '/common.css', revision: null },
@@ -27,10 +29,33 @@ if (workbox) {
     { url: "/assets/blur.png", revision: null },
     { url: "/assets/footer_bg2.png", revision: null},
     { url: "/assets/footer-illustration-cropped.png", revision: null},
+    { url: "/assets-Home-mobile/Menu.svg", revision: null},
+    { url: "/assets-Search-Page/Close.svg", revision: null },
+    { url: "/assets/Booksouls-LOGO.svg",revision: null },
+    { url: "/assets/Circular-pattern-in-Podcast-BG.svg", revision: null },
+    { url: "/assets/Header-Illustration-1.svg", revision: null },
+    { url: "/assets/Header-Illustration-2.svg", revision: null },
+    { url: "/assets/Quotes.svg", revision: null },
+    { url: "/assets/header_background.svg", revision: null },
+    { url: "/assets/icons/Dropdown-icon.svg", revision: null },
+    { url: "/assets/icons/Facebook.svg", revision: null },
+    { url: "/assets/icons/Headphones-White.svg", revision: null },
+    { url: "/assets/icons/Headphones.svg", revision: null },
+    { url: "/assets/icons/Heart.svg", revision: null },
+    { url: "/assets/icons/Instagram.svg", revision: null },
+    { url: "assets/icons/Pinterest.svg", revision: null },
+    { url: "/assets/icons/Play-Button-Podcast.svg", revision: null },
+    { url: "/assets/icons/Search.svg", revision: null },
+    { url: "/assets/icons/Twitter.svg", revision: null },
+    { url: "/assets/triang_svg.svg", revision: null },
+    { url: "/assets-Home-mobile/HeaderdesignBG.svg", revision: null },
   ]);
+  
 } else {
   console.log(`Boo! Workbox didn't load 😬`);
 }
+
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
 
 // self.addEventListener('install', e => {
 //   e.waitUntil(self.skipWaiting());
