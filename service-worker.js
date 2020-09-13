@@ -6,6 +6,11 @@ workbox.setConfig({
 
 workbox.core.skipWaiting();
 workbox.core.clientsClaim();
+workbox.core.setCacheNameDetails({
+  prefix: 'workbox',
+  suffix: 'v1',
+  precache: 'precache',
+});
 
 if (workbox) {
   console.log(`Yay! Workbox is loaded 🎉`);
