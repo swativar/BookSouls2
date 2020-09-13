@@ -13,10 +13,9 @@ module.exports = {
     "assets-Error-Page/warning.gif",
     "manifest.json",
     "install.js",
+    "errorpage.html",
+    "errorpage.css",
   ],
   "swDest": "bookfinal/sw.js",
-  "swSrc": "bookfinal/service-worker.js",
-  "globaIgnores":[
-    "../workbox-config.js"
-  ]
+  "swSrc": "C:\\Users\\swati\\Desktop\\bookfinal\\service-worker.js",
 };
