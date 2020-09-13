@@ -118,7 +118,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
   ({ url }) => url.origin === location.origin && (url.pathname === '/index.html' || url.pathname === '/'),
-  new workbox.strategies.CacheFirst({
+  new workbox.strategies.StaleWhileRevalidate({
     plugins: [
       new workbox.cacheableResponse.CacheableResponsePlugin({
         statuses: [0, 200]
@@ -175,7 +175,10 @@ workbox.routing.setCatchHandler(({ event }) => {
       return workbox.precaching.matchPrecache('/offline.html');
       break;
     case 'image':
-      return workbox.precaching.matchPrecache('/assets/blur.png');
+      if(!event.request.url.endsWith('.svg')){
+        return workbox.precaching.matchPrecache('/assets/blur.png')
+      }
+      return Response.error();
       break;
     default:
       // If we don't have a fallback, just return an error response.
