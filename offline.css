@@ -1,13 +1,10 @@
 .error-left{
     width: 48%;
-    height: 350px;
+    text-align: center;
 }
 .offline-warning{
-    transform:scale(0.7);
-    transform-origin: 50% 0;
-}
-.error-left img{
-    width: 100%;
+    width:300px;
+    height: 300px;
 }
 .error-right{
     width: 48%;
@@ -51,9 +48,14 @@
     .error-left{
         width: 100%;
     }
+    .offline-warning{
+        width:250px;
+        height: 250px;
+    }
     .error-right{
         width: 100%;
         position: relative;
+        text-align: center;
     }
     .hr2{
         width: 95%;
@@ -66,14 +68,17 @@
         margin-top: 15%;
     }
     .error-right p:nth-child(2),.error-right p:nth-child(3){
-         font-size: 16px;
-         line-height: 20px;
+         font-size: 17px;
+         line-height: 24px;
+         width:80vw;
+         margin-left: auto;
+         margin-right: auto;
     }
     .arrow-img{
-        bottom: -6%;
-        right: -5%;
-        width: 120px;
-        height: 120px;
+        bottom: 0%;
+        right: 0%;
+        width: 110px;
+        height: 110px;
      }
      .retry-button{
         font-size: 14px!important;
