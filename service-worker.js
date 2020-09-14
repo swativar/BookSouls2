@@ -8,7 +8,7 @@ workbox.core.skipWaiting();
 workbox.core.clientsClaim();
 workbox.core.setCacheNameDetails({
   prefix: 'workbox',
-  suffix: 'v4',
+  suffix: 'v5',
   precache: 'precache',
 });
 
@@ -21,7 +21,7 @@ if (workbox) {
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
 
 
-const suffix = 'v4';
+const suffix = 'v5';
 self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys()
@@ -34,14 +34,15 @@ self.addEventListener('activate', function(event) {
 workbox.routing.registerRoute(
   ({ request }) => request.destination === 'style',
   new workbox.strategies.StaleWhileRevalidate({
-    cacheName: 'static-css-v4',
+    cacheName: 'static-css-v5',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 200,
       }),
       new workbox.cacheableResponse.CacheableResponsePlugin({
         statuses: [0, 200]
-      })
+      }),
+      new workbox.broadcastUpdate.BroadcastUpdatePlugin(),
     ]
   })
 );
@@ -49,14 +50,15 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
   ({ request }) => request.destination === 'script',
   new workbox.strategies.StaleWhileRevalidate({
-    cacheName: 'static-js-v4',
+    cacheName: 'static-js-v5',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 200,
       }),
       new workbox.cacheableResponse.CacheableResponsePlugin({
         statuses: [0, 200]
-      })
+      }),
+      new workbox.broadcastUpdate.BroadcastUpdatePlugin(),
     ]
   })
 );
@@ -66,7 +68,7 @@ workbox.routing.registerRoute(
   ({ request }) => request.destination === 'image',
   new workbox.strategies.StaleWhileRevalidate({
     // Use a custom cache name.
-    cacheName: 'static-images-v4',
+    cacheName: 'static-images-v5',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 250,
@@ -75,7 +77,8 @@ workbox.routing.registerRoute(
       }),
       new workbox.cacheableResponse.CacheableResponsePlugin({
         statuses: [0, 200]
-      })
+      }),
+      new workbox.broadcastUpdate.BroadcastUpdatePlugin(),
     ]
   })
 );
@@ -86,7 +89,8 @@ workbox.routing.registerRoute(
     plugins: [
       new workbox.cacheableResponse.CacheableResponsePlugin({
         statuses: [0, 200]
-      })
+      }),
+      new workbox.broadcastUpdate.BroadcastUpdatePlugin(),
     ],
   })
 );
@@ -99,7 +103,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
   ({ event }) => event.request.destination === 'font',
   new workbox.strategies.CacheFirst({
-    cacheName: 'static-fonts-v4',
+    cacheName: 'static-fonts-v5',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 60,

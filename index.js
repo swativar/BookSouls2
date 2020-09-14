@@ -56,7 +56,7 @@ window.onload = Pageloadtime;
 function Pageloadtime() {
     var aftr_loadtime = new Date().getTime();
     // Time calculating in seconds  
-    pgloadtime = (aftr_loadtime - before_loadtime) / 1000;
+    var pgloadtime = (aftr_loadtime - before_loadtime) / 1000;
     console.log(pgloadtime);
     var navbar_brand = document.querySelector('.navbar-brand');
     var header_illus1 = document.querySelector('.header_illustration img:first-child');
