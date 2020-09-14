@@ -1,21 +1,19 @@
 module.exports = {
-  "globDirectory": "bookfinal/",
+  "globDirectory": ".",
   "globPatterns": [
-    "**/*.svg",
-    "**/*.png",
+    "**/*.{svg,png,gif}",
     "index.html",
     "index.css",
     "index.js",
     "offline.html",
     "offline.css",
     "common.css",
-    "common.html",
-    "assets-Error-Page/warning.gif",
+    "common.js",
     "manifest.json",
     "install.js",
     "errorpage.html",
-    "errorpage.css",
+    "errorpage.css"
   ],
-  "swDest": "bookfinal/sw.js",
-  "swSrc": "C:\\Users\\swati\\Desktop\\bookfinal\\service-worker.js",
+  "swDest": "sw.js",
+  "swSrc": "service-worker.js",
 };

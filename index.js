@@ -1,13 +1,43 @@
+import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-window.prod.mjs';
+
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js").then(registration => {
-        console.log("registered!");
-        console.log(registration);
-    }).catch((err) => {
-        console.log("registeration failed!");
-        console.log(err);
-    });
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js").then(registration => {
+            console.log("registered!");
+            console.log(registration);
+        }).catch((err) => {
+            console.log("registeration failed!");
+            console.log(err);
+        });
+    })
 }
 
+navigator.serviceWorker.addEventListener('message', async (event) => {
+
+    if (event.data.meta === 'workbox-broadcast-update') {
+        const { cacheName, updatedUrl } = event.data.payload;
+        const cache = await caches.open(cacheName);
+        const updatedResponse = await cache.match(updatedUrl);
+        const updatedText = await updatedResponse.text();
+    }
+});
+
+if ('serviceWorker' in navigator) {
+    const wb = new Workbox('/sw.js');
+    wb.addEventListener('activated', (event) => {
+        if (!event.isUpdate) {
+            if (confirm(`New content is available!. Click OK to refresh`)) {
+                window.location.reload();
+            }
+        }
+    });
+    wb.addEventListener('waiting', (event) => {
+        alert(`A new service worker has installed, but it can't activate` +
+            `until all tabs running the current version have fully unloaded.`);
+    });
+
+    wb.register();
+}
 
 var header_explore = document.querySelector('#header_explore');
 
@@ -190,18 +220,18 @@ function searchResult() {
     // Page is loaded
     const objects = document.getElementsByClassName('asyncImage');
     Array.from(objects).map((item) => {
-      // Start loading image
-      const img = new Image();
-      img.src = item.dataset.src;
-      // Once image is loaded replace the src of the HTML element
-      img.onload = () => {
-        item.classList.remove('asyncImage');
-        return item.nodeName === 'IMG' ? 
-          item.src = item.dataset.src :        
-          item.style.backgroundImage = `url(${item.dataset.src})`;
-      };
+        // Start loading image
+        const img = new Image();
+        img.src = item.dataset.src;
+        // Once image is loaded replace the src of the HTML element
+        img.onload = () => {
+            item.classList.remove('asyncImage');
+            return item.nodeName === 'IMG' ?
+                item.src = item.dataset.src :
+                item.style.backgroundImage = `url(${item.dataset.src})`;
+        };
     });
-  })();
+})();
 
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
