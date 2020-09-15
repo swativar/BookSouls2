@@ -18,6 +18,12 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
+addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    skipWaiting();
+  }
+});
+
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
 
 
@@ -66,7 +72,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
   ({ request }) => request.destination === 'image',
-  new workbox.strategies.StaleWhileRevalidate({
+  new workbox.strategies.CacheFirst({
     // Use a custom cache name.
     cacheName: 'static-images-v5',
     plugins: [
@@ -78,25 +84,12 @@ workbox.routing.registerRoute(
       new workbox.cacheableResponse.CacheableResponsePlugin({
         statuses: [0, 200]
       }),
-      new workbox.broadcastUpdate.BroadcastUpdatePlugin(),
     ]
   })
 );
 
 workbox.routing.registerRoute(
-  ({ url }) => url.origin === location.origin && (url.pathname === '/index.html' || url.pathname === '/'),
-  new workbox.strategies.StaleWhileRevalidate({
-    plugins: [
-      new workbox.cacheableResponse.CacheableResponsePlugin({
-        statuses: [0, 200]
-      }),
-      new workbox.broadcastUpdate.BroadcastUpdatePlugin(),
-    ],
-  })
-);
-
-workbox.routing.registerRoute(
-  ({ event, url }) => event.request.destination === 'document' && (url.pathname !== '/index.html' || url.pathname !== '/'),
+  ({ event }) => event.request.destination === 'document',
   new workbox.strategies.NetworkOnly()
 );
 

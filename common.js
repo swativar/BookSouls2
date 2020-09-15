@@ -18,25 +18,40 @@ navigator.serviceWorker.addEventListener('message', async (event) => {
         const { cacheName, updatedUrl } = event.data.payload;
         const cache = await caches.open(cacheName);
         const updatedResponse = await cache.match(updatedUrl);
-        const updatedText = await updatedResponse.text();
+        if (!event.isUpdate) {
+            if (confirm(`Update is available!. Click OK to refresh`)) {
+                window.location.reload();
+            }
+        }
+      //  const updatedText = await updatedResponse.text();
     }
 });
 
 if ('serviceWorker' in navigator) {
     const wb = new Workbox('/sw.js');
-    wb.addEventListener('activated', (event) => {
-        if (!event.isUpdate) {
-            if (confirm(`New content is available!. Click OK to refresh`)) {
-                window.location.reload();
-            }
-        }
-    });
-    wb.addEventListener('waiting', (event) => {
-        alert(`A new service worker has installed, but it can't activate` +
-            `until all tabs running the current version have fully unloaded.`);
-    });
+    let registration;
 
-    wb.register();
+    const showSkipWaitingPrompt = (event) => {
+        const prompt = createUIPrompt({
+            onAccept: async () => {
+                wb.addEventListener('controlling', (event) => {
+                    window.location.reload();
+                });
+
+                if (registration && registration.waiting) {
+                    messageSW(registration.waiting, { type: 'SKIP_WAITING' });
+                }
+            },
+
+            onReject: () => {
+                prompt.dismiss();
+            }
+        });
+    };
+    wb.addEventListener('waiting', showSkipWaitingPrompt);
+    wb.addEventListener('externalwaiting', showSkipWaitingPrompt);
+
+    wb.register().then((r) => registration = r);
 }
 
 
