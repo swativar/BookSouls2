@@ -90,7 +90,15 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
   ({ event }) => event.request.destination === 'document',
-  new workbox.strategies.NetworkOnly()
+  new workbox.strategies.NetworkOnly({
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        headers:{
+          'X-Is-Cacheable': 'false',
+        }
+      })
+    ]
+  })
 );
 
 workbox.routing.registerRoute(
@@ -113,8 +121,7 @@ workbox.routing.setDefaultHandler(
     plugins: [
       new workbox.cacheableResponse.CacheableResponsePlugin({
         headers:{
-          pragma: "no-cache",
-          "cache-control": "no-cache",
+          'X-Is-Cacheable': 'false',
         }
       })
     ]
