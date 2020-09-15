@@ -26,8 +26,9 @@ if ('serviceWorker' in navigator) {
     let registration;
 
     const showSkipWaitingPrompt = (event) => {
-        const prompt = createUIPrompt({
-            onAccept: async () => {
+        if(event.isUpdate){
+            console.log("Waiting...");
+            if (confirm(`New Version is available!. Click OK to refresh`)){
                 wb.addEventListener('controlling', (event) => {
                     window.location.reload();
                 });
@@ -35,17 +36,11 @@ if ('serviceWorker' in navigator) {
                 if (registration && registration.waiting) {
                     messageSW(registration.waiting, { type: 'SKIP_WAITING' });
                 }
-            },
-
-            onReject: () => {
-                prompt.dismiss();
             }
-        });
-    };
-    wb.addEventListener('waiting', showSkipWaitingPrompt);
-    wb.addEventListener('externalwaiting', showSkipWaitingPrompt);
-
-    wb.register().then((r) => registration = r);
+        }
+    }
+     wb.addEventListener('installed', showSkipWaitingPrompt);
+     wb.register().then((r) => registration = r);
 }
 
 var header_explore = document.querySelector('#header_explore');
