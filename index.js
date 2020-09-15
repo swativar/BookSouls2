@@ -13,11 +13,16 @@ if ("serviceWorker" in navigator) {
 }
 
 navigator.serviceWorker.addEventListener('message', async (event) => {
-
     if (event.data.meta === 'workbox-broadcast-update') {
-        const { cacheName, updatedUrl } = event.data.payload;
+        const {cacheName, updatedURL} = event.data.payload;
         const cache = await caches.open(cacheName);
-        const updatedResponse = await cache.match(updatedUrl);
+        const updatedResponse = await cache.match(updatedURL);
+        const updatedText = await updatedResponse.text();
+        if(updatedText){
+            if (confirm(`Update is available!. Click OK to refresh`)) {
+                window.location.reload();
+            }
+        }
     }
 });
 
