@@ -1,4 +1,4 @@
-import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-window.prod.mjs';
+import { Workbox , messageSW } from 'https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-window.prod.mjs';
 
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
