@@ -109,7 +109,16 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.setDefaultHandler(
-  new workbox.strategies.NetworkOnly()
+  new workbox.strategies.NetworkOnly({
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        headers:{
+          pragma: "no-cache",
+          "cache-control": "no-cache",
+        }
+      })
+    ]
+  })
 );
 
 
