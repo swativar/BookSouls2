@@ -18,12 +18,11 @@ navigator.serviceWorker.addEventListener('message', async (event) => {
         const { cacheName, updatedUrl } = event.data.payload;
         const cache = await caches.open(cacheName);
         const updatedResponse = await cache.match(updatedUrl);
-        if (!event.isUpdate) {
-            if (confirm(`Update is available!. Click OK to refresh`)) {
-                window.location.reload();
-            }
+    }
+    if (!event.isUpdate) {
+        if (confirm(`Update is available!. Click OK to refresh`)) {
+            window.location.reload();
         }
-      //  const updatedText = await updatedResponse.text();
     }
 });
 
