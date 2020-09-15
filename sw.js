@@ -90,7 +90,19 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
   ({ event }) => event.request.destination === 'document',
-  new workbox.strategies.NetworkOnly()
+  new workbox.strategies.NetworkOnly({
+    credentials: "include",
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        headers: {
+          pragma: "no-cache",
+          "cache-control": "no-cache",
+          "Access-Control-Request-Headers":"X-Is-Cacheable",
+          "X-Is-Cacheable" : "false",
+      }
+      })
+    ]
+  })
 );
 
 workbox.routing.registerRoute(
