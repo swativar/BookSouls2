@@ -96,7 +96,7 @@ workbox.routing.registerRoute(
         headers:{
           'X-Is-Cacheable': 'false',
           pragma: "no-cache",
-          "cache-control": "no-cache",
+          "cache-control": "max-age=0",
         }
       })
     ]
@@ -125,7 +125,7 @@ workbox.routing.setDefaultHandler(
         headers:{
           'X-Is-Cacheable': 'false',
           pragma: "no-cache",
-          "cache-control": "no-cache",
+          "cache-control": "max-age=0",
         }
       })
     ]
