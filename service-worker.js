@@ -18,9 +18,9 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
-addEventListener('message', (event) => {
+self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
-    skipWaiting();
+    self.skipWaiting();
   }
 });
 
@@ -90,17 +90,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
   ({ event }) => event.request.destination === 'document',
-  new workbox.strategies.NetworkOnly({
-    plugins: [
-      new workbox.cacheableResponse.CacheableResponsePlugin({
-        headers:{
-          'X-Is-Cacheable': 'false',
-          pragma: "no-cache",
-          "cache-control": "no-cache",
-        }
-      })
-    ]
-  })
+  new workbox.strategies.NetworkOnly()
 );
 
 workbox.routing.registerRoute(
@@ -119,17 +109,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.setDefaultHandler(
-  new workbox.strategies.NetworkOnly({
-    plugins: [
-      new workbox.cacheableResponse.CacheableResponsePlugin({
-        headers:{
-          'X-Is-Cacheable': 'false',
-          pragma: "no-cache",
-          "cache-control": "no-cache",
-        }
-      })
-    ]
-  })
+  new workbox.strategies.NetworkOnly()
 );
 
 
