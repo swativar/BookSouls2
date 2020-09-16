@@ -1,4 +1,4 @@
-import { Workbox , messageSW } from 'https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-window.prod.mjs';
+import { Workbox, messageSW } from 'https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-window.prod.mjs';
 
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
@@ -14,34 +14,76 @@ if ("serviceWorker" in navigator) {
 
 navigator.serviceWorker.addEventListener('message', async (event) => {
     if (event.data.meta === 'workbox-broadcast-update') {
-        const {cacheName, updatedURL} = event.data.payload;
+        const { cacheName, updatedURL } = event.data.payload;
         const cache = await caches.open(cacheName);
         const updatedResponse = await cache.match(updatedURL);
         const updatedText = await updatedResponse.text();
+        confirm("New Version is available!.", "Click OK to refresh", "OK", "Cancel",
+        async () => {
+                window.location.reload();
+        }
+    );
+        
     }
 });
 
-if ('serviceWorker' in navigator) {
-    const wb = new Workbox('/sw.js');
-    let registration;
 
-    const showSkipWaitingPrompt = (event) => {
-        if(event.isUpdate){
-            console.log("Waiting...");
-            if (confirm(`New Version is available!. Click OK to refresh`)){
-                wb.addEventListener('controlling', (event) => {
-                    window.location.reload();
-                });
+function confirm(title, msg, $true, $false, accept) { /*change*/
+    var $content = "<div class='modal fade' id='myModal'>" +
+        "<div class='modal-dialog'>" +
+        "<div class='modal-content'>" +
+        "<div class='modal-header'>" +
+        "<h4 class='modal-title'>" + title + "</h4>" +
+        "<button type='button' class='close' data-dismiss='modal'>&times;</button>" +
 
-                if (registration && registration.waiting) {
-                    messageSW(registration.waiting, { type: 'SKIP_WAITING' });
-                }
-            }
-        }
-    }
-     wb.addEventListener('installed', showSkipWaitingPrompt);
-     wb.register().then((r) => registration = r);
+        "</div>" +
+        "<div class='modal-body'>" +
+        msg +
+        "</div>" +
+        "<div class='modal-footer'>" +
+        "<div class='controls'>" +
+        "<button type='button' class='btn btn-warning doAction px-4'>" + $true + "</button>" +
+        "<button type='button' class='btn btn-warning ml-3 cancelAction' data-dismiss='modal'>" + $false + "</button>" +
+        "</div>" +
+        "</div>" +
+        "</div>" +
+        "</div>";
+    $('body').prepend($content);
+    $("#myModal").modal({ backdrop: "static" });
+    $('.doAction').click(function () {
+        accept();
+        $("#myModal").modal("hide");
+    })
+
+    $('.cancelAction').click(function () {
+        $("#myModal").modal("hide");
+    })
+
 }
+
+// if ('serviceWorker' in navigator) {
+//     const wb = new Workbox('/sw.js');
+//     let registration;
+
+//     const showSkipWaitingPrompt = (event) => {
+//         if (event.isUpdate) {
+//             console.log("Waiting...");
+//             confirm("New Version is available!.", "Click OK to refresh", "OK", "Cancel",
+//                 async () => {
+//                   //  wb.addEventListener('controlling', (event) => {
+//                         window.location.reload();
+//                   //  });
+//                     if (registration && registration.waiting) {
+//                         console.log("Waiting finished!");
+//                         messageSW(registration.waiting, { type: 'SKIP_WAITING' });
+//                     }
+//                 }
+//             );
+//         }
+//     }
+//     wb.addEventListener('installed', showSkipWaitingPrompt);
+//     wb.register().then((r) => registration = r);
+// }
 
 
 document.onreadystatechange = function () {

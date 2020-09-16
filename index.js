@@ -21,27 +21,27 @@ navigator.serviceWorker.addEventListener('message', async (event) => {
     }
 });
 
-if ('serviceWorker' in navigator) {
-    const wb = new Workbox('/sw.js');
-    let registration;
+// if ('serviceWorker' in navigator) {
+//     const wb = new Workbox('/sw.js');
+//     let registration;
 
-    const showSkipWaitingPrompt = (event) => {
-        if(event.isUpdate){
-            console.log("Waiting...");
-            if (confirm(`New Version is available!. Click OK to refresh`)){
-                wb.addEventListener('controlling', (event) => {
-                    window.location.reload();
-                });
+//     const showSkipWaitingPrompt = (event) => {
+//         if(event.isUpdate){
+//             console.log("Waiting...");
+//             if (confirm(`New Version is available!. Click OK to refresh`)){
+//                 wb.addEventListener('controlling', (event) => {
+//                     window.location.reload();
+//                 });
 
-                if (registration && registration.waiting) {
-                    messageSW(registration.waiting, { type: 'SKIP_WAITING' });
-                }
-            }
-        }
-    }
-     wb.addEventListener('installed', showSkipWaitingPrompt);
-     wb.register().then((r) => registration = r);
-}
+//                 if (registration && registration.waiting) {
+//                     messageSW(registration.waiting, { type: 'SKIP_WAITING' });
+//                 }
+//             }
+//         }
+//     }
+//      wb.addEventListener('installed', showSkipWaitingPrompt);
+//      wb.register().then((r) => registration = r);
+// }
 
 var header_explore = document.querySelector('#header_explore');
 
