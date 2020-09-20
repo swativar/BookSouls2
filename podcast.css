@@ -99,21 +99,6 @@
 .tab-content-home .carousel{
     position: initial;
 }
-/*.tab-content-home{
-    width: 75%;
-    position: relative;
-    display: block;
-}
-.tab-content-explore{
-    width: 75%;
-    position: relative;
-    display: none;
-}
-.tab-content-genre{
-    width: 75%;
-    position: relative;
-    display: none;
-}*/
 .tab-content-home,.podcast-creativity-container,.podcast-lifestyle-container{
     position: relative;
 }
@@ -305,20 +290,21 @@
 }
 .podcast-card-container{
     position: relative;
-    height: 250px;
+   /* height: 250px;*/
+   width: 180px;
 }
-.podcast-card-desc{
+/*.podcast-card-desc{
     width: 80%;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%,0);
-}
+}*/
 .podcast-card-desc p{
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 22px;
-    line-height: 24px;
+    line-height: 25px;
 }
 .podcast-genre{
     width: 60%;
