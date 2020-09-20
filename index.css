@@ -615,6 +615,9 @@ html.scroll-visibility::-webkit-scrollbar{
     text-align: center;
     font-family: 'Vision Heavy', sans-serif;
     line-height: 32px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 } 
 .inspire_item_content a{
     font-size: 24px;
@@ -1607,6 +1610,7 @@ footer li a:hover{
     }
     .inspire_item_content {
         line-height: 18px;
+        width: 85%;
     } 
     .inspire_item_content a{
         font-size: 13px;
