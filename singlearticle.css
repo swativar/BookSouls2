@@ -28,7 +28,7 @@ header{
     margin-top: 15px;
     margin-bottom:15px;
 }
-.single-article > h2{
+.single-article-heading h2{
     font-family: 'Playfair Display';
     font-weight: 500;
     font-size: 40px;
@@ -169,7 +169,34 @@ cite,i{
     width: 35px;
     height: 35px;
 }
-@media screen and (max-width:576px){
+@media only screen and (max-width:1200px){
+    .single-article-content{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .share{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .single-article-social{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .single-article-quote{
+        transform: rotate(-180deg) scale(0.7);
+        left: -80px;
+    }
+    .single-article-subscribe{
+        padding-left: 60px!important;
+        padding-right: 60px!important;
+    }
+}
+@media only screen and (max-width:991px){
+    .single-article-heading h2{
+        text-align: left!important;
+    }
+}
+@media screen and (max-width:767px){
     header{
         height: 250px;
     }
