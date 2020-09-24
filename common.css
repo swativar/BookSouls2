@@ -734,12 +734,38 @@ a.top-nav:hover{
     .footer-illustration img{
         width: 100%;
     }
+    .search-input input{
+        width:652px;
+    }
+    .search-input input::placeholder{
+        font-size:22px;
+    }
+    .search-input input:focus{
+        font-size: 22px;
+    }
+    .search-input input{
+        font-size: 22px;
+    }
+    footer ul li{
+        font-size:14px;
+    }
+    footer ul li:first-child{
+        font-size:16px;
+    }
+    .footer-logo img{
+        width:140px;
+        height: 40px;
+    }
+    .footer-logo p{
+        font-size:16px;
+    }
+
 }
 @media screen and (max-width:767px){
     .wrapper{
         padding-left: 16px;
         padding-right: 16px;
-        max-width: 500px;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -885,6 +911,12 @@ a.top-nav:hover{
         display:flex;
         justify-content:center;
         width:45%;
+    }
+    .footer{
+        max-width: 468px;
+    }
+    .footer_in{
+        max-width: 468px;
     }
     footer ul{
         padding-left: 0px!important;

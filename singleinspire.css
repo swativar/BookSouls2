@@ -72,7 +72,35 @@
     top: -85%;
     z-index: -1;
 }
-@media screen and (max-width:576px){
+@media only screen and (max-width:1200px){
+    .millionaire-content{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+@media screen and (max-width:991px){
+    .millionaire-content{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .millionaire-title h2{
+        font-size: 42px;
+    }
+    .body::before{
+        right: 0;
+        top: -5%;
+        transform: scale(0.5);
+        transform-origin: right top;
+        
+    }
+    .body::after{
+        left:0;
+        top: -15%;
+        transform:scale(0.5);
+        transform-origin: left top;
+    }
+}
+@media screen and (max-width:767px){
     .inspire-navigation{
         position: relative;
         top:210px;

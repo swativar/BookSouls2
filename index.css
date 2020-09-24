@@ -1338,6 +1338,31 @@ footer li a:hover{
     .footer-illustration img{
         width: 100%;
     }
+    footer ul li{
+        font-size:14px;
+    }
+    footer ul li:first-child{
+        font-size:16px;
+    }
+    .footer-logo img{
+        width:140px;
+        height: 40px;
+    }
+    .footer-logo p{
+        font-size:16px;
+    }
+    .search-input input{
+        width:652px;
+    }
+    .search-input input::placeholder{
+        font-size:22px;
+    }
+    .search-input input:focus{
+        font-size: 22px;
+    }
+    .search-input input{
+        font-size: 22px;
+    }
 }
 @media only screen and (max-width:767px){
     #butInstall{
@@ -1834,6 +1859,12 @@ footer li a:hover{
         padding-right: 5px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .footer{
+        max-width: 468px;
+    }
+    .footer_in{
+        max-width: 468px;
     }
     .footer-links > div{
         display:flex;

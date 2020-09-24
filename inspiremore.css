@@ -80,7 +80,7 @@
     content: url('assets-InspireMe/BG-shapes.svg');
     position: absolute;
     left:0;
-    top: -85%;
+    top: -680px;
     z-index: -1;
 }
 .related-heading h2{
@@ -116,7 +116,72 @@
 .bg-white{
     background-color: #fff;
 }
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:1200px){
+    .millionaire-cont{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .millionaire-links{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .millionaire-img{
+        left: 0;
+    }
+    .millionaire-title{
+        left: -30px;
+    }
+    .body{
+        position: relative;
+        overflow-x: hidden;
+    }
+    .body::before{
+        right: 0;
+        top: -20%;
+        transform: scale(0.8);
+        transform-origin: right top;
+    }
+    .body::after{
+        left:0;
+        top: -35%;
+        transform: scale(0.8);
+        transform-origin: left top;
+        right: 0;
+        
+    }
+}
+@media only screen and (max-width:991px){
+    .millionaire-cont{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .millionaire-links{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .millionaire-title h2{
+        font-size:42px;
+    }
+    .body{
+        position: relative;
+        overflow-x: hidden;
+    }
+    .body::before{
+        right: 0;
+        top: -7%;
+        transform: scale(0.5);
+        transform-origin: right top;
+    }
+    .body::after{
+        left:0;
+        top: -15%;
+        transform: scale(0.5);
+        transform-origin: left top;
+        right: 0;
+        
+    }
+}
+@media only screen and (max-width:767px) {
     .inspire-navigation{
         margin-top: 30px;
         position: relative;
