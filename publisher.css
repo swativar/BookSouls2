@@ -9,7 +9,7 @@
 .pub-background-img1{
     position: absolute;
     top: 18%;
-    right: 50%;
+    right: 230px;
 }
 .pub-background-img2{
     position: absolute;
@@ -170,7 +170,7 @@ li.quick-sub-active::before{
     margin-bottom: 0!important;
 }
 .publisher-tab-home{
-    width: 73%;
+    width: 100%;
     position: relative;
     
 }
@@ -282,7 +282,59 @@ li.quick-sub-active::before{
     color: #272727;
     margin-top: 10px;
 }
-@media screen and (max-width:576px){
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:991px){
+.home-card-img > img{
+    width:170px;
+    height: 130px;
+}
+.home-card-content{
+    width:150px;
+    height: 100px;
+}
+.publisher-home-card{
+    height: 180px;
+}
+.home-card-title{
+    line-height: 16px;
+    margin: 0 0 5px 0;
+}
+.home-card-title a{
+    font-size: 14px;
+}
+.home-card-content p:nth-child(2){
+    font-size:12px;
+    line-height:14px;
+}
+.home-card-content p:last-child{
+    margin-top: 5px;
+}
+.publisher-header-left p{
+    font-size: 20px;
+    line-height:25px;
+}
+.pub-background-img2 {
+    transform: scale(0.7);
+    transform-origin:top right;
+}
+.pub-background-img1{
+    transform:scale(0.7);
+    transform-origin:top right;
+    right: 165px;
+}
+.pub-background-img3{
+    transform: scale(0.7);
+    transform-origin:top right;
+    top:34.5%;
+}
+.publisher-top::after{
+    transform: scale(0.7);
+    transform-origin:top left;
+}
+}
+@media screen and (max-width:767px){
     .publisher-header-left{
         width: 100%;
         margin-top: 10%;
@@ -295,7 +347,7 @@ li.quick-sub-active::before{
     }
     .pub-background-img1{
         top: 35%;
-        right: 32%;
+        right: 106px;
         transform:scale(0.45);
         transform-origin:right top;
     }
@@ -337,6 +389,7 @@ li.quick-sub-active::before{
     }
     .publisher-home-card{
         margin-right: 15px;
+        height: 250px;
     }
     .home-card-img > img{
         width: 200px;
@@ -355,7 +408,7 @@ li.quick-sub-active::before{
         font-size: 15px;
     }
     .home-card-content p:nth-child(2){
-        font-size: 12px;
+        line-height:16px;
     }
     .carousel-item{
         overflow-x: scroll;
