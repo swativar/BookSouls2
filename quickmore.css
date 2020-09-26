@@ -81,6 +81,33 @@
     left: 0;
     right: 93%;
 }
+@media screen and (max-width:1200px){
+    .alchemist-cont{
+        padding-left: 70px;
+        padding-right: 70px;
+        max-width: 100%;
+    }
+    .heart-icon-audio{
+        right: 20%;
+    }
+    .hr2{
+        margin-left: 280px;
+        margin-right: 280px;
+    }
+}
+@media screen and (max-width:991px){
+    .alchemist-cont{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .heart-icon-audio{
+        right: 20%;
+    }
+    .hr2{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
 @media screen and (max-width:576px){
 
     .audio-version{

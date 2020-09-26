@@ -53,8 +53,8 @@
      margin-top: 10px;
  }
  .audio-container{
-     margin-top: 4%;
-     margin-bottom:4%;
+     margin-top: 55px;
+     margin-bottom:55px;
  }
  .audio-player{
     width:70%;
@@ -147,7 +147,37 @@
     font-family: 'Playfair Display';
     font-style: italic;
 }
-@media screen and (max-width:576px){
+@media only screen and (max-width:991px){
+    .audio-controls img{
+        margin-right: 15px;
+    }
+    .celeb-name{
+        margin-left: 10px;
+    }
+    .celeb-name p:first-child{
+        width: 100%;
+    }
+    .celeb-name p:last-child {
+        margin-top: 4px;
+    }
+    .reader-celeb{
+        width:25%;
+        max-width: 186px;
+    }
+    .hr2{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .reader-audio-player{
+        width: 75%;
+    }
+    .audio-share{
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:767px){
     .quick-navigation{
      position: absolute;
      top:270px;
@@ -201,9 +231,13 @@
         width: 100%;
         position: relative;
     }
+    .celeb-name{
+        margin-left:0;
+    }
     .reader-celeb{
         width: 100%;
         position: relative;
+        max-width: 100%;
     }
     .audio-controls-flex{
         position: relative;

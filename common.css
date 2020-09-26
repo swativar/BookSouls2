@@ -726,6 +726,9 @@ a.top-nav:hover{
     .subscribe_right{
         width:540px;
     }
+    .hr{
+        width:92%
+    }
 }
 @media only screen and (max-width:991px){
     .footer-illustration{
@@ -761,6 +764,9 @@ a.top-nav:hover{
     }
     .footer_p p{
         font-size:14px;
+    }
+    .hr{
+        width:90%
     }
 
 }

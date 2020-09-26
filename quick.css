@@ -60,132 +60,6 @@
 #quick-books-cara .carousel-indicators{
     bottom: -50px;
 }
-.quick-tab-links{
-    width: 24%;
-    box-shadow: 1px 1px 40px rgb(223, 221, 221);
-    border-radius: 20px;
-    z-index: 1;
-    background-color: #fff;
-}
-.quick-tab-cat{
-    list-style-type: none;
-    padding: 0!important;
-}
-.quick-tab-sub-cat{
-    list-style-type: none;
-    padding-left: 0px!important;
-}
-.quick-tab-links li{
-    width: 100%;
-    cursor: pointer;
-    padding: 0 40px;
-    margin: 5% 0;
-    font-family: 'Vision Regular';
-    position: relative;
-}
-.quick-tab-cat > li{
-    font-size: 24px;
-}
-.quick-tab-cat > li:not(.quick-active){
-    border-left: 10px solid transparent;
-}
-.quick-tab-sub-cat > li{
-    font-size: 18px;
-}
-.quick-tab-title{
-    background-color: #000;
-    height: 80px;
-    text-align: center;
-    display: flex;
-    padding-left: 20px;
-    align-items: center;
-    position: relative;
-}
-.arrow::after,.title2 .arrow::after,.title3 .arrow::after{
-    content: " ";
-    position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
-    left: 10%;
-    border-width: 12px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-.title1 p::before{
-    content: url('assets-Quick-Page/ExploreIcon.svg');
-    display: inline-block;
-    position: relative;
-    top: 5px;
-    margin-right: 15px;
-}
-.title2 p::before{
-    content: url('assets-Quick-Page/DiscoverIcon.svg');
-    display: inline-block;
-    position: relative;
-    top: 5px;
-    margin-right: 15px;
-}
-.title3 p::before{
-    content: url('assets-Quick-Page/LanguageIcon.svg');
-    display: inline-block;
-    position: relative;
-    top: 7px;
-    margin-right: 15px;
-}
-li.quick-active{
-    border-left: 10px solid #FFDE00;
-    color: #FFDE00;
-}
-li.quick-sub-active{
-    color: #FFDE00;
-    list-style-position: inside;
-}
-li.quick-sub-active::before{
-    content:''; 
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #FFDE00;
-    margin-right: 20px;
-    position: relative;
-    top: 2px;
-}
-.quick-tab-sub-cat > li:not(.quick-sub-active)::before{
-    content:''; 
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: transparent;
-    margin-right: 20px;
-    position: relative;
-    top: 2px;
-}
-.quick-tab-title:first-child{
-    border-radius: 20px 20px 0 0;
-}
-.title3{
-    border-radius: 0 0 20px 20px;
-}
-.quick-tab-sub-cat{
-    display: none;
-}
-#explore,#discover,#language{
-    display: none;
-}
-.title1 p,.title2 p,.title3 p{
-    cursor: pointer;
-}
-.quick-tab-title p{
-    font-size: 26px;
-    font-family: 'Vision Regular';
-    margin-bottom: 0!important;
-}
-.quick-tab-home{
-    width: 73%;
-    position: relative;
-    
-}
 .quick-tab-popular{
     position: relative;
 }
@@ -209,7 +83,7 @@ li.quick-sub-active::before{
     height: 30px;
     position: relative;
     border: 1px solid #FFDE00;
-    cursor: default;
+    cursor: not-allowed;
 }
 .previous span{
     position: absolute;
@@ -258,11 +132,6 @@ li.quick-sub-active::before{
 .bq-card2{
     box-shadow: 1px 1px 30px rgba(0,0,255,0.05);
 }
-.tab-popular-carousel-inner{
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
-}
 .quick-cards-container{
     height: 430px;
 }
@@ -270,6 +139,8 @@ li.quick-sub-active::before{
     border: none!important;
     padding: 1.25rem 0.46rem!important;
     background-color:#fff!important;
+    width: 100%;
+    height: 100%;
 }
 .bq-card1 .card-header > p,.bq-card2 .card-header > p{
     color:#292929;
@@ -280,14 +151,19 @@ li.quick-sub-active::before{
 }
 .quick-card-img{
     position: relative;
+    width:82%;
+    margin-left:auto;
+    margin-right:auto;
 }
 .quick-card-img > img{
     border-radius: 5px;
-    width:176px;
-    height: 265px;
+   /* width:176px; */
+    width:100%;
+    height: auto;
+   /* height: 265px;*/
 }
 .heart-icon-quick{
-    right: 17px;
+    right: -5px;
     top: -5px;
 }
 .quick-card-title{
@@ -324,11 +200,49 @@ li.quick-sub-active::before{
 .quick-tab-recomm,.quick-tab-new{
     position: relative;
 }
-.hr2{
-    margin-right:165px;
-    margin-left:165px;
+@media screen and (max-width:991px){
+    .bq-card1,.bq-card2{
+        width: 180px;
+        height: 350px;
+    }
+    .quick-card-title{
+        line-height:20px;
+    }
+    .quick-card-title a {
+       font-size:16px;
+    }
+    .bq-card1 .card-header > p, .bq-card2 .card-header > p{
+        font-size: 14px;
+        line-height:20px;
+    }
+    .quick_item_bottom{
+        padding:0 0.3rem;
+        position: absolute;
+        bottom: 15px;
+    }
+    .quick_item_bottom .audio-icon::before{
+        margin-left:0;
+    }
+    .quick_item_bottom span:last-child{
+        width:30%;
+    }
+    .quick-cards-container{
+        height: 380px;
+    }
+    .quick-genre-container a img{
+        width: 100px;
+    }
+    
+.quick-header-left p{
+    font-size: 20px;
+    line-height:24px;
 }
-@media screen and (max-width:576px){
+.quick-top-background::after{
+    transform: scale(0.8);
+    transform-origin: top right;
+}
+}
+@media screen and (max-width:767px){
     .hr2{
         margin-right:16px;
         margin-left: 16px;
@@ -356,7 +270,7 @@ li.quick-sub-active::before{
     }
     .quick-header-left h2{
         font-size: 24px;
-        margin-top: 23%;
+        margin-top: 75px;
     }
     .quick-header-left p{
         font-size: 14px;
@@ -368,7 +282,7 @@ li.quick-sub-active::before{
     }
     .bq-card1,.bq-card2{
         width: 180px;
-        height: auto;
+        height: 335px;
     }
     .bq-card1 .card-header > p,.bq-card2 .card-header > p{
         font-size: 12px;
@@ -379,12 +293,8 @@ li.quick-sub-active::before{
     }
     .quick-card-img > img{
         border-radius: 5px;
-        width: 85%;
+        width: 100%;
         height: 200px;
-    }
-    .heart-icon-quick{
-        right: 10px;
-        top: -5px;
     }
     .quick-card-title{
         margin-top: 5%;
@@ -395,6 +305,7 @@ li.quick-sub-active::before{
     }
     .quick_item_bottom{
         padding: 0 0.20rem;
+        
     }
     .quick_item_bottom span:last-child{
         font-size: 10px;
