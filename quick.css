@@ -205,6 +205,21 @@
         width: 180px;
         height: 350px;
     }
+    .quick-top-background::before{
+        transform:scale(0.7);
+        transform-origin:top right;
+    }
+    .book-img-2{
+        width:150px;
+        height: 240px;
+    }
+    .book-img-3{
+        width:140px;
+        height: 200px;
+    }
+    #quick-books-cara .carousel-indicators{
+        bottom:-70px;
+    }
     .quick-card-title{
         line-height:20px;
     }
@@ -238,7 +253,7 @@
     line-height:24px;
 }
 .quick-top-background::after{
-    transform: scale(0.8);
+    transform: scale(0.7);
     transform-origin: top right;
 }
 }
@@ -326,6 +341,9 @@
     .book-img-1,.book-img-3{
         width: 110px;
         height: 170px;
+    }
+    #quick-books-cara .carousel-indicators{
+        bottom:-50px;
     }
     .quick-cards-container{
         height: 370px;
