@@ -662,6 +662,10 @@
     .relation-related-lastauth {
         margin-bottom: 0.1rem;
     }
+    .relation-related-cards .last-related-card{
+        margin: 20px auto;
+        width:96%;
+    }
     .relationship-title h2,.relation-related-title h2,.spirituality-title h2,.view-by-cat-title h2{
         font-size: 18px;
     }
