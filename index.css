@@ -281,13 +281,6 @@ html.scroll-visibility::-webkit-scrollbar{
     z-index: 1031;
     display: none;
 }
-.preference-tags{
-   padding-left:165px;
-   padding-right: 165px;
-   max-width: 1366px;
-   margin-left: auto;
-   margin-right: auto;
-}
 .preference-header{ 
     position: relative;
     width: 100%;
@@ -1364,6 +1357,9 @@ footer li a:hover{
     .footer_p p{
         font-size:14px;
     }
+    .preference-next-arrows{
+        left: 90%;
+    }
 }
 @media only screen and (max-width:767px){
     #butInstall{
@@ -1975,11 +1971,6 @@ footer li a:hover{
     .search-input input:focus{
         font-size: 13px;
     }
-    .preference-tags{
-        padding-left:16px;
-        padding-right: 16px;
-        max-width: 100%;
-     }
      .logo-preferencepage{
         padding-right:2px;
     }

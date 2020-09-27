@@ -552,13 +552,6 @@ a.top-nav:hover{
     z-index: 1031;
     display: none;
 }
-.preference-tags{
-   padding-left:165px;
-   padding-right: 165px;
-   max-width: 1366px;
-   margin-left: auto;
-   margin-right: auto;
-}
 .preference-header{ 
     position: relative;
     width: 100%;
@@ -765,6 +758,9 @@ a.top-nav:hover{
     }
     .hr{
         width:90%
+    }
+    .preference-next-arrows{
+        left: 90%;
     }
 
 }
@@ -1077,12 +1073,7 @@ a.top-nav:hover{
     #email-input::placeholder{
         font-size: 12px;
     }
-    .preference-tags{
-        padding-left:16px;
-        padding-right: 16px;
-        max-width: 100%;
-     }
-     .logo-preferencepage{
+    .logo-preferencepage{
         padding-right:2px;
     }
     .logo-preferencepage a{
