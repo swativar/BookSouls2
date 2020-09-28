@@ -72,6 +72,7 @@
     .errorpage-header::before{
         transform: scale(0.7);
         transform-origin: top left;
+        top:60px;
     }
     .errorpage-header::after{
         top: 80px;
