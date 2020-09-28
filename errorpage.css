@@ -44,31 +44,48 @@
 .errorpage-header::before{
     content: url('assets-Error-Page/Large404.svg');
     position: absolute;
-    top: -23%;
+    top: 40px;
     left: 0;
     z-index: -1;
 }
 .errorpage-header::after{
     content: url('assets-Error-Page/Side404.svg');
     position: absolute;
-    top: 0;
+    top: 140px;
     right: 0;
     z-index: -1;
 }
 .hr2{
     width: 60%;
 }
+@media screen and (max-width:1200px){
+    .errorpage-header::after{
+      transform: scale(0.8);
+      transform-origin: top right;
+    }
+    .errorpage-header::before{
+      transform: scale(0.8);
+      transform-origin: top left;
+    }
+}
 @media screen and (max-width:991px){
     .errorpage-header::before{
-        top: 0%;
-        left: 0;
         transform: scale(0.7);
         transform-origin: top left;
+    }
+    .errorpage-header::after{
+        top: 80px;
+        transform: scale(0.7);
+        transform-origin: top right;
     }
     .error-left{
         display:flex;
         align-items: center;
         width: 35%;
+    }
+    .error-left img{
+        width:300px;
+        height: 300px;
     }
     .error-right{
         width: 65%;
@@ -81,6 +98,7 @@
     }
     .error-left img{
         width: 100%;
+        height: 100%;
     }
     .error-right{
         width: 100%;
