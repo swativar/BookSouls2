@@ -38,8 +38,8 @@
     overflow: hidden;
 }
 .errorpage-header > div{
-    margin-top: 12%;
-    margin-bottom: 7%;
+    margin-top: 167px;
+    margin-bottom: 96px;
 }
 .errorpage-header::before{
     content: url('assets-Error-Page/Large404.svg');
@@ -97,8 +97,8 @@
         flex-direction: column;
     }
     .error-left img{
-        width: 100%;
-        height: 100%;
+        width: 328px;
+        height: 234px;
     }
     .error-right{
         width: 100%;
@@ -106,6 +106,10 @@
         max-width: 330px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .errorpage-header > div{
+        margin-top: 43px;
+        margin-bottom: 25px;
     }
     .hr2{
         width: 95%;
@@ -115,7 +119,7 @@
         text-align:center;
         font-size: 32px;
         line-height: 42px;
-        margin-top: 15%;
+        margin-top: 49px;
     }
     .error-right p:nth-child(2),.error-right p:nth-child(3){
          font-size: 16px;
@@ -139,5 +143,10 @@
         transform: scale(0.42);
         
         
+    }
+}
+@media screen and (max-width:342px){
+    .arrow-img{
+        display: none;
     }
 }

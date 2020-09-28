@@ -9,6 +9,7 @@
 .error-right{
     width: 48%;
     position: relative;
+    max-width: 500px;
 }
 .error-right p:first-child{
     font-size: 45px;
@@ -38,15 +39,33 @@
     position: relative;
 }
 .errorpage-header > div{
-    margin-top: 12%;
-    margin-bottom: 7%;
+    margin-top: 167px;
+    margin-bottom: 96px;
 }
 .hr2{
     width: 60%;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:991px){
+    .error-left{
+        display:flex;
+        align-items: center;
+        width: 35%;
+    }
+    .offline-warning{
+        width:200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .error-right{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:767px) {
     .error-left{
         width: 100%;
+        flex-direction: column;
     }
     .offline-warning{
         width:250px;
@@ -54,8 +73,14 @@
     }
     .error-right{
         width: 100%;
+        max-width: 330px;
         position: relative;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .errorpage-header > div{
+        margin-top: 43px;
+        margin-bottom: 25px;
     }
     .hr2{
         width: 95%;
@@ -65,12 +90,11 @@
         text-align:center;
         font-size: 32px;
         line-height: 42px;
-        margin-top: 15%;
+        margin-top: 49px;
     }
     .error-right p:nth-child(2),.error-right p:nth-child(3){
          font-size: 17px;
          line-height: 24px;
-         width:80vw;
          margin-left: auto;
          margin-right: auto;
     }
@@ -85,5 +109,13 @@
     }
     .errorpage-header::after{
         display: none;
+    }
+}
+@media screen and (max-width:342px){
+    .arrow-img{
+        display: none;
+    }
+    body{
+        overflow-x: scroll;
     }
 }
