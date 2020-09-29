@@ -40,10 +40,21 @@
     transform: scale(1);
     transform-origin: 0 0;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:991px){
+    .forgot-form{
+        margin-top: 3rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+@media screen and (max-width:767px) {
     .forgot-form{
         padding-left: 1rem;
         padding-right: 1rem;
+        max-width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
     }
     #email-forgot{
         width: 100%;

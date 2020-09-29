@@ -9,9 +9,7 @@
     <meta name="theme-color" content="#ffde00">
     <link rel="apple-touch-icon" href="/Favicons/192_192.png">
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="articles.css">
-    <link rel="stylesheet" href="inspiremore.css">
-    <link rel="stylesheet" href="inspireme.css">
+    <link rel="stylesheet" href="settings.css">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -25,7 +23,7 @@
 
 </head>
 
-<body class="body">
+<body>
     <!--Loader until page loads-->
     <div id="loader" class="center"></div>
     <!--Search bar-->
@@ -39,11 +37,12 @@
             </div>
         </div>
         <div class="search-input">
-            <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search" onkeyup="searchResult()">
+            <input type="text" placeholder="search anything... elon musk, kylie jenner..." name="search"
+                onkeyup="searchResult()">
         </div>
     </div>
-     <!--Preferences-->
-     <div class="preference">
+    <!--Preferences-->
+    <div class="preference">
         <div class="preference-header wrapper">
             <div class="logo-preferencepage">
                 <a href="index.html"><img src="assets/Booksouls-LOGO.svg"></a>
@@ -230,8 +229,8 @@
                 </div>
                 <div class="preference-next-arrows">
                     <div class="pre-next-arrows">
-                    <span class="preference-next-arrow1">&#10095;</span>
-                    <span class="preference-next-arrow2">&#10095;</span>
+                        <span class="preference-next-arrow1">&#10095;</span>
+                        <span class="preference-next-arrow2">&#10095;</span>
                     </div>
                 </div>
             </div>
@@ -243,15 +242,14 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-md bg-white fixed-top">
         <div class="container">
-             <!-- Toggler/collapsibe Button -->
-             <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
                 <img src="assets-Home-mobile/Menu.svg" alt="">
             </button>
+
             <!-- Brand -->
-            <div class="booksouls-logo">
             <a class="navbar-brand" href="index.html"><img src="assets/Booksouls-LOGO.svg" alt="booksouls logo"></a>
-            <span class="nav-tag">inspire me</span>
-            </div>
 
             <!-- Navbar links -->
             <div class="navbar-collapse justify-content-end" id="collapsibleNavbar">
@@ -264,7 +262,7 @@
                         <a class="nav-link" href="articles.html"><span class="hover-yellow">Articles</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inspireme.html"><span class="nav-yellow">Inspire Me</span></a>
+                        <a class="nav-link" href="inspireme.html"><span class="hover-yellow">Inspire Me</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="podcast.html"><span class="hover-yellow">Podcast</span></a>
@@ -288,204 +286,88 @@
             <a class="search-icon" onclick="searchPage()"><img src="assets/icons/Search.svg" alt=""></a>
         </div>
     </nav>
-    <div class="wrapper inspire-navigation">
-        <a href="index.html" class="top-nav">Home</a>
-        <span>&#47;</span>
-        <a href="inspireme.html" class="top-nav">Inspire Me</a>
-        <span>&#47;</span>
-        <span class="top-nav">One Night Millionaire</span>
-    </div>
-    <div class="millionaire-header wrapper d-flex align-items-center justify-content-start justify-content-lg-center">
-        <div class="millionaire-img">
-            <img class="rounded"
-                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                alt="">
+    <div class="settings">
+        <div class="settings-title text-center">
+            <h2 class="text-light">Sett<span class="text-warn">ings</span></h2>
         </div>
-        <div class="millionaire-title">
-            <h2>One Night Millionaire</h2>
-            <div class="heart-icon heart-icon-mill bg-light1">
-                <img src="assets/icons/Heart.svg" alt="">
+        <div class="settings-links-wrapper">
+            <div class="clearfix edit-link">
+                <a class="text-warn float-right">Edit</a>
             </div>
-            <div class="text-center millionaire-audio">
-                <a href="inspireaudio.html">Listen to the Audio Version</a>
-            </div>
-        </div>
-    </div>
-    <div class="millionaire-cont" id="top-content">
-        <h3>Who Is Kylie Jenner?</h3>
-        <p>Kylie Jenner was born in 1997 in California. Jenner grew up in the spotlight among her famous siblings in the
-            reality series, Keeping Up With The Kardashians. She’s harnessed her family's fame to launch her own
-            business ventures including a successful cosmetics line, Kylie Cosmetics, and earned millions from sales of
-            her signature Kylie Lip Kit. Additionally, she’s amassed a mega social media following and in 2015 was named
-            one of Time magazine’s Most Influential Teens. In 2019 she was highlighted by Forbes as the youngest-ever
-            self-made billionaire.</p>
-        <h3>Early Life & Family</h3>
-        <p>Kylie Kristen Jenner was born on August 10, 1997, in Los Angeles, California to parents Kris and former
-            Olympic gold medalist Bruce Jenner. In 2015 Bruce announced he was transgender and has since been known as
-            Caitlyn. Kylie has an older sister, Kendall, and several half-siblings: Kourtney, Kim, Khloé and Rob, from
-            her mother’s first marriage to O.J. Simpson defense attorney Robert Kardashian and Burt, Brandon, Brody and
-            Casey from her father’s previous marriages. Her sister Khloé married NBA players Lamar Odom in 2009 and
-            Tristan Thompson in 2016. Her sister Kim married rap superstar Kanye West in 2014.
-            Jenner attended the private Sierra Canyon School and earned her high school diploma from Lauren Springs High
-            School. She considers Calabasas, California, her hometown.</p>
-    </div>
-    <!--Subscribe-->
-    <div class="wrapper d-none d-md-block">
-        <div class="my-5 subscribe_middle">
-            <div class="d-flex flex-md-column flex-xl-row justify-content-between align-items-center">
-                <div class="subscribe_left">
-                    <p>Get articles directly in your email</p>
-                    <p>Be First to read the articles and other special
-                        contents</p>
-                </div>
-                <div class="subscribe_right d-flex justify-content-between">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter email" id="email1">
+            <div class="d-flex flex-row justify-content-between settings-content">
+                <div>
+                    <div class="account">
+                        <p class="settings-con-heading">Account</p>
+                        <div class="mt-4">
+                            <img class="rounded-circle" width="55" height="55" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                            <div class="account-name">
+                            <p>Mrinal Sharma</p>
+                            <p>Not you? <a href="">Change User</a></p>
+                            </div>
+                        </div>
                     </div>
-                    <button class="btn btn-warning subscribe_btn">SUBSCRIBE</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="millionaire-cont">
-        <h3>'Keeping Up With The Kardashians'</h3>
-        <p>Following the release of a sex tape involving her sister Kim that garnered vast media attention, in 2007 the
-            family debuted their reality television series Keeping Up With The Kardashians on E! The series, which
-            featured many of the Kardashian clan, was so successful, it led to a number of spinoffs for some of the
-            siblings, all of whom have etched a place in pop culture history.</p>
-        <p class="my-4"><q>Having a reality TV show, and an app and Snapchat, people think they know exactly who you
-                are.</q>- <cite>Kylie Jenner</cite>
-        <h3>Businesses and Social Media</h3>
-        <p>With the success and public interest in the series and their lives, Jenner and her siblings have expanded
-            their individual brands beyond reality television, earning millions through the lucrative world of celebrity
-            endorsements. She and her sister Kendall have launched a clothing collection for PacSun and TopShop called
-            Kendall & Kylie. Jenner has also launched her own cosmetic brand, Kylie Cosmetics, which includes her wildly
-            successful Kylie Lip Kit. In 2015 the then 17-year-old socialite caused a media frenzy when she admitted to
-            using “temporary lip fillers” (and sparked another frenzy in July 2018 when she revealed via Instagram that
-            the fillers were gone).</p>
-        <p class="my-4"><q>When I'm, like, 30, I want to go off the map, have a family, and live in Malibu with a farm,
-                and just
-                raise my own chickens.</q>- <cite>Kylie Jenner</cite></p>
-        <p>In 2015 she and Kendall were named to Time magazine’s Most Influential Teens list. That same year, she
-            launched a paid lifestyle app called Kylie, which is estimated to generate millions of dollars for the young
-            businesswoman. Additionally, like her sisters, Kylie Jenner has an extensive following on social media; on
-            Instagram alone, she has garnered more than 100 million followers. She used this visibility to start a
-            campaign on the social media site against bullying #IAmMoreThan. The campaign featured the personal stories
-            of six people who turned their painful experiences of being bullied into something positive.</p>
-    </div>
-    <!--Subscribe-->
-    <div class="wrapper d-none d-md-block">
-        <div class="my-5 subscribe_middle">
-            <div class="d-flex flex-md-column flex-xl-row justify-content-between align-items-center">
-                <div class="subscribe_left">
-                    <p>Get articles directly in your email</p>
-                    <p>Be First to read the articles and other special
-                        contents</p>
-                </div>
-                <div class="subscribe_right d-flex justify-content-between">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter email" id="email1">
+                    <div class="form-group mt-5">
+                    <label for="settings-user" class="settings-con-heading">Username</label>
+                    <input type="text" value="@mrinals963" class="form-control disabled-input-class mt-4" id="settings-user" disabled>
                     </div>
-                    <button class="btn btn-warning subscribe_btn">SUBSCRIBE</button>
+                    <div class="form-group mt-5">
+                        <label for="settings-password" class="settings-con-heading">Password</label>
+                        <div class="password-group">
+                        <img src="assets-SignIn-SignOut/EyeClosed.svg" width="20" height="20" class="eye-icon" onclick = 'toggleText(this)'>
+                        <input type="password" value="@mrinals963" class="disabled-input-class form-control mt-4" id="settings-password" disabled>
+                        </div>
+                    </div>
+                    <div class="language mt-5">
+                        <div>
+                            <label for="sel1" class="settings-con-heading">Language</label>
+                            <select class="custom-select mt-4 disabled-input-class" id="sel1" disabled>
+                                <option>English (UK)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="unsubscribe">
+                        <p class="settings-con-heading">Unsubscribe</p>
+                        <div class="mt-4 unsubscribe-newsletter d-flex align-items-center">
+                            <p>Newsletter</p>
+                            <img class="settings-delete-icon" src="assets-SignIn-SignOut/DeleteIcon.svg">
+                        </div>
+                    </div>
+                    <div class="settings-preference">
+                        <p class="settings-con-heading">Preferences</p>
+                        <div class="d-flex flex-column">
+                        <label>
+                            <div class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                            </div>
+                            Send me desktop notifications
+                        </label>
+                        <label>
+                            <div class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                            </div>
+                            Dark mode
+                        </label>
+                        </div>
+                    </div>
+                    <div class="settings-save">
+                        <button class="btn btn-warning px-md-3 px-lg-5 py-2">Save</button>
+                        <button class="btn btn-outline-warning text-dark px-md-3 px-lg-5 py-2">Cancel</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="millionaire-cont">
-        <p>Demonstrating her social media influence, after Jenner tweeted about her diminished interest in the Snapchat
-            platform in February 2018, shares of its parent company dropped by 6.1 percent the following day, wiping out
-            a whopping $1.3 billion in market value.</p>
-        <p>That summer Forbes featured Jenner on a cover to highlight its annual "richest self-made women" list. Coming
-            in at No. 27 with a net worth of $900 million — well ahead of famous big sister Kim, at $350 million —
-            Jenner's fortune was attributed to her 100 percent ownership of the successful Kylie Cosmetics brand.</p>
-        <p>In March 2019 Jenner again was featured in Forbes as part of its annual ranking of the planet's richest
-            people. With her net worth up to $1 billion, the 21-year-old became the youngest member of the billionaires'
-            club and the youngest-ever self-made billionaire, surpassing the mark once set by 23-year-old Mark
-            Zuckerberg. Showing no signs of slowing down, she went on to launch her Kylie Skin skincare line in May.</p>
-        <p>In November 2019 it was announced that fragrance and cosmetics giant Coty Inc. was set to purchase a 51
-            percent stake in Jenner's beauty business, for $600 million. Along with retaining 49 percent ownership,
-            Jenner would continue to serve as creative lead on product development and marketing initiatives for her
-            brand.</p>
-    </div>
-    <!---->
-    <div class="clearfix my-5 millionaire-links">
-        <div class="float-left share-left">
-            <p>Share it with your friends!</p>
-        </div>
-        <div class="float-right social-links">
-            <a href><img class="whats-app" src="assets-singlearticle/WhatsApp.svg"></a>
-            <a href><img src="assets-singlearticle/Facebook.svg"></a>
-            <a href><img src="assets-singlearticle/Twitter.svg"></a>
-            <a href><img src="assets-singlearticle/Instagram.svg"></a>
         </div>
     </div>
     <hr class="hr2">
-    <!---->
-    <div class="wrapper related mt-5">
-        <div class="related-heading">
-            <h2 class="h2"><span>Related</span></h2>
-        </div>
-        <div class="creativity-cards">
-        <div class="d-flex justify-content-between mt-4">
-            <div class="create-card">
-                <img class="create-card-img"
-                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                    alt="">
-                <div class="text-center create-card-title">
-                    <a href>One Night Millionaire</a>
-                </div>
-                <div class="heart-icon heart-icon-creative bg-light">
-                    <img src="assets/icons/Heart.svg">
-                </div>
-            </div>
-            <div class="create-card">
-                <img class="create-card-img"
-                    src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
-                    alt="">
-                <div class="text-center create-card-title">
-                    <a href>Man behind Revolution</a>
-                </div>
-                <div class="heart-icon heart-icon-creative bg-light">
-                    <img src="assets/icons/Heart.svg">
-                </div>
-            </div>
-            <div class="create-card">
-                <img class="create-card-img" src="https://api.time.com/wp-content/uploads/2014/10/474639991.jpg" alt="">
-                <div class="text-center create-card-title">
-                    <a href>Internet's own boy</a>
-                </div>
-                <div class="heart-icon heart-icon-creative bg-light">
-                    <img src="assets/icons/Heart.svg">
-                </div>
-            </div>
-            <div class="create-card">
-                <img class="create-card-img"
-                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kylie-jenner-baby-sex-2-1507650257.jpg"
-                    alt="">
-                <div class="text-center create-card-title">
-                    <a href>One Night Millionaire</a>
-                </div>
-                <div class="heart-icon heart-icon-creative bg-light">
-                    <img src="assets/icons/Heart.svg">
-                </div>
-            </div>
-            <div class="create-card">
-                <img class="create-card-img"
-                    src="https://static01.nyt.com/images/2019/11/01/multimedia/01xp-elonmusk/merlin_162496989_edfc836d-1bcf-45b1-8c42-68eaaac5d1de-superJumbo.jpg"
-                    alt="">
-                <div class="text-center create-card-title">
-                    <a href>Man behind Revolution</a>
-                </div>
-                <div class="heart-icon heart-icon-creative bg-light">
-                    <img src="assets/icons/Heart.svg">
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
     <!--Subscribe-->
 
-    <div class="wrapper email text-center mt-5 mb-5">
+    <div class="wrapper email text-center mb-5">
         <p>Stay <span class="text-warn">Updated</span></p>
         <p>Get selected contents directly in your email</p>
         <div class="d-flex flex-column flex-md-row mt-4 mt-md-5 justify-content-between footer_subscribe">
@@ -575,7 +457,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="common.js"></script>
-    <script src="inspireme.js"></script>
+    <script src="settings.js"></script>
 </body>
 
 </html>

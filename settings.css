@@ -1,0 +1,308 @@
+.settings{
+    background: linear-gradient(
+        #042330 0%,
+        #042330 420px,
+        #fff 420px,
+        #fff 100%
+    );
+    margin-bottom: 5%;
+}
+.settings-links-wrapper{
+    width:900px;
+    margin: 2% auto;
+    padding: 80px 60px;
+    box-shadow: 1px 1px 30px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.settings-title{
+    padding-top: 123px;
+    margin-bottom: 68px;
+}
+.settings-title h2{
+    font-size: 4.5rem;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+.custom-control-input:checked~.custom-control-label::before{
+    background-color:#FFDE00!important;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-right: 0.7rem;
+    vertical-align: middle;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border:1px solid rgba(0,0,0,0.1);
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow:1px 1px 10px rgba(0,0,0,0.2);
+  }
+  
+  input:checked + .slider {
+    background-color: #ffde00;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ffde00;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .settings-con-heading{
+      font-size:25px;
+      font-family:'Montserrat';
+      font-weight: 600;
+  }
+  .language .custom-select:focus {
+    border-color: rgb(255, 222, 0);
+    box-shadow: 0 0 0 0.2rem #FFDE00;
+    color: #495057;
+    background-color: #fff;
+    outline: 0;
+    }
+    .account > div > img{
+      margin-right: 15px;
+    }
+    .account > div{
+      background-color:#fcfafa;
+      padding:15px;
+    }
+    .account-name{
+    display: inline-block;
+    vertical-align: middle;
+    }
+    .account-name p{
+      margin-bottom: 0;
+    }
+  .account-name p:first-child{
+    font-size:18px;
+    font-family:'Montserrat';
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .account-name p:last-child,.account-name p:last-child > a{
+      font-family: 'Montserrat';
+      color: #c0c0c0;
+      font-size: 12px;
+      line-height: 16px;
+  }
+  .account-name p:last-child > a{
+      text-decoration: none;
+      border-bottom:2px solid #c0c0c0;
+  }
+  .account-name p:last-child > a:hover{
+      text-decoration: none;
+      border-bottom: none;
+  }
+  .username > div,.password > div,.unsubscribe > div{
+    background-color:#fcfafa;
+    padding: .375rem 1.25rem;
+    border-radius: 5px;
+    height: calc(2.25rem + 2px);
+  }
+  .unsubscribe > div{
+      width: 300px;
+      position: relative;
+  }
+  .settings-delete-icon{
+      cursor: pointer;
+  }
+  .password > div{
+      position: relative;
+  }
+  .password > div > img,.unsubscribe > div > img{
+      position: absolute;
+      right: 15px;
+  }
+  .username > div p,.password > div p,.unsubscribe > div > p{
+      margin-bottom:0;
+      font-family:'Montserrat';
+      font-size:18px;
+  }
+  .language .custom-select{
+    background: #fcfafa url(assets/icons/Dropdown-icon.svg) no-repeat right .75rem center!important;
+    border:none!important;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 0.375rem 1.75rem 0.375rem 1.25rem!important;
+  }
+  .language label{
+      margin-bottom: 0;
+  }
+  .settings-preference{
+      margin-top:4.5rem;
+  }
+  .settings-preference label{
+      margin:10px 0;
+      font-family:'Montserrat';
+      font-size: 20px;
+  }
+  .settings-save{
+      position:absolute;
+      bottom:7%;
+      right: 0%;
+      padding-right: 60px;
+  }
+  .settings-save button{
+      margin-left: 25px;
+      font-family: 'Montserrat'!important;
+      font-size: 20px!important;
+  }
+  .settings-content > div:first-child{
+      width: 40%;
+  }
+  .settings-content > div:last-child{
+      width:50%;
+  }
+  .edit-link{
+      position: absolute;
+      right: 0;
+      padding-right: inherit;
+      top: 4%;
+      line-height:22px;
+  }
+  .edit-link a{
+      font-size: 24px;
+      text-decoration: none;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid #ffde00;
+  }
+  .edit-link a:hover{
+      text-decoration:none;
+      border-bottom:none;
+  }
+  .hr2{
+      width: 900px;
+  }
+  #settings-user,#settings-password{
+    background-color:#fcfafa;
+    padding: .375rem 1.25rem;
+    border-radius: 2px;
+    height: calc(2.25rem + 2px);
+    border:none;
+    margin-bottom:0;
+    font-family:'Montserrat';
+    font-size:18px;
+  }
+  #settings-user:focus,#settings-password:focus{
+    border-color: #FFDE00!important;
+    box-shadow: 0 0 0 0.2rem #FFDE00;
+    color: #495057;
+    background-color: #fff;
+    outline: 0;
+}
+  .password-group{
+    position: relative;
+    }
+   .eye-icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0,-50%);
+    cursor: pointer;
+   }
+  @media only screen and (max-width:1200px){
+    .hr2{
+        width: 85%;
+    }
+  }
+  @media only screen and (max-width:991px){
+    .hr2{
+        width: 77%;
+    }
+    .settings-links-wrapper{
+        width:700px;
+        padding: 60px 50px;
+  }
+  .account-name p:first-child{
+    font-size:14px;
+    line-height: 18px;
+  }
+  .account-name p:last-child,.account-name p:last-child > a{
+      font-size: 12px;
+      line-height: 14px;
+  }
+  .edit-link a{
+    font-size: 20px;
+  }
+  .settings-content > div:first-child{
+    width: 42%;
+}
+.settings-content > div:last-child{
+    width:47%;
+}
+.settings-preference label{
+    font-size: 14px;
+}
+.settings-save{
+    padding-right: 50px;
+}
+.settings-save button{
+    font-size: 16px!important;
+}
+.settings-con-heading{
+    font-size:20px;
+}
+.username > div p,.password > div p,.unsubscribe > div > p{
+    font-size:14px;
+}
+#settings-user, #settings-password{
+    font-size:14px;
+}
+.language .custom-select{
+    font-size: 14px;
+  }
+  .unsubscribe > div{
+      width: 100%;
+  }
+}
+@media only screen and (max-width:767px){
+    .hr2{
+        width: 90%;
+    }
+}
