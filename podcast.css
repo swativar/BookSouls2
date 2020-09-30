@@ -243,6 +243,8 @@
 .podcast-genre{
     width: 60%;
     position: relative;
+    margin-right: auto;
+    margin-right: auto;
 }
 .genre-card-container a{
     margin: 4% 0;
