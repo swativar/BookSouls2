@@ -65,10 +65,10 @@
     line-height: 31px;
     margin-bottom: 0!important;
 }
-.tab-content-home .carousel,.podcast-recomm .carousel,.podcast-genre .carousel{
+.tab-content-home .carousel,.podcast-recomm .carousel,.podcast-genre .carousel,.podcast-creativity-container .carousel,.podcast-lifestyle-container .carousel{
     position: initial;
 }
-.tab-content-home,.podcast-recomm{
+.tab-content-home,.podcast-recomm,.podcast-creativity-container,.podcast-lifestyle-container{
     position: relative;
 }
 .tab-home-controls{
