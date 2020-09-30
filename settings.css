@@ -133,35 +133,30 @@
       text-decoration: none;
       border-bottom:2px solid #c0c0c0;
   }
-  .account-name p:last-child > a:hover{
+   .account-name p:last-child > a:hover{
       text-decoration: none;
       border-bottom: none;
-  }
-  .username > div,.password > div,.unsubscribe > div{
+    }
+    .unsubscribe > div{
     background-color:#fcfafa;
     padding: .375rem 1.25rem;
     border-radius: 5px;
     height: calc(2.25rem + 2px);
-  }
-  .unsubscribe > div{
-      width: 300px;
-      position: relative;
-  }
-  .settings-delete-icon{
+    width: 300px;
+    position: relative;
+    }
+    .settings-delete-icon{
       cursor: pointer;
-  }
-  .password > div{
-      position: relative;
-  }
-  .password > div > img,.unsubscribe > div > img{
+    }
+    .unsubscribe > div > img{
       position: absolute;
       right: 15px;
-  }
-  .username > div p,.password > div p,.unsubscribe > div > p{
+    }
+    .unsubscribe > div > p{
       margin-bottom:0;
       font-family:'Montserrat';
       font-size:18px;
-  }
+    }
   .language .custom-select{
     background: #fcfafa url(assets/icons/Dropdown-icon.svg) no-repeat right .75rem center!important;
     border:none!important;
@@ -190,6 +185,9 @@
       margin-left: 25px;
       font-family: 'Montserrat'!important;
       font-size: 20px!important;
+  }
+  .settings-save button:first-child{
+    opacity: 0.5;
   }
   .settings-content > div:first-child{
       width: 40%;
@@ -288,7 +286,7 @@
 .settings-con-heading{
     font-size:20px;
 }
-.username > div p,.password > div p,.unsubscribe > div > p{
+.unsubscribe > div > p{
     font-size:14px;
 }
 #settings-user, #settings-password{

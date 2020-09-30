@@ -10,18 +10,20 @@ function toggleText(elem){
 
 var edit_link = document.querySelector('.edit-link a');
 console.log(edit_link);
-
+var save = document.querySelector('.js-settings-save');
 edit_link.onclick = function(){
-    console.log("entered");
+
     var inputs = document.getElementsByClassName('disabled-input-class');
     for(var i = 0; i < inputs.length; i++) {
     inputs[i].disabled = false;
     }
+    save.style.opacity = '1';
+    save.style.filter  = 'alpha(opacity=100)'; // IE fallback
 }
 
 var delete_icon = document.querySelector('.settings-delete-icon');
-var unsubscribe = document.querySelector('.unsubscribe-newsletter');
+var unsubscribe = delete_icon.parentNode;
+
 delete_icon.onclick = function(){
-    console.log("unsubs");
    unsubscribe.remove();
 }

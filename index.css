@@ -1,3 +1,4 @@
+/* ||Fonts */
 @font-face{
     font-family: Vision;
     src:url('assets/Vision/Vision-Light.woff');
@@ -14,6 +15,7 @@
     font-family: Vision Heavy;
     src:url('assets/Vision/Vision-Heavy.ttf');
 }
+/* || Loading Circle */
 #loader { 
     border: 12px solid #f3f3f3; 
     border-radius: 50%; 
@@ -21,19 +23,6 @@
     width: 70px; 
     height: 70px; 
     animation: spin 1s linear infinite;
-}
-#butInstall{
-    position: fixed;
-    bottom: 5%;
-    right: 3%;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size:2.5rem!important;
-    line-height:42px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-    font-weight: 100;
 }
 @keyframes spin{
     0% {
@@ -49,6 +38,21 @@
         transform: rotate(360deg);
     }
 }
+/* || Button for installing website offline */
+#butInstall{
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size:2.5rem!important;
+    line-height:42px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    font-weight: 100;
+}
+/*.......*/
 .bg-light1{
     background-color: #fff!important;
 }
@@ -412,6 +416,7 @@ html.scroll-visibility::-webkit-scrollbar{
 .custom-control-input:focus~.custom-control-label::before {
     box-shadow: none!important;
 }
+/* || Articles Section */
 .articles{
     background:linear-gradient(
         to right,
