@@ -81,7 +81,7 @@
     left: 0;
     right: 93%;
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:1199.98px){
     .alchemist-cont{
         padding-left: 70px;
         padding-right: 70px;
@@ -95,7 +95,7 @@
         margin-right: 280px;
     }
 }
-@media screen and (max-width:991px){
+@media screen and (max-width:991.98px){
     .alchemist-cont{
         padding-left: 70px;
         padding-right: 70px;
@@ -108,7 +108,7 @@
         margin-right: 50px;
     }
 }
-@media screen and (max-width:576px){
+@media screen and (max-width:767.98px){
 
     .audio-version{
         position: relative;

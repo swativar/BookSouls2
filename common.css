@@ -583,7 +583,7 @@ a.top-nav:hover{
     right:0;
     top:0;
     bottom: 0;
-    left: 95%;
+    width: 52px;
     background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
 }
 .pre-next-arrows{
@@ -660,27 +660,29 @@ a.top-nav:hover{
     .wrapper{
         padding-left: 7vw;
         padding-right: 7vw;
-        max-width: 100vw;
+        max-width: 1200px;
     }
     nav .container{
         padding-left: 7vw;
         padding-right: 7vw;
-        max-width: 100vw;
+       /* max-width: 100vw;*/
+       max-width: 1200px;
     }
     .subscribe_right{
         width:540px;
     }
 }
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1199.98px){
     .wrapper{
         padding-left: 16px;
         padding-right: 16px;
-        max-width: 100vw;
+        max-width: 992px;
     }
     nav .container {
         padding-right: 16px;
         padding-left: 16px;
-        max-width: 100vw;
+       /* max-width: 100vw;*/
+       max-width: 992px;
     }
     .subscribe_left{
         width:100%;
@@ -694,7 +696,13 @@ a.top-nav:hover{
         width:92%
     }
 }
-@media only screen and (max-width:991px){
+@media only screen and (max-width:991.98px){
+    .wrapper{
+        max-width: 768px;
+    }
+    nav .container{
+        max-width: 768px;
+    }
     .footer-illustration{
         width: 180px;
     }
@@ -732,12 +740,20 @@ a.top-nav:hover{
     .hr{
         width:90%
     }
-    .preference-next-arrows{
+   /* .preference-next-arrows{
         left: 90%;
+    }*/
+    .heart-icon{
+        height: 27px;
+        width: 27px;
+    }
+    .heart-icon img{
+        width:15px;
+        height:15px;
     }
 
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:767.98px){
     .wrapper{
         padding-left: 16px;
         padding-right: 16px;
@@ -752,13 +768,8 @@ a.top-nav:hover{
         font-size: 0.8rem!important;
     }
     .heart-icon{
-        position: absolute;
         height: 25px;
         width: 25px;
-        border-radius: 50%;
-        display: flex;
-        align-items:center;
-        justify-content: center;
     }
     .heart-icon img{
         width:14px;
@@ -1101,9 +1112,9 @@ a.top-nav:hover{
     .preference-tags-wrapper{
         width: 200%;
     }
-    .preference-next-arrows{
-        left: 80%;
-    }
+    /*.preference-next-arrows{
+        width:65px;
+    }*/
     .preference-next-arrow1,.preference-next-arrow2{
         font-size: 1.5rem;
     }

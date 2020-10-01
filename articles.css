@@ -461,6 +461,10 @@
 .cat-row{
     padding: 0 15%;
 }
+.view-by-cat{
+    overflow: hidden;
+    position: relative;
+}
 .view-by-cat::before{
     content: 'Categories';
     position: absolute;
@@ -508,8 +512,11 @@
       right: 0;
       z-index: 1;
     }
+    .view-by-cat::before{
+        font-size:15rem;
+    }
 }
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1199.98px){
     .prev_in{
         left: 0;
         z-index: 1;
@@ -519,9 +526,10 @@
       z-index: 1;
     }
     .view-by-cat{
-        overflow: hidden;
-        position: relative;
         height: 550px;
+    }
+    .view-by-cat::before{
+        font-size:13rem;
     }
     .header-card-left img{
         width:400px;
@@ -535,7 +543,7 @@
         width:100%;
     }
 }
-@media only screen and (max-width:991px){
+@media only screen and (max-width:991.98px){
     .view-by-cat::before{
         font-size:10rem;
         top:50%;
@@ -576,7 +584,7 @@
         margin:12% 0;
     }
 }
-@media only screen and (max-width:767px){
+@media only screen and (max-width:767.98px){
     .header-carousel{
         height: 390px;
     }

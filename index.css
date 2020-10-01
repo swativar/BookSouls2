@@ -344,7 +344,7 @@ html.scroll-visibility::-webkit-scrollbar{
     right:0;
     top:0;
     bottom: 0;
-    left: 95%;
+    width:52px;
     background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
 }
 .pre-next-arrows{
@@ -1175,7 +1175,7 @@ footer li a:hover{
         margin-right: auto;
     }
 }
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1199.98px) {
     .wrapper{
         padding-left: 16px;
         padding-right: 16px;
@@ -1224,7 +1224,7 @@ footer li a:hover{
         top:10%;
     }
 }
-@media screen and (max-width:991px){
+@media screen and (max-width:991.98px){
     header{
         height: 500px;
     }
@@ -1362,11 +1362,19 @@ footer li a:hover{
     .footer_p p{
         font-size:14px;
     }
-    .preference-next-arrows{
+    /*.preference-next-arrows{
         left: 90%;
+    }*/
+    .heart-icon{
+        height: 27px;
+        width: 27px;
+    }
+    .heart-icon img{
+        width:15px;
+        height:15px;
     }
 }
-@media only screen and (max-width:767px){
+@media only screen and (max-width:767.98px){
     #butInstall{
         bottom: 5%;
         z-index: 2;
@@ -1384,13 +1392,8 @@ footer li a:hover{
         font-size: 0.7rem!important;
     }
     .heart-icon{
-        position: absolute;
         height: 25px;
         width: 25px;
-        border-radius: 50%;
-        display: flex;
-        align-items:center;
-        justify-content: center;
     }
     .heart-icon img{
         width:14px;
@@ -2031,9 +2034,9 @@ footer li a:hover{
     .preference-tags-wrapper{
         width: 200%;
     }
-    .preference-next-arrows{
+    /*.preference-next-arrows{
         left: 80%;
-    }
+    }*/
     .preference-next-arrow1,.preference-next-arrow2{
         font-size: 1.5rem;
     }

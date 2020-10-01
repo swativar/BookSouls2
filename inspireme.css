@@ -236,14 +236,7 @@
 .bg-white{
     background-color: #fff;
 }
-@media screen and (max-width:1366px){
-    #tab-home .carousel-inner{
-        max-width: 1073px;
-        margin-left: auto;
-        margin-right: auto;
-       }
-}
-@media screen and (max-width:991px){
+@media screen and (max-width:991.98px){
    .create-card{
        width:140px;
        height: 160px;
@@ -264,13 +257,8 @@
    .inspire-header-right{
        width:58%;
    }
-   #tab-home .carousel-inner{
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-   }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:767.98px){
     .inspireme-header::before{
         right: 0;
         top: 70px;

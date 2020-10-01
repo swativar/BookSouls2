@@ -200,9 +200,9 @@
 .quick-tab-recomm,.quick-tab-new{
     position: relative;
 }
-@media screen and (max-width:991px){
+@media screen and (max-width:991.98px){
     .bq-card1,.bq-card2{
-        width: 180px;
+        width: 175px;
         height: 350px;
     }
     .quick-top-background::before{
@@ -257,7 +257,7 @@
     transform-origin: top right;
 }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:767.98px){
     .hr2{
         margin-right:16px;
         margin-left: 16px;

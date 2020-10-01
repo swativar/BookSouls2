@@ -169,7 +169,7 @@ cite,i{
     width: 35px;
     height: 35px;
 }
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1199.98px){
     .single-article-content{
         margin-left: 60px;
         margin-right: 60px;
@@ -191,12 +191,12 @@ cite,i{
         padding-right: 60px!important;
     }
 }
-@media only screen and (max-width:991px){
+@media only screen and (max-width:991.98px){
     .single-article-heading h2{
         text-align: left!important;
     }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:767.98px){
     header{
         height: 250px;
     }

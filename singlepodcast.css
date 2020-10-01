@@ -200,12 +200,12 @@
     font-family: 'Playfair Display';
     font-style: italic;
 }
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1199.98px){
     .reader-celeb{
         max-width: 213px;
     }
 }
-@media only screen and (max-width:991px){
+@media only screen and (max-width:991.98px){
     .audio-controls img{
         margin-right: 15px;
     }
@@ -255,7 +255,7 @@
          font-size:42px;
      }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:767.98px){
     .reader-audio{
         display: flex;
         flex-direction:column;
