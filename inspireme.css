@@ -232,10 +232,6 @@
     font-family: 'Playfair Display';
     font-style: italic;
 }
-
-.bg-white{
-    background-color: #fff;
-}
 @media screen and (max-width:991.98px){
    .create-card{
        width:140px;

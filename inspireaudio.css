@@ -2,52 +2,55 @@
     margin-top: 80px;
     margin-bottom: 40px;
 }
+.body-background{
+    position: relative;
+    overflow: hidden;
+}
 .body-background::before{
     content: url('assets-InspireMe/BG-Shapes-2.svg');
     position: absolute;
     right: 0;
-    top: -53%;
+    bottom:300px;
     z-index: -1;
 }
 .body-background::after{
     content: url('assets-InspireMe/BG-shapes.svg');
     position: absolute;
     left:0;
-    top: -710px;
+    top: -650px;
     z-index: -1;
 }
 .audio-container{
-    margin-top: 7%;
+    margin-top: 94px;
+    margin-bottom:54px;
+}
+.millionaire-links{
+    margin-top:110px;
+    margin-bottom:68px;
 }
 @media screen and (max-width:1199.98px){
     .body-background::before{
-        right: 0;
-        top: 0%;
-        transform:scale(0.4);
-        transform-origin: right top;
+        top:auto;
+        transform:scale(0.8);
+        transform-origin: right bottom;
     }
     .body-background::after{
-        left:0;
-        top: -8%;
-        transform:scale(0.4);
+        top:-400px;
+        transform:scale(0.8);
         transform-origin: left top;
     }
 }
 @media screen and (max-width:991.98px){
-    .body-background{
-        position: relative;
-        overflow-x: hidden;
-    }
     .body-background::before{
         right: 0;
-        top: 0%;
-        transform:scale(0.4);
+        top: -4%;
+        transform:scale(0.45);
         transform-origin: right top;
     }
     .body-background::after{
         left:0;
-        top: -8%;
-        transform:scale(0.4);
+        top: -16%;
+        transform:scale(0.45);
         transform-origin: left top;
     }
     .millionaire-img{

@@ -46,8 +46,11 @@
     right: -5px;
 }
 .millionaire-cont{
-    margin-left: 350px;
-    margin-right: 350px;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1366px;
 }
 .millionaire-cont p{
     font-size: 21px;
@@ -69,14 +72,18 @@
     font-weight: 600;
     margin-bottom: 4%;
 }
-.body::before{
+.inspire-content-background{
+    position: relative;
+    overflow-x: hidden;
+}
+.inspire-content-background::before{
     content: url('assets-InspireMe/BG-Shapes-2.svg');
     position: absolute;
     right: 0;
-    top: -53%;
+    top: -10%;
     z-index: -1;
 }
-.body::after{
+.inspire-content-background::after{
     content: url('assets-InspireMe/BG-shapes.svg');
     position: absolute;
     left:0;
@@ -89,8 +96,11 @@
     font-style: italic;
 }
 .millionaire-links{
-    margin-left: 250px;
-    margin-right: 250px;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1366px;
 }
 .hr2{
     margin-left: 250px;
@@ -118,12 +128,14 @@
 }
 @media only screen and (max-width:1199.98px){
     .millionaire-cont{
-        margin-left: 70px;
-        margin-right: 70px;
+        padding-left: 70px;
+        padding-right: 70px;
+        max-width: 992px;
     }
     .millionaire-links{
-        margin-left: 60px;
-        margin-right: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+        max-width: 992px;
     }
     .millionaire-img{
         left: 0;
@@ -131,19 +143,15 @@
     .millionaire-title{
         left: -30px;
     }
-    .body{
-        position: relative;
-        overflow-x: hidden;
-    }
-    .body::before{
+    .inspire-content-background::before{
         right: 0;
-        top: -20%;
+        top: -5%;
         transform: scale(0.8);
         transform-origin: right top;
     }
-    .body::after{
+    .inspire-content-background::after{
         left:0;
-        top: -35%;
+        top: -13%;
         transform: scale(0.8);
         transform-origin: left top;
         right: 0;
@@ -152,29 +160,27 @@
 }
 @media only screen and (max-width:991.98px){
     .millionaire-cont{
-        margin-left: 50px;
-        margin-right: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 768px;
     }
     .millionaire-links{
-        margin-left: 40px;
-        margin-right: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        max-width: 768px;
     }
     .millionaire-title h2{
         font-size:42px;
     }
-    .body{
-        position: relative;
-        overflow-x: hidden;
-    }
-    .body::before{
+    .inspire-content-background::before{
         right: 0;
-        top: -7%;
+        top: -4%;
         transform: scale(0.5);
         transform-origin: right top;
     }
-    .body::after{
+    .inspire-content-background::after{
         left:0;
-        top: -15%;
+        top: -7%;
         transform: scale(0.5);
         transform-origin: left top;
         right: 0;
@@ -188,15 +194,15 @@
         top:210px;
     }
     .millionaire-cont{
-        margin-left: 16px;
-        margin-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     #top-content{
         margin-top:5rem;
     }
     .millionaire-links{
-        margin-left: 16px;
-        margin-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     .millionaire-cont p{
         font-size: 14.5px;
@@ -241,19 +247,15 @@
         bottom: -33px;
         right: -5px;
     }
-    .body{
-        position: relative;
-        overflow-x: hidden;
-    }
-    .body::before{
+    .inspire-content-background::before{
         right: 0;
-        top: 23%;
+        top: 3%;
         transform: scale(0.4);
         transform-origin: right top;
     }
-    .body::after{
+    .inspire-content-background::after{
         left:0;
-        top: -15%;
+        top: -3%;
         transform: scale(0.4);
         transform-origin: left top;
         right: 0;

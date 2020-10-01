@@ -33,6 +33,7 @@
 .millionaire-content > p{
     font-size: 22px;
     font-family: 'Montserrat',sans-serif;
+    margin-bottom:0;
 } 
 .millionaire-audio p{
     width: 20%;
@@ -54,48 +55,51 @@
     font-family: 'Playfair Display';
     font-style: italic;
 }
-.body{
+.inspire-main{
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
-.body::before{
+.inspire-main::before{
     content: url('assets-InspireMe/BG-Shapes-2.svg');
     position: absolute;
     right: 0;
-    top: -53%;
     z-index: -1;
+    bottom: -20px;
 }
-.body::after{
+.inspire-main::after{
     content: url('assets-InspireMe/BG-shapes.svg');
     position: absolute;
     left:0;
-    top: -85%;
+    bottom:290px;
     z-index: -1;
 }
 @media only screen and (max-width:1199.98px){
     .millionaire-content{
         padding-left: 70px;
         padding-right: 70px;
+        max-width: 992px;
     }
 }
 @media screen and (max-width:991.98px){
     .millionaire-content{
         padding-left: 60px;
         padding-right: 60px;
+        max-width: 768px;
     }
     .millionaire-title h2{
         font-size: 42px;
     }
-    .body::before{
+    .inspire-main::before{
         right: 0;
         top: -5%;
+        bottom:auto;
         transform: scale(0.5);
         transform-origin: right top;
-        
     }
-    .body::after{
+    .inspire-main::after{
         left:0;
-        top: -15%;
+        top: -20%;
+        bottom:auto;
         transform:scale(0.5);
         transform-origin: left top;
     }
@@ -135,14 +139,14 @@
         width:110px;
         height: 135px;
     }
-    .body::before{
+    .inspire-main::before{
         right: 0;
         top: 16%;
         transform: scale(0.4);
         transform-origin: right top;
         
     }
-    .body::after{
+    .inspire-main::after{
         left:0;
         top: -15%;
         transform:scale(0.4);
