@@ -11,16 +11,13 @@
     margin-left: auto;
     margin-right:auto;
 }
-.podcast-stack3,.podcast-stack2,.podcast-stack1{
-    position: relative;
-    border-radius: 10px;
-    background-position: center;
-    background-blend-mode: overlay;
-}
 .podcast-stack{
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    border-radius: 10px;
+    background-position: center;
+    background-blend-mode: overlay;
 }
 .podcast-stack > a{
     position: absolute;
@@ -224,16 +221,8 @@
 }
 .podcast-card-container{
     position: relative;
-   /* height: 250px;*/
-   width: 180px;
+    width: 180px;
 }
-/*.podcast-card-desc{
-    width: 80%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,0);
-}*/
 .podcast-card-desc p{
     font-family: 'Montserrat';
     font-weight: 600;
@@ -249,13 +238,6 @@
 .genre-card-container a{
     margin: 4% 0;
 }
-/*@media screen and (max-width:1366px){
-    #pod-tab-home .carousel-inner{
-        max-width: 1078px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}*/
 @media screen and (max-width:1199.98px){
     .genre-card-container a img{
         width:110px;
@@ -281,8 +263,6 @@
  }
  .podcast-stack{
      width:300px;
-     margin-left: auto;
-     margin-right: auto;
      height: 200px;
  }
  .podcast-header-left p{
@@ -290,15 +270,8 @@
      line-height:24px;
  }
  .podcast-genre{
-     margin-left: auto;
-     margin-right: auto;
      width:590px;
  }
-/*#pod-tab-home .carousel-inner{
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-}*/
 }
 @media screen and (max-width:767.98px){
     .podcast-top{
@@ -315,8 +288,6 @@
     .podcast-stack3,.podcast-stack2,.podcast-stack1{
         height:170px;
         width: 250px;
-        margin-left: auto;
-        margin-right:auto;
     }
     .podcast-stack-play img{
         width: 50px;
@@ -326,19 +297,8 @@
         font-size: 30px;
     }
     .podcast-header-left p{
-        font-family: 'Montserrat';
         font-size: 14px;
         line-height: 20px;
-        margin-bottom: 0!important;
-    }
-    .tab-content-home{
-        width: 100%;
-    }
-    .tab-content-explore{
-        width: 100%;
-    }
-    .tab-content-genre{
-        width: 100%;
     }
     .podcast-recomm,.podcast-genre{
         width: 100%;

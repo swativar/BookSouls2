@@ -270,25 +270,20 @@
         overflow-x: hidden;
     }
     .bg1{
-        position: absolute;
         right: 0;
         top: -20%;
         height: 100%;
-        z-index:-1;  
         transform:scale(0.5);
         transform-origin: right top;
     }
     .bg2{
-        position: absolute;
         left: 0;
         bottom: 0;
         top:-42%;
         transform:scale(0.32);
         overflow-x: hidden;
-        transform-origin: right top;
         height: 100%;
-        z-index: -1; 
-        transform-origin: left bottom; 
+        transform-origin: left bottom;
     }
     .create-card{
         height: 200px;

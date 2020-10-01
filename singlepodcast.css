@@ -1,6 +1,9 @@
 .reader-celeb{
    width: 21%;
 }
+.reader-celeb img{
+    margin-right:15px;
+}
 .reader-audio-player{
   width: 79%;
 }
@@ -8,7 +11,7 @@
     margin-bottom: 0!important;
 }
 .celeb-name p:first-child{
-    width: 50%;
+    width: 60%;
     line-height: 15px;
     font-family: 'Vision Heavy';
     font-size: 14px;
@@ -204,13 +207,15 @@
     .reader-celeb{
         max-width: 213px;
     }
+    .millionaire-links,.podcast-topics{
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 992px;
+    }
 }
 @media only screen and (max-width:991.98px){
     .audio-controls img{
         margin-right: 15px;
-    }
-    .celeb-name{
-        margin-left: 10px;
     }
     .celeb-name p:first-child{
         width: 100%;
@@ -222,13 +227,10 @@
     .reader-audio-player{
         width: 75%;
     }
-    .millionaire-links{
-        padding-left: 16px;
-        padding-right: 16px;
-    }
     .millionaire-links,.podcast-topics{
         padding-left: 16px;
         padding-right: 16px;
+        max-width: 768px;
     }
     .hr2{
         margin-left:16px;

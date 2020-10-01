@@ -33,9 +33,12 @@ header{
     font-weight: 500;
     font-size: 40px;
 }
-.single-article-social{
-    margin-left: 250px;
-    margin-right: 250px;
+.single-article-social,.share{
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1366px;
 }
 .social-links a{
     margin-right: 10px;
@@ -51,13 +54,16 @@ header{
     opacity: 0.7;
 }
 .single-article-content{
-    margin-left: 250px;
-    margin-right: 250px;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     margin-top: 5%;
     font-family: 'Montserrat';
     font-size: 19px;
     line-height: 31px;
+    max-width: 1366px;
 }
 .single-article-content p{
     margin-bottom: 3%;
@@ -119,13 +125,10 @@ cite,i{
     transform: rotate(-180deg);
     opacity: 0.5;
     z-index: -1;
+    padding-right: inherit;
 }
 .middle-image{
     height: 300px;
-}
-.share{
-    margin-left: 250px;
-    margin-right: 250px;
 }
 .share-left p{
     font-family: 'Montserrat',sans-serif;
@@ -170,17 +173,10 @@ cite,i{
     height: 35px;
 }
 @media only screen and (max-width:1199.98px){
-    .single-article-content{
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-    .share{
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-    .single-article-social{
-        margin-left: 60px;
-        margin-right: 60px;
+    .single-article-content,.share,.single-article-social{
+        padding-left: 60px;
+        padding-right: 60px;
+        max-width: 992px;
     }
     .single-article-quote{
         transform: rotate(-180deg) scale(0.7);
@@ -221,27 +217,24 @@ cite,i{
         margin-bottom: 1.5rem;
     }
     .single-article-social{
-        margin-left: 16px;
-        margin-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
         margin-bottom: 56px;
     }
     .single-article-content{
-        margin-left: 16px;
-        margin-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
         margin-top: 5%;
         font-size: 14.5px;
         line-height: 23px;
     }
     .quote{
         font-size: 17px;
-        font-family: 'Playfair Display';
-        font-weight: 500;
         line-height: 20px;
-        quotes: none;
     }
     .share{
-        margin-left: 16px;
-        margin-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     .related-article-wrapper{
         margin-left: 16px;
