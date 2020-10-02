@@ -115,7 +115,7 @@ workbox.routing.setCatchHandler(({ event }) => {
       break;
     case 'image':
       if(!event.request.url.endsWith('.svg')){
-        return workbox.precaching.matchPrecache('/assets/blur.png')
+        return workbox.precaching.matchPrecache('/assets/BSWaterMark.png');
       }
       return Response.error();
       break;
