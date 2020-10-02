@@ -542,6 +542,12 @@
     .spirituality-right .header-flex5,.spirituality-right .header-flex4{
         width:100%;
     }
+    .header-flex3{
+        width:330px;
+    }
+    .header-flex4,.header-flex5{
+        width:280px;
+    }
 }
 @media only screen and (max-width:991.98px){
     .view-by-cat::before{
@@ -571,6 +577,14 @@
     }
     .next_in{
       right: 0;
+    }
+    .header-flex3{
+        border-left: none!important;
+        border-right: none!important;
+        width:48%;
+    }
+    .header-flex-con{
+       width:52%;
     }
     .header-flex4,.header-flex5{
         width:90%;
