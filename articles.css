@@ -462,7 +462,6 @@
     padding: 0 15%;
 }
 .view-by-cat{
-    overflow: hidden;
     position: relative;
 }
 .view-by-cat::before{
@@ -505,11 +504,11 @@
 }
 @media only screen and (min-width:1200px) and (max-width:1366px) {
     .prev_in{
-        left: 0;
+        left: -45px;
         z-index: 1;
     }
     .next_in{
-      right: 0;
+      right: -45px;
       z-index: 1;
     }
     .view-by-cat::before{
@@ -527,6 +526,7 @@
     }
     .view-by-cat{
         height: 550px;
+        overflow: hidden;
     }
     .view-by-cat::before{
         font-size:13rem;
