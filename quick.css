@@ -362,6 +362,11 @@
     .carousel-item::-webkit-scrollbar{
         display: none;
     }
+    .genre-buttons{
+        max-width: 340px;
+        margin-left:auto;
+        margin-right: auto;
+    }
     .genre-buttons button{
      margin:6px 0;
      box-shadow: 1px 1px 5px rgba(0,0,0,0.2);

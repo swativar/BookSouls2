@@ -26,4 +26,17 @@ var unsubscribe = delete_icon.parentNode;
 
 delete_icon.onclick = function(){
    unsubscribe.remove();
+   if(save.style.opacity !== 1){
+    save.style.opacity = '1';
+    }
 }
+
+var js_visible_save = document.querySelectorAll('.js-visible-save');
+js_visible_save.forEach(function(save_visible){
+    save_visible.onchange = function(){
+        
+        if(save.style.opacity !== 1){
+            save.style.opacity = '1';
+        }
+    }
+});

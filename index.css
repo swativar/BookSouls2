@@ -1894,6 +1894,11 @@ footer li a:hover{
     .footer_subscribe{
         padding: 0px;
     }
+    .email{
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .email p:first-child{
         font-size:25px;
     }
