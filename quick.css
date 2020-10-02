@@ -160,7 +160,7 @@
    /* width:176px; */
     width:100%;
     height: auto;
-   /* height: 265px;*/
+    height: 265px;
 }
 .heart-icon-quick{
     right: -5px;
@@ -219,6 +219,9 @@
     }
     #quick-books-cara .carousel-indicators{
         bottom:-70px;
+    }
+    .quick-card-img > img{
+        height: 200px;
     }
     .quick-card-title{
         line-height:20px;
