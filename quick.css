@@ -83,7 +83,8 @@
     height: 30px;
     position: relative;
     border: 1px solid #FFDE00;
-    cursor: not-allowed;
+    /*cursor: not-allowed;*/
+    cursor: default;
 }
 .previous span{
     position: absolute;

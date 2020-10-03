@@ -1,36 +1,4 @@
-document.onreadystatechange = function() { 
-    if (document.readyState !== "complete") { 
-        document.querySelector("body").style.visibility = "hidden"; 
-        document.querySelector("#loader").style.visibility = "visible";
-        document.documentElement.style.overflow = 'hidden';
-    } else { 
-        document.querySelector("#loader").style.display = "none"; 
-        document.querySelector("body").style.visibility = "visible";
-        document.documentElement.style.overflow = 'auto'; 
-    } 
-};
 
-// function show(evt, name) {
-//     // Declare all variables
-//     var i, tabcontent, tablinks;
-  
-//     // Get all elements with class="tabcontent" and hide them
-//     tabcontent = document.getElementsByClassName("tab-content");
-//     console.log(tabcontent);
-//     for (i = 0; i < tabcontent.length; i++) {
-//       tabcontent[i].style.display = "none";
-//     }
-  
-//     // Get all elements with class="tablinks" and remove the class "active"
-//     tablinks = document.getElementsByClassName("tab-li");
-//     for (i = 0; i < tablinks.length; i++) {
-//       tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
-//     }
-  
-//     // Show the current tab, and add an "active" class to the link that opened the tab
-//     document.getElementById(name).style.display = "block";
-//     evt.currentTarget.className += " tab-active";
-//   }
   $('#page-header').carousel({interval:2500});
   $('#pod-tab-home').carousel({interval:false,wrap:false});
   $('#pod-recom,#pod-recom-mobile,#pod-creative,#pod-life-style').carousel({interval:false,wrap:false});
@@ -78,8 +46,3 @@ $("#pod-tab-home,#pod-recom,#pod-genre,#pod-recom-mobile,#pod-creative,#pod-life
     document.querySelector('#' + event.target.id + ' .previous').style.cursor = "default";
   }
 });
-  
-// if (location.protocol !== 'https:') {
-//   location.replace(`https:${location.href.substring(location.protocol.length)}`);
-// }
-// console.log(location.protocol);
