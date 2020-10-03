@@ -303,4 +303,28 @@
     .hr2{
         width: 90%;
     }
+    .settings-content > div:first-child,.settings-content > div:last-child{
+      width: 100%;
+    }
+    .settings-links-wrapper{
+      width:93%;
+      padding:25px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .settings-save{
+      padding-right: 0;
+      position:initial;
+      margin-top: 3rem;
+      float: right;
+    }
+    .edit-link{
+      top: 0;
+      padding-top: 25px;
+    }
+    .settings-title h2{
+      font-size:3.5rem;
+    }
+
 }
