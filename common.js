@@ -143,6 +143,7 @@ function searchResult() {
     }
 }
 
+
 (() => {
     'use strict';
     // Page is loaded
