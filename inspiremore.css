@@ -174,13 +174,13 @@
     }
     .inspire-content-background::before{
         right: 0;
-        top: -4%;
+        top: -160px;
         transform: scale(0.5);
         transform-origin: right top;
     }
     .inspire-content-background::after{
         left:0;
-        top: -7%;
+        top: -280px;
         transform: scale(0.5);
         transform-origin: left top;
         right: 0;
