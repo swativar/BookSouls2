@@ -60,13 +60,14 @@
     .alchemist-content{
         padding-left: 70px;
         padding-right: 70px;
-        max-width: 100%;
+        max-width: 992px;
     }
 }
 @media screen and (max-width:991.98px){
     .alchemist-content{
         padding-left: 50px;
         padding-right: 50px;
+        max-width: 768px;
     }
     .millionaire-bottom{
         margin-left:50px;
