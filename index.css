@@ -674,16 +674,16 @@ html.scroll-visibility::-webkit-scrollbar{
 .subscribe_middle .form-group{
     margin-bottom: 0!important;
 }
-#email1{
+.subscribe_right input{
     width: 355px;
     border:none;
     padding:4% 8%;
 }
-#email1::placeholder{
+.subscribe_right input::placeholder{
     font-size: 17px;
     font-family: 'Vision';
 }
-#email1:focus{
+.subscribe_right input:focus{
     border-color: #FFDE00!important;
     box-shadow: 0 0 0 0.2rem #FFDE00;
     color: #495057;
@@ -1188,6 +1188,9 @@ footer li a:hover{
         margin-left: auto;
         margin-right: auto;
     }
+    .subscribe_right{
+        width:540px;
+    }
 }
 @media only screen and (max-width:1199.98px) {
     .wrapper{
@@ -1238,9 +1241,6 @@ footer li a:hover{
     .inspire_item{
         width: 220px;
         height: 260px;
-    }
-    #email1{
-        width:340px;
     }
     .booksouls_quick::before{
         font-size:22.5rem;

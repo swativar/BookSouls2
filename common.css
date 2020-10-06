@@ -202,21 +202,21 @@ nav .container{
 .subscribe_middle .form-group{
     margin-bottom: 0!important;
 }
-#email1{
-    width: 355px;
-    border:none;
-    padding:4% 8%;
+.subscribe_right input{
+    width: 355px!important;
+    border:none!important;
+    padding:4% 8%!important;
 }
-#email1::placeholder{
-    font-size: 17px;
-    font-family: 'Vision';
+.subscribe_right input::placeholder{
+    font-size: 17px!important;
+    font-family: 'Vision'!important;
 }
-#email1:focus{
+.subscribe_right input:focus{
     border-color: #FFDE00!important;
-    box-shadow: 0 0 0 0.2rem #FFDE00;
-    color: #495057;
-    background-color: #fff;
-    outline: 0;
+    box-shadow: 0 0 0 0.2rem #FFDE00!important;
+    color: #495057!important;
+    background-color: #fff!important;
+    outline: 0!important;
 }
 /*---------*/
 /*----footer section newsletter-----*/
